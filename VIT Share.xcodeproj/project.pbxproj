@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FB244434F1006FE3E5 /* LoginViewController.swift */; };
+		020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */; };
+		020A330024443A8A006FE3E5 /* BicycleShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FF24443A8A006FE3E5 /* BicycleShareViewController.swift */; };
+		020A330224443AAD006FE3E5 /* BooksShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A330124443AAD006FE3E5 /* BooksShareViewController.swift */; };
+		020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A330324443B07006FE3E5 /* ProfileViewController.swift */; };
+		02272EBE244DC40F00AED173 /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02272EBC244DC40F00AED173 /* Cell2.swift */; };
+		02272EBF244DC40F00AED173 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02272EBD244DC40F00AED173 /* Cell2.xib */; };
+		024C71112443B145002D9CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71102443B145002D9CCE /* AppDelegate.swift */; };
+		024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71122443B145002D9CCE /* SceneDelegate.swift */; };
+		024C71182443B145002D9CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C71162443B145002D9CCE /* Main.storyboard */; };
+		024C711A2443B149002D9CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024C71192443B149002D9CCE /* Assets.xcassets */; };
+		024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C711B2443B149002D9CCE /* LaunchScreen.storyboard */; };
+		024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71242443B48C002D9CCE /* SignUpViewController.swift */; };
+		024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024C71262443BCBB002D9CCE /* GoogleService-Info.plist */; };
+		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
+		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
+		0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286BCE6244F072D00680B19 /* RidesModel.swift */; };
+		02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF2244677CD004742B1 /* FindRideViewController.swift */; };
+		02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */; };
+		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
+		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
+		02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */; };
+		02F46AC82444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02F46AC72444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */; };
+		4D578D3567D08131C8FFD5B2 /* Pods_VIT_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020A32FB244434F1006FE3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabShareViewController.swift; sourceTree = "<group>"; };
+		020A32FF24443A8A006FE3E5 /* BicycleShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleShareViewController.swift; sourceTree = "<group>"; };
+		020A330124443AAD006FE3E5 /* BooksShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksShareViewController.swift; sourceTree = "<group>"; };
+		020A330324443B07006FE3E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		02272EBC244DC40F00AED173 /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
+		02272EBD244DC40F00AED173 /* Cell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell2.xib; sourceTree = "<group>"; };
+		024C710D2443B145002D9CCE /* VIT Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIT Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024C71102443B145002D9CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		024C71122443B145002D9CCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		024C71172443B145002D9CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		024C71192443B149002D9CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		024C711C2443B149002D9CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		024C711E2443B149002D9CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024C71242443B48C002D9CCE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		024C71262443BCBB002D9CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		0286BCE6244F072D00680B19 /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
+		02B0EBF2244677CD004742B1 /* FindRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideViewController.swift; sourceTree = "<group>"; };
+		02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRideViewController.swift; sourceTree = "<group>"; };
+		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
+		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
+		02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		02F46AC72444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
+		2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIT_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.release.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.release.xcconfig"; sourceTree = "<group>"; };
+		9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.debug.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		024C710A2443B145002D9CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D578D3567D08131C8FFD5B2 /* Pods_VIT_Share.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024C71042443B145002D9CCE = {
+			isa = PBXGroup;
+			children = (
+				02F46AC62444F712001668A3 /* Fonts */,
+				024C710F2443B145002D9CCE /* VIT Share */,
+				024C710E2443B145002D9CCE /* Products */,
+				7F240E75B7C0609C05F44065 /* Pods */,
+				A152D71F50EE75777C88DE5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		024C710E2443B145002D9CCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				024C710D2443B145002D9CCE /* VIT Share.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		024C710F2443B145002D9CCE /* VIT Share */ = {
+			isa = PBXGroup;
+			children = (
+				024C71102443B145002D9CCE /* AppDelegate.swift */,
+				024C71122443B145002D9CCE /* SceneDelegate.swift */,
+				024C711B2443B149002D9CCE /* LaunchScreen.storyboard */,
+				024C71162443B145002D9CCE /* Main.storyboard */,
+				024C71192443B149002D9CCE /* Assets.xcassets */,
+				020A32FB244434F1006FE3E5 /* LoginViewController.swift */,
+				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
+				020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */,
+				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
+				0260C5F92447CA340066C06C /* Cell.xib */,
+				0260C5F82447CA340066C06C /* Cell.swift */,
+				02272EBD244DC40F00AED173 /* Cell2.xib */,
+				02272EBC244DC40F00AED173 /* Cell2.swift */,
+				02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */,
+				02B0EBF2244677CD004742B1 /* FindRideViewController.swift */,
+				02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */,
+				02B0EBF624467826004742B1 /* ModifyRideViewController.swift */,
+				0286BCE6244F072D00680B19 /* RidesModel.swift */,
+				020A32FF24443A8A006FE3E5 /* BicycleShareViewController.swift */,
+				020A330124443AAD006FE3E5 /* BooksShareViewController.swift */,
+				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
+				024C711E2443B149002D9CCE /* Info.plist */,
+				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
+			);
+			path = "VIT Share";
+			sourceTree = "<group>";
+		};
+		02F46AC62444F712001668A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				02F46AC72444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F240E75B7C0609C05F44065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */,
+				323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A152D71F50EE75777C88DE5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		024C710C2443B145002D9CCE /* VIT Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "VIT Share" */;
+			buildPhases = (
+				32FD0A7D034B6793FFFF1BFE /* [CP] Check Pods Manifest.lock */,
+				024C71092443B145002D9CCE /* Sources */,
+				024C710A2443B145002D9CCE /* Frameworks */,
+				024C710B2443B145002D9CCE /* Resources */,
+				3E3A277057D75BCB01F4CAB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VIT Share";
+			productName = "VIT Share";
+			productReference = 024C710D2443B145002D9CCE /* VIT Share.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		024C71052443B145002D9CCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Likhit Garimella";
+				TargetAttributes = {
+					024C710C2443B145002D9CCE = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 024C71082443B145002D9CCE /* Build configuration list for PBXProject "VIT Share" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 024C71042443B145002D9CCE;
+			productRefGroup = 024C710E2443B145002D9CCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				024C710C2443B145002D9CCE /* VIT Share */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		024C710B2443B145002D9CCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */,
+				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
+				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
+				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
+				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
+				02F46AC82444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */,
+				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32FD0A7D034B6793FFFF1BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIT Share-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E3A277057D75BCB01F4CAB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIT Share/Pods-VIT Share-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIT Share/Pods-VIT Share-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIT Share/Pods-VIT Share-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024C71092443B145002D9CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
+				020A330224443AAD006FE3E5 /* BooksShareViewController.swift in Sources */,
+				02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */,
+				0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */,
+				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
+				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
+				020A330024443A8A006FE3E5 /* BicycleShareViewController.swift in Sources */,
+				02272EBE244DC40F00AED173 /* Cell2.swift in Sources */,
+				02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */,
+				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
+				0260C5FA2447CA340066C06C /* Cell.swift in Sources */,
+				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
+				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,
+				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
+				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
+				020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		024C71162443B145002D9CCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				024C71172443B145002D9CCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		024C711B2443B149002D9CCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				024C711C2443B149002D9CCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		024C711F2443B149002D9CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		024C71202443B149002D9CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		024C71222443B149002D9CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BWS8985H;
+				INFOPLIST_FILE = "VIT Share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		024C71232443B149002D9CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BWS8985H;
+				INFOPLIST_FILE = "VIT Share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		024C71082443B145002D9CCE /* Build configuration list for PBXProject "VIT Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024C711F2443B149002D9CCE /* Debug */,
+				024C71202443B149002D9CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "VIT Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024C71222443B149002D9CCE /* Debug */,
+				024C71232443B149002D9CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 024C71052443B145002D9CCE /* Project object */;
+}
