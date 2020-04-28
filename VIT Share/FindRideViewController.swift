@@ -8,13 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 import SkeletonView
 
 class FindRideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
-    
-    // Outlets
-    
-    
+   
     /* //////////////////////////////////////////////////////////////////////////////// */
     
     @IBOutlet var cardCollectionView: UICollectionView!
@@ -29,18 +27,24 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     var searching = false       // Property which decides which array to generate, the filter search array or full array.
     // ⬆️ Initially set to false
     
+    var ridesList = [RidesModel]()
     
+    var refRides: DatabaseReference!
+    
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if searching {
+        /* if searching {
             return searchFromPlace.count    // Setting count of No of filter search cells = No of collection view cells to be displayed.
         } else {
         return fromLocArr.count     // Else, display entire 'fromLocArr' in collection view.
-        }
+        } */
+        return ridesList.count
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
-        if fromLocArr != nil {
+        /* if fromLocArr != nil {
             cell.hideAnimation()
             cell.fromPlace.text = fromLocArr[indexPath.row]         // Display data that is retrieved, into the cells.
             cell.toPlace.text = toLocArr[indexPath.row]             // Display data that is retrieved, into the cells.
@@ -53,17 +57,28 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         } else {
             cell.fromPlace.text = fromLocArr[indexPath.row]     // If searching not done, return all elements in the array.
         }
+        return cell */
+        
+        if ridesList != nil {
+            cell.hideAnimation()
+            let ride: RidesModel
+            ride = ridesList[indexPath.row]
+            cell.fromPlace.text = ride.from
+            cell.toPlace.text = ride.to
+            cell.noOfSeatsValue.text = ride.seats
+            cell.dateAndTime.text = ride.dateTime
+        }
         return cell
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        // Search bar delegate function.
+    /* func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        // Search bar delegate function.
         searchFromPlace = fromLocArr.filter({$0!.prefix(searchText.count) == searchText})
         // Filter the 'fromLoc' array by prefix.
         // ⬆️ From this, we get to know number of elements from 'fromLoc' array.
         // All the filtered searches will be stored in 'searchFromPlace' array.
         searching = true    // Enable 'searching'
         cardCollectionView.reloadData()     // After this ⬆️, reload collection view.
-    }
+    } */
     
     /* //////////////////////////////////////////////////////////////////////////////// */
     
@@ -77,16 +92,39 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         }
         
         hideKeyboardWhenTappedAround()
-        retrieveData()
+        // retrieveData()
+        
+        refRides = Database.database().reference().child("Rides").child("Details")
+        refRides.observe(DataEventType.value, with: { (snapshot) in
+            
+            if snapshot.childrenCount > 0 {
+                
+                self.ridesList.removeAll()
+                for rides in snapshot.children.allObjects as! [DataSnapshot] {
+                    let rideObject = rides.value as? [String: AnyObject]
+                    let rideId = rideObject?["id"]
+                    let rideFrom  = rideObject?["From"]
+                    let rideTo  = rideObject?["To"]
+                    let rideSeats = rideObject?["Seats"]
+                    let rideDateTime = rideObject?["Date"]
+                    
+                    let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
+                    self.ridesList.append(ride)
+                }
+                self.cardCollectionView.reloadData()
+                
+            }
+            
+        })
         
     }
     
-    var fromLocArr: [String?] = []
-    var toLocArr: [String?] = []
-    var noOfSeatsArr: [String?] = []
-    var dateAndTimeArr: [String?] = []
+    // var fromLocArr: [String?] = []
+    // var toLocArr: [String?] = []
+    // var noOfSeatsArr: [String?] = []
+    // var dateAndTimeArr: [String?] = []
     
-    func retrieveData() {
+    /* func retrieveData() {
         
         let dataDB = Database.database().reference().child("Rides").child("Details")
         
@@ -108,6 +146,6 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
             self.cardCollectionView.reloadData()
         }
         
-    }
+    } */
     
-}   // #114
+}   // #152

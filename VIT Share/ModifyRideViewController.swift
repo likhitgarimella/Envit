@@ -17,8 +17,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet var cardCollectionView2: UICollectionView!
     
+    // Creating a List from Model
     var ridesList = [RidesModel]()
     
+    // Creating a Reference
     var refRides: DatabaseReference!
     
     // numberOfItemsInSection
@@ -52,7 +54,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             let newFrom = alertController.textFields?[0].text
             let newTo = alertController.textFields?[1].text
             let newSeats = alertController.textFields?[2].text
-            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!)
+            let newDateTime = alertController.textFields?[3].text
+            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
         }
         
         let deleteAction = UIAlertAction(title: "Delete", style: .default) { (_) in
@@ -72,16 +75,21 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         alertController.addTextField{(textField) in
             textField.text = ride.seats
         }
+        alertController.addTextField{(textField) in
+            textField.text = ride.dateTime
+        }
         
     }
     
-    func updateRide(id: String, newFrom: String, newTo: String, newSeats: String) {
+    // Update Ride func
+    func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
         
         let ride = [
             "id": id,
             "From": newFrom,
             "To": newTo,
-            "Seats": newSeats
+            "Seats": newSeats,
+            "Date": newDateTime
         ]
         refRides.child(id).setValue(ride)
         
@@ -92,6 +100,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
         if let flowLayout = cardCollectionView2.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
@@ -99,6 +108,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
         hideKeyboardWhenTappedAround()
         
+        // Referring it till "Details"
         refRides = Database.database().reference().child("Rides").child("Details")
         refRides.observe(DataEventType.value, with: { (snapshot) in
             
@@ -106,7 +116,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
                 
                 self.ridesList.removeAll()
                 for rides in snapshot.children.allObjects as! [DataSnapshot] {
-                    let rideObject = rides.value as? [String: AnyObject]
+                    let rideObject = rides.value as? [String: AnyObject]    // Create an Object
                     let rideId = rideObject?["id"]
                     let rideFrom  = rideObject?["From"]
                     let rideTo  = rideObject?["To"]
@@ -124,4 +134,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #128
+}   // #138

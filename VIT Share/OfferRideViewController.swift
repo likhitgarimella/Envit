@@ -25,6 +25,7 @@ class OfferRideViewController: UIViewController {
     
     let datePicker = UIDatePicker()
     
+    // Date and Time picker func
     func CreateDatePicker() {
         
         // Toolbar
@@ -46,6 +47,7 @@ class OfferRideViewController: UIViewController {
         
     }
     
+    // Done button in picker keyboard func
     @objc func DonePressed() {
         
         // Formatter
@@ -152,4 +154,4 @@ class OfferRideViewController: UIViewController {
         
     }
     
-}   // #156
+}   // #158
