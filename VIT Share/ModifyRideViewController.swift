@@ -36,6 +36,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             cell.fromPlace2.text = ride.from
             cell.toPlace2.text = ride.to
             cell.noOfSeatsValue2.text = ride.seats
+            cell.dateAndTime2.text = ride.dateTime
         }
         return cell
     }
@@ -110,8 +111,9 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
                     let rideFrom  = rideObject?["From"]
                     let rideTo  = rideObject?["To"]
                     let rideSeats = rideObject?["Seats"]
+                    let rideDateTime = rideObject?["Date"]
                     
-                    let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?)
+                    let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
                     self.ridesList.append(ride)
                 }
                 self.cardCollectionView2.reloadData()
@@ -122,4 +124,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #126
+}   // #128

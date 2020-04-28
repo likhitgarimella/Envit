@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="224"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WU-Ga-8s3">
-                                <rect key="frame" x="20" y="16" width="39" height="21"/>
+                                <rect key="frame" x="20" y="16" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Vellore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-W5-XzN">
-                                <rect key="frame" x="20" y="43" width="80.5" height="21"/>
+                                <rect key="frame" x="20" y="43" width="84.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN6-y8-htB">
-                                <rect key="frame" x="20" y="72" width="18" height="21"/>
+                                <rect key="frame" x="20" y="72" width="19" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Chennai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcE-lc-j9s">
-                                <rect key="frame" x="20" y="99" width="92.5" height="21"/>
+                                <rect key="frame" x="20" y="99" width="97.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIM-4C-dpz">
-                                <rect key="frame" x="292.5" y="16" width="87.5" height="21"/>
+                                <rect key="frame" x="285" y="16" width="95" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -71,9 +71,22 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GD-Ri-QDg">
-                                <rect key="frame" x="321.5" y="44" width="29.5" height="57.5"/>
+                                <rect key="frame" x="319" y="44" width="27" height="56"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-Lb-poJ">
+                                <rect key="frame" x="0.0" y="188" width="400" height="28"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="KPR-Mx-33I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -82,6 +95,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jVw-Lb-poJ" secondAttribute="bottom" constant="8" id="0IC-F2-jUg"/>
                             <constraint firstAttribute="trailing" secondItem="fIM-4C-dpz" secondAttribute="trailing" constant="20" id="6tn-ge-jvi"/>
                             <constraint firstItem="fIM-4C-dpz" firstAttribute="top" secondItem="c4j-jA-0no" secondAttribute="top" constant="16" id="7yh-Ph-mkQ"/>
                             <constraint firstItem="EN6-y8-htB" firstAttribute="leading" secondItem="c4j-jA-0no" secondAttribute="leading" constant="20" id="9qJ-Ax-XZ0"/>
@@ -89,8 +103,10 @@
                             <constraint firstItem="Omr-W5-XzN" firstAttribute="top" secondItem="9WU-Ga-8s3" secondAttribute="bottom" constant="6" id="FkF-hg-ToB"/>
                             <constraint firstItem="Omr-W5-XzN" firstAttribute="leading" secondItem="c4j-jA-0no" secondAttribute="leading" constant="20" id="Kzw-FB-O5X"/>
                             <constraint firstItem="3GD-Ri-QDg" firstAttribute="centerX" secondItem="fIM-4C-dpz" secondAttribute="centerX" id="QwW-GC-wme"/>
+                            <constraint firstAttribute="trailing" secondItem="jVw-Lb-poJ" secondAttribute="trailing" id="SSc-cl-rLX"/>
                             <constraint firstItem="EN6-y8-htB" firstAttribute="top" secondItem="Omr-W5-XzN" secondAttribute="bottom" constant="8" id="TeP-Dq-gzA"/>
                             <constraint firstAttribute="height" constant="224" id="U4i-cQ-Wla"/>
+                            <constraint firstItem="jVw-Lb-poJ" firstAttribute="leading" secondItem="c4j-jA-0no" secondAttribute="leading" id="gzg-Io-qrf"/>
                             <constraint firstAttribute="width" constant="400" id="hQR-SI-V9x"/>
                             <constraint firstItem="zcE-lc-j9s" firstAttribute="top" secondItem="EN6-y8-htB" secondAttribute="bottom" constant="6" id="hwQ-xW-z08"/>
                             <constraint firstItem="9WU-Ga-8s3" firstAttribute="top" secondItem="c4j-jA-0no" secondAttribute="top" constant="16" id="j7h-1l-XxZ"/>
@@ -116,6 +132,7 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cardView2" destination="c4j-jA-0no" id="EaT-HS-2Ba"/>
+                <outlet property="dateAndTime2" destination="jVw-Lb-poJ" id="Qsa-hp-LZz"/>
                 <outlet property="fromLabel2" destination="9WU-Ga-8s3" id="whk-j4-D7u"/>
                 <outlet property="fromPlace2" destination="Omr-W5-XzN" id="irW-GV-Kvw"/>
                 <outlet property="noOfSeatsLabel2" destination="fIM-4C-dpz" id="Q6S-68-Fuh"/>

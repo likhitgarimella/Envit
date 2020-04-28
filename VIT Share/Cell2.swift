@@ -20,7 +20,7 @@ class Cell2: UICollectionViewCell {
     @IBOutlet var toPlace2: UILabel!
     @IBOutlet var noOfSeatsLabel2: UILabel!
     @IBOutlet var noOfSeatsValue2: UILabel!
-    //
+    @IBOutlet var dateAndTime2: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +37,7 @@ class Cell2: UICollectionViewCell {
         toPlace2.showAnimatedGradientSkeleton()
         noOfSeatsLabel2.showAnimatedGradientSkeleton()
         noOfSeatsValue2.showAnimatedGradientSkeleton()
+        dateAndTime2.showAnimatedGradientSkeleton()
         
     }
     
@@ -49,7 +50,8 @@ class Cell2: UICollectionViewCell {
         toPlace2.hideSkeleton()
         noOfSeatsLabel2.hideSkeleton()
         noOfSeatsValue2.hideSkeleton()
+        dateAndTime2.hideSkeleton()
         
     }
 
-}   // #56
+}   // #58

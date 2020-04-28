@@ -135,7 +135,7 @@ class OfferRideViewController: UIViewController {
         // Writing data to DB
         refRides = Database.database().reference().child("Rides").child("Details")
         let key = refRides.childByAutoId().key
-        let ride = ["id": key, "From": fromLoc.text!, "To": toLoc.text!, "Seats": stepperValue.text!]
+        let ride = ["id": key, "From": fromLoc.text!, "To": toLoc.text!, "Seats": stepperValue.text!, "Date": date.text!]
         refRides.child(key!).setValue(ride)
         
         // Clear textfields after success

@@ -14,12 +14,14 @@ class RidesModel {
     var from: String?
     var to: String?
     var seats: String?
+    var dateTime: String?
     
-    init(id: String?, from: String?, to: String?, seats: String?) {
+    init(id: String?, from: String?, to: String?, seats: String?, dateTime: String?) {
         self.id = id
         self.from = from
         self.to = to
         self.seats = seats
+        self.dateTime = dateTime
     }
     
-}   // #26
+}   // #28

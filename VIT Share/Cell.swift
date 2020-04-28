@@ -20,7 +20,7 @@ class Cell: UICollectionViewCell {
     @IBOutlet var toPlace: UILabel!
     @IBOutlet var noOfSeatsLabel: UILabel!
     @IBOutlet var noOfSeatsValue: UILabel!
-    @IBOutlet var dataAndTime: UILabel!
+    @IBOutlet var dateAndTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -149,7 +149,7 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cardView" destination="tO0-Gg-YHU" id="7xf-fw-nCv"/>
-                <outlet property="dataAndTime" destination="5Xa-OU-36W" id="hQl-v8-myD"/>
+                <outlet property="dateAndTime" destination="5Xa-OU-36W" id="gBL-X1-lZA"/>
                 <outlet property="fromLabel" destination="Fhw-nD-LHR" id="yp7-xH-Dn6"/>
                 <outlet property="fromPlace" destination="TrV-mB-1tE" id="Hoh-s9-izb"/>
                 <outlet property="noOfSeatsLabel" destination="rtW-id-o6V" id="MlB-2S-Meb"/>

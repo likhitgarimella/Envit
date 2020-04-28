@@ -47,7 +47,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.noOfSeatsValue.text = noOfSeatsArr[indexPath.row]  // Display data that is retrieved, into the cells.
         }
         
-        // cell.dataAndTime.text = dateAndTimeArr[indexPath.row]  // Display data that is retrieved, into the cells.    // Undo this
+        cell.dateAndTime.text = dateAndTimeArr[indexPath.row]  // Display data that is retrieved, into the cells.
         if searching {
             cell.fromPlace.text = searchFromPlace[indexPath.row]    // The 'fromPlace' textfields in collection view cells will be updated to 'searchFromPlace' array.
         } else {
@@ -84,7 +84,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     var fromLocArr: [String?] = []
     var toLocArr: [String?] = []
     var noOfSeatsArr: [String?] = []
-    // var dateAndTimeArr: [String?] = []   // Undo this
+    var dateAndTimeArr: [String?] = []
     
     func retrieveData() {
         
@@ -101,10 +101,10 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
             self.toLocArr.append(snapshotValue["To"]!)
             let noOfSeats = snapshotValue["Seats"]!
             self.noOfSeatsArr.append(snapshotValue["Seats"]!)
-            // let dateTime = snapshotValue["Date"]!                // Undo this
-            // self.dateAndTimeArr.append(snapshotValue["Date"]!)   // Undo this
+            let dateTime = snapshotValue["Date"]!
+            self.dateAndTimeArr.append(snapshotValue["Date"]!)
             
-            print(fromLocn, toLocn, noOfSeats)                      // Undo this
+            print(fromLocn, toLocn, noOfSeats, dateTime)
             self.cardCollectionView.reloadData()
         }
         
