@@ -12,6 +12,23 @@ import FirebaseDatabase
 import SkeletonView
 
 class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+
+
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    
+    @IBOutlet var cardCollectionView2: UICollectionView!
+    
+    // Creating a List from Model
+    var ridesList = [RidesModel]()
+    
+    // Creating a Reference
+    var refRides: DatabaseReference!
+    
+    // numberOfItemsInSection
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return ridesList.count
+    }
     
     let pickerData = ["VIT Vellore", "VIT Chennai", "Chennai Airport", "Bangalore Airport", "Tirupati Airport", "Katpadi Railway Station", "Chennai Railway Station", "Bangalore Railway Station", "Tirupati Railway Station", "Pondicherry", "Kodaikanal"]
     
@@ -25,21 +42,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
-    }
-    
-    /* //////////////////////////////////////////////////////////////////////////////// */
-    
-    @IBOutlet var cardCollectionView2: UICollectionView!
-    
-    // Creating a List from Model
-    var ridesList = [RidesModel]()
-    
-    // Creating a Reference
-    var refRides: DatabaseReference!
-    
-    // numberOfItemsInSection
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ridesList.count
     }
     
     // cellForItemAt
@@ -57,6 +59,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
     
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    
     // didSelectItemAt
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -73,9 +79,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
         }
         
-        // Adding Update action
-        alertController.addAction(updateAction)
-        
         // Picker view
         let pickerView = UIPickerView()
         alertController.view.addSubview(pickerView) // Adding picker view to the alert controller view
@@ -90,7 +93,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         toolbar.sizeToFit()
         
         // Bar button, in Toolbar
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(DonePressed))
         toolbar.setItems([doneBtn], animated: true)
         
         // #1
@@ -119,7 +122,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
         // #4
         alertController.addTextField{(textField) in
-            textField.text = ride.dateTime
+            // textField.text = ride.dateTime
             textField.inputView = datePicker
             
             // Assign toolbar to the keyboard
@@ -130,6 +133,15 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             
             // Date picker mode
             datePicker.datePickerMode = .dateAndTime
+            
+            // Formatter
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short    // Setting the format to 'short'
+            formatter.timeStyle = .short    // Setting the format to 'short'
+            
+            textField.text = formatter.string(from: datePicker.date)
+            self.view.endEditing(true)
+            
         }
         
         // Delete action
@@ -138,12 +150,24 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         }
         
         // Adding Update action
+        alertController.addAction(updateAction)
+        
+        // Adding Delete action
         alertController.addAction(deleteAction)
         
         // Present Alert controller
         present(alertController, animated: true, completion: nil)
         
     }
+    
+    @objc func DonePressed() {
+        
+        
+    }
+    
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
     
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
@@ -159,8 +183,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
+    
     /* //////////////////////////////////////////////////////////////////////////////// */
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -198,4 +224,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #202
+}   // #228
