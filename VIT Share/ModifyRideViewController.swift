@@ -66,10 +66,90 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
     
     
     // didSelectItemAt
     /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let ride = ridesList[indexPath.row]
+        let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
+        
+        alertController.addTextField(configurationHandler: fromFunc(textField:))
+        alertController.addTextField(configurationHandler: toFunc(textField:))
+        alertController.addTextField(configurationHandler: seatsFunc(textField:))
+        alertController.addTextField(configurationHandler: dateFunc(textField:))
+        
+        // Update action
+        let updateAction = UIAlertAction(title: "Update", style: .default) { (_) in
+            let id = ride.id
+            let newFrom = alertController.textFields?[0].text
+            let newTo = alertController.textFields?[1].text
+            let newSeats = alertController.textFields?[2].text
+            let newDateTime = alertController.textFields?[3].text
+            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
+        }
+        
+        // Adding Update action
+        alertController.addAction(updateAction)
+        
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func fromFunc(textField: UITextField!) {
+        
+        textField.tag = 0
+        textField.inputView = pickerView
+        textField.inputAccessoryView = toolbar
+        
+    }
+    
+    
+    func toFunc(textField: UITextField!) {
+        
+        textField.tag = 1
+        textField.inputView = pickerView
+        textField.inputAccessoryView = toolbar
+        
+    }
+    
+    func seatsFunc(textField: UITextField!) {
+        
+        textField.tag = 2
+        textField.keyboardType = .decimalPad
+        
+    }
+    
+    func dateFunc(textField: UITextField!) {
+        
+        textField.tag = 3
+        textField.inputView = datePicker
+        textField.inputAccessoryView = toolbar
+        datePicker.datePickerMode = .dateAndTime
+        
+        // Formatter
+        let formatter = DateFormatter()
+        
+        formatter.dateStyle = .short    // Setting the format to 'short'
+        formatter.timeStyle = .short    // Setting the format to 'short'
+        
+        textField.text = formatter.string(from: datePicker.date)
+        textField.resignFirstResponder()
+        self.view.endEditing(true)
+        
+    } */
+    
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    
+    // didSelectItemAt
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let ride = ridesList[indexPath.row]
         let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
@@ -98,7 +178,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         toolbar.sizeToFit()
         
         // Bar button, in Toolbar
-        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(DonePressed))
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
         toolbar.setItems([doneBtn], animated: true)
         
         // #1
@@ -163,127 +243,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // Present Alert controller
         present(alertController, animated: true, completion: nil)
      
-    } */
-    
-    
-    /* //////////////////////////////////////////////////////////////////////////////// */
-
-    
-    // didSelectItemAt
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let ride = ridesList[indexPath.row]
-        let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
-        
-        alertController.addTextField(configurationHandler: fromFunc(textField:))
-        alertController.addTextField(configurationHandler: toFunc(textField:))
-        alertController.addTextField(configurationHandler: seatsFunc(textField:))
-        alertController.addTextField(configurationHandler: dateFunc(textField:))
-        
-        // Update action
-        let updateAction = UIAlertAction(title: "Update", style: .default) { (_) in
-            let id = ride.id
-            let newFrom = alertController.textFields?[0].text
-            let newTo = alertController.textFields?[1].text
-            let newSeats = alertController.textFields?[2].text
-            let newDateTime = alertController.textFields?[3].text
-            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
-        }
-        
-        // Adding Update action
-        alertController.addAction(updateAction)
-        
-        // Present Alert controller
-        present(alertController, animated: true, completion: nil)
-        
     }
-    
-    func fromFunc(textField: UITextField!) {
-        
-        textField.tag = 0
-        // textField.inputView = pickerView
-        textField.inputAccessoryView = toolbar
-        
-    }
-    
-    
-    func toFunc(textField: UITextField!) {
-        
-        textField.tag = 1
-        // textField.inputView = pickerView
-        textField.inputAccessoryView = toolbar
-        
-    }
-    
-    func seatsFunc(textField: UITextField!) {
-        
-        textField.tag = 2
-        textField.keyboardType = .decimalPad
-        
-    }
-    
-    func dateFunc(textField: UITextField!) {
-        
-        textField.tag = 3
-        textField.inputView = datePicker
-        textField.inputAccessoryView = toolbar
-        datePicker.datePickerMode = .dateAndTime
-        
-        // Formatter
-        let formatter = DateFormatter()
-        
-        formatter.dateStyle = .short    // Setting the format to 'short'
-        formatter.timeStyle = .short    // Setting the format to 'short'
-        
-        textField.text = formatter.string(from: datePicker.date)
-        textField.resignFirstResponder()
-        self.view.endEditing(true)
-        
-    }
-    
-    
-    /* //////////////////////////////////////////////////////////////////////////////// */
-    
-    
-    /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let ride = ridesList[indexPath.row]
-        let id = ride.id
-        let newFrom = fromTF.text
-        let newTo = toTF.text
-        let newSeats = seatsTF.text
-        let newDateTime = dateTF.text
-        self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
-        
-        // PopUp Animation
-        PopUpAnimation()
-        
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
-        
-        fromTF.inputView = pickerView
-        fromTF.inputAccessoryView = toolbar
-        
-        toTF.inputView = pickerView
-        toTF.inputAccessoryView = toolbar
-        
-        seatsTF.keyboardType = .decimalPad
-        
-        dateTF.inputView = datePicker
-        dateTF.inputAccessoryView = toolbar
-        datePicker.datePickerMode = .dateAndTime
-        
-    }
-    
-    @IBAction func updateButton(_ sender: UIButton) {
-        
-        AnimateOut(desiredView: popUpView)  // This First
-        AnimateOut(desiredView: blurView)   // This Next
-        
-    } */
-    
-    
-    /* //////////////////////////////////////////////////////////////////////////////// */
     
     
     // Update Ride func
@@ -300,6 +260,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
+    /*
     // Picker view
     let pickerView = UIPickerView()
     // alertController.view.addSubview(pickerView) // Adding picker view to the alert controller view
@@ -324,6 +285,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         self.view.endEditing(true)
         
     }
+    */
     
     
     /* //////////////////////////////////////////////////////////////////////////////// */
@@ -332,11 +294,13 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         pickerView.delegate = self                  // Set delegate
         pickerView.dataSource = self                // Set datasource
         
         toolbar.sizeToFit()
         toolbar.setItems([doneBtn], animated: true)
+        */
         
         // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
@@ -490,4 +454,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #494
+}   // #458
