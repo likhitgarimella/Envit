@@ -146,7 +146,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cab Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQQ-fD-hNA">
-                                <rect key="frame" x="20" y="40" width="132" height="36"/>
+                                <rect key="frame" x="20" y="40" width="131.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -720,12 +720,131 @@
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
+                        <outlet property="blurView" destination="Dvl-an-8oS" id="qqO-cj-9a1"/>
                         <outlet property="cardCollectionView2" destination="PNo-h9-hHH" id="XF3-J3-fvB"/>
+                        <outlet property="dateTF" destination="M75-3C-IKJ" id="X28-P7-z1U"/>
+                        <outlet property="fromTF" destination="c5o-c2-nUZ" id="RQW-SG-Nrf"/>
+                        <outlet property="popUpView" destination="Y1M-90-bg2" id="mmQ-hr-VAi"/>
+                        <outlet property="seatsTF" destination="4m6-Mh-JDI" id="l4k-k8-7Q6"/>
+                        <outlet property="toTF" destination="0EV-C5-8Pe" id="iPX-Od-KN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw5-8Y-7hj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="Dvl-an-8oS">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OTD-4l-8a5">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" id="Y1M-90-bg2">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select 1" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-c2-nUZ">
+                            <rect key="frame" x="20" y="32" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="eK8-UQ-I77"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select 2" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-C5-8Pe">
+                            <rect key="frame" x="20" y="80" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="gMh-j4-9jb"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select 3" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="4m6-Mh-JDI">
+                            <rect key="frame" x="20" y="128" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="7l4-if-SYQ"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select 4" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="M75-3C-IKJ">
+                            <rect key="frame" x="20" y="176" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="OcC-vd-aUf"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-7P-wQI">
+                            <rect key="frame" x="20" y="240" width="200" height="32"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="OyD-G1-YVv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                            <state key="normal" title="Update">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="updateButton:" destination="c7M-O0-Wcr" eventType="touchUpInside" id="Gui-Kf-Ie6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dnc-7P-wQI" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="2eL-zb-f7v"/>
+                        <constraint firstItem="M75-3C-IKJ" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="7tG-aD-5fT"/>
+                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="0EV-C5-8Pe" secondAttribute="right" constant="20" id="C0W-la-xW2"/>
+                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="c5o-c2-nUZ" secondAttribute="right" constant="20" id="D7e-YV-vWm"/>
+                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="Gz6-eg-EWF"/>
+                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="OC3-mu-6h5"/>
+                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="top" secondItem="QIG-Mo-E1R" secondAttribute="top" constant="32" id="TYz-2j-bcs"/>
+                        <constraint firstItem="M75-3C-IKJ" firstAttribute="top" secondItem="4m6-Mh-JDI" secondAttribute="bottom" constant="16" id="VA1-4h-lzV"/>
+                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="4m6-Mh-JDI" secondAttribute="right" constant="20" id="aHT-E0-xS3"/>
+                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="top" secondItem="c5o-c2-nUZ" secondAttribute="bottom" constant="16" id="bJj-gd-gVH"/>
+                        <constraint firstItem="dnc-7P-wQI" firstAttribute="top" secondItem="M75-3C-IKJ" secondAttribute="bottom" constant="32" id="cKt-tt-s3P"/>
+                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="top" secondItem="0EV-C5-8Pe" secondAttribute="bottom" constant="16" id="fzu-6T-vjI"/>
+                        <constraint firstItem="dnc-7P-wQI" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="ggT-y7-EY4"/>
+                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="M75-3C-IKJ" secondAttribute="right" constant="20" id="hnb-U4-bh2"/>
+                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="iVv-Rc-b0k"/>
+                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="dnc-7P-wQI" secondAttribute="right" constant="20" id="jM3-t6-9Bb"/>
+                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="m6x-hP-OES"/>
+                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="qoJ-NW-c1E"/>
+                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="sp3-Nm-aKI"/>
+                        <constraint firstItem="M75-3C-IKJ" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="zwD-XT-AOj"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="QIG-Mo-E1R"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="1872" y="-548"/>
+            <point key="canvasLocation" x="1871" y="-104"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

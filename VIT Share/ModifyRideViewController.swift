@@ -44,6 +44,11 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         return pickerData[row]
     }
     
+    /* func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        fromTF.text = pickerData[row]
+        toTF.text = pickerData[row]
+    } */
+    
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! Cell2
@@ -64,7 +69,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     // didSelectItemAt
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let ride = ridesList[indexPath.row]
         let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
@@ -157,13 +162,125 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
         // Present Alert controller
         present(alertController, animated: true, completion: nil)
+     
+    } */
+    
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+
+    
+    // didSelectItemAt
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let ride = ridesList[indexPath.row]
+        let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
+        
+        alertController.addTextField(configurationHandler: fromFunc(textField:))
+        alertController.addTextField(configurationHandler: toFunc(textField:))
+        alertController.addTextField(configurationHandler: seatsFunc(textField:))
+        alertController.addTextField(configurationHandler: dateFunc(textField:))
+        
+        // Update action
+        let updateAction = UIAlertAction(title: "Update", style: .default) { (_) in
+            let id = ride.id
+            let newFrom = alertController.textFields?[0].text
+            let newTo = alertController.textFields?[1].text
+            let newSeats = alertController.textFields?[2].text
+            let newDateTime = alertController.textFields?[3].text
+            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
+        }
+        
+        // Adding Update action
+        alertController.addAction(updateAction)
+        
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
         
     }
     
-    @objc func DonePressed() {
+    func fromFunc(textField: UITextField!) {
         
+        textField.tag = 0
+        // textField.inputView = pickerView
+        textField.inputAccessoryView = toolbar
         
     }
+    
+    
+    func toFunc(textField: UITextField!) {
+        
+        textField.tag = 1
+        // textField.inputView = pickerView
+        textField.inputAccessoryView = toolbar
+        
+    }
+    
+    func seatsFunc(textField: UITextField!) {
+        
+        textField.tag = 2
+        textField.keyboardType = .decimalPad
+        
+    }
+    
+    func dateFunc(textField: UITextField!) {
+        
+        textField.tag = 3
+        textField.inputView = datePicker
+        textField.inputAccessoryView = toolbar
+        datePicker.datePickerMode = .dateAndTime
+        
+        // Formatter
+        let formatter = DateFormatter()
+        
+        formatter.dateStyle = .short    // Setting the format to 'short'
+        formatter.timeStyle = .short    // Setting the format to 'short'
+        
+        textField.text = formatter.string(from: datePicker.date)
+        textField.resignFirstResponder()
+        self.view.endEditing(true)
+        
+    }
+    
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    
+    /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let ride = ridesList[indexPath.row]
+        let id = ride.id
+        let newFrom = fromTF.text
+        let newTo = toTF.text
+        let newSeats = seatsTF.text
+        let newDateTime = dateTF.text
+        self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
+        
+        // PopUp Animation
+        PopUpAnimation()
+        
+        AnimateIn(desiredView: blurView)    // This First
+        AnimateIn(desiredView: popUpView)   // This Next
+        
+        fromTF.inputView = pickerView
+        fromTF.inputAccessoryView = toolbar
+        
+        toTF.inputView = pickerView
+        toTF.inputAccessoryView = toolbar
+        
+        seatsTF.keyboardType = .decimalPad
+        
+        dateTF.inputView = datePicker
+        dateTF.inputAccessoryView = toolbar
+        datePicker.datePickerMode = .dateAndTime
+        
+    }
+    
+    @IBAction func updateButton(_ sender: UIButton) {
+        
+        AnimateOut(desiredView: popUpView)  // This First
+        AnimateOut(desiredView: blurView)   // This Next
+        
+    } */
     
     
     /* //////////////////////////////////////////////////////////////////////////////// */
@@ -183,12 +300,43 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
+    // Picker view
+    let pickerView = UIPickerView()
+    // alertController.view.addSubview(pickerView) // Adding picker view to the alert controller view
+    
+    // Date and Time picker
+    let datePicker = UIDatePicker()
+    
+    // Toolbar, upon Picker
+    let toolbar = UIToolbar()
+    
+    // Bar button, in Toolbar
+    let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(DonePressed))
+    
+    @objc func DonePressed() {
+        
+        // Formatter
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short    // Setting the format to 'short'
+        formatter.timeStyle = .short    // Setting the format to 'short'
+        
+        dateTF.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+        
+    }
+    
     
     /* //////////////////////////////////////////////////////////////////////////////// */
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pickerView.delegate = self                  // Set delegate
+        pickerView.dataSource = self                // Set datasource
+        
+        toolbar.sizeToFit()
+        toolbar.setItems([doneBtn], animated: true)
         
         // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
@@ -222,6 +370,124 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             
         })
         
+        // PopUp UIView Properties
+        PopUpProp()
+        
+        BorderProp()
+        CornerRadius()
+        LeftPadding()
+        
     }
     
-}   // #228
+    
+    
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    /* //////////////////////////////////////////////////////////////////////////////// */
+    
+    
+    
+    // PopUp Animation
+    func PopUpAnimation() {
+        
+        blurView.bounds = self.view.bounds
+        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.54)
+        
+    }
+    
+    // Animate in a specified view
+    func AnimateIn(desiredView: UIView) {
+        
+        let backgroundView = self.view!
+        
+        // Attach our desired view to the screen
+        backgroundView.addSubview(desiredView)
+        
+        // Sets the view's scaling to be 120%
+        desiredView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        desiredView.alpha = 0
+        desiredView.center = backgroundView.center
+        // Animate from here ⬆️
+        
+        // To here ⬇️
+        // Animate the effect
+        UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+        })
+        
+    }
+    
+    // Animate out a specified view
+    func AnimateOut(desiredView: UIView) {
+        
+       UIView.animate(withDuration: 0.2, animations: {
+            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            desiredView.alpha = 1
+       }, completion: { _ in
+        // This code runs when when above AnimateOut animation is done
+        desiredView.removeFromSuperview()
+       })
+        
+    }
+    
+    // Popup view outlets
+    @IBOutlet var blurView: UIVisualEffectView!
+    
+    @IBOutlet var popUpView: UIView!
+    
+    @IBOutlet var fromTF: UITextField!
+    
+    @IBOutlet var toTF: UITextField!
+    
+    @IBOutlet var seatsTF: UITextField!
+    
+    @IBOutlet var dateTF: UITextField!
+    
+    // PopUp UIView Properties
+    func PopUpProp() {
+        
+        popUpView.layer.cornerRadius = 16
+        
+    }
+    
+    func BorderProp() {
+        
+        // Textfield Border Property
+        let myColor = UIColor.systemGray
+        fromTF.layer.borderColor = myColor.cgColor
+        fromTF.layer.borderWidth = 1.6
+        toTF.layer.borderColor = myColor.cgColor
+        toTF.layer.borderWidth = 1.6
+        seatsTF.layer.borderColor = myColor.cgColor
+        seatsTF.layer.borderWidth = 1.6
+        dateTF.layer.borderColor = myColor.cgColor
+        dateTF.layer.borderWidth = 1.6
+        
+    }
+    
+    func CornerRadius() {
+        
+        // Textfield Corner Radius Property
+        fromTF.layer.cornerRadius = 4
+        toTF.layer.cornerRadius = 4
+        seatsTF.layer.cornerRadius = 4
+        dateTF.layer.cornerRadius = 4
+        
+    }
+    
+    func LeftPadding() {
+        
+        // Create a padding view for Credits TextFields on LEFT
+        fromTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: fromTF.frame.height))
+        fromTF.leftViewMode = .always
+        toTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: toTF.frame.height))
+        toTF.leftViewMode = .always
+        seatsTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: seatsTF.frame.height))
+        seatsTF.leftViewMode = .always
+        dateTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: dateTF.frame.height))
+        dateTF.leftViewMode = .always
+        
+    }
+    
+}   // #494
