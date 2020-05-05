@@ -22,7 +22,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     // Creating a List from Model
     var ridesList = [RidesModel]()
     
-    // Creating a Reference
+    // Creating a Database Reference
     var refRides: DatabaseReference!
     
     // numberOfItemsInSection
@@ -30,22 +30,29 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         return ridesList.count
     }
     
+    // Array for 1st picker
     var pickerDataFrom = ["VIT Vellore", "VIT Chennai", "Chennai Airport", "Bangalore Airport", "Tirupati Airport", "Katpadi Railway Station", "Chennai Railway Station", "Bangalore Railway Station", "Tirupati Railway Station", "Pondicherry", "Kodaikanal"]
     
+    // Array for 2nd picker
     var pickerDataTo = ["VIT Vellore", "VIT Chennai", "Chennai Airport", "Bangalore Airport", "Tirupati Airport", "Katpadi Railway Station", "Chennai Railway Station", "Bangalore Railway Station", "Tirupati Railway Station", "Pondicherry", "Kodaikanal"]
     
+    
+    // numberOfComponents
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
+    // numberOfRowsInComponent
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataFrom.count
     }
     
+    // titleForRow
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataFrom[row]
     }
     
+    // didSelectRow
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == pickerViewFrom) {
             fromTF.text = pickerDataFrom[row]
@@ -105,6 +112,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
+    // Update button
     @IBAction func updateButton(_ sender: UIButton) {
         
         AnimateOut(desiredView: popUpView)  // This First
@@ -112,17 +120,16 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
 
-    
-    
+
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
         
         let ride = [
             "id": id,
-            "From": newFrom,
-            "To": newTo,
-            "Seats": newSeats,
-            "Date": newDateTime
+            "From": fromTF.text!,
+            "To": toTF.text!,
+            "Seats": seatsTF.text!,
+            "Date": dateTF.text!
         ]
         refRides.child(id).setValue(ride)
         
@@ -163,12 +170,15 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 1st picker view
         pickerViewFrom.delegate = self                  // Set delegate
         pickerViewFrom.dataSource = self                // Set datasource
         
+        // 2nd picker view
         pickerViewTo.delegate = self                  // Set delegate
         pickerViewTo.dataSource = self                // Set datasource
         
+        // Toolbar properties
         toolbar.sizeToFit()
         toolbar.setItems([doneBtn], animated: true)
         
@@ -328,4 +338,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #332
+}   // #342
