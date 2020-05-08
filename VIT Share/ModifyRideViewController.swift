@@ -55,10 +55,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     // didSelectRow
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == pickerViewFrom) {
-            fromTF.text = pickerDataFrom[row]
+            textFieldRefFrom.text = pickerDataFrom[row]
         }
         if (pickerView == pickerViewTo) {
-            toTF.text = pickerDataTo[row]
+            textFieldRefTo.text = pickerDataTo[row]
         }
     }
     
@@ -77,39 +77,94 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
     
+    var textFieldRefFrom: UITextField!
+    var textFieldRefTo: UITextField!
+    
+    var textFieldRef: UITextField!
+    
     // didSelectItemAt
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let ride = ridesList[indexPath.row]
-        let id = ride.id
-        let newFrom = fromTF.text
-        let newTo = toTF.text
-        let newSeats = seatsTF.text
-        let newDateTime = dateTF.text
-        self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
+        let ride = ridesList[indexPath.row]     //indexPath.row
+        let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
+        alertController.addTextField(configurationHandler: fromFunc(textField:))
+        alertController.addTextField(configurationHandler: toFunc(textField:))
+        alertController.addTextField(configurationHandler: seatsFunc(textField:))
+        alertController.addTextField(configurationHandler: dateFunc(textField:))
         
-        // PopUp Animation
-        PopUpAnimation()
+        // Update action
+        let updateAction = UIAlertAction(title: "Update", style: .default) { (_) in
+            let id = ride.id
+            let newFrom = alertController.textFields?[0].text
+            let newTo = alertController.textFields?[1].text
+            let newSeats = alertController.textFields?[2].text
+            let newDateTime = alertController.textFields?[3].text
+            self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
+        }
         
-        AnimateIn(desiredView: blurView)    // This First
-        AnimateIn(desiredView: popUpView)   // This Next
+        // Adding Update action
+        alertController.addAction(updateAction)
         
-        fromTF.inputView = pickerViewFrom
-        fromTF.text = ride.from
-        // fromTF.inputAccessoryView = toolbar
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
         
-        toTF.inputView = pickerViewTo
-        toTF.text = ride.to
-        // toTF.inputAccessoryView = toolbar
-        
-        seatsTF.keyboardType = .decimalPad
-        seatsTF.text = ride.seats
-        
-        dateTF.text = ride.dateTime
-        dateTF.inputView = datePicker
-        dateTF.inputAccessoryView = toolbar
+    }
+    
+    var selectedDate: String = ""
+    
+    func fromFunc(textField: UITextField!) {
+        textField.tag = 0
+        textField.inputView = pickerViewFrom
+        textField.placeholder = "From"
+        textFieldRefFrom = textField
+    }
+    
+    func toFunc(textField: UITextField!) {
+        textField.tag = 1
+        textField.inputView = pickerViewTo
+        textField.placeholder = "To"
+        textFieldRefTo = textField
+    }
+    
+    func seatsFunc(textField: UITextField!) {
+        textField.tag = 2
+        textField.keyboardType = .decimalPad
+        textField.placeholder = "Seats"
+    }
+    
+    func dateFunc(textField: UITextField!) {
+        textField.tag = 3
+        textField.placeholder = "Date"
         datePicker.datePickerMode = .dateAndTime
+        textFieldRef = textField
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        onDatePickerStart(sender: datePicker)
         
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneDatePicker))
+        toolbar.setItems([doneButton], animated: false)
+        textField.inputView = datePicker
+        textField.inputAccessoryView = toolbar
+    }
+    
+    func onDatePickerStart(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        textFieldRef.text = formatter.string(from: datePicker.date)
+    }
+    
+    @objc func datePickerValueChanged(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        textFieldRef.text = formatter.string(from: datePicker.date)
+    }
+    
+    @objc func doneDatePicker() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        textFieldRef.text = formatter.string(from: datePicker.date)
+        textFieldRef.resignFirstResponder()
+        self.view.endEditing(true)
     }
     
     // Update button
@@ -119,7 +174,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         AnimateOut(desiredView: blurView)   // This Next
         
     }
-
 
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
@@ -135,33 +189,15 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-    
     // Picker view
     var pickerViewFrom = UIPickerView()
     var pickerViewTo = UIPickerView()
-    // alertController.view.addSubview(pickerView) // Adding picker view to the alert controller view
     
     // Date and Time picker
     let datePicker = UIDatePicker()
     
     // Toolbar, upon Picker
     let toolbar = UIToolbar()
-    
-    // Bar button, in Toolbar
-    let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(DonePressed))
-    
-    @objc func DonePressed() {
-        
-        // Formatter
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short    // Setting the format to 'short'
-        formatter.timeStyle = .short    // Setting the format to 'short'
-        
-        dateTF.text = formatter.string(from: datePicker.date)
-        self.view.endEditing(true)
-        
-    }
-    
     
     
     /* //////////////////////////////////////////////////////////////////////////////// */
@@ -180,8 +216,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
         // Toolbar properties
         toolbar.sizeToFit()
-        toolbar.setItems([doneBtn], animated: true)
-        
         
         // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
@@ -338,4 +372,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #342
+}   // #376
