@@ -96,9 +96,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     // didSelectItemAt
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let ride = ridesList[indexPath.row]     //indexPath.row
+        // indexPath.row
+        let ride = ridesList[indexPath.row]
         // Alert
-        let alertController = UIAlertController(title: "Update", message: "Update Values", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Modify Ride", message: "", preferredStyle: .alert)
         
         // Add Textfields
         alertController.addTextField(configurationHandler: fromFunc(textField:))
@@ -115,6 +116,15 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             let newDateTime = alertController.textFields?[3].text   // 4th textfield in Alert
             self.updateRide(id: id!, newFrom: newFrom!, newTo: newTo!, newSeats: newSeats!, newDateTime: newDateTime!)
         }
+        
+        let titleFont = [NSAttributedString.Key.font: UIFont(name: "SFProDisplay-Medium", size: 22.0)!]
+        // let messageFont = [NSAttributedString.Key.font: UIFont(name: "Avenir-Roman", size: 18.0)!]
+        
+        let titleAttrString = NSMutableAttributedString(string: "Modify Ride", attributes: titleFont)
+        // let messageAttrString = NSMutableAttributedString(string: "Message Here", attributes: messageFont)
+
+        alertController.setValue(titleAttrString, forKey: "attributedTitle")
+        // alertController.setValue(messageAttrString, forKey: "attributedMessage")
         
         // Assigning old data from 'ride' to alert's textfields when Alert loads up
         alertController.textFields?[0].text = ride.from
@@ -143,6 +153,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         textField.tag = 0
         textField.inputView = pickerViewFrom
         textFieldRefFrom = textField        // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
     }
     
     // Func for To textfield
@@ -150,6 +162,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         textField.tag = 1
         textField.inputView = pickerViewTo
         textFieldRefTo = textField          // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
     }
     
     // Func for Seats textfield
@@ -157,6 +171,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         textField.tag = 2
         textField.keyboardType = .decimalPad
         textFieldRefSeats = textField       // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
     }
     
     // Func for Date textfield
@@ -165,6 +181,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         textField.inputView = datePicker
         datePicker.datePickerMode = .dateAndTime
         textFieldRefDate = textField        // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
         
         datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
         onDatePickerStart(sender: datePicker)
@@ -390,4 +408,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #394
+}   // #412

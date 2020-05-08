@@ -14,6 +14,7 @@
 		020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A330324443B07006FE3E5 /* ProfileViewController.swift */; };
 		02272EBE244DC40F00AED173 /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02272EBC244DC40F00AED173 /* Cell2.swift */; };
 		02272EBF244DC40F00AED173 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02272EBD244DC40F00AED173 /* Cell2.xib */; };
+		022C91E82465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022C91E72465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf */; };
 		024C71112443B145002D9CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71102443B145002D9CCE /* AppDelegate.swift */; };
 		024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71122443B145002D9CCE /* SceneDelegate.swift */; };
 		024C71182443B145002D9CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C71162443B145002D9CCE /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		020A330324443B07006FE3E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		02272EBC244DC40F00AED173 /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
 		02272EBD244DC40F00AED173 /* Cell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell2.xib; sourceTree = "<group>"; };
+		022C91E72465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SFProDisplay-Medium-1.ttf"; sourceTree = "<group>"; };
 		024C710D2443B145002D9CCE /* VIT Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIT Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		024C71102443B145002D9CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024C71122443B145002D9CCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				02F46AC72444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */,
+				022C91E72465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
 				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
+				022C91E82465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf in Resources */,
 				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
 				02F46AC82444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */,
 				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
