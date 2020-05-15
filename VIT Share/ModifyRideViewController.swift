@@ -135,6 +135,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // Delete action
         let deleteAction = UIAlertAction(title: "Delete", style: .default) { (_) in
             
+            
         }
         
         // Adding Update action
@@ -216,14 +217,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         textFieldRefDate.resignFirstResponder()
         self.view.endEditing(true)
     }
-    
-    // Update button
-    @IBAction func updateButton(_ sender: UIButton) {
-        
-        AnimateOut(desiredView: popUpView)  // This First
-        AnimateOut(desiredView: blurView)   // This Next
-        
-    }
 
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
@@ -289,123 +282,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             
         })
         
-        // PopUp UIView Properties
-        PopUpProp()
-        
-        BorderProp()
-        CornerRadius()
-        LeftPadding()
-        
     }
     
-    
-    /* //////////////////////////////////////////////////////////////////////////////// */
-    
-    
-    // PopUp Animation
-    func PopUpAnimation() {
-        
-        blurView.bounds = self.view.bounds
-        popUpView.bounds = CGRect(x: 0, y: 0, width: self.view.bounds.width*0.68, height: self.view.bounds.height*0.54)
-        
-    }
-    
-    // Animate in a specified view
-    func AnimateIn(desiredView: UIView) {
-        
-        let backgroundView = self.view!
-        
-        // Attach our desired view to the screen
-        backgroundView.addSubview(desiredView)
-        
-        // Sets the view's scaling to be 120%
-        desiredView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        desiredView.alpha = 0
-        desiredView.center = backgroundView.center
-        // Animate from here ⬆️
-        
-        // To here ⬇️
-        // Animate the effect
-        UIView.animate(withDuration: 0.2, animations: {
-            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            desiredView.alpha = 1
-        })
-        
-    }
-    
-    // Animate out a specified view
-    func AnimateOut(desiredView: UIView) {
-        
-       UIView.animate(withDuration: 0.2, animations: {
-            desiredView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            desiredView.alpha = 1
-       }, completion: { _ in
-        // This code runs when when above AnimateOut animation is done
-        desiredView.removeFromSuperview()
-       })
-        
-    }
-    
-    // Popup view outlets
-    @IBOutlet var blurView: UIVisualEffectView!
-    
-    @IBOutlet var popUpView: UIView!
-    
-    @IBOutlet var fromTF: UITextField!
-    
-    @IBOutlet var toTF: UITextField!
-    
-    @IBOutlet var seatsTF: UITextField!
-    
-    @IBOutlet var dateTF: UITextField!
-    
-    @IBOutlet var updateOutlet: UIButton!
-    
-    // PopUp UIView Properties
-    func PopUpProp() {
-        
-        popUpView.layer.cornerRadius = 16
-        
-    }
-    
-    func BorderProp() {
-        
-        // Textfield Border Property
-        let myColor = UIColor.systemGray
-        fromTF.layer.borderColor = myColor.cgColor
-        fromTF.layer.borderWidth = 1.6
-        toTF.layer.borderColor = myColor.cgColor
-        toTF.layer.borderWidth = 1.6
-        seatsTF.layer.borderColor = myColor.cgColor
-        seatsTF.layer.borderWidth = 1.6
-        dateTF.layer.borderColor = myColor.cgColor
-        dateTF.layer.borderWidth = 1.6
-        
-    }
-    
-    func CornerRadius() {
-        
-        // Textfield Corner Radius Property
-        fromTF.layer.cornerRadius = 4
-        toTF.layer.cornerRadius = 4
-        seatsTF.layer.cornerRadius = 4
-        dateTF.layer.cornerRadius = 4
-        updateOutlet.layer.cornerRadius = 6
-        
-    }
-    
-    func LeftPadding() {
-        
-        // Create a padding view for Credits TextFields on LEFT
-        fromTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: fromTF.frame.height))
-        fromTF.leftViewMode = .always
-        toTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: toTF.frame.height))
-        toTF.leftViewMode = .always
-        seatsTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: seatsTF.frame.height))
-        seatsTF.leftViewMode = .always
-        dateTF.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: dateTF.frame.height))
-        dateTF.leftViewMode = .always
-        
-    }
-    
-}   // #412
+}   // #288

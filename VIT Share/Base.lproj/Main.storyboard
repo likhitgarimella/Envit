@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-06-tzO">
-                                <rect key="frame" x="121.66666666666667" y="625.33333333333337" width="170.66666666666663" height="18.666666666666629"/>
+                                <rect key="frame" x="128.66666666666669" y="625.33333333333337" width="156.66666666666669" height="18.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -146,13 +146,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cab Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQQ-fD-hNA">
-                                <rect key="frame" x="20" y="40" width="142" height="35"/>
+                                <rect key="frame" x="20" y="40" width="131.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DNW-jA-Kjd">
-                                <rect key="frame" x="20" y="95" width="374" height="32"/>
+                                <rect key="frame" x="20" y="96" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Find Ride"/>
@@ -170,21 +170,21 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf5-oS-TPm">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="c7M-O0-Wcr" kind="embed" id="37Q-i9-Raj"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAQ-eH-sx4">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="j0o-55-6OK" kind="embed" id="7Ma-FR-mTF"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdZ-Fh-u6B">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="TL2-o1-txW" kind="embed" id="dEu-AV-9hj"/>
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTp-At-JmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.7391304347827" y="-896.73913043478262"/>
+            <point key="canvasLocation" x="1022" y="-1326"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XRA-oL-9o1">
@@ -258,7 +258,7 @@
             </objects>
             <point key="canvasLocation" x="171" y="117"/>
         </scene>
-        <!--Bicycles-->
+        <!--Books-->
         <scene sceneID="iRr-Fl-e6T">
             <objects>
                 <viewController id="Qo3-6f-dJu" customClass="BicycleShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
@@ -268,11 +268,11 @@
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="b9t-Eu-Srj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bicycles" image="chart" id="8km-Sf-dKX"/>
+                    <tabBarItem key="tabBarItem" title="Books" image="chart" id="8km-Sf-dKX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecG-y4-jfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="-103"/>
+            <point key="canvasLocation" x="1022" y="-429"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -420,7 +420,7 @@
             </objects>
             <point key="canvasLocation" x="-697.10144927536237" y="906.52173913043487"/>
         </scene>
-        <!--Books-->
+        <!--Faculty-->
         <scene sceneID="GhB-v0-DvM">
             <objects>
                 <viewController id="lLd-eY-cCZ" customClass="BooksShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
@@ -430,7 +430,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7ed-py-Rfx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Books" image="coins" id="LuD-Ua-Oab"/>
+                    <tabBarItem key="tabBarItem" title="Faculty" image="coins" id="LuD-Ua-Oab"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fog-Hl-n34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -512,7 +512,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAi-vr-AVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="-1277"/>
+            <point key="canvasLocation" x="1870" y="-2093"/>
         </scene>
         <!--Offer Ride View Controller-->
         <scene sceneID="26O-g2-Yrp">
@@ -529,13 +529,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of available seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-ra-jJ5">
-                                                <rect key="frame" x="20.000000000000014" y="216" width="223.33333333333337" height="28"/>
+                                                <rect key="frame" x="20" y="216" width="206.33333333333334" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-0K-Hfl">
-                                                <rect key="frame" x="20" y="116" width="25" height="28"/>
+                                                <rect key="frame" x="20" y="116" width="23.666666666666671" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -547,7 +547,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gan-D8-bbm">
-                                                <rect key="frame" x="19.999999999999996" y="16" width="55.666666666666657" height="28"/>
+                                                <rect key="frame" x="19.999999999999996" y="16" width="51.666666666666657" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -683,7 +683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHb-GA-ZvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="-1632"/>
+            <point key="canvasLocation" x="1022" y="-2092"/>
         </scene>
         <!--Modify Ride View Controller-->
         <scene sceneID="3fd-iK-9v4">
@@ -720,140 +720,12 @@
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
-                        <outlet property="blurView" destination="Dvl-an-8oS" id="qqO-cj-9a1"/>
                         <outlet property="cardCollectionView2" destination="PNo-h9-hHH" id="XF3-J3-fvB"/>
-                        <outlet property="dateTF" destination="M75-3C-IKJ" id="X28-P7-z1U"/>
-                        <outlet property="fromTF" destination="c5o-c2-nUZ" id="RQW-SG-Nrf"/>
-                        <outlet property="popUpView" destination="Y1M-90-bg2" id="mmQ-hr-VAi"/>
-                        <outlet property="seatsTF" destination="4m6-Mh-JDI" id="l4k-k8-7Q6"/>
-                        <outlet property="toTF" destination="0EV-C5-8Pe" id="iPX-Od-KN2"/>
-                        <outlet property="updateOutlet" destination="dnc-7P-wQI" id="L4g-vs-JGG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw5-8Y-7hj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" id="Dvl-an-8oS">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OTD-4l-8a5">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <blurEffect style="regular"/>
-                </visualEffectView>
-                <view contentMode="scaleToFill" id="Y1M-90-bg2">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="320"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-c2-nUZ">
-                            <rect key="frame" x="20" y="60" width="200" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="eK8-UQ-I77"/>
-                            </constraints>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="To" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-C5-8Pe">
-                            <rect key="frame" x="20" y="108" width="200" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="gMh-j4-9jb"/>
-                            </constraints>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seats" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="4m6-Mh-JDI">
-                            <rect key="frame" x="20" y="156" width="200" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="7l4-if-SYQ"/>
-                            </constraints>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="M75-3C-IKJ">
-                            <rect key="frame" x="20" y="204" width="200" height="32"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="OcC-vd-aUf"/>
-                            </constraints>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-7P-wQI">
-                            <rect key="frame" x="20" y="268" width="200" height="32"/>
-                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="32" id="OyD-G1-YVv"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
-                            <state key="normal" title="Update">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <connections>
-                                <action selector="updateButton:" destination="c7M-O0-Wcr" eventType="touchUpInside" id="Gui-Kf-Ie6"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueB-7Z-Sbe">
-                            <rect key="frame" x="89" y="20" width="62.333333333333343" height="24"/>
-                            <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="20"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="dnc-7P-wQI" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="2eL-zb-f7v"/>
-                        <constraint firstItem="M75-3C-IKJ" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="7tG-aD-5fT"/>
-                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="0EV-C5-8Pe" secondAttribute="right" constant="20" id="C0W-la-xW2"/>
-                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="top" secondItem="ueB-7Z-Sbe" secondAttribute="bottom" constant="16" id="CDF-tX-ThO"/>
-                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="c5o-c2-nUZ" secondAttribute="right" constant="20" id="D7e-YV-vWm"/>
-                        <constraint firstItem="ueB-7Z-Sbe" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="D89-G1-lfk"/>
-                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="Gz6-eg-EWF"/>
-                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="OC3-mu-6h5"/>
-                        <constraint firstItem="M75-3C-IKJ" firstAttribute="top" secondItem="4m6-Mh-JDI" secondAttribute="bottom" constant="16" id="VA1-4h-lzV"/>
-                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="4m6-Mh-JDI" secondAttribute="right" constant="20" id="aHT-E0-xS3"/>
-                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="top" secondItem="c5o-c2-nUZ" secondAttribute="bottom" constant="16" id="bJj-gd-gVH"/>
-                        <constraint firstItem="dnc-7P-wQI" firstAttribute="top" secondItem="M75-3C-IKJ" secondAttribute="bottom" constant="32" id="cKt-tt-s3P"/>
-                        <constraint firstItem="4m6-Mh-JDI" firstAttribute="top" secondItem="0EV-C5-8Pe" secondAttribute="bottom" constant="16" id="fzu-6T-vjI"/>
-                        <constraint firstItem="dnc-7P-wQI" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="ggT-y7-EY4"/>
-                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="M75-3C-IKJ" secondAttribute="right" constant="20" id="hnb-U4-bh2"/>
-                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="iVv-Rc-b0k"/>
-                        <constraint firstItem="QIG-Mo-E1R" firstAttribute="right" secondItem="dnc-7P-wQI" secondAttribute="right" constant="20" id="jM3-t6-9Bb"/>
-                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="m6x-hP-OES"/>
-                        <constraint firstItem="0EV-C5-8Pe" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="qoJ-NW-c1E"/>
-                        <constraint firstItem="c5o-c2-nUZ" firstAttribute="centerX" secondItem="Y1M-90-bg2" secondAttribute="centerX" id="sp3-Nm-aKI"/>
-                        <constraint firstItem="ueB-7Z-Sbe" firstAttribute="top" secondItem="QIG-Mo-E1R" secondAttribute="top" constant="20" id="yvt-9w-gBH"/>
-                        <constraint firstItem="M75-3C-IKJ" firstAttribute="left" secondItem="QIG-Mo-E1R" secondAttribute="left" constant="20" id="zwD-XT-AOj"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="QIG-Mo-E1R"/>
-                </view>
             </objects>
-            <point key="canvasLocation" x="1871" y="-104"/>
+            <point key="canvasLocation" x="1870" y="-1326"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
