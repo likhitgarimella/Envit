@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-06-tzO">
-                                <rect key="frame" x="128.66666666666669" y="625.33333333333337" width="156.66666666666669" height="18.666666666666629"/>
+                                <rect key="frame" x="121.66666666666667" y="625.33333333333337" width="170.66666666666663" height="18.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -157,7 +157,7 @@
                                 <segments>
                                     <segment title="Find Ride"/>
                                     <segment title="Offer Ride"/>
-                                    <segment title="Your Rides"/>
+                                    <segment title="Modify Ride"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -261,18 +261,108 @@
         <!--Books-->
         <scene sceneID="iRr-Fl-e6T">
             <objects>
-                <viewController id="Qo3-6f-dJu" customClass="BicycleShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Qo3-6f-dJu" customClass="BooksShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPB-Xu-dSC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otp-ee-lMY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmp-tE-gKD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTT-2Z-xgB">
+                                <rect key="frame" x="20" y="40" width="157" height="36"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="koL-HH-yla">
+                                <rect key="frame" x="20" y="96" width="374" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Buy"/>
+                                    <segment title="Post"/>
+                                    <segment title="Modify"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switchSegment:" destination="Qo3-6f-dJu" eventType="valueChanged" id="aHd-Qa-eIv"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vn7-wS-IGk">
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="cxF-ft-Mnb" kind="embed" id="A26-Gf-ljc"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTx-iQ-ffz">
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <connections>
+                                    <segue destination="H1H-nM-qV1" kind="embed" id="CRO-h4-1Dy"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GL-zQ-eWs">
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <connections>
+                                    <segue destination="gQw-qI-aQu" kind="embed" id="UVa-R0-I6Q"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oTT-2Z-xgB" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" constant="20" id="3LT-HC-DNm"/>
+                            <constraint firstItem="koL-HH-yla" firstAttribute="left" secondItem="b9t-Eu-Srj" secondAttribute="left" constant="20" id="61t-ZP-dGy"/>
+                            <constraint firstItem="KTx-iQ-ffz" firstAttribute="trailing" secondItem="b9t-Eu-Srj" secondAttribute="trailing" id="9kv-mC-qGF"/>
+                            <constraint firstItem="4GL-zQ-eWs" firstAttribute="trailing" secondItem="b9t-Eu-Srj" secondAttribute="trailing" id="COh-RR-eje"/>
+                            <constraint firstItem="otp-ee-lMY" firstAttribute="top" secondItem="b9t-Eu-Srj" secondAttribute="top" id="Db8-1x-Mze"/>
+                            <constraint firstItem="vn7-wS-IGk" firstAttribute="trailing" secondItem="b9t-Eu-Srj" secondAttribute="trailing" id="IRV-fK-8wp"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="top" secondItem="b9t-Eu-Srj" secondAttribute="top" id="ItW-eq-m8F"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="bottom" secondItem="b9t-Eu-Srj" secondAttribute="bottom" id="JPa-Ob-Bp0"/>
+                            <constraint firstItem="b9t-Eu-Srj" firstAttribute="right" secondItem="koL-HH-yla" secondAttribute="right" constant="20" id="KON-nW-b0g"/>
+                            <constraint firstItem="koL-HH-yla" firstAttribute="top" secondItem="oTT-2Z-xgB" secondAttribute="bottom" constant="20" id="LMh-Aq-saw"/>
+                            <constraint firstItem="4GL-zQ-eWs" firstAttribute="bottom" secondItem="b9t-Eu-Srj" secondAttribute="bottom" id="Muv-yx-ziN"/>
+                            <constraint firstItem="b9t-Eu-Srj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oTT-2Z-xgB" secondAttribute="trailing" symbolic="YES" id="Sc3-jP-WYX"/>
+                            <constraint firstItem="oTT-2Z-xgB" firstAttribute="top" secondItem="b9t-Eu-Srj" secondAttribute="top" constant="40" id="VmB-Ex-8GO"/>
+                            <constraint firstItem="4GL-zQ-eWs" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" id="WLn-La-K4u"/>
+                            <constraint firstItem="KTx-iQ-ffz" firstAttribute="bottom" secondItem="b9t-Eu-Srj" secondAttribute="bottom" id="WsI-pW-Iyf"/>
+                            <constraint firstItem="vn7-wS-IGk" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" id="X1n-V3-jPX"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="trailing" secondItem="b9t-Eu-Srj" secondAttribute="trailing" id="a9a-la-tp1"/>
+                            <constraint firstItem="otp-ee-lMY" firstAttribute="trailing" secondItem="b9t-Eu-Srj" secondAttribute="trailing" id="aF0-v4-1dq"/>
+                            <constraint firstItem="vn7-wS-IGk" firstAttribute="top" secondItem="koL-HH-yla" secondAttribute="bottom" constant="8" id="bVz-GC-v1b"/>
+                            <constraint firstItem="KTx-iQ-ffz" firstAttribute="top" secondItem="koL-HH-yla" secondAttribute="bottom" constant="8" id="bxp-3w-qDD"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" id="cjb-M2-Djf"/>
+                            <constraint firstItem="otp-ee-lMY" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" id="dQu-TW-myj"/>
+                            <constraint firstItem="otp-ee-lMY" firstAttribute="bottom" secondItem="b9t-Eu-Srj" secondAttribute="bottom" id="eoj-tj-BkM"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="width" secondItem="otp-ee-lMY" secondAttribute="width" priority="750" id="lYr-6f-IH9"/>
+                            <constraint firstItem="koL-HH-yla" firstAttribute="centerX" secondItem="tPB-Xu-dSC" secondAttribute="centerX" id="mF1-qN-QOo"/>
+                            <constraint firstItem="KTx-iQ-ffz" firstAttribute="leading" secondItem="b9t-Eu-Srj" secondAttribute="leading" id="nZM-Th-rAz"/>
+                            <constraint firstItem="4GL-zQ-eWs" firstAttribute="top" secondItem="koL-HH-yla" secondAttribute="bottom" constant="8" id="oiv-2o-kCe"/>
+                            <constraint firstItem="vn7-wS-IGk" firstAttribute="bottom" secondItem="b9t-Eu-Srj" secondAttribute="bottom" id="ojI-83-Lzg"/>
+                            <constraint firstItem="kmp-tE-gKD" firstAttribute="height" secondItem="otp-ee-lMY" secondAttribute="height" priority="250" id="pBf-XP-lEc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="b9t-Eu-Srj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Books" image="chart" id="8km-Sf-dKX"/>
+                    <connections>
+                        <outlet property="buyView" destination="4GL-zQ-eWs" id="TTS-18-efj"/>
+                        <outlet property="modifyBooksView" destination="vn7-wS-IGk" id="DCO-IY-00Q"/>
+                        <outlet property="postView" destination="KTx-iQ-ffz" id="mab-Qw-gY8"/>
+                        <outlet property="segment" destination="koL-HH-yla" id="zL1-fM-CvS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecG-y4-jfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="-429"/>
+            <point key="canvasLocation" x="1022" y="117"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -423,7 +513,7 @@
         <!--Faculty-->
         <scene sceneID="GhB-v0-DvM">
             <objects>
-                <viewController id="lLd-eY-cCZ" customClass="BooksShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lLd-eY-cCZ" customClass="FacultyViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olB-il-N3l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,12 +524,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fog-Hl-n34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="720"/>
+            <point key="canvasLocation" x="1022" y="887"/>
         </scene>
         <!--Profile-->
         <scene sceneID="2zO-Mz-eUT">
             <objects>
-                <viewController id="lRJ-Ug-21N" customClass="ProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lRJ-Ug-21N" customClass="ProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t1-hS-oK6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -455,7 +545,7 @@
         <!--Find Ride View Controller-->
         <scene sceneID="MT9-HS-t4E">
             <objects>
-                <viewController id="TL2-o1-txW" customClass="FindRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="TL2-o1-txW" customClass="FindRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EEX-Fc-5H6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,12 +602,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAi-vr-AVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="-2093"/>
+            <point key="canvasLocation" x="1022" y="-2049"/>
         </scene>
         <!--Offer Ride View Controller-->
         <scene sceneID="26O-g2-Yrp">
             <objects>
-                <viewController id="j0o-55-6OK" customClass="OfferRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="j0o-55-6OK" customClass="OfferRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dHX-QZ-mod">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -683,12 +773,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHb-GA-ZvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="-2092"/>
+            <point key="canvasLocation" x="1870" y="-2049"/>
         </scene>
         <!--Modify Ride View Controller-->
         <scene sceneID="3fd-iK-9v4">
             <objects>
-                <viewController id="c7M-O0-Wcr" customClass="ModifyRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="c7M-O0-Wcr" customClass="ModifyRideViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ijU-2e-Xnk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -726,6 +816,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw5-8Y-7hj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="-1326"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="eFH-w9-IT1">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gQw-qI-aQu" customClass="BuyViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzg-Aa-zCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ve-Ge-k1d"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJf-yS-rm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-573"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="Q8a-CN-vDO">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="H1H-nM-qV1" customClass="PostViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMP-CW-7KO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beW-El-Acn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="-573"/>
+        </scene>
+        <!--Modify Books View Controller-->
+        <scene sceneID="0cz-Vj-EBW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cxF-ft-Mnb" customClass="ModifyBooksViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dh1-vY-2GY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-UF-WIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="117"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
