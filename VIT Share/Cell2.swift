@@ -39,6 +39,20 @@ class Cell2: UICollectionViewCell {
         noOfSeatsValue2.showAnimatedGradientSkeleton()
         dateAndTime2.showAnimatedGradientSkeleton()
         
+        setupViews()
+        
+    }
+    
+    let editButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 284, y: 124, width: 32, height: 32))
+        let btnImage = UIImage(named: "pen")
+        button.setImage(btnImage, for: .normal)
+        return button
+    }()
+
+    func setupViews()
+    {
+        addSubview(editButton)
     }
     
     func hideAnimation() {
@@ -54,4 +68,4 @@ class Cell2: UICollectionViewCell {
         
     }
 
-}   // #58
+}   // #72

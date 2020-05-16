@@ -65,7 +65,12 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // Registering cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! Cell2
+        // Adding target for edit button
+        cell.editButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
+        // sender.tag = indexPath.row
+        cell.editButton.tag = indexPath.row
         if ridesList != nil {
             cell.hideAnimation()
             let ride: RidesModel
@@ -78,26 +83,11 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
     
-    var textFieldRefFrom: UITextField!      // Textfield for From in Alert
-    var textFieldRefTo: UITextField!        // Textfield for To in Alert
-    var textFieldRefSeats: UITextField!     // Textfield for Seats in Alert
-    var textFieldRefDate: UITextField!      // Textfield for Date&Time in Alert
-    
-    // Picker view
-    var pickerViewFrom = UIPickerView()
-    var pickerViewTo = UIPickerView()
-    
-    // Date and Time picker
-    var datePicker = UIDatePicker()
-    
-    // Toolbar, upon Picker
-    let toolbar = UIToolbar()
-    
-    // didSelectItemAt
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    // Action for edit button
+    @objc func buttonPressed(sender: UIButton) {
         
-        // indexPath.row
-        let ride = ridesList[indexPath.row]
+        // indexPath.row = sender.tag
+        let ride = ridesList[sender.tag]
         // Alert
         let alertController = UIAlertController(title: "Modify Ride", message: "", preferredStyle: .alert)
         
@@ -132,22 +122,38 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         alertController.textFields?[2].text = ride.seats
         alertController.textFields?[3].text = ride.dateTime
         
-        // Delete action
-        let deleteAction = UIAlertAction(title: "Delete", style: .default) { (_) in
-            
+        // Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
             
         }
+        
+        // cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
         
         // Adding Update action
         alertController.addAction(updateAction)
         
-        // Adding Delete action
-        alertController.addAction(deleteAction)
+        // Adding Cancel action
+        alertController.addAction(cancelAction)
         
         // Present Alert controller
         present(alertController, animated: true, completion: nil)
         
     }
+    
+    var textFieldRefFrom: UITextField!      // Textfield for From in Alert
+    var textFieldRefTo: UITextField!        // Textfield for To in Alert
+    var textFieldRefSeats: UITextField!     // Textfield for Seats in Alert
+    var textFieldRefDate: UITextField!      // Textfield for Date&Time in Alert
+    
+    // Picker view
+    var pickerViewFrom = UIPickerView()
+    var pickerViewTo = UIPickerView()
+    
+    // Date and Time picker
+    var datePicker = UIDatePicker()
+    
+    // Toolbar, upon Picker
+    let toolbar = UIToolbar()
     
     // Func for From textfield
     func fromFunc(textField: UITextField!) {
@@ -284,4 +290,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #288
+}   // #294
