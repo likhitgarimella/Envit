@@ -67,10 +67,17 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // Registering cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! Cell2
+        
         // Adding target for edit button
         cell.editButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
-        // sender.tag = indexPath.row
+        // Adding target for delete button
+        cell.deleteButton.addTarget(self, action: #selector(deletePressed(sender:)), for: .touchUpInside)
+        
+        // Button sender.tag = Collection view indexPath.row
         cell.editButton.tag = indexPath.row
+        // Button sender.tag = Collection view indexPath.row
+        cell.deleteButton.tag = indexPath.row
+        
         if ridesList != nil {
             cell.hideAnimation()
             let ride: RidesModel
@@ -87,7 +94,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     @objc func buttonPressed(sender: UIButton) {
         
         sender.flash()
-        // indexPath.row = sender.tag
+        // Collection view indexPath.row = Button sender.tag
         let ride = ridesList[sender.tag]
         // Alert
         let alertController = UIAlertController(title: "Modify Ride", message: "", preferredStyle: .alert)
@@ -130,6 +137,36 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
         // Adding Update action
         alertController.addAction(updateAction)
+        
+        // Adding Cancel action
+        alertController.addAction(cancelAction)
+        
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    // Action for delete button
+    @objc func deletePressed(sender: UIButton) {
+        
+        sender.flash()
+        // Collection view indexPath.row = Button sender.tag
+        let ride = ridesList[sender.tag]
+        // Alert
+        let alertController = UIAlertController(title: "Delete Ride", message: "Are you sure you want to delete your ride?", preferredStyle: .alert)
+        
+        // Delete action
+        let deleteAction = UIAlertAction(title: "Delete", style: .default) { (_) in
+            self.deleteRide(id: ride.id!)
+        }
+        
+        // Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
+            
+        }
+        
+        // Adding Delete action
+        alertController.addAction(deleteAction)
         
         // Adding Cancel action
         alertController.addAction(cancelAction)
@@ -203,7 +240,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     func onDatePickerStart(sender: UIDatePicker) {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        formatter.dateFormat = "dd-MM-yyyy, HH:mm"
         // textFieldRef.text = formatter.string(from: datePicker.date)
         // Commented this ⬆️ line bcuz, this gives instant current text into the textfield,
         // without even selecting a value from datePicker.
@@ -211,13 +248,13 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     @objc func datePickerValueChanged(sender: UIDatePicker) {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        formatter.dateFormat = "dd-MM-yyyy, HH:mm"
         textFieldRefDate.text = formatter.string(from: datePicker.date)
     }
     
     @objc func doneDatePicker() {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MM-yyyy HH:mm"
+        formatter.dateFormat = "dd-MM-yyyy, HH:mm"
         textFieldRefDate.text = formatter.string(from: datePicker.date)
         textFieldRefDate.resignFirstResponder()
         self.view.endEditing(true)
@@ -225,7 +262,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
 
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
-        
         let ride = [
             "id": id,
             "From": textFieldRefFrom.text!,
@@ -234,7 +270,11 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
             "Date": textFieldRefDate.text!
         ]
         refRides.child(id).setValue(ride)
-        
+    }
+    
+    // Delete Ride func
+    func deleteRide(id: String) {
+        refRides.child(id).setValue(nil)
     }
     
     
@@ -304,4 +344,4 @@ extension UIButton {
         layer.add(flash, forKey: nil)
     }
     
-}   // #308
+}   // #348
