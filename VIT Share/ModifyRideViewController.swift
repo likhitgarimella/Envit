@@ -86,6 +86,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     // Action for edit button
     @objc func buttonPressed(sender: UIButton) {
         
+        sender.flash()
         // indexPath.row = sender.tag
         let ride = ridesList[sender.tag]
         // Alert
@@ -126,8 +127,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
             
         }
-        
-        // cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
         
         // Adding Update action
         alertController.addAction(updateAction)
@@ -290,4 +289,19 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #294
+}
+
+extension UIButton {
+    
+    func flash() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.1
+        flash.fromValue = 1
+        flash.toValue = 0.5
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 1
+        layer.add(flash, forKey: nil)
+    }
+    
+}   // #308
