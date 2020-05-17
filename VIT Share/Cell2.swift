@@ -76,4 +76,4 @@ class Cell2: UICollectionViewCell {
         
     }
 
-}   // #72
+}   // #80
