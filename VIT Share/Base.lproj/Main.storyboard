@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-06-tzO">
-                                <rect key="frame" x="128.66666666666669" y="625.33333333333337" width="156.66666666666669" height="18.666666666666629"/>
+                                <rect key="frame" x="121.66666666666667" y="625.33333333333337" width="170.66666666666663" height="18.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -146,13 +146,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cab Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQQ-fD-hNA">
-                                <rect key="frame" x="20" y="40" width="131.66666666666666" height="36"/>
+                                <rect key="frame" x="20" y="40" width="142" height="35"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DNW-jA-Kjd">
-                                <rect key="frame" x="20" y="96" width="374" height="32"/>
+                                <rect key="frame" x="20" y="95" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Find Ride"/>
@@ -170,21 +170,21 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf5-oS-TPm">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="c7M-O0-Wcr" kind="embed" id="37Q-i9-Raj"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAQ-eH-sx4">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="j0o-55-6OK" kind="embed" id="7Ma-FR-mTF"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdZ-Fh-u6B">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="TL2-o1-txW" kind="embed" id="dEu-AV-9hj"/>
@@ -275,13 +275,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTT-2Z-xgB">
-                                <rect key="frame" x="20" y="40" width="157" height="36"/>
+                                <rect key="frame" x="20" y="40" width="172" height="35"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="koL-HH-yla">
-                                <rect key="frame" x="20" y="96" width="374" height="32"/>
+                                <rect key="frame" x="20" y="95" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Buy"/>
@@ -299,21 +299,21 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vn7-wS-IGk">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="cxF-ft-Mnb" kind="embed" id="A26-Gf-ljc"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTx-iQ-ffz">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="H1H-nM-qV1" kind="embed" id="CRO-h4-1Dy"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GL-zQ-eWs">
-                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="gQw-qI-aQu" kind="embed" id="UVa-R0-I6Q"/>
@@ -621,13 +621,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of available seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-ra-jJ5">
-                                                <rect key="frame" x="20" y="216" width="206.33333333333334" height="28"/>
+                                                <rect key="frame" x="20.000000000000014" y="216" width="223.33333333333337" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-0K-Hfl">
-                                                <rect key="frame" x="20" y="116" width="23.666666666666671" height="28"/>
+                                                <rect key="frame" x="20" y="116" width="25" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -639,7 +639,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gan-D8-bbm">
-                                                <rect key="frame" x="19.999999999999996" y="16" width="51.666666666666657" height="28"/>
+                                                <rect key="frame" x="19.999999999999996" y="16" width="55.666666666666657" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -851,13 +851,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQm-3X-cMT">
-                                                <rect key="frame" x="20" y="16" width="43" height="29"/>
+                                                <rect key="frame" x="20" y="16" width="43" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Title" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-J0-O6s">
-                                                <rect key="frame" x="20" y="55" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="54" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="qc4-tF-aVe"/>
                                                 </constraints>
@@ -872,13 +872,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-Mk-lme">
-                                                <rect key="frame" x="20" y="117" width="115" height="29"/>
+                                                <rect key="frame" x="20" y="116" width="115" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Author/Publication" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ipE-32-K3v">
-                                                <rect key="frame" x="20" y="156" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="154" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="gKd-97-HA6"/>
                                                 </constraints>
@@ -892,11 +892,18 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDv-kC-YN6">
+                                                <rect key="frame" x="20.000000000000007" y="216" width="97.666666666666686" height="29"/>
+                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="vQm-3X-cMT" firstAttribute="leading" secondItem="cTn-e7-g8V" secondAttribute="leading" constant="20" id="4I9-i7-gEr"/>
                                             <constraint firstAttribute="right" secondItem="ipE-32-K3v" secondAttribute="right" constant="120" id="6Sw-Qz-B1k"/>
+                                            <constraint firstItem="rDv-kC-YN6" firstAttribute="leading" secondItem="cTn-e7-g8V" secondAttribute="leading" constant="20" id="AGu-su-wO4"/>
                                             <constraint firstAttribute="right" secondItem="eWc-J0-O6s" secondAttribute="right" constant="120" id="BiT-c1-aTc"/>
                                             <constraint firstItem="Fbe-Mk-lme" firstAttribute="leading" secondItem="cTn-e7-g8V" secondAttribute="leading" constant="20" id="BnV-ty-8je"/>
                                             <constraint firstItem="Fbe-Mk-lme" firstAttribute="top" secondItem="eWc-J0-O6s" secondAttribute="bottom" constant="22" id="FJN-D7-4YU"/>
@@ -905,8 +912,10 @@
                                             <constraint firstItem="ipE-32-K3v" firstAttribute="left" secondItem="cTn-e7-g8V" secondAttribute="left" constant="20" id="VCG-8I-GSr"/>
                                             <constraint firstItem="eWc-J0-O6s" firstAttribute="left" secondItem="cTn-e7-g8V" secondAttribute="left" constant="20" id="ZDU-MU-Ua2"/>
                                             <constraint firstItem="eWc-J0-O6s" firstAttribute="top" secondItem="vQm-3X-cMT" secondAttribute="bottom" constant="10" id="ifv-dl-DTW"/>
+                                            <constraint firstItem="rDv-kC-YN6" firstAttribute="top" secondItem="ipE-32-K3v" secondAttribute="bottom" constant="22" id="meU-2l-Cl8"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vQm-3X-cMT" secondAttribute="trailing" constant="20" symbolic="YES" id="pZR-hn-rcr"/>
                                             <constraint firstItem="vQm-3X-cMT" firstAttribute="top" secondItem="cTn-e7-g8V" secondAttribute="top" constant="16" id="tu5-hm-iTG"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rDv-kC-YN6" secondAttribute="trailing" constant="20" symbolic="YES" id="yzk-Xa-8hL"/>
                                         </constraints>
                                     </view>
                                 </subviews>
