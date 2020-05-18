@@ -14,6 +14,8 @@ class PostViewController: UIViewController {
     // Outlets
     @IBOutlet var bookTitle: UITextField!
     @IBOutlet var bookDescription: UITextField!
+    @IBOutlet var bookPrice: UITextField!
+    @IBOutlet var submitOutlet: UIButton!
     
     func BorderProp() {
         
@@ -31,6 +33,7 @@ class PostViewController: UIViewController {
         // Textfield Corner Radius Property
         bookTitle.layer.cornerRadius = 4
         bookDescription.layer.cornerRadius = 4
+        submitOutlet.layer.cornerRadius = 6
         
     }
     
@@ -43,14 +46,28 @@ class PostViewController: UIViewController {
         bookDescription.leftViewMode = .always
         
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    // #1
+    let radioButton1 = LTHRadioButton(selectedColor: .systemBlue)
+    
+    // #2
+    let radioButton2 = LTHRadioButton(selectedColor: .systemBlue)
+    
+    // #3
+    let radioButton3 = LTHRadioButton(selectedColor: .systemBlue)
+    
+    func RadioButton() {
         
-        // 1
-        let radioButton1 = LTHRadioButton(selectedColor: .systemBlue)
+        // #1
         view.addSubview(radioButton1)
-
+        
+        // #2
+        view.addSubview(radioButton2)
+        
+        // #3
+        view.addSubview(radioButton3)
+        
+        // #1
         radioButton1.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
           radioButton1.topAnchor.constraint(equalTo: view.topAnchor, constant: 264),
@@ -60,44 +77,109 @@ class PostViewController: UIViewController {
         )
 
         radioButton1.onSelect {
-          print("Radio-1 selected.")
+            print("Radio-1 selected.")
+            self.radioButton2.deselect()
+            self.radioButton3.deselect()
         }
 
         radioButton1.onDeselect {
-          print("Radio-1 deselected.")
+            print("Radios deselected.")
         }
 
         radioButton1.select() // I'm selected.
         radioButton1.deselect(animated: false) // I'm deselected.
         
-        let radioButton2 = LTHRadioButton(selectedColor: .systemBlue)
-        view.addSubview(radioButton2)
-        
-        // 2
+        // #2
         radioButton2.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
           radioButton2.topAnchor.constraint(equalTo: view.topAnchor, constant: 264),
-          radioButton2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 160),
+          radioButton2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 180),
           radioButton2.heightAnchor.constraint(equalToConstant: radioButton2.frame.height),
           radioButton2.widthAnchor.constraint(equalToConstant: radioButton2.frame.width)]
         )
 
         radioButton2.onSelect {
-          print("Radio-2 selected.")
+            print("Radio-2 selected.")
+            self.radioButton1.deselect()
+            self.radioButton3.deselect()
         }
 
         radioButton2.onDeselect {
-          print("Radio-2 deselected.")
+            print("Radios deselected.")
         }
 
         radioButton2.select() // I'm selected.
         radioButton2.deselect(animated: false) // I'm deselected.
+        
+        // #3
+        radioButton3.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+          radioButton3.topAnchor.constraint(equalTo: view.topAnchor, constant: 304),
+          radioButton3.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+          radioButton3.heightAnchor.constraint(equalToConstant: radioButton3.frame.height),
+          radioButton3.widthAnchor.constraint(equalToConstant: radioButton3.frame.width)]
+        )
 
+        radioButton3.onSelect {
+            print("Radio-3 selected.")
+            self.radioButton1.deselect()
+            self.radioButton2.deselect()
+        }
+
+        radioButton3.onDeselect {
+            print("Radios deselected.")
+        }
+
+        radioButton3.select() // I'm selected.
+        radioButton3.deselect(animated: false) // I'm deselected.
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         hideKeyboardWhenTappedAround()
         BorderProp()
         CornerRadius()
         LeftPadding()
+        RadioButton()
+        
+    }
+    
+    // Create a DB reference
+    var refBooks: DatabaseReference!
+    
+    @IBAction func submitTapped(_ sender: UIButton) {
+        
+        if (bookTitle.text!.isEmpty || bookDescription.text!.isEmpty || bookPrice.text!.isEmpty || (radioButton1.isSelected == false && radioButton2.isSelected == false && radioButton3.isSelected == false) ) {
+            // Alert
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        // Writing data to DB
+        refBooks = Database.database().reference().child("Books").child("Details")
+        let key = refBooks.childByAutoId().key
+        let book = ["id": key, "Title": bookTitle.text!, "Description": bookDescription.text!, "Price": bookPrice.text!]
+        refBooks.child(key!).setValue(book)
+        
+        // Clear textfields after submit tapped
+        self.bookTitle.text = ""
+        self.bookDescription.text = ""
+        self.bookPrice.text = ""
+        
+        // Deselect radio buttons after submit tapped
+        radioButton1.deselect()
+        radioButton2.deselect()
+        radioButton3.deselect()
+        
+        //And to enable back for a new input in textfield
+        self.bookTitle.isEnabled = true
+        self.bookDescription.isEnabled = true
+        self.bookPrice.isEnabled = true
         
     }
 
-}   // #104
+}   // #186
