@@ -17,6 +17,10 @@ class PostViewController: UIViewController {
     @IBOutlet var bookPrice: UITextField!
     @IBOutlet var submitOutlet: UIButton!
     
+    @IBOutlet var label1: UILabel!
+    @IBOutlet var label2: UILabel!
+    @IBOutlet var label3: UILabel!
+    
     func BorderProp() {
         
         // Textfield Border Property
@@ -162,8 +166,20 @@ class PostViewController: UIViewController {
         // Writing data to DB
         refBooks = Database.database().reference().child("Books").child("Details")
         let key = refBooks.childByAutoId().key
-        let book = ["id": key, "Title": bookTitle.text!, "Description": bookDescription.text!, "Price": bookPrice.text!]
-        refBooks.child(key!).setValue(book)
+        
+        let book1ForLabel1 = ["1) id": key, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label1.text!, "5) Price": bookPrice.text!]
+        let book2ForLabel2 = ["1) id": key, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label2.text!, "5) Price": bookPrice.text!]
+        let book3ForLabel3 = ["1) id": key, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label3.text!, "5) Price": bookPrice.text!]
+        
+        if radioButton1.isSelected == true {
+            refBooks.child(key!).setValue(book1ForLabel1)
+        }
+        if radioButton2.isSelected == true {
+            refBooks.child(key!).setValue(book2ForLabel2)
+        }
+        if radioButton3.isSelected == true {
+            refBooks.child(key!).setValue(book3ForLabel3)
+        }
         
         // Clear textfields after submit tapped
         self.bookTitle.text = ""
@@ -182,4 +198,4 @@ class PostViewController: UIViewController {
         
     }
 
-}   // #186
+}   // #202
