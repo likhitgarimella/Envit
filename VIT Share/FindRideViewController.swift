@@ -59,15 +59,13 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         }
         return cell */
         
-        if ridesList != nil {
-            cell.hideAnimation()
-            let ride: RidesModel
-            ride = ridesList[indexPath.row]
-            cell.fromPlace.text = ride.from
-            cell.toPlace.text = ride.to
-            cell.noOfSeatsValue.text = ride.seats
-            cell.dateAndTime.text = ride.dateTime
-        }
+        cell.hideAnimation()
+        let ride: RidesModel
+        ride = ridesList[indexPath.row]
+        cell.fromPlace.text = ride.from
+        cell.toPlace.text = ride.to
+        cell.noOfSeatsValue.text = ride.seats
+        cell.dateAndTime.text = ride.dateTime
         return cell
     }
     
@@ -148,4 +146,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #152
+}   // #150

@@ -78,15 +78,13 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // Button sender.tag = Collection view indexPath.row
         cell.deleteButton.tag = indexPath.row
         
-        if ridesList != nil {
-            cell.hideAnimation()
-            let ride: RidesModel
-            ride = ridesList[indexPath.row]
-            cell.fromPlace2.text = ride.from
-            cell.toPlace2.text = ride.to
-            cell.noOfSeatsValue2.text = ride.seats
-            cell.dateAndTime2.text = ride.dateTime
-        }
+        cell.hideAnimation()
+        let ride: RidesModel
+        ride = ridesList[indexPath.row]
+        cell.fromPlace2.text = ride.from
+        cell.toPlace2.text = ride.to
+        cell.noOfSeatsValue2.text = ride.seats
+        cell.dateAndTime2.text = ride.dateTime
         return cell
     }
     
@@ -344,4 +342,4 @@ extension UIButton {
         layer.add(flash, forKey: nil)
     }
     
-}   // #348
+}   // #346

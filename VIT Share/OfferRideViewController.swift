@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class OfferRideViewController: UIViewController {
 
@@ -123,6 +124,7 @@ class OfferRideViewController: UIViewController {
     // Create a DB reference
     var refRides: DatabaseReference!
     
+    // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
         if (fromLoc.text!.isEmpty || toLoc.text!.isEmpty || stepperValue.text!.isEmpty || date.text!.isEmpty) {
@@ -146,7 +148,7 @@ class OfferRideViewController: UIViewController {
         self.stepperValue.text = "0"
         self.date.text = ""
         
-        //And to enable back for a new input in textfield
+        // And to enable back for a new input in textfield
         self.fromLoc.isEnabled = true
         self.toLoc.isEnabled = true
         self.stepperValue.isEnabled = true
@@ -154,4 +156,4 @@ class OfferRideViewController: UIViewController {
         
     }
     
-}   // #158
+}   // #160

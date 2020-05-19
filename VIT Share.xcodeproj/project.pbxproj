@@ -30,6 +30,9 @@
 		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
 		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
 		02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */; };
+		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
+		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
+		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
 		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
 		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
@@ -64,6 +67,9 @@
 		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHRadioButton.swift; sourceTree = "<group>"; };
+		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
+		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
+		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
 		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
@@ -116,17 +122,20 @@
 				020A32FB244434F1006FE3E5 /* LoginViewController.swift */,
 				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
 				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
+				02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */,
 				020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */,
 				0260C5F92447CA340066C06C /* Cell.xib */,
 				0260C5F82447CA340066C06C /* Cell.swift */,
 				02272EBD244DC40F00AED173 /* Cell2.xib */,
 				02272EBC244DC40F00AED173 /* Cell2.swift */,
-				02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */,
 				0286BCE6244F072D00680B19 /* RidesModel.swift */,
 				02B0EBF2244677CD004742B1 /* FindRideViewController.swift */,
 				02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */,
 				02B0EBF624467826004742B1 /* ModifyRideViewController.swift */,
 				020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */,
+				02BCDD5524736844001BE3F9 /* Cell3.xib */,
+				02BCDD5424736844001BE3F9 /* Cell3.swift */,
+				02BCDD522473655B001BE3F9 /* BooksModel.swift */,
 				02CCA964246E609800481AB4 /* BuyViewController.swift */,
 				02CCA966246E610300481AB4 /* PostViewController.swift */,
 				02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */,
@@ -233,6 +242,7 @@
 				022C91E82465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf in Resources */,
 				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
 				02F46AC82444F721001668A3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */,
+				02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */,
 				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +299,13 @@
 				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
 				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
 				020A330224443AAD006FE3E5 /* FacultyViewController.swift in Sources */,
+				02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */,
 				02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */,
 				0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
 				020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */,
+				02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */,
 				02272EBE244DC40F00AED173 /* Cell2.swift in Sources */,
 				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
 				02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */,

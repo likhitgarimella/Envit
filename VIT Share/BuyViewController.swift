@@ -7,14 +7,69 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class BuyViewController: UIViewController {
+class BuyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet var cardCollectionView: UICollectionView!
+    
+    var booksList = [BooksModel]()
+    
+    var refBooks: DatabaseReference!
+    
+    // numberOfItemsInSection
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return booksList.count
+    }
+    
+    // cellForItemAt
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell3", for: indexPath) as! Cell3
+        
+        // cell.hideAnimation()
+        let book: BooksModel
+        book = booksList[indexPath.row]
+        cell.bookTitle.text = book.title
+        cell.bookDescription.text = book.description
+        cell.conditionValue.text = book.condition
+        cell.price.text = String(book.price!)
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        cardCollectionView.register(UINib.init(nibName: "Cell3", bundle: nil), forCellWithReuseIdentifier: "Cell3")
+        if let flowLayout = cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
         
+        hideKeyboardWhenTappedAround()
+        
+        refBooks = Database.database().reference().child("Books").child("Details")
+        refBooks.observe(DataEventType.value, with: { (snapshot) in
+            
+            if snapshot.childrenCount > 0 {
+                
+                self.booksList.removeAll()
+                for books in snapshot.children.allObjects as! [DataSnapshot] {
+                    let bookObject = books.value as? [String: AnyObject]
+                    let bookId = bookObject?["1) id"]
+                    let bookTitle  = bookObject?["2) Title"]
+                    let bookDesc  = bookObject?["3) Description"]
+                    let bookCond = bookObject?["4) Condition"]
+                    let bookPrice = bookObject?["5) Price"]
+                    
+                    let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDesc as! String?, condition: bookCond as! String?, price: bookPrice as! String?)
+                    self.booksList.append(book)
+                }
+                self.cardCollectionView.reloadData()
+                
+            }
+            
+        })
         
     }
 
-}   // #21
+}   // #76

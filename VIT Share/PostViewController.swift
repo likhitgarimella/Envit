@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class PostViewController: UIViewController {
     
@@ -152,6 +153,7 @@ class PostViewController: UIViewController {
     // Create a DB reference
     var refBooks: DatabaseReference!
     
+    // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
         if (bookTitle.text!.isEmpty || bookDescription.text!.isEmpty || bookPrice.text!.isEmpty || (radioButton1.isSelected == false && radioButton2.isSelected == false && radioButton3.isSelected == false) ) {
@@ -191,11 +193,11 @@ class PostViewController: UIViewController {
         radioButton2.deselect()
         radioButton3.deselect()
         
-        //And to enable back for a new input in textfield
+        // And to enable back for a new input in textfield
         self.bookTitle.isEnabled = true
         self.bookDescription.isEnabled = true
         self.bookPrice.isEnabled = true
         
     }
 
-}   // #202
+}   // #204
