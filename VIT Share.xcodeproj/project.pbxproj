@@ -25,6 +25,7 @@
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286BCE6244F072D00680B19 /* RidesModel.swift */; };
+		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
 		02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF2244677CD004742B1 /* FindRideViewController.swift */; };
 		02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */; };
 		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
@@ -62,6 +63,7 @@
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		0286BCE6244F072D00680B19 /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
+		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02B0EBF2244677CD004742B1 /* FindRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
 				020A330124443AAD006FE3E5 /* FacultyViewController.swift */,
 				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
+				029FB8002475A3E60053D916 /* Extensions.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
 			);
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029FB8012475A3E60053D916 /* Extensions.swift in Sources */,
 				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
 				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
 				020A330224443AAD006FE3E5 /* FacultyViewController.swift in Sources */,

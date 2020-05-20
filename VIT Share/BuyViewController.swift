@@ -36,10 +36,12 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         cell.price.text = String(book.price!)
         
         if let seconds = book.timestamp {
-            let timeStampDate = NSDate(timeIntervalSince1970: seconds)
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM d, h:mm a"
-            cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            // let dateFormatter = DateFormatter()
+            // dateFormatter.dateFormat = "MMM d, h:mm a"
+            // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            cell.timeAgo.text = pastDate.timeAgoDisplay()
         }
         
         return cell
@@ -82,4 +84,4 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
 
-}   // #86
+}   // #88

@@ -239,6 +239,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     func onDatePickerStart(sender: UIDatePicker) {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy, HH:mm"
+        
         // textFieldRef.text = formatter.string(from: datePicker.date)
         // Commented this ⬆️ line bcuz, this gives instant current text into the textfield,
         // without even selecting a value from datePicker.
@@ -327,19 +328,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}
-
-extension UIButton {
-    
-    func flash() {
-        let flash = CABasicAnimation(keyPath: "opacity")
-        flash.duration = 0.1
-        flash.fromValue = 1
-        flash.toValue = 0.5
-        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        flash.autoreverses = true
-        flash.repeatCount = 1
-        layer.add(flash, forKey: nil)
-    }
-    
-}   // #346
+}   // #332
