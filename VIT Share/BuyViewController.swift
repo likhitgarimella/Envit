@@ -34,6 +34,14 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         cell.bookDescription.text = book.description
         cell.conditionValue.text = book.condition
         cell.price.text = String(book.price!)
+        
+        if let seconds = book.timestamp {
+            let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM d, h:mm a"
+            cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+        }
+        
         return cell
     }
 
@@ -60,10 +68,12 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
                     let bookDesc  = bookObject?["3) Description"]
                     let bookCond = bookObject?["4) Condition"]
                     let bookPrice = bookObject?["5) Price"]
+                    let bookTimestamp = bookObject?["6) Timestamp"]
                     
-                    let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDesc as! String?, condition: bookCond as! String?, price: bookPrice as! String?)
+                    let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDesc as! String?, condition: bookCond as! String?, price: bookPrice as! String?, timestamp: bookTimestamp as! Double?)
                     self.booksList.append(book)
                 }
+                
                 self.cardCollectionView.reloadData()
                 
             }
@@ -72,4 +82,4 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
 
-}   // #76
+}   // #86

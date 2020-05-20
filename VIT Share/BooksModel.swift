@@ -15,13 +15,15 @@ class BooksModel {
     var description: String?
     var condition: String?
     var price: String?
+    var timestamp: Double?
     
-    init(id: String?, title: String?, description: String?, condition: String?, price: String?) {
+    init(id: String?, title: String?, description: String?, condition: String?, price: String?, timestamp: Double?) {
         self.id = id
         self.title = title
         self.description = description
         self.condition = condition
         self.price = price
+        self.timestamp = timestamp
     }
     
-}   // #28
+}   // #30

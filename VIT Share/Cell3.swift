@@ -19,7 +19,9 @@ class Cell3: UICollectionViewCell {
     @IBOutlet var conditionLabel: UILabel!
     @IBOutlet var conditionValue: UILabel!
     @IBOutlet var price: UILabel!
-
+    
+    @IBOutlet var timeAgo: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,4 +32,4 @@ class Cell3: UICollectionViewCell {
         
     }
 
-}   // #34
+}   // #36
