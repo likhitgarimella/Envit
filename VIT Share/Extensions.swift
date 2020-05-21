@@ -61,19 +61,37 @@ extension Date {
         let year = 12 * month
         
         if secondsAgo < minute {
+            if secondsAgo == 1 {
+                return "\(secondsAgo) second ago"
+            }
             return "\(secondsAgo) seconds ago"
         } else if secondsAgo < hour {
+            if (secondsAgo / minute) == 1 {
+                return "\(secondsAgo / minute) minute ago"
+            }
             return "\(secondsAgo / minute) minutes ago"
         } else if secondsAgo < day {
+            if (secondsAgo / hour) == 1 {
+                return "\(secondsAgo / hour) hour ago"
+            }
             return "\(secondsAgo / hour) hours ago"
         } else if secondsAgo < week {
+            if (secondsAgo / day) == 1 {
+                return "\(secondsAgo / day) day ago"
+            }
             return "\(secondsAgo / day) days ago"
         } else if secondsAgo < month {
+            if (secondsAgo / week) == 1 {
+                return "\(secondsAgo / week) week ago"
+            }
             return "\(secondsAgo / week) weeks ago"
         } else if secondsAgo < year {
+            if (secondsAgo / month) == 1 {
+                return "\(secondsAgo / month) month ago"
+            }
             return "\(secondsAgo / month) months ago"
         }
         return "\(secondsAgo / year) years ago"
     }
     
-}   // #80
+}   // #98

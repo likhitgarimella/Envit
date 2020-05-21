@@ -27,6 +27,9 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell3", for: indexPath) as! Cell3
         
+        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
         // cell.hideAnimation()
         let book: BooksModel
         book = booksList[indexPath.row]
@@ -49,7 +52,10 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
+        
         cardCollectionView.register(UINib.init(nibName: "Cell3", bundle: nil), forCellWithReuseIdentifier: "Cell3")
         if let flowLayout = cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
@@ -84,4 +90,4 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
 
-}   // #88
+}   // #94
