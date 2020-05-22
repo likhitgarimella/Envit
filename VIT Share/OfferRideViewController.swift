@@ -142,6 +142,10 @@ class OfferRideViewController: UIViewController {
         let ride = ["id": key, "From": fromLoc.text!, "To": toLoc.text!, "Seats": stepperValue.text!, "Date": date.text!]
         refRides.child(key!).setValue(ride)
         
+        let alertView = SPAlertView(title: "Ride Added", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
         // Clear textfields after success
         self.fromLoc.text = ""
         self.toLoc.text = ""
@@ -156,4 +160,4 @@ class OfferRideViewController: UIViewController {
         
     }
     
-}   // #160
+}   // #164

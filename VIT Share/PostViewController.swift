@@ -185,6 +185,10 @@ class PostViewController: UIViewController {
             refBooks.child(key!).setValue(book3ForLabel3)
         }
         
+        let alertView = SPAlertView(title: "Book Added", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
         // Clear textfields after submit tapped
         self.bookTitle.text = ""
         self.bookDescription.text = ""
@@ -202,4 +206,4 @@ class PostViewController: UIViewController {
         
     }
 
-}   // #206
+}   // #210
