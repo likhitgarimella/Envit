@@ -128,8 +128,17 @@ class OfferRideViewController: UIViewController {
     @IBAction func submitTapped(_ sender: UIButton) {
         
         if (fromLoc.text!.isEmpty || toLoc.text!.isEmpty || stepperValue.text!.isEmpty || date.text!.isEmpty) {
-            // Alert
+            // Alert for empty fields
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        if (fromLoc.text!.isEmpty == toLoc.text!.isEmpty) {
+            // Alert for From & To location textfields
+            let myAlert = UIAlertController(title: "Invalid", message: "From location and To location cannot be the same", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
@@ -142,6 +151,7 @@ class OfferRideViewController: UIViewController {
         let ride = ["id": key, "From": fromLoc.text!, "To": toLoc.text!, "Seats": stepperValue.text!, "Date": date.text!]
         refRides.child(key!).setValue(ride)
         
+        // Alert pod - Ride Added
         let alertView = SPAlertView(title: "Ride Added", message: nil, preset: SPAlertPreset.done)
         alertView.duration = 1.2
         alertView.present()
@@ -160,4 +170,4 @@ class OfferRideViewController: UIViewController {
         
     }
     
-}   // #164
+}   // #174
