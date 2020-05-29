@@ -18,6 +18,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     // Collection View
     @IBOutlet var cardCollectionView2: UICollectionView!
     
+    @IBOutlet var activityIndicatorView2: UIActivityIndicatorView!
+    
     // Creating a List from Model
     var ridesList = [RidesModel]()
     
@@ -281,6 +283,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicatorView2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicatorView2.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatorView2.startAnimating()
+        
         // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
         if let flowLayout = cardCollectionView2.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -318,6 +324,8 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
                     let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
                     self.ridesList.append(ride)
                 }
+                self.activityIndicatorView2.stopAnimating()
+                self.activityIndicatorView2.hidesWhenStopped = true
                 self.cardCollectionView2.reloadData()
                 
             }
@@ -326,4 +334,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #330
+}   // #338
