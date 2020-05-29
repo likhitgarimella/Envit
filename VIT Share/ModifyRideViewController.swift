@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-import SkeletonView
 
 class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     // Delegate & Datasource for CollectionView & PickerView
@@ -78,7 +77,6 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // Button sender.tag = Collection view indexPath.row
         cell.deleteButton.tag = indexPath.row
         
-        cell.hideAnimation()
         let ride: RidesModel
         ride = ridesList[indexPath.row]
         cell.fromPlace2.text = ride.from
@@ -328,4 +326,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #332
+}   // #330

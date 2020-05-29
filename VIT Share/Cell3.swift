@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 class Cell3: UICollectionViewCell {
     
@@ -32,4 +31,4 @@ class Cell3: UICollectionViewCell {
         
     }
 
-}   // #36
+}   // #35

@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-import SkeletonView
 
 class FindRideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
    
@@ -59,7 +58,6 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         }
         return cell */
         
-        cell.hideAnimation()
         let ride: RidesModel
         ride = ridesList[indexPath.row]
         cell.fromPlace.text = ride.from
@@ -146,4 +144,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #150
+}   // #148

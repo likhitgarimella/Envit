@@ -8,7 +8,6 @@ target 'VIT Share' do
 
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
-pod 'SkeletonView'
 
 end
 

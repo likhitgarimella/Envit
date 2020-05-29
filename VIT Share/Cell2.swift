@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 class Cell2: UICollectionViewCell {
     
@@ -29,15 +28,6 @@ class Cell2: UICollectionViewCell {
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint2.constant = screenWidth - (2 * 12)
-        
-        cardView2.showAnimatedGradientSkeleton()
-        fromLabel2.showAnimatedGradientSkeleton()
-        fromPlace2.showAnimatedGradientSkeleton()
-        toLabel2.showAnimatedGradientSkeleton()
-        toPlace2.showAnimatedGradientSkeleton()
-        noOfSeatsLabel2.showAnimatedGradientSkeleton()
-        noOfSeatsValue2.showAnimatedGradientSkeleton()
-        dateAndTime2.showAnimatedGradientSkeleton()
         
         setupViews()
         
@@ -62,18 +52,5 @@ class Cell2: UICollectionViewCell {
         addSubview(editButton)
         addSubview(deleteButton)
     }
-    
-    func hideAnimation() {
-        
-        cardView2.hideSkeleton()
-        fromLabel2.hideSkeleton()
-        fromPlace2.hideSkeleton()
-        toLabel2.hideSkeleton()
-        toPlace2.hideSkeleton()
-        noOfSeatsLabel2.hideSkeleton()
-        noOfSeatsValue2.hideSkeleton()
-        dateAndTime2.hideSkeleton()
-        
-    }
 
-}   // #80
+}   // #57
