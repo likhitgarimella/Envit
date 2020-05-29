@@ -1080,9 +1080,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0ib-Jy-U1x">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0ib-Jy-U1x">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0eM-kX-hky">
                                     <size key="itemSize" width="128" height="128"/>
@@ -1098,6 +1097,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0ib-Jy-U1x" firstAttribute="leading" secondItem="Fng-SC-qvs" secondAttribute="leading" id="8ia-fV-1pp"/>
+                            <constraint firstItem="0ib-Jy-U1x" firstAttribute="trailing" secondItem="Fng-SC-qvs" secondAttribute="trailing" id="8jN-Us-pgy"/>
+                            <constraint firstItem="0ib-Jy-U1x" firstAttribute="top" secondItem="Fng-SC-qvs" secondAttribute="top" id="VlV-2Q-8qU"/>
+                            <constraint firstItem="0ib-Jy-U1x" firstAttribute="bottom" secondItem="Fng-SC-qvs" secondAttribute="bottom" id="gcg-eI-SE1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fng-SC-qvs"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>

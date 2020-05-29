@@ -55,8 +55,87 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Action for edit button
     @objc func buttonPressed(sender: UIButton) {
         
+        sender.flash()
+        // Collection view indexPath.row = Button sender.tag
+        let book = booksList[sender.tag]
+        // Alert
+        let alertController = UIAlertController(title: "Modify Book", message: "", preferredStyle: .alert)
         
+        // Add Textfields
+        alertController.addTextField(configurationHandler: titleFunc(textField:))
+        alertController.addTextField(configurationHandler: descriptionFunc(textField:))
+        alertController.addTextField(configurationHandler: conditionFunc(textField:))
+        alertController.addTextField(configurationHandler: priceFunc(textField:))
         
+        // Update action
+        let updateAction = UIAlertAction(title: "Update", style: .default) { (_) in
+            let id = book.id
+            let newTitle = alertController.textFields?[0].text              // 1st textfield in Alert
+            let newDescription = alertController.textFields?[1].text        // 2nd textfield in Alert
+            let newCondition = alertController.textFields?[2].text          // 3rd textfield in Alert
+            let newPrice = alertController.textFields?[3].text              // 4th textfield in Alert
+            self.updateBook(id: id!, newTitle: newTitle!, newDescription: newDescription!, newCondition: newCondition!, newPrice: newPrice!)
+        }
+        
+    }
+    
+    // Func for Title textfield
+    func titleFunc(textField: UITextField!) {
+        textField.tag = 0
+        textField.inputView = pickerViewFrom
+        textFieldRefFrom = textField        // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
+    }
+    
+    // Func for Description textfield
+    func descriptionFunc(textField: UITextField!) {
+        textField.tag = 1
+        textField.inputView = pickerViewTo
+        textFieldRefTo = textField          // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
+    }
+    
+    // Func for Condition textfield
+    func conditionFunc(textField: UITextField!) {
+        textField.tag = 2
+        textField.keyboardType = .decimalPad
+        textFieldRefSeats = textField       // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
+    }
+    
+    // Func for Price textfield
+    func priceFunc(textField: UITextField!) {
+        textField.tag = 3
+        textField.inputView = datePicker
+        datePicker.datePickerMode = .dateAndTime
+        textFieldRefDate = textField        // Equating this textfield to global textfield reference
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
+        
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        onDatePickerStart(sender: datePicker)
+        
+        // Done button
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneDatePicker))
+        // Set done button to toolbar
+        toolbar.setItems([doneButton], animated: false)
+        // Adding toolbar to picker
+        textField.inputAccessoryView = toolbar
+    }
+    
+    // Update Book func
+    func updateBook(id: String, newTitle: String, newDescription: String, newCondition: String, newPrice: String) {
+        let book = [
+            "1) id": id,
+            "2) Title": textFieldRefFrom.text!,
+            "3) Description": textFieldRefTo.text!,
+            "4) Condition": textFieldRefSeats.text!,
+            "5) Price": textFieldRefDate.text!
+        ]
+        refBooks.child(id).setValue(book)
     }
 
     override func viewDidLoad() {
@@ -96,4 +175,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #100
+}   // #179
