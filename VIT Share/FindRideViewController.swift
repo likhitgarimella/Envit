@@ -92,6 +92,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         // activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView.startAnimating()
         
+        // Register CollectionViewCell 'Cell' here
         cardCollectionView.register(UINib.init(nibName: "Cell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         if let flowLayout = cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
@@ -117,6 +118,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
                     let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
                     self.ridesList.append(ride)
                 }
+                
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
                 self.cardCollectionView.reloadData()
@@ -156,4 +158,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #160
+}   // #162

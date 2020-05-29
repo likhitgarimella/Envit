@@ -14,6 +14,8 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     @IBOutlet var cardCollectionView: UICollectionView!
     
+    @IBOutlet var activityIndicatorView3: UIActivityIndicatorView!
+    
     var booksList = [BooksModel]()
     
     var refBooks: DatabaseReference!
@@ -53,6 +55,15 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // center activity indicator
+        /// this line centers for lower iOS versions too..
+        activityIndicatorView3.center = self.view.center
+        /// these 2 lines work only from iOS 13.0
+        // activityIndicatorView3.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // activityIndicatorView3.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatorView3.startAnimating()
+        
+        // Register CollectionViewCell 'Cell3' here
         cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
         // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
@@ -81,7 +92,8 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
                     let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDesc as! String?, condition: bookCond as! String?, price: bookPrice as! String?, timestamp: bookTimestamp as! Double?)
                     self.booksList.append(book)
                 }
-                
+                self.activityIndicatorView3.stopAnimating()
+                self.activityIndicatorView3.hidesWhenStopped = true
                 self.cardCollectionView.reloadData()
                 
             }
@@ -90,4 +102,4 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
 
-}   // #94
+}   // #106
