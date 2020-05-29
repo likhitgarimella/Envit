@@ -29,6 +29,28 @@ class Cell4: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint2.constant = screenWidth - (2 * 12)
         
+        setupViews()
+        
+    }
+    
+    let editButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 270, y: 124, width: 32, height: 32))
+        let btnImage = UIImage(named: "pen")
+        button.setImage(btnImage, for: .normal)
+        return button
+    }()
+    
+    let deleteButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 336, y: 124, width: 28, height: 32))
+        let btnImage = UIImage(named: "delete")
+        button.setImage(btnImage, for: .normal)
+        return button
+    }()
+
+    func setupViews()
+    {
+        addSubview(editButton)
+        addSubview(deleteButton)
     }
 
-}   // #35
+}   // #57
