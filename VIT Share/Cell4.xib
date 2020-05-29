@@ -101,6 +101,16 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="36O-KK-3js"/>
             <size key="customSize" width="406" height="240"/>
+            <connections>
+                <outlet property="bookDescription2" destination="SqY-ca-xfq" id="oXf-7E-aaR"/>
+                <outlet property="bookTitle2" destination="BRe-Ty-V9C" id="QoF-lb-wWE"/>
+                <outlet property="cardView2" destination="hQb-iW-vIe" id="v5J-1j-9Ub"/>
+                <outlet property="conditionLabel2" destination="Dbd-bA-zPl" id="jd8-Vr-I6b"/>
+                <outlet property="conditionValue2" destination="INg-3w-oHz" id="yOK-aO-JTc"/>
+                <outlet property="price2" destination="R7g-uN-kRh" id="flQ-4e-aAc"/>
+                <outlet property="timeAgo2" destination="ted-O7-3oW" id="ei9-ON-avQ"/>
+                <outlet property="widthConstraint2" destination="ttG-oK-WTH" id="rCb-DI-rBO"/>
+            </connections>
             <point key="canvasLocation" x="119" y="70"/>
         </collectionViewCell>
     </objects>
