@@ -55,6 +55,7 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         textFieldRefCondition.text = pickerDataBooksCondition[row]
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // Registering cell
@@ -63,7 +64,7 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         // Adding target for edit button
         cell.editButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
         // Adding target for delete button
-        // cell.deleteButton.addTarget(self, action: #selector(deletePressed(sender:)), for: .touchUpInside)
+        cell.deleteButton.addTarget(self, action: #selector(deletePressed(sender:)), for: .touchUpInside)
         
         // Button sender.tag = Collection view indexPath.row
         cell.editButton.tag = indexPath.row
@@ -146,6 +147,36 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
     
+    // Action for delete button
+    @objc func deletePressed(sender: UIButton) {
+        
+        sender.flash()
+        // Collection view indexPath.row = Button sender.tag
+        let book = booksList[sender.tag]
+        // Alert
+        let alertController = UIAlertController(title: "Delete Book", message: "Are you sure you want to delete your posted book?", preferredStyle: .alert)
+        
+        // Delete action
+        let deleteAction = UIAlertAction(title: "Delete", style: .default) { (_) in
+            self.deleteBook(id: book.id!)
+        }
+        
+        // Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
+            
+        }
+        
+        // Adding Delete action
+        alertController.addAction(deleteAction)
+        
+        // Adding Cancel action
+        alertController.addAction(cancelAction)
+        
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
     var textFieldRefTitle: UITextField!      // Textfield for From in Alert
     var textFieldRefDescription: UITextField!        // Textfield for To in Alert
     var textFieldRefCondition: UITextField!     // Textfield for Seats in Alert
@@ -200,6 +231,11 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
             ] as [String : Any]
         refBooks.child(id).setValue(book)
     }
+    
+    // Delete Book func
+    func deleteBook(id: String) {
+        refBooks.child(id).setValue(nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -252,4 +288,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #256
+}   // #292
