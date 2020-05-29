@@ -1101,6 +1101,9 @@
                         <viewLayoutGuide key="safeArea" id="Fng-SC-qvs"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="cardCollectionView2" destination="0ib-Jy-U1x" id="9HZ-1L-6a2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-UF-WIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
