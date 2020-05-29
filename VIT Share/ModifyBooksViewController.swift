@@ -16,6 +16,8 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Collection View
     @IBOutlet var cardCollectionView2: UICollectionView!
     
+    @IBOutlet var activityIndicatorView4: UIActivityIndicatorView!
+    
     // Creating a List from Model
     var booksList = [BooksModel]()
     
@@ -201,6 +203,14 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // center activity indicator
+        /// this line centers for lower iOS versions too..
+        activityIndicatorView4.center = self.view.center
+        /// these 2 lines work only from iOS 13.0
+        // activityIndicatorView4.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // activityIndicatorView4.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatorView4.startAnimating()
 
         // Register CollectionViewCell 'Cell4' here
         cardCollectionView2.register(UINib.init(nibName: "Cell4", bundle: nil), forCellWithReuseIdentifier: "Cell4")
@@ -232,6 +242,8 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
                     let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDescription as! String?, condition: bookCondition as! String?, price: bookPrice as! String?, timestamp: bookTimestamp as! Double?)
                     self.booksList.append(book)
                 }
+                self.activityIndicatorView4.stopAnimating()
+                self.activityIndicatorView4.hidesWhenStopped = true
                 self.cardCollectionView2.reloadData()
                 
             }
@@ -240,4 +252,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #244
+}   // #256
