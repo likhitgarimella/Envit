@@ -283,8 +283,12 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activityIndicatorView2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        activityIndicatorView2.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        // center activity indicator
+        /// this line centers for lower iOS versions too..
+        activityIndicatorView2.center = self.view.center
+        /// these 2 lines work only from iOS 13.0
+        // activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView2.startAnimating()
         
         // Register CollectionViewCell 'Cell2' here
@@ -334,4 +338,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #338
+}   // #342

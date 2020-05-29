@@ -84,8 +84,12 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        // center activity indicator
+        /// this line centers for lower iOS versions too..
+        activityIndicatorView.center = self.view.center
+        /// these 2 lines work only from iOS 13.0
+        // activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView.startAnimating()
         
         cardCollectionView.register(UINib.init(nibName: "Cell", bundle: nil), forCellWithReuseIdentifier: "Cell")
@@ -152,4 +156,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #156
+}   // #160
