@@ -47,7 +47,17 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         cell.bookTitle2.text = book.title
         cell.bookDescription2.text = book.description
         cell.conditionValue2.text = book.condition
-        cell.price2.text = book.price
+        cell.price2.text = String(book.price!)
+        
+        if let seconds = book.timestamp {
+            // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            // let dateFormatter = DateFormatter()
+            // dateFormatter.dateFormat = "MMM d, h:mm a"
+            // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            cell.timeAgo2.text = pastDate.timeAgoDisplay()
+        }
+        
         return cell
         
     }
@@ -77,13 +87,46 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
             self.updateBook(id: id!, newTitle: newTitle!, newDescription: newDescription!, newCondition: newCondition!, newPrice: newPrice!)
         }
         
+        let titleFont = [NSAttributedString.Key.font: UIFont(name: "SFProDisplay-Medium", size: 22.0)!]
+        // let messageFont = [NSAttributedString.Key.font: UIFont(name: "Avenir-Roman", size: 18.0)!]
+        
+        let titleAttrString = NSMutableAttributedString(string: "Modify Book", attributes: titleFont)
+        // let messageAttrString = NSMutableAttributedString(string: "Message Here", attributes: messageFont)
+
+        alertController.setValue(titleAttrString, forKey: "attributedTitle")
+        // alertController.setValue(messageAttrString, forKey: "attributedMessage")
+        
+        // Assigning old data from 'book' to alert's textfields when Alert loads up
+        alertController.textFields?[0].text = book.title
+        alertController.textFields?[1].text = book.description
+        alertController.textFields?[2].text = book.condition
+        alertController.textFields?[3].text = book.price
+        
+        // Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
+            
+        }
+        
+        // Adding Update action
+        alertController.addAction(updateAction)
+        
+        // Adding Cancel action
+        alertController.addAction(cancelAction)
+        
+        // Present Alert controller
+        present(alertController, animated: true, completion: nil)
+        
     }
+    
+    var textFieldRefTitle: UITextField!      // Textfield for From in Alert
+    var textFieldRefDescription: UITextField!        // Textfield for To in Alert
+    var textFieldRefCondition: UITextField!     // Textfield for Seats in Alert
+    var textFieldRefPrice: UITextField!      // Textfield for Date&Time in Alert
     
     // Func for Title textfield
     func titleFunc(textField: UITextField!) {
         textField.tag = 0
-        textField.inputView = pickerViewFrom
-        textFieldRefFrom = textField        // Equating this textfield to global textfield reference
+        textFieldRefTitle = textField        // Equating this textfield to global textfield reference
         let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         textField.addConstraint(heightConstraint)
     }
@@ -91,8 +134,7 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Func for Description textfield
     func descriptionFunc(textField: UITextField!) {
         textField.tag = 1
-        textField.inputView = pickerViewTo
-        textFieldRefTo = textField          // Equating this textfield to global textfield reference
+        textFieldRefDescription = textField          // Equating this textfield to global textfield reference
         let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         textField.addConstraint(heightConstraint)
     }
@@ -100,8 +142,7 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Func for Condition textfield
     func conditionFunc(textField: UITextField!) {
         textField.tag = 2
-        textField.keyboardType = .decimalPad
-        textFieldRefSeats = textField       // Equating this textfield to global textfield reference
+        textFieldRefCondition = textField       // Equating this textfield to global textfield reference
         let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         textField.addConstraint(heightConstraint)
     }
@@ -109,32 +150,25 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Func for Price textfield
     func priceFunc(textField: UITextField!) {
         textField.tag = 3
-        textField.inputView = datePicker
-        datePicker.datePickerMode = .dateAndTime
-        textFieldRefDate = textField        // Equating this textfield to global textfield reference
+        textField.keyboardType = .decimalPad
+        textFieldRefPrice = textField        // Equating this textfield to global textfield reference
         let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         textField.addConstraint(heightConstraint)
-        
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
-        onDatePickerStart(sender: datePicker)
-        
-        // Done button
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneDatePicker))
-        // Set done button to toolbar
-        toolbar.setItems([doneButton], animated: false)
-        // Adding toolbar to picker
-        textField.inputAccessoryView = toolbar
     }
     
     // Update Book func
     func updateBook(id: String, newTitle: String, newDescription: String, newCondition: String, newPrice: String) {
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
         let book = [
             "1) id": id,
-            "2) Title": textFieldRefFrom.text!,
-            "3) Description": textFieldRefTo.text!,
-            "4) Condition": textFieldRefSeats.text!,
-            "5) Price": textFieldRefDate.text!
-        ]
+            "2) Title": textFieldRefTitle.text!,
+            "3) Description": textFieldRefDescription.text!,
+            "4) Condition": textFieldRefCondition.text!,
+            "5) Price": textFieldRefPrice.text!,
+            "6) Timestamp": timestamp
+            ] as [String : Any]
         refBooks.child(id).setValue(book)
     }
 
@@ -163,8 +197,9 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
                     let bookDescription  = bookObject?["3) Description"]
                     let bookCondition = bookObject?["4) Condition"]
                     let bookPrice = bookObject?["5) Price"]
+                    let bookTimestamp = bookObject?["6) Timestamp"]
                     
-                    let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDescription as! String?, condition: bookCondition as! String?, price: bookPrice as! String?, timestamp: nil)
+                    let book = BooksModel(id: bookId as! String?, title: bookTitle as! String?, description: bookDescription as! String?, condition: bookCondition as! String?, price: bookPrice as! String?, timestamp: bookTimestamp as! Double?)
                     self.booksList.append(book)
                 }
                 self.cardCollectionView2.reloadData()
@@ -175,4 +210,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #179
+}   // #214
