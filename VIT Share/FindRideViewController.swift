@@ -16,6 +16,8 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet var cardCollectionView: UICollectionView!
     
+    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
     // This function is just to enable / display the Search bar.
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let searchView: UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchBar", for: indexPath)
@@ -82,6 +84,10 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicatorView.startAnimating()
+        
         cardCollectionView.register(UINib.init(nibName: "Cell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         if let flowLayout = cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
@@ -107,6 +113,8 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
                     let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
                     self.ridesList.append(ride)
                 }
+                self.activityIndicatorView.stopAnimating()
+                self.activityIndicatorView.hidesWhenStopped = true
                 self.cardCollectionView.reloadData()
                 
             }
@@ -144,4 +152,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #148
+}   // #156
