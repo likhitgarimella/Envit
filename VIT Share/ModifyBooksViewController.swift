@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     // Delegate & Datasource for CollectionView & PickerView
     
     // Collection View
@@ -25,6 +25,32 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return booksList.count
+    }
+    
+    // Picker view
+    var pickerBooksCondition = UIPickerView()
+    
+    // Array for books condition picker
+    var pickerDataBooksCondition = ["New/Unused", "Good/Used", "Collectible"]
+    
+    // numberOfComponents
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // numberOfRowsInComponent
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataBooksCondition.count
+    }
+    
+    // titleForRow
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerDataBooksCondition[row]
+    }
+    
+    // didSelectRow
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        textFieldRefCondition.text = pickerDataBooksCondition[row]
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -142,6 +168,7 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
     // Func for Condition textfield
     func conditionFunc(textField: UITextField!) {
         textField.tag = 2
+        textField.inputView = pickerBooksCondition
         textFieldRefCondition = textField       // Equating this textfield to global textfield reference
         let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         textField.addConstraint(heightConstraint)
@@ -183,6 +210,9 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
         hideKeyboardWhenTappedAround()
         
+        pickerBooksCondition.delegate = self                  // Set delegate
+        pickerBooksCondition.dataSource = self                // Set datasource
+        
         // Referring it till "Details"
         refBooks = Database.database().reference().child("Books").child("Details")
         refBooks.observe(DataEventType.value, with: { (snapshot) in
@@ -210,4 +240,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #214
+}   // #244
