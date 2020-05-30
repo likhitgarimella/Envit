@@ -18,6 +18,17 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginOutlet: UIButton!
     @IBOutlet var signupOutlet: UIButton!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if Auth.auth().currentUser != nil {
+            print("Current user: \(String(describing: Auth.auth().currentUser))")
+            // segue to tab bar VC
+            self.performSegue(withIdentifier: "goToHome", sender: self)
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -106,4 +117,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #110
+}   // #121
