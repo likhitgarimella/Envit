@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -71,6 +72,11 @@ class LoginViewController: UIViewController {
         // dismiss keyboard
         view.endEditing(true)
         
+        // progress hud
+        let hud1 = JGProgressHUD(style: .dark)
+        // hud1.textLabel.text = "Please Wait..."
+        hud1.show(in: self.view)
+        
         // validations
         guard let email = emailId.text, let password = password.text else {
             print("Invalid Form Input")
@@ -79,11 +85,17 @@ class LoginViewController: UIViewController {
         
         AuthService.signIn(email: email, password: password, onSuccess: {
             print("On Success")
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = "Logged In!"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
             // segue to tab bar VC
             self.performSegue(withIdentifier: "goToHome", sender: self)
         }, onError: {errorString in
             // this will be the one which prints error due to auth, in console
             print(errorString!)
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = errorString!
+            hud1.dismiss(afterDelay: 2.0, animated: true)
         })
         
     }
@@ -94,4 +106,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #98
+}   // #110
