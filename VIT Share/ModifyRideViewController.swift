@@ -66,8 +66,12 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         // Registering cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell2", for: indexPath) as! Cell2
+        
+        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         
         // Adding target for edit button
         cell.editButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
@@ -86,6 +90,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         cell.noOfSeatsValue2.text = ride.seats
         cell.dateAndTime2.text = ride.dateTime
         return cell
+        
     }
     
     // Action for edit button
@@ -291,6 +296,10 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // activityIndicatorView2.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView2.startAnimating()
         
+        // Register CollectionViewCell 'Cell3' here
+        cardCollectionView2.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
+        
         // Register CollectionViewCell 'Cell2' here
         cardCollectionView2.register(UINib.init(nibName: "Cell2", bundle: nil), forCellWithReuseIdentifier: "Cell2")
         if let flowLayout = cardCollectionView2.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -338,4 +347,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #342
+}   // #351

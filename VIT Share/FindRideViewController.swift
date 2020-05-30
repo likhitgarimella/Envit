@@ -44,7 +44,12 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
+        
+        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
         /* if fromLocArr != nil {
             cell.hideAnimation()
             cell.fromPlace.text = fromLocArr[indexPath.row]         // Display data that is retrieved, into the cells.
@@ -67,6 +72,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         cell.noOfSeatsValue.text = ride.seats
         cell.dateAndTime.text = ride.dateTime
         return cell
+        
     }
     
     /* func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        // Search bar delegate function.
@@ -91,6 +97,10 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         // activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         // activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView.startAnimating()
+        
+        // Register CollectionViewCell 'Cell3' here
+        cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
         // Register CollectionViewCell 'Cell' here
         cardCollectionView.register(UINib.init(nibName: "Cell", bundle: nil), forCellWithReuseIdentifier: "Cell")
@@ -158,4 +168,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #162
+}   // #172
