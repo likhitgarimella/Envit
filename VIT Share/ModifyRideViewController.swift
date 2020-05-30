@@ -267,13 +267,25 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
 
     // Update Ride func
     func updateRide(id: String, newFrom: String, newTo: String, newSeats: String, newDateTime: String) {
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        // adding user uid here too, when user modfies data
         let ride = [
-            "id": id,
-            "From": textFieldRefFrom.text!,
-            "To": textFieldRefTo.text!,
-            "Seats": textFieldRefSeats.text!,
-            "Date": textFieldRefDate.text!
-        ]
+            "1) id": id,
+            "2) From": textFieldRefFrom.text!,
+            "3) To": textFieldRefTo.text!,
+            "4) Seats": textFieldRefSeats.text!,
+            "5) Date": textFieldRefDate.text!,
+            "6) Timestamp": timestamp,
+            "7) uid": currentUserId
+            ] as [String : Any]
         refRides.child(id).setValue(ride)
     }
     
@@ -350,4 +362,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #354
+}   // #366
