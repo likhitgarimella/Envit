@@ -27,14 +27,14 @@
                                     <constraint firstAttribute="width" secondItem="A3b-qI-Mwm" secondAttribute="height" multiplier="5:3" id="uYV-6o-FaL"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWs-Qv-saI">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWs-Qv-saI">
                                 <rect key="frame" x="34" y="264.33333333333331" width="346" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="a8b-7Z-NXi"/>
                                 </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,9 +117,9 @@
                         <viewLayoutGuide key="safeArea" id="0cs-TT-ALd"/>
                     </view>
                     <connections>
+                        <outlet property="emailId" destination="VWs-Qv-saI" id="HbA-Wo-ZGW"/>
                         <outlet property="loginOutlet" destination="0cR-ZG-QL5" id="dym-Cd-d0f"/>
                         <outlet property="password" destination="1Qr-f7-2dj" id="fhi-S3-R2O"/>
-                        <outlet property="phoneNo" destination="VWs-Qv-saI" id="WdJ-wv-F7b"/>
                         <outlet property="signupOutlet" destination="JdR-kM-3E8" id="Her-CU-cx0"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignup" id="ZPx-lX-gPe"/>
                         <segue destination="Hy6-Ga-tPz" kind="show" identifier="goToHome" id="Hdy-ma-UKs"/>
@@ -949,7 +949,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good/Used" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiU-Uo-jvF">
-                                                <rect key="frame" x="208" y="261" width="78" height="20"/>
+                                                <rect key="frame" x="208" y="261" width="78" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1122,7 +1122,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4e8-lt-oAl"/>
+        <segue reference="Hdy-ma-UKs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 3" width="80" height="80"/>

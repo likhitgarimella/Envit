@@ -11,6 +11,19 @@ import Firebase
 
 class AuthService {
     
+    static func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+        
+        print("Sign in")
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                onError(error!.localizedDescription)
+                return
+            }
+            onSuccess()
+        }
+        
+    }
+    
     static func signUp(name: String, email: String, phone: String, block: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("Sign up")
@@ -40,4 +53,4 @@ class AuthService {
         
     }
     
-}   // #44
+}   // #57
