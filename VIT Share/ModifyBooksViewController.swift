@@ -61,6 +61,9 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         // Registering cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell4", for: indexPath) as! Cell4
         
+        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
         // Adding target for edit button
         cell.editButton.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
         // Adding target for delete button
@@ -247,6 +250,10 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         // activityIndicatorView4.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         // activityIndicatorView4.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView4.startAnimating()
+        
+        // Register CollectionViewCell 'Cell3' here
+        cardCollectionView2.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
 
         // Register CollectionViewCell 'Cell4' here
         cardCollectionView2.register(UINib.init(nibName: "Cell4", bundle: nil), forCellWithReuseIdentifier: "Cell4")
@@ -288,4 +295,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #292
+}   // #299
