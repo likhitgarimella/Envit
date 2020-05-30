@@ -111,16 +111,16 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
                 self.ridesList.removeAll()
                 for rides in snapshot.children.allObjects as! [DataSnapshot] {
                     let rideObject = rides.value as? [String: AnyObject]
-                    let rideId = rideObject?["id"]
-                    let rideFrom  = rideObject?["From"]
-                    let rideTo  = rideObject?["To"]
-                    let rideSeats = rideObject?["Seats"]
-                    let rideDateTime = rideObject?["Date"]
+                    let rideId = rideObject?["1) id"]
+                    let rideFrom  = rideObject?["2) From"]
+                    let rideTo  = rideObject?["3) To"]
+                    let rideSeats = rideObject?["4) Seats"]
+                    let rideDateTime = rideObject?["5) Date"]
+                    let rideTimestamp = rideObject?["6) Timestamp"]
                     
-                    let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?)
+                    let ride = RidesModel(id: rideId as! String?, from: rideFrom as! String?, to: rideTo as! String?, seats: rideSeats as! String?, dateTime: rideDateTime as! String?, timestamp: rideTimestamp as! Double?)
                     self.ridesList.append(ride)
                 }
-                
                 self.activityIndicatorView.stopAnimating()
                 self.activityIndicatorView.hidesWhenStopped = true
                 self.cardCollectionView.reloadData()
