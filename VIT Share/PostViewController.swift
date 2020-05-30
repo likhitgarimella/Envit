@@ -171,9 +171,15 @@ class PostViewController: UIViewController {
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
-        let book1ForLabel1 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label1.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp] as [String : Any]
-        let book2ForLabel2 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label2.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp] as [String : Any]
-        let book3ForLabel3 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label3.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp] as [String : Any]
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let book1ForLabel1 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label1.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
+        let book2ForLabel2 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label2.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
+        let book3ForLabel3 = ["1) id": key!, "2) Title": bookTitle.text!, "3) Description": bookDescription.text!, "4) Condition": label3.text!, "5) Price": bookPrice.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
         
         if radioButton1.isSelected == true {
             refBooks.child(key!).setValue(book1ForLabel1)
@@ -206,4 +212,4 @@ class PostViewController: UIViewController {
         
     }
 
-}   // #210
+}   // #216
