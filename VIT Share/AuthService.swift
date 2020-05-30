@@ -11,7 +11,7 @@ import Firebase
 
 class AuthService {
     
-    static func signUp(name: String, email: String, phone: String, block: String, password: String, uid: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+    static func signUp(name: String, email: String, phone: String, block: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("Sign up")
         // Firebase Auth
@@ -33,9 +33,9 @@ class AuthService {
     
     static func setUserInformation(name: String, email: String, phone: String, block: String, uid: String, onSuccess: @escaping () -> Void) {
         
-        let databaseRef = Database.database().reference().child("users").child(uid)
+        let databaseRef = Database.database().reference().child("Users").child(uid)
         // put that download url string in db
-        databaseRef.setValue(["Name": name, "Email": email, "Phone": phone, "Block": block])
+        databaseRef.setValue(["1) Name": name, "2) Email": email, "3) Phone": phone, "4) Block": block])
         onSuccess()
         
     }

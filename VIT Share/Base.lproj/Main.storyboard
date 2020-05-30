@@ -499,11 +499,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="M86-KN-mGW"/>
                     <connections>
-                        <outlet property="block" destination="98D-Ra-feG" id="MKy-fS-yRC"/>
-                        <outlet property="confirmPass" destination="qGF-32-vk2" id="IUw-sy-mGA"/>
-                        <outlet property="name" destination="uuN-6r-EZX" id="b3p-TO-8Rq"/>
-                        <outlet property="pass" destination="PcG-3x-pbG" id="X6l-vE-flB"/>
-                        <outlet property="phoneNo" destination="lHY-Bo-lKT" id="R3f-9Z-JwT"/>
+                        <outlet property="block" destination="PcG-3x-pbG" id="OS5-Gr-G5s"/>
+                        <outlet property="emailId" destination="98D-Ra-feG" id="QtG-lP-0gC"/>
+                        <outlet property="name" destination="uuN-6r-EZX" id="d2a-pI-hu3"/>
+                        <outlet property="pass" destination="qGF-32-vk2" id="vgQ-al-T5L"/>
+                        <outlet property="phoneNo" destination="lHY-Bo-lKT" id="WFV-xr-Rtk"/>
                         <outlet property="registerOutlet" destination="Zfv-pn-4PK" id="Nsm-MI-Thd"/>
                         <segue destination="Hy6-Ga-tPz" kind="show" identifier="goToHome" id="4e8-lt-oAl"/>
                     </connections>
