@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var phoneNo: UITextField!
     @IBOutlet var block: UITextField!
     @IBOutlet var pass: UITextField!
+    
     @IBOutlet var registerOutlet: UIButton!
     
     override func viewDidLoad() {
@@ -88,7 +89,7 @@ class SignUpViewController: UIViewController {
         // dismiss keyboard
         view.endEditing(true)
         
-        // progress hud
+        // Progress HUD
         let hud1 = JGProgressHUD(style: .dark)
         // hud1.textLabel.text = "Please Wait..."
         hud1.show(in: self.view)
@@ -99,6 +100,7 @@ class SignUpViewController: UIViewController {
             return
         }
         
+        // Auth service sign up
         AuthService.signUp(name: name, email: email, phone: phone, block: block, password: password, onSuccess: {
             print("On Success")
             hud1.indicatorView = nil    // remove indicator
@@ -116,4 +118,4 @@ class SignUpViewController: UIViewController {
         
     }
     
-}   // #120
+}   // #122

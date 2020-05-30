@@ -33,6 +33,7 @@ class Cell4: UICollectionViewCell {
         
     }
     
+    // Edit button
     let editButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 270, y: 84, width: 32, height: 32))
         let btnImage = UIImage(named: "pen")
@@ -40,6 +41,7 @@ class Cell4: UICollectionViewCell {
         return button
     }()
     
+    // Delete button
     let deleteButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 336, y: 84, width: 28, height: 32))
         let btnImage = UIImage(named: "delete")
@@ -47,6 +49,7 @@ class Cell4: UICollectionViewCell {
         return button
     }()
 
+    // Add buttons to views
     func setupViews()
     {
         editButton.transform = CGAffineTransform(scaleX: 1, y: -1)
@@ -55,4 +58,4 @@ class Cell4: UICollectionViewCell {
         addSubview(deleteButton)
     }
 
-}   // #59
+}   // #62

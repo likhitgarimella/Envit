@@ -78,9 +78,9 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         // Adding target for delete button
         cell.deleteButton.addTarget(self, action: #selector(deletePressed(sender:)), for: .touchUpInside)
         
-        // Button sender.tag = Collection view indexPath.row
+        // setting Button sender.tag = Collection view indexPath.row
         cell.editButton.tag = indexPath.row
-        // Button sender.tag = Collection view indexPath.row
+        // setting Button sender.tag = Collection view indexPath.row
         cell.deleteButton.tag = indexPath.row
         
         let ride: RidesModel
@@ -97,7 +97,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
     @objc func buttonPressed(sender: UIButton) {
         
         sender.flash()
-        // Collection view indexPath.row = Button sender.tag
+        // setting Collection view indexPath.row = Button sender.tag
         let ride = ridesList[sender.tag]
         // Alert
         let alertController = UIAlertController(title: "Modify Ride", message: "", preferredStyle: .alert)
@@ -179,6 +179,7 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
+    // global textfield references
     var textFieldRefFrom: UITextField!      // Textfield for From in Alert
     var textFieldRefTo: UITextField!        // Textfield for To in Alert
     var textFieldRefSeats: UITextField!     // Textfield for Seats in Alert
@@ -347,4 +348,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #351
+}   // #352

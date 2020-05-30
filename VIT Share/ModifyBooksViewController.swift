@@ -180,10 +180,11 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
     
-    var textFieldRefTitle: UITextField!      // Textfield for From in Alert
-    var textFieldRefDescription: UITextField!        // Textfield for To in Alert
-    var textFieldRefCondition: UITextField!     // Textfield for Seats in Alert
-    var textFieldRefPrice: UITextField!      // Textfield for Date&Time in Alert
+    // global textfield references
+    var textFieldRefTitle: UITextField!             // Textfield for Title in Alert
+    var textFieldRefDescription: UITextField!       // Textfield for Description in Alert
+    var textFieldRefCondition: UITextField!         // Textfield for Condition in Alert
+    var textFieldRefPrice: UITextField!             // Textfield for Price in Alert
     
     // Func for Title textfield
     func titleFunc(textField: UITextField!) {
@@ -295,4 +296,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #299
+}   // #300

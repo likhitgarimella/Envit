@@ -11,9 +11,11 @@ import Firebase
 
 class AuthService {
     
+    // Sign in
     static func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("Sign in")
+        // Firebase Auth
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if error != nil {
                 onError(error!.localizedDescription)
@@ -24,6 +26,7 @@ class AuthService {
         
     }
     
+    // Sign up
     static func signUp(name: String, email: String, phone: String, block: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
         
         print("Sign up")
@@ -38,12 +41,14 @@ class AuthService {
             guard let uid = user?.user.uid else {
                 return
             }
+            
             self.setUserInformation(name: name, email: email, phone: phone, block: block, uid: uid, onSuccess: onSuccess)
             
         })
         
     }
     
+    // Set user info to database
     static func setUserInformation(name: String, email: String, phone: String, block: String, uid: String, onSuccess: @escaping () -> Void) {
         
         let databaseRef = Database.database().reference().child("Users").child(uid)
@@ -53,4 +58,4 @@ class AuthService {
         
     }
     
-}   // #57
+}   // #62

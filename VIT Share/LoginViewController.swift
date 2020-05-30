@@ -18,9 +18,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginOutlet: UIButton!
     @IBOutlet var signupOutlet: UIButton!
     
+    // Notifies the VC that its view was added to a view hierarchy
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
+        // if user signed in
         if Auth.auth().currentUser != nil {
             print("Current user: \(String(describing: Auth.auth().currentUser))")
             // segue to tab bar VC
@@ -83,7 +85,7 @@ class LoginViewController: UIViewController {
         // dismiss keyboard
         view.endEditing(true)
         
-        // progress hud
+        // Progress HUD
         let hud1 = JGProgressHUD(style: .dark)
         // hud1.textLabel.text = "Please Wait..."
         hud1.show(in: self.view)
@@ -94,6 +96,7 @@ class LoginViewController: UIViewController {
             return
         }
         
+        // Auth service sign in
         AuthService.signIn(email: email, password: password, onSuccess: {
             print("On Success")
             hud1.indicatorView = nil    // remove indicator
@@ -117,4 +120,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #121
+}   // #124
