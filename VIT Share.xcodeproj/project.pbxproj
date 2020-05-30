@@ -251,6 +251,8 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
+				02DC18D5248299E500CBC10C /* Cab Share */,
+				02DC18D624829A8500CBC10C /* Books Share */,
 				024C710E2443B145002D9CCE /* Products */,
 				7F240E75B7C0609C05F44065 /* Pods */,
 				A152D71F50EE75777C88DE5D /* Frameworks */,
@@ -278,6 +280,19 @@
 				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
 				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
 				02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */,
+				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
+				020A330124443AAD006FE3E5 /* FacultyViewController.swift */,
+				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
+				029FB8002475A3E60053D916 /* Extensions.swift */,
+				024C711E2443B149002D9CCE /* Info.plist */,
+				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
+			);
+			path = "VIT Share";
+			sourceTree = "<group>";
+		};
+		02DC18D5248299E500CBC10C /* Cab Share */ = {
+			isa = PBXGroup;
+			children = (
 				020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */,
 				0260C5F92447CA340066C06C /* Cell.xib */,
 				0260C5F82447CA340066C06C /* Cell.swift */,
@@ -287,6 +302,13 @@
 				02B0EBF2244677CD004742B1 /* FindRideViewController.swift */,
 				02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */,
 				02B0EBF624467826004742B1 /* ModifyRideViewController.swift */,
+			);
+			path = "Cab Share";
+			sourceTree = "<group>";
+		};
+		02DC18D624829A8500CBC10C /* Books Share */ = {
+			isa = PBXGroup;
+			children = (
 				020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */,
 				02BCDD5524736844001BE3F9 /* Cell3.xib */,
 				02BCDD5424736844001BE3F9 /* Cell3.swift */,
@@ -296,14 +318,8 @@
 				02CCA964246E609800481AB4 /* BuyViewController.swift */,
 				02CCA966246E610300481AB4 /* PostViewController.swift */,
 				02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */,
-				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
-				020A330124443AAD006FE3E5 /* FacultyViewController.swift */,
-				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
-				029FB8002475A3E60053D916 /* Extensions.swift */,
-				024C711E2443B149002D9CCE /* Info.plist */,
-				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
 			);
-			path = "VIT Share";
+			path = "Books Share";
 			sourceTree = "<group>";
 		};
 		02E3A9992478DC4600A9C18C /* CBFlashyTabBarController */ = {

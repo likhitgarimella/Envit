@@ -250,7 +250,7 @@
                     <connections>
                         <segue destination="8WI-uS-Drs" kind="relationship" relationship="viewControllers" id="Nmf-La-Xu7"/>
                         <segue destination="Qo3-6f-dJu" kind="relationship" relationship="viewControllers" id="AYk-hd-6oJ"/>
-                        <segue destination="lLd-eY-cCZ" kind="relationship" relationship="viewControllers" id="ysL-YZ-3iF"/>
+                        <segue destination="ugr-28-6Q5" kind="relationship" relationship="viewControllers" id="ysL-YZ-3iF"/>
                         <segue destination="lRJ-Ug-21N" kind="relationship" relationship="viewControllers" id="jex-2R-lrl"/>
                     </connections>
                 </tabBarController>
@@ -512,21 +512,53 @@
             </objects>
             <point key="canvasLocation" x="-697.10144927536237" y="906.52173913043487"/>
         </scene>
-        <!--Faculty-->
+        <!--Faculty Review Post-->
         <scene sceneID="GhB-v0-DvM">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lLd-eY-cCZ" customClass="FacultyViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="olB-il-N3l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uf5-1H-6Jl">
+                                <rect key="frame" x="0.0" y="267" width="414" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="gyb-QX-vWF"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FacultyCell" rowHeight="60" id="qqa-Jb-Ahh">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qqa-Jb-Ahh" id="AYU-RV-kJl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lLd-eY-cCZ" id="s2k-oz-VsT"/>
+                                    <outlet property="delegate" destination="lLd-eY-cCZ" id="U61-e0-haB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uf5-1H-6Jl" firstAttribute="trailing" secondItem="7ed-py-Rfx" secondAttribute="trailing" id="LQ3-EI-kqD"/>
+                            <constraint firstItem="Uf5-1H-6Jl" firstAttribute="bottom" secondItem="7ed-py-Rfx" secondAttribute="bottom" id="SEX-hK-mmO"/>
+                            <constraint firstItem="Uf5-1H-6Jl" firstAttribute="leading" secondItem="7ed-py-Rfx" secondAttribute="leading" id="oOi-KS-bWa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7ed-py-Rfx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Faculty" image="coins" id="LuD-Ua-Oab"/>
+                    <navigationItem key="navigationItem" title="Faculty Review Post" id="gtc-q1-h88"/>
+                    <connections>
+                        <outlet property="facultyTableView" destination="Uf5-1H-6Jl" id="gvm-QB-B9y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fog-Hl-n34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="887"/>
+            <point key="canvasLocation" x="1869.5652173913045" y="963.58695652173924"/>
         </scene>
         <!--Profile-->
         <scene sceneID="2zO-Mz-eUT">
@@ -542,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4m-Vy-e8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="1581"/>
+            <point key="canvasLocation" x="170" y="1559"/>
         </scene>
         <!--Find Ride View Controller-->
         <scene sceneID="MT9-HS-t4E">
@@ -1119,6 +1151,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-UF-WIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869.5652173913045" y="116.57608695652175"/>
+        </scene>
+        <!--Faculty-->
+        <scene sceneID="EoV-aW-tN1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ugr-28-6Q5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Faculty" image="coins" id="LuD-Ua-Oab"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zLd-DX-FD2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lLd-eY-cCZ" kind="relationship" relationship="rootViewController" id="GYl-Rr-n8n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZS-ht-KBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="964"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
