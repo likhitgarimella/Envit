@@ -21,6 +21,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
     // This function is just to enable / display the Search bar.
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let searchView: UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchBar", for: indexPath)
+        /* searchView.transform = CGAffineTransform(scaleX: 1, y: -1) */
         return searchView
     }
     
@@ -47,7 +48,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
         let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
         
-        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        /* cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1) */
         // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         
         /* if fromLocArr != nil {
@@ -99,7 +100,7 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         activityIndicatorView.startAnimating()
         
         // Register CollectionViewCell 'Cell3' here
-        cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        /* cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1) */
         // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
         // Register CollectionViewCell 'Cell' here
@@ -168,4 +169,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #172
+}   // #173
