@@ -168,6 +168,7 @@ class PostViewController: UIViewController {
         // Writing data to DB
         refBooks = Database.database().reference().child("Books").child("Details")
         let key = refBooks.childByAutoId().key
+        
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
@@ -191,6 +192,7 @@ class PostViewController: UIViewController {
             refBooks.child(key!).setValue(book3ForLabel3)
         }
         
+        // Alert pod - Book Added
         let alertView = SPAlertView(title: "Book Added", message: nil, preset: SPAlertPreset.done)
         alertView.duration = 1.2
         alertView.present()
@@ -212,4 +214,4 @@ class PostViewController: UIViewController {
         
     }
 
-}   // #216
+}   // #218

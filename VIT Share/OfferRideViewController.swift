@@ -136,7 +136,7 @@ class OfferRideViewController: UIViewController {
             return
         }
         
-        if (fromLoc.text!.isEmpty == toLoc.text!.isEmpty) {
+        if (fromLoc.text == toLoc.text) {
             // Alert for From & To location textfields
             let myAlert = UIAlertController(title: "Invalid", message: "From location and To location cannot be the same", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
@@ -148,7 +148,17 @@ class OfferRideViewController: UIViewController {
         // Writing data to DB
         refRides = Database.database().reference().child("Rides").child("Details")
         let key = refRides.childByAutoId().key
-        let ride = ["id": key, "From": fromLoc.text!, "To": toLoc.text!, "Seats": stepperValue.text!, "Date": date.text!]
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let ride = ["1) id": key!, "2) From": fromLoc.text!, "3) To": toLoc.text!, "4) Seats": stepperValue.text!, "5) Date": date.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
         refRides.child(key!).setValue(ride)
         
         // Alert pod - Ride Added
@@ -170,4 +180,4 @@ class OfferRideViewController: UIViewController {
         
     }
     
-}   // #174
+}   // #184
