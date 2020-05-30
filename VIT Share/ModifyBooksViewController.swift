@@ -225,13 +225,21 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        // adding user uid here too, when user modfies data
         let book = [
             "1) id": id,
             "2) Title": textFieldRefTitle.text!,
             "3) Description": textFieldRefDescription.text!,
             "4) Condition": textFieldRefCondition.text!,
             "5) Price": textFieldRefPrice.text!,
-            "6) Timestamp": timestamp
+            "6) Timestamp": timestamp,
+            "7) uid": currentUserId
             ] as [String : Any]
         refBooks.child(id).setValue(book)
     }
@@ -296,4 +304,4 @@ class ModifyBooksViewController: UIViewController, UICollectionViewDataSource, U
         
     }
 
-}   // #300
+}   // #308
