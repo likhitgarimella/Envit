@@ -67,6 +67,16 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         cell.toPlace.text = ride.to
         cell.noOfSeatsValue.text = ride.seats
         cell.dateAndTime.text = ride.dateTime
+        
+        if let seconds = ride.timestamp {
+            // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            // let dateFormatter = DateFormatter()
+            // dateFormatter.dateFormat = "MMM d, h:mm a"
+            // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            cell.timeAgo.text = pastDate.timeAgoDisplay()
+        }
+        
         return cell
         
     }
@@ -160,4 +170,4 @@ class FindRideViewController: UIViewController, UICollectionViewDataSource, UICo
         
     } */
     
-}   // #164
+}   // #174

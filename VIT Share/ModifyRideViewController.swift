@@ -89,6 +89,16 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         cell.toPlace2.text = ride.to
         cell.noOfSeatsValue2.text = ride.seats
         cell.dateAndTime2.text = ride.dateTime
+        
+        if let seconds = ride.timestamp {
+            // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            // let dateFormatter = DateFormatter()
+            // dateFormatter.dateFormat = "MMM d, h:mm a"
+            // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            cell.timeAgo2.text = pastDate.timeAgoDisplay()
+        }
+        
         return cell
         
     }
@@ -362,4 +372,4 @@ class ModifyRideViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-}   // #366
+}   // #376

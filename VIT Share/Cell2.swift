@@ -21,6 +21,8 @@ class Cell2: UICollectionViewCell {
     @IBOutlet var noOfSeatsValue2: UILabel!
     @IBOutlet var dateAndTime2: UILabel!
     
+    @IBOutlet var timeAgo2: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -35,7 +37,7 @@ class Cell2: UICollectionViewCell {
     
     // Edit button
     let editButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 270, y: 64, width: 32, height: 32))
+        let button = UIButton(frame: CGRect(x: 270, y: 80, width: 32, height: 32))
         let btnImage = UIImage(named: "pen")
         button.setImage(btnImage, for: .normal)
         return button
@@ -43,7 +45,7 @@ class Cell2: UICollectionViewCell {
     
     // Delete button
     let deleteButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 336, y: 64, width: 28, height: 32))
+        let button = UIButton(frame: CGRect(x: 336, y: 80, width: 28, height: 32))
         let btnImage = UIImage(named: "delete")
         button.setImage(btnImage, for: .normal)
         return button
@@ -58,4 +60,4 @@ class Cell2: UICollectionViewCell {
         addSubview(deleteButton)
     }
 
-}   // #62
+}   // #64

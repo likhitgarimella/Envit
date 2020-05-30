@@ -71,6 +71,12 @@
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM d, h:mm a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm0-tJ-CcF">
+                                <rect key="frame" x="283.5" y="165" width="108.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -85,9 +91,11 @@
                             <constraint firstAttribute="trailing" secondItem="jVw-Lb-poJ" secondAttribute="trailing" id="SSc-cl-rLX"/>
                             <constraint firstItem="EN6-y8-htB" firstAttribute="top" secondItem="Omr-W5-XzN" secondAttribute="bottom" constant="8" id="TeP-Dq-gzA"/>
                             <constraint firstAttribute="height" constant="224" id="U4i-cQ-Wla"/>
+                            <constraint firstItem="jVw-Lb-poJ" firstAttribute="top" secondItem="qm0-tJ-CcF" secondAttribute="bottom" constant="4" id="a9n-cK-Vs4"/>
                             <constraint firstItem="jVw-Lb-poJ" firstAttribute="leading" secondItem="c4j-jA-0no" secondAttribute="leading" id="gzg-Io-qrf"/>
                             <constraint firstAttribute="width" constant="400" id="hQR-SI-V9x"/>
                             <constraint firstItem="zcE-lc-j9s" firstAttribute="top" secondItem="EN6-y8-htB" secondAttribute="bottom" constant="6" id="hwQ-xW-z08"/>
+                            <constraint firstAttribute="trailing" secondItem="qm0-tJ-CcF" secondAttribute="trailing" constant="8" id="iff-18-c5v"/>
                             <constraint firstItem="9WU-Ga-8s3" firstAttribute="top" secondItem="c4j-jA-0no" secondAttribute="top" constant="16" id="j7h-1l-XxZ"/>
                             <constraint firstItem="3GD-Ri-QDg" firstAttribute="top" secondItem="fIM-4C-dpz" secondAttribute="bottom" constant="7" id="jn4-u2-MZM"/>
                             <constraint firstItem="9WU-Ga-8s3" firstAttribute="leading" secondItem="c4j-jA-0no" secondAttribute="leading" constant="20" id="pzP-bD-BRz"/>
@@ -110,6 +118,7 @@
                 <outlet property="fromPlace2" destination="Omr-W5-XzN" id="irW-GV-Kvw"/>
                 <outlet property="noOfSeatsLabel2" destination="fIM-4C-dpz" id="Q6S-68-Fuh"/>
                 <outlet property="noOfSeatsValue2" destination="3GD-Ri-QDg" id="ZM9-Ww-WSk"/>
+                <outlet property="timeAgo2" destination="qm0-tJ-CcF" id="Ro5-SR-vbw"/>
                 <outlet property="toLabel2" destination="EN6-y8-htB" id="7RU-pJ-Y8c"/>
                 <outlet property="toPlace2" destination="zcE-lc-j9s" id="6ar-sa-SpW"/>
                 <outlet property="widthConstraint2" destination="hQR-SI-V9x" id="SNu-NJ-fge"/>

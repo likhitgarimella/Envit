@@ -26,37 +26,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="224"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhw-nD-LHR">
-                                <rect key="frame" x="20" y="16" width="39" height="21"/>
+                                <rect key="frame" x="20" y="16" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Vellore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrV-mB-1tE">
-                                <rect key="frame" x="20" y="43" width="80.5" height="21"/>
+                                <rect key="frame" x="20" y="43" width="84.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNJ-Kk-1Oe">
-                                <rect key="frame" x="20" y="72" width="18" height="21"/>
+                                <rect key="frame" x="20" y="72" width="19" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Chennai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVL-Qc-Mg8">
-                                <rect key="frame" x="20" y="99" width="92.5" height="21"/>
+                                <rect key="frame" x="20" y="99" width="97.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtW-id-o6V">
-                                <rect key="frame" x="292.5" y="16" width="87.5" height="21"/>
+                                <rect key="frame" x="285" y="16" width="95" height="21"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iK-df-c7t">
-                                <rect key="frame" x="321.5" y="44" width="29.5" height="57.5"/>
+                                <rect key="frame" x="319" y="44" width="27" height="56"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -87,6 +87,12 @@
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM d, h:mm a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-py-HGk">
+                                <rect key="frame" x="273" y="149" width="119" height="19"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -97,6 +103,7 @@
                             <constraint firstAttribute="height" constant="224" id="6oa-Y4-d2E"/>
                             <constraint firstAttribute="bottom" secondItem="5Xa-OU-36W" secondAttribute="bottom" constant="8" id="7MG-b3-A6G"/>
                             <constraint firstItem="yVL-Qc-Mg8" firstAttribute="top" secondItem="oNJ-Kk-1Oe" secondAttribute="bottom" constant="6" id="8ME-aU-Cel"/>
+                            <constraint firstAttribute="trailing" secondItem="OFT-py-HGk" secondAttribute="trailing" constant="8" id="JhG-Y5-caN"/>
                             <constraint firstItem="pG0-Tn-xcr" firstAttribute="leading" secondItem="tO0-Gg-YHU" secondAttribute="leading" constant="34" id="Jj1-0b-h4v"/>
                             <constraint firstItem="1iK-df-c7t" firstAttribute="centerX" secondItem="rtW-id-o6V" secondAttribute="centerX" id="KZv-zw-by9"/>
                             <constraint firstItem="yVL-Qc-Mg8" firstAttribute="leading" secondItem="tO0-Gg-YHU" secondAttribute="leading" constant="20" id="MFI-KX-L8X"/>
@@ -105,6 +112,7 @@
                             <constraint firstAttribute="trailing" secondItem="rtW-id-o6V" secondAttribute="trailing" constant="20" id="R6k-RJ-Bu1"/>
                             <constraint firstItem="pG0-Tn-xcr" firstAttribute="top" secondItem="yVL-Qc-Mg8" secondAttribute="bottom" constant="20" id="Vwg-Sb-c4j"/>
                             <constraint firstItem="OdX-5V-fy5" firstAttribute="leading" secondItem="pG0-Tn-xcr" secondAttribute="trailing" constant="34" id="W9f-6e-9tc"/>
+                            <constraint firstItem="5Xa-OU-36W" firstAttribute="top" secondItem="OFT-py-HGk" secondAttribute="bottom" constant="20" id="dQv-t5-HIJ"/>
                             <constraint firstItem="Fhw-nD-LHR" firstAttribute="top" secondItem="tO0-Gg-YHU" secondAttribute="top" constant="16" id="kMj-uX-JxM"/>
                             <constraint firstItem="oNJ-Kk-1Oe" firstAttribute="top" secondItem="TrV-mB-1tE" secondAttribute="bottom" constant="8" id="tlp-Pe-5Hh"/>
                             <constraint firstAttribute="trailing" secondItem="5Xa-OU-36W" secondAttribute="trailing" id="uMY-aJ-0aF"/>
@@ -130,6 +138,7 @@
                 <outlet property="fromPlace" destination="TrV-mB-1tE" id="Hoh-s9-izb"/>
                 <outlet property="noOfSeatsLabel" destination="rtW-id-o6V" id="MlB-2S-Meb"/>
                 <outlet property="noOfSeatsValue" destination="1iK-df-c7t" id="Y5p-T9-v9e"/>
+                <outlet property="timeAgo" destination="OFT-py-HGk" id="nK5-cq-Arf"/>
                 <outlet property="toLabel" destination="oNJ-Kk-1Oe" id="JgF-tm-xlf"/>
                 <outlet property="toPlace" destination="yVL-Qc-Mg8" id="Nsc-J2-ZCd"/>
                 <outlet property="widthConstraint" destination="6fJ-pJ-eNY" id="TD1-bM-Mca"/>

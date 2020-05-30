@@ -21,6 +21,8 @@ class Cell: UICollectionViewCell {
     @IBOutlet var noOfSeatsValue: UILabel!
     @IBOutlet var dateAndTime: UILabel!
     
+    @IBOutlet var timeAgo: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -31,4 +33,4 @@ class Cell: UICollectionViewCell {
         
     }
 
-}   // #35
+}   // #37
