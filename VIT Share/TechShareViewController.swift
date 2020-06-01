@@ -12,8 +12,9 @@ class TechShareViewController: UIViewController {
     
     // Outlets
     @IBOutlet var segment: UISegmentedControl!
-    @IBOutlet var findAMentorView: UIView!
-    @IBOutlet var beAMentorView: UIView!
+    @IBOutlet var feedView: UIView!
+    @IBOutlet var mentorView: UIView!
+    @IBOutlet var menteeView: UIView!
     @IBOutlet var modifyView: UIView!
 
     override func viewDidLoad() {
@@ -37,21 +38,30 @@ class TechShareViewController: UIViewController {
     @IBAction func switchSegment(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
-            findAMentorView.alpha = 1
-            beAMentorView.alpha = 0
+            feedView.alpha = 1
+            mentorView.alpha = 0
+            menteeView.alpha = 0
             modifyView.alpha = 0
         }
         if sender.selectedSegmentIndex == 1 {
-            findAMentorView.alpha = 0
-            beAMentorView.alpha = 1
+            feedView.alpha = 0
+            mentorView.alpha = 1
+            menteeView.alpha = 0
             modifyView.alpha = 0
         }
         if sender.selectedSegmentIndex == 2 {
-            findAMentorView.alpha = 0
-            beAMentorView.alpha = 0
+            feedView.alpha = 0
+            mentorView.alpha = 0
+            menteeView.alpha = 1
+            modifyView.alpha = 0
+        }
+        if sender.selectedSegmentIndex == 3 {
+            feedView.alpha = 0
+            mentorView.alpha = 0
+            menteeView.alpha = 0
             modifyView.alpha = 1
         }
         
     }
 
-}   // #58
+}   // #68

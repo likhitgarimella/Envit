@@ -527,7 +527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4m-Vy-e8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="1354"/>
+            <point key="canvasLocation" x="-697" y="2057"/>
         </scene>
         <!--Tech-->
         <scene sceneID="oKh-hI-7Pp">
@@ -554,8 +554,9 @@
                                 <rect key="frame" x="20" y="96" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
-                                    <segment title="Find a mentor"/>
-                                    <segment title="Be a mentor"/>
+                                    <segment title="Feed"/>
+                                    <segment title="Mentor"/>
+                                    <segment title="Mentee"/>
                                     <segment title="Modify"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,6 +590,13 @@
                                     <segue destination="yp1-MN-uM6" kind="embed" id="BuX-ZA-gx2"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-6J-5Su">
+                                <rect key="frame" x="0.0" y="135" width="414" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="T5f-2L-9Do" kind="embed" id="bPN-pu-4dP"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -597,12 +605,14 @@
                             <constraint firstItem="sqL-vu-B2r" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="5eT-eY-vQF"/>
                             <constraint firstItem="Xhv-bX-VeO" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="6or-cB-xYq"/>
                             <constraint firstItem="sqL-vu-B2r" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="Al3-bH-NU2"/>
+                            <constraint firstItem="ahY-6J-5Su" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="Ayk-CH-ZzE"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="Bce-Hi-j5q"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="KsY-4b-vbt"/>
                             <constraint firstItem="SVK-ho-5d0" firstAttribute="left" secondItem="O8P-nZ-nad" secondAttribute="left" constant="20" id="LTa-jr-9ec"/>
                             <constraint firstItem="Xhv-bX-VeO" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="LYp-eq-4gp"/>
                             <constraint firstItem="fB8-6R-g6d" firstAttribute="width" secondItem="Xhv-bX-VeO" secondAttribute="width" priority="750" id="ONo-c6-3n5"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="PyR-Nc-Uez"/>
+                            <constraint firstItem="ahY-6J-5Su" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="U8P-dN-EHK"/>
                             <constraint firstItem="fB8-6R-g6d" firstAttribute="top" secondItem="O8P-nZ-nad" secondAttribute="top" id="UA1-G6-cf7"/>
                             <constraint firstItem="SVK-ho-5d0" firstAttribute="top" secondItem="qrB-12-8O2" secondAttribute="bottom" constant="20" id="WbE-06-8Ey"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="Zuv-i7-k56"/>
@@ -619,22 +629,25 @@
                             <constraint firstItem="fB8-6R-g6d" firstAttribute="height" secondItem="Xhv-bX-VeO" secondAttribute="height" priority="250" id="qOx-0E-wcP"/>
                             <constraint firstItem="XmZ-QZ-0J8" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="qmZ-1j-bei"/>
                             <constraint firstItem="Xhv-bX-VeO" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="rhB-c1-dU6"/>
+                            <constraint firstItem="ahY-6J-5Su" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="rjL-3L-coi"/>
                             <constraint firstItem="sqL-vu-B2r" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="uha-5Y-sXi"/>
                             <constraint firstItem="sqL-vu-B2r" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="v34-sv-ijF"/>
+                            <constraint firstItem="ahY-6J-5Su" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="vha-se-VvO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O8P-nZ-nad"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tech" image="heart" id="BJa-EF-Xot"/>
                     <connections>
-                        <outlet property="beAMentorView" destination="XmZ-QZ-0J8" id="cVu-JK-jqK"/>
-                        <outlet property="findAMentorView" destination="45h-zZ-5uF" id="cLy-BA-Fvd"/>
+                        <outlet property="feedView" destination="ahY-6J-5Su" id="035-i2-B6O"/>
+                        <outlet property="menteeView" destination="XmZ-QZ-0J8" id="Dyu-nA-Rvo"/>
+                        <outlet property="mentorView" destination="45h-zZ-5uF" id="1Au-cG-9yu"/>
                         <outlet property="modifyView" destination="sqL-vu-B2r" id="2By-ht-9C8"/>
                         <outlet property="segment" destination="SVK-ho-5d0" id="YbS-ff-K9t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVl-Gq-Jny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.7391304347827" y="906.52173913043487"/>
+            <point key="canvasLocation" x="638" y="907"/>
         </scene>
         <!--Find Ride View Controller-->
         <scene sceneID="MT9-HS-t4E">
@@ -1236,42 +1249,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4OE-eE-ck2"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ml1-mN-vvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="1721"/>
+            <point key="canvasLocation" x="170" y="1721"/>
         </scene>
-        <!--Be Mentor View Controller-->
+        <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
             <objects>
-                <viewController id="2yx-Bv-AGp" customClass="BeMentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2yx-Bv-AGp" customClass="MenteeViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qg-xz-Qa8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Iqt-WN-uFA"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Gx-3BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="1721"/>
+            <point key="canvasLocation" x="1080" y="1721"/>
         </scene>
-        <!--Find Mentor View Controller-->
+        <!--Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
             <objects>
-                <viewController id="yp1-MN-uM6" customClass="FindMentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yp1-MN-uM6" customClass="MentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XvC-W9-APF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="veh-Wx-0vZ"/>
                     </view>
                     <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06g-1d-Nnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="907"/>
+            <point key="canvasLocation" x="2045" y="1721"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="ByD-lt-4z1">
+            <objects>
+                <viewController id="T5f-2L-9Do" customClass="FeedViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FKN-9Z-zDL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30a-mQ-tD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571" y="907"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

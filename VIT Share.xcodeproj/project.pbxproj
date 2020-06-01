@@ -56,9 +56,10 @@
 		024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024C71262443BCBB002D9CCE /* GoogleService-Info.plist */; };
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
-		02802BB32484BA4F008BF296 /* FindMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* FindMentorViewController.swift */; };
-		02802BB52484BAB4008BF296 /* BeMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB42484BAB4008BF296 /* BeMentorViewController.swift */; };
+		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
+		02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB42484BAB4008BF296 /* MenteeViewController.swift */; };
 		02802BB72484BADA008BF296 /* ModifyTechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB62484BADA008BF296 /* ModifyTechViewController.swift */; };
+		02802BB924850709008BF296 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB824850709008BF296 /* FeedViewController.swift */; };
 		0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286BCE6244F072D00680B19 /* RidesModel.swift */; };
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
 		02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF2244677CD004742B1 /* FindRideViewController.swift */; };
@@ -137,9 +138,10 @@
 		024C71262443BCBB002D9CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
-		02802BB22484BA4F008BF296 /* FindMentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMentorViewController.swift; sourceTree = "<group>"; };
-		02802BB42484BAB4008BF296 /* BeMentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeMentorViewController.swift; sourceTree = "<group>"; };
+		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
+		02802BB42484BAB4008BF296 /* MenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeViewController.swift; sourceTree = "<group>"; };
 		02802BB62484BADA008BF296 /* ModifyTechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTechViewController.swift; sourceTree = "<group>"; };
+		02802BB824850709008BF296 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0286BCE6244F072D00680B19 /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02B0EBF2244677CD004742B1 /* FindRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideViewController.swift; sourceTree = "<group>"; };
@@ -291,8 +293,9 @@
 				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
-				02802BB22484BA4F008BF296 /* FindMentorViewController.swift */,
-				02802BB42484BAB4008BF296 /* BeMentorViewController.swift */,
+				02802BB824850709008BF296 /* FeedViewController.swift */,
+				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
+				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
 				02802BB62484BADA008BF296 /* ModifyTechViewController.swift */,
 				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
 				029FB8002475A3E60053D916 /* Extensions.swift */,
@@ -532,7 +535,7 @@
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
 				0221E1272477C12F0022DCCB /* SPAlertIconShuffleView.swift in Sources */,
 				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
-				02802BB32484BA4F008BF296 /* FindMentorViewController.swift in Sources */,
+				02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */,
 				02E3A9AF2478DC4A00A9C18C /* CBFlashyTabBarController.swift in Sources */,
 				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
 				0221E12F2477C12F0022DCCB /* SPAlertIconMessageView.swift in Sources */,
@@ -543,7 +546,7 @@
 				02E3A9AE2478DC4A00A9C18C /* CBTabBarButton.swift in Sources */,
 				0221E1262477C12F0022DCCB /* SPAlertIconHeartView.swift in Sources */,
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
-				02802BB52484BAB4008BF296 /* BeMentorViewController.swift in Sources */,
+				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				02355CC0248106090062BA59 /* Cell4.swift in Sources */,
 				02802BB72484BADA008BF296 /* ModifyTechViewController.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
@@ -565,6 +568,7 @@
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
 				0221E1352477C12F0022DCCB /* SPAlertIconPrivacyView.swift in Sources */,
+				02802BB924850709008BF296 /* FeedViewController.swift in Sources */,
 				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
 				0221E1372477C12F0022DCCB /* SPAlertIconDoneView.swift in Sources */,
 				02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */,

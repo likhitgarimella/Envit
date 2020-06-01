@@ -1,5 +1,5 @@
 //
-//  FindMentorViewController.swift
+//  MentorViewController.swift
 //  VIT Share
 //
 //  Created by Likhit Garimella on 01/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FindMentorViewController: UIViewController {
+class MentorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

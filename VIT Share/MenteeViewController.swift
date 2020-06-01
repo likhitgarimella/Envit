@@ -1,5 +1,5 @@
 //
-//  BeMentorViewController.swift
+//  MenteeViewController.swift
 //  VIT Share
 //
 //  Created by Likhit Garimella on 01/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeMentorViewController: UIViewController {
+class MenteeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
