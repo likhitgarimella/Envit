@@ -1228,10 +1228,10 @@
             </objects>
             <point key="canvasLocation" x="3154" y="907"/>
         </scene>
-        <!--View Controller-->
+        <!--Modify Tech View Controller-->
         <scene sceneID="YWx-jq-jFq">
             <objects>
-                <viewController id="QsU-5y-BBG" sceneMemberID="viewController">
+                <viewController id="QsU-5y-BBG" customClass="ModifyTechViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ADR-L0-1zI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1243,10 +1243,10 @@
             </objects>
             <point key="canvasLocation" x="1022" y="1721"/>
         </scene>
-        <!--View Controller-->
+        <!--Be Mentor View Controller-->
         <scene sceneID="sqN-XP-3dq">
             <objects>
-                <viewController id="2yx-Bv-AGp" sceneMemberID="viewController">
+                <viewController id="2yx-Bv-AGp" customClass="BeMentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qg-xz-Qa8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1258,10 +1258,10 @@
             </objects>
             <point key="canvasLocation" x="2046" y="1721"/>
         </scene>
-        <!--View Controller-->
+        <!--Find Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
             <objects>
-                <viewController id="yp1-MN-uM6" sceneMemberID="viewController">
+                <viewController id="yp1-MN-uM6" customClass="FindMentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XvC-W9-APF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
