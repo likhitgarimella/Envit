@@ -82,6 +82,8 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         DropDownOptions()
         Properties()
         
+        // prerequisites.counterDelegate = self
+        
     }
 
-}   // #88
+}   // #90
