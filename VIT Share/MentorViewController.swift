@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class MentorViewController: UIViewController, UITextViewDelegate {
     
@@ -85,5 +87,55 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         // prerequisites.counterDelegate = self
         
     }
+    
+    // Create a DB reference
+    var refMentors: DatabaseReference!
+    
+    // Submit button action
+    @IBAction func submitTapped(_ sender: UIButton) {
+        
+        if (domain.text!.isEmpty || experienceTextView.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        // Writing data to DB
+        refMentors = Database.database().reference().child("Mentors").child("Details")
+        let key = refMentors.childByAutoId().key
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let mentor = ["1) id": key!, "2) Domain": domain.text!, "3) Experience": experienceTextView.text!, "4) Prerequisites": prerequisites.text!, "5) Courses": courses.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
+        refMentors.child(key!).setValue(mentor)
+        
+        // Alert pod - Ride Added
+        let alertView = SPAlertView(title: "Mentor Added", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
+        // Clear textfields after success
+        self.domain.text = ""
+        self.experienceTextView.text = ""
+        self.prerequisites.text = ""
+        self.courses.text = ""
+        
+        // And to enable back for a new input in textfield
+        self.domain.isEnabled = true
+        // self.experienceTextView.isEnabled = true
+        self.prerequisites.isEnabled = true
+        self.courses.isEnabled = true
+        
+    }
 
-}   // #90
+}   // #142
