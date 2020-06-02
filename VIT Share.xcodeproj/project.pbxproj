@@ -68,6 +68,10 @@
 		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
 		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
 		02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */; };
+		02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B96D8D248659CF000C7D48 /* MentorPostCell.swift */; };
+		02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B96D8E248659CF000C7D48 /* MentorPostCell.xib */; };
+		02B96D93248665B2000C7D48 /* MenteePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B96D91248665B2000C7D48 /* MenteePostCell.swift */; };
+		02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B96D92248665B2000C7D48 /* MenteePostCell.xib */; };
 		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
 		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
 		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
@@ -151,6 +155,10 @@
 		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHRadioButton.swift; sourceTree = "<group>"; };
+		02B96D8D248659CF000C7D48 /* MentorPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCell.swift; sourceTree = "<group>"; };
+		02B96D8E248659CF000C7D48 /* MentorPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentorPostCell.xib; sourceTree = "<group>"; };
+		02B96D91248665B2000C7D48 /* MenteePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteePostCell.swift; sourceTree = "<group>"; };
+		02B96D92248665B2000C7D48 /* MenteePostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenteePostCell.xib; sourceTree = "<group>"; };
 		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
@@ -296,6 +304,10 @@
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
 				02802BB824850709008BF296 /* FeedViewController.swift */,
+				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
+				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
+				02B96D92248665B2000C7D48 /* MenteePostCell.xib */,
+				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
 				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
 				02802BBA24857862008BF296 /* TextFieldCounter.swift */,
 				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
@@ -472,6 +484,8 @@
 				024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */,
 				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
 				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
+				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
+				02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
 				02355CC1248106090062BA59 /* Cell4.xib in Resources */,
 				022C91E82465F016004E852B /* FontsFree-Net-SFProDisplay-Medium-1.ttf in Resources */,
@@ -533,6 +547,7 @@
 			files = (
 				0221E1292477C12F0022DCCB /* SPAlertIconStarView.swift in Sources */,
 				029FB8012475A3E60053D916 /* Extensions.swift in Sources */,
+				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
 				02E3A9AD2478DC4A00A9C18C /* CBFlashyTabBar.swift in Sources */,
 				0221E1212477C12F0022DCCB /* SPAlertIconAnimatable.swift in Sources */,
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
@@ -592,6 +607,7 @@
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
+				02B96D93248665B2000C7D48 /* MenteePostCell.swift in Sources */,
 				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
 				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
