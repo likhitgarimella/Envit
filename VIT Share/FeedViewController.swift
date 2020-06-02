@@ -12,24 +12,28 @@ class FeedViewController: UIViewController {
     
     // Outlets
     @IBOutlet var mentorSwitch: UISwitch!
-    @IBOutlet var projectSwitch: UISwitch!
+    @IBOutlet var menteeSwitch: UISwitch!
+    
+    // universal collection view
+    @IBOutlet var feedCollectionView: UICollectionView!
     
     // switch properties
     func Switch() {
         
-        
+        mentorSwitch.isOn = true
+        menteeSwitch.isOn = false
         
     }
     
     @IBAction func enableMentor(_ sender: UISwitch) {
         
-        
+        menteeSwitch.setOn(!sender.isOn, animated: true)
         
     }
     
     @IBAction func enableMentee(_ sender: UISwitch) {
         
-        
+        mentorSwitch.setOn(!sender.isOn, animated: true)
         
     }
 
@@ -40,4 +44,4 @@ class FeedViewController: UIViewController {
         
     }
     
-}   // #21
+}   // #48
