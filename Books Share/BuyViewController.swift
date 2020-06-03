@@ -63,10 +63,10 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         // activityIndicatorView3.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView3.startAnimating()
         
-        // Register CollectionViewCell 'Cell3' here
         cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
         // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
+        // Register CollectionViewCell 'Cell3' here
         cardCollectionView.register(UINib.init(nibName: "Cell3", bundle: nil), forCellWithReuseIdentifier: "Cell3")
         if let flowLayout = cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     // Outlets
     @IBOutlet var mentorSwitch: UISwitch!
@@ -36,12 +36,27 @@ class FeedViewController: UIViewController {
         mentorSwitch.setOn(!sender.isOn, animated: true)
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Switch()
         
+        // Register CollectionViewCell 'MentorPostCell' here
+        feedCollectionView.register(UINib.init(nibName: "MentorPostCell", bundle: nil), forCellWithReuseIdentifier: "MentorPostCell")
+        if let flowLayout = feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+        
     }
     
-}   // #48
+}   // #63
