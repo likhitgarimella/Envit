@@ -13,7 +13,9 @@ class MentorPostCell: UICollectionViewCell {
     // Outlets
     @IBOutlet var cardView: UIView!
     @IBOutlet var widthConstraint: NSLayoutConstraint!
-
+    @IBOutlet var experienceTextView: UITextView!
+    @IBOutlet var courseTextView: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -22,6 +24,12 @@ class MentorPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
+        experienceTextView.layer.cornerRadius = 6
+        courseTextView.layer.cornerRadius = 6
+        experienceTextView.backgroundColor = UIColor.white
+        courseTextView.backgroundColor = UIColor.white
+        courseTextView.dataDetectorTypes = .link
+        
     }
 
-}   // #28
+}   // #34
