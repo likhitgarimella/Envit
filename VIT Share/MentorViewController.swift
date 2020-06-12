@@ -120,7 +120,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         refMentors.child(key!).setValue(mentor)
         
         // Alert pod - Ride Added
-        let alertView = SPAlertView(title: "Mentor Added", message: nil, preset: SPAlertPreset.done)
+        let alertView = SPAlertView(title: "Your work has been added", message: nil, preset: SPAlertPreset.done)
         alertView.duration = 1.2
         alertView.present()
         

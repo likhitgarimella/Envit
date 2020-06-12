@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class FeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     

@@ -11,6 +11,7 @@
 		020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */; };
 		020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */; };
 		020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A330324443B07006FE3E5 /* ProfileViewController.swift */; };
+		0216545024941D44007F6A73 /* TechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0216544F24941D44007F6A73 /* TechModel.swift */; };
 		0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */; };
 		0221E11F2477C12F0022DCCB /* SPAlertHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */; };
 		0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E1002477C12D0022DCCB /* SPAlertLayout.swift */; };
@@ -96,6 +97,7 @@
 		020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabShareViewController.swift; sourceTree = "<group>"; };
 		020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksShareViewController.swift; sourceTree = "<group>"; };
 		020A330324443B07006FE3E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0216544F24941D44007F6A73 /* TechModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechModel.swift; sourceTree = "<group>"; };
 		0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
 		0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertHaptic.swift; sourceTree = "<group>"; };
 		0221E1002477C12D0022DCCB /* SPAlertLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertLayout.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
+				0216544F24941D44007F6A73 /* TechModel.swift */,
 				02802BB824850709008BF296 /* FeedViewController.swift */,
 				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
 				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
@@ -612,6 +615,7 @@
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
 				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
 				02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */,
+				0216545024941D44007F6A73 /* TechModel.swift in Sources */,
 				020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */,
 				02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */,
 			);

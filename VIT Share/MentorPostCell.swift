@@ -32,4 +32,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #34
+}   // #36
