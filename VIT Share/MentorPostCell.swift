@@ -15,6 +15,8 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     @IBOutlet var experienceTextView: UITextView!
     @IBOutlet var courseTextView: UITextView!
+    @IBOutlet var domainName: UILabel!
+    @IBOutlet var prerequisiteTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +28,13 @@ class MentorPostCell: UICollectionViewCell {
         
         experienceTextView.layer.cornerRadius = 6
         courseTextView.layer.cornerRadius = 6
+        prerequisiteTextView.layer.cornerRadius = 6
         experienceTextView.backgroundColor = UIColor.white
         courseTextView.backgroundColor = UIColor.white
+        prerequisiteTextView.backgroundColor = UIColor.white
+        
         courseTextView.dataDetectorTypes = .link
         
     }
 
-}   // #36
+}   // #41

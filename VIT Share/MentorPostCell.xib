@@ -38,16 +38,33 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Recommended course" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-tY-Den">
-                                <rect key="frame" x="16" y="189" width="170.5" height="23"/>
+                                <rect key="frame" x="16" y="189" width="170.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Prerequisites" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k57-x8-ZIG">
+                                <rect key="frame" x="16" y="290.5" width="97" height="22"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://github.com/likhitgarimella" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AZ-sN-Gt6">
-                                <rect key="frame" x="16" y="220" width="318" height="56"/>
+                                <rect key="frame" x="16" y="218.5" width="318" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="7BM-nu-Jek"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://github.com/likhitgarimella" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkq-tW-aOJ">
+                                <rect key="frame" x="16" y="320.5" width="318" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="XhT-aT-MlM"/>
                                 </constraints>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="14"/>
@@ -60,21 +77,50 @@
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z83-Rc-D1w">
+                                <rect key="frame" x="275" y="16" width="59" height="22"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDy-Gu-dUg">
+                                <rect key="frame" x="264" y="16" width="11" height="22"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="MMM d, h:mm a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-8q-6Ny">
+                                <rect key="frame" x="252" y="369" width="82" height="15"/>
+                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="12"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6AZ-sN-Gt6" secondAttribute="bottom" constant="124" id="6Tl-dE-4j1"/>
+                            <constraint firstItem="Fkq-tW-aOJ" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="1PC-aQ-q2b"/>
+                            <constraint firstItem="k57-x8-ZIG" firstAttribute="top" secondItem="6AZ-sN-Gt6" secondAttribute="bottom" constant="16" id="1ZT-N8-MKG"/>
                             <constraint firstItem="9wp-RZ-UfP" firstAttribute="top" secondItem="yQD-q2-DUv" secondAttribute="bottom" constant="8" id="6WT-ZU-U9I"/>
                             <constraint firstItem="9wp-RZ-UfP" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="ENv-0b-DKP"/>
                             <constraint firstItem="yQD-q2-DUv" firstAttribute="top" secondItem="dV8-OX-zAi" secondAttribute="top" constant="16" id="Hjy-2r-zi3"/>
                             <constraint firstItem="mSt-tY-Den" firstAttribute="top" secondItem="9wp-RZ-UfP" secondAttribute="bottom" constant="16" id="JDn-Na-b34"/>
+                            <constraint firstItem="YDy-Gu-dUg" firstAttribute="top" secondItem="dV8-OX-zAi" secondAttribute="top" constant="16" id="Kgq-OM-Tlh"/>
+                            <constraint firstItem="Fkq-tW-aOJ" firstAttribute="top" secondItem="k57-x8-ZIG" secondAttribute="bottom" constant="8" id="LvM-Qs-Hjq"/>
+                            <constraint firstAttribute="bottom" secondItem="Fkq-tW-aOJ" secondAttribute="bottom" constant="43.5" id="Met-xO-1QJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Fkq-tW-aOJ" secondAttribute="trailing" constant="16" id="QJH-na-D3f"/>
                             <constraint firstAttribute="trailing" secondItem="6AZ-sN-Gt6" secondAttribute="trailing" constant="16" id="QYf-Km-q7N"/>
+                            <constraint firstItem="k57-x8-ZIG" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="RNM-8R-hOB"/>
                             <constraint firstItem="6AZ-sN-Gt6" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="TcE-th-mfX"/>
+                            <constraint firstItem="z83-Rc-D1w" firstAttribute="top" secondItem="dV8-OX-zAi" secondAttribute="top" constant="16" id="eRE-X5-48n"/>
                             <constraint firstAttribute="width" constant="350" id="fTR-iG-BNU"/>
                             <constraint firstItem="yQD-q2-DUv" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="nmd-mt-UNH"/>
                             <constraint firstAttribute="trailing" secondItem="9wp-RZ-UfP" secondAttribute="trailing" constant="16" id="raw-hQ-Y1I"/>
                             <constraint firstItem="mSt-tY-Den" firstAttribute="leading" secondItem="dV8-OX-zAi" secondAttribute="leading" constant="16" id="s6O-oG-wWy"/>
+                            <constraint firstAttribute="trailing" secondItem="qBN-8q-6Ny" secondAttribute="trailing" constant="16" id="sQG-WH-Md8"/>
                             <constraint firstItem="6AZ-sN-Gt6" firstAttribute="top" secondItem="mSt-tY-Den" secondAttribute="bottom" constant="8" id="sxz-62-PnZ"/>
+                            <constraint firstItem="z83-Rc-D1w" firstAttribute="leading" secondItem="YDy-Gu-dUg" secondAttribute="trailing" id="t5q-wi-44N"/>
+                            <constraint firstAttribute="trailing" secondItem="z83-Rc-D1w" secondAttribute="trailing" constant="16" id="tWu-8G-jE3"/>
+                            <constraint firstAttribute="bottom" secondItem="qBN-8q-6Ny" secondAttribute="bottom" constant="16" id="yZe-Uj-rFD"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -89,7 +135,9 @@
             <connections>
                 <outlet property="cardView" destination="dV8-OX-zAi" id="Bxn-N7-wQ1"/>
                 <outlet property="courseTextView" destination="6AZ-sN-Gt6" id="D48-Qk-WWD"/>
+                <outlet property="domainName" destination="z83-Rc-D1w" id="orm-eE-Zfy"/>
                 <outlet property="experienceTextView" destination="9wp-RZ-UfP" id="euI-OR-mL6"/>
+                <outlet property="prerequisiteTextView" destination="Fkq-tW-aOJ" id="a9F-yn-ZTN"/>
                 <outlet property="widthConstraint" destination="fTR-iG-BNU" id="Nnc-Oz-GB9"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>

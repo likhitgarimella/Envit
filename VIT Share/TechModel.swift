@@ -11,18 +11,18 @@ import Foundation
 class TechModel {
     
     var id: String?
-    var domain: String?
-    var experienceTextView: String?
-    var prerequisites: String?
-    var courses: String?
+    var domainText: String?
+    var experienceText: String?
+    var prerequisitesText: String?
+    var coursesText: String?
     var timestamp: Double?
     
-    init(id: String?, domain: String?, experienceTextView: String?, prerequisites: String?, courses: String?, timestamp: Double?) {
+    init(id: String?, domainText: String?, experienceText: String?, prerequisitesText: String?, coursesText: String?, timestamp: Double?) {
         self.id = id
-        self.domain = domain
-        self.experienceTextView = experienceTextView
-        self.prerequisites = prerequisites
-        self.courses = courses
+        self.domainText = domainText
+        self.experienceText = experienceText
+        self.prerequisitesText = prerequisitesText
+        self.coursesText = coursesText
         self.timestamp = timestamp
     }
     

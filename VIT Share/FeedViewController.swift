@@ -39,12 +39,39 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
+    var techList = [TechModel]()
+    
+    var refTechs: DatabaseReference!
+    
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return techList.count
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
+        
+        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
+        // cell.hideAnimation()
+        let tech: TechModel
+        tech = techList[indexPath.row]
+        cell.domainName.text = tech.domainText
+        cell.experienceTextView.text = tech.experienceText
+        cell.courseTextView.text = tech.coursesText
+        cell.prerequisiteTextView.text = tech.prerequisitesText
+        
+        if let seconds = tech.timestamp {
+            // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
+            let pastDate = Date(timeIntervalSince1970: seconds)
+            // let dateFormatter = DateFormatter()
+            // dateFormatter.dateFormat = "MMM d, h:mm a"
+            // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
+            // cell.timeAgo.text = pastDate.timeAgoDisplay()
+        }
+        
         return cell
     }
 
@@ -61,4 +88,4 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-}   // #63
+}   // #92
