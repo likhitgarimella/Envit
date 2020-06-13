@@ -37,7 +37,7 @@ class Cell2: UICollectionViewCell {
     
     // Edit button
     let editButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 270, y: 80, width: 32, height: 32))
+        let button = UIButton(frame: CGRect(x: 270, y: 112, width: 32, height: 32))
         let btnImage = UIImage(named: "pen")
         button.setImage(btnImage, for: .normal)
         return button
@@ -45,7 +45,7 @@ class Cell2: UICollectionViewCell {
     
     // Delete button
     let deleteButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 336, y: 80, width: 28, height: 32))
+        let button = UIButton(frame: CGRect(x: 336, y: 112, width: 28, height: 32))
         let btnImage = UIImage(named: "delete")
         button.setImage(btnImage, for: .normal)
         return button
@@ -54,10 +54,8 @@ class Cell2: UICollectionViewCell {
     // Add buttons to view
     func setupViews()
     {
-        editButton.transform = CGAffineTransform(scaleX: 1, y: -1)
-        deleteButton.transform = CGAffineTransform(scaleX: 1, y: -1)
         addSubview(editButton)
         addSubview(deleteButton)
     }
 
-}   // #64
+}   // #62
