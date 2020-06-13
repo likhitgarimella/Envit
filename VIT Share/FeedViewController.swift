@@ -53,9 +53,6 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
         
-        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
-        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        
         // cell.hideAnimation()
         let mentor: TechModel
         mentor = techList[indexPath.row]
@@ -80,9 +77,6 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         
         Switch()
-        
-        feedCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
-        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
         // Register CollectionViewCell 'MentorPostCell' here
         feedCollectionView.register(UINib.init(nibName: "MentorPostCell", bundle: nil), forCellWithReuseIdentifier: "MentorPostCell")
@@ -118,4 +112,4 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
     }
     
-}   // #122
+}   // #116

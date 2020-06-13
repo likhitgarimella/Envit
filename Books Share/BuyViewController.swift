@@ -29,9 +29,6 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell3", for: indexPath) as! Cell3
         
-        cell.contentView.transform = CGAffineTransform(scaleX: 1, y: -1)
-        // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        
         // cell.hideAnimation()
         let book: BooksModel
         book = booksList[indexPath.row]
@@ -62,9 +59,6 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         // activityIndicatorView3.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         // activityIndicatorView3.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         activityIndicatorView3.startAnimating()
-        
-        cardCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
-        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
         
         // Register CollectionViewCell 'Cell3' here
         cardCollectionView.register(UINib.init(nibName: "Cell3", bundle: nil), forCellWithReuseIdentifier: "Cell3")
@@ -102,4 +96,4 @@ class BuyViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
 
-}   // #106
+}   // #100
