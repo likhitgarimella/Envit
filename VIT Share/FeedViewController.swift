@@ -41,7 +41,8 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var techList = [TechModel]()
     
-    var refTechs: DatabaseReference!
+    var refMentors: DatabaseReference!
+    var refMentees: DatabaseReference!
     
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,14 +57,14 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         
         // cell.hideAnimation()
-        let tech: TechModel
-        tech = techList[indexPath.row]
-        cell.domainName.text = tech.domainText
-        cell.experienceTextView.text = tech.experienceText
-        cell.courseTextView.text = tech.coursesText
-        cell.prerequisiteTextView.text = tech.prerequisitesText
+        let mentor: TechModel
+        mentor = techList[indexPath.row]
+        cell.domainName.text = mentor.domainText
+        cell.experienceTextView.text = mentor.experienceText
+        cell.courseTextView.text = mentor.coursesText
+        cell.prerequisiteTextView.text = mentor.prerequisitesText
         
-        if let seconds = tech.timestamp {
+        if let seconds = mentor.timestamp {
             // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
             let pastDate = Date(timeIntervalSince1970: seconds)
             // let dateFormatter = DateFormatter()
@@ -80,12 +81,41 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         Switch()
         
+        feedCollectionView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        // cardCollectionView.transform = CGAffineTransform.init(rotationAngle: (-(CGFloat)(Double.pi)))
+        
         // Register CollectionViewCell 'MentorPostCell' here
         feedCollectionView.register(UINib.init(nibName: "MentorPostCell", bundle: nil), forCellWithReuseIdentifier: "MentorPostCell")
         if let flowLayout = feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
         
+        hideKeyboardWhenTappedAround()
+        
+        refMentors = Database.database().reference().child("Mentors").child("Details")
+        refMentors.observe(DataEventType.value, with: { (snapshot) in
+            
+            if snapshot.childrenCount > 0 {
+                
+                self.techList.removeAll()
+                for mentors in snapshot.children.allObjects as! [DataSnapshot] {
+                    let mentorObject = mentors.value as? [String: AnyObject]
+                    let mentorId = mentorObject?["1) id"]
+                    let mentorDomain  = mentorObject?["2) Domain"]
+                    let mentorExp  = mentorObject?["3) Experience"]
+                    let mentorPrereq = mentorObject?["4) Prerequisites"]
+                    let mentorCourses = mentorObject?["5) Courses"]
+                    let mentorTimestamp = mentorObject?["6) Timestamp"]
+                    
+                    let mentor = TechModel(id: mentorId as! String?, domainText: mentorDomain as! String?, experienceText: mentorExp as! String?, prerequisitesText: mentorPrereq as! String?, coursesText: mentorCourses as! String?, timestamp: mentorTimestamp as! Double?)
+                    self.techList.append(mentor)
+                }
+                self.feedCollectionView.reloadData()
+                
+            }
+            
+        })
+        
     }
     
-}   // #92
+}   // #122
