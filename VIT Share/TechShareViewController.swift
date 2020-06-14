@@ -20,6 +20,8 @@ class TechShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardWhenTappedAround()
+        
         SegmentFontColor()
         
     }
@@ -64,4 +66,4 @@ class TechShareViewController: UIViewController {
         
     }
 
-}   // #68
+}   // #70

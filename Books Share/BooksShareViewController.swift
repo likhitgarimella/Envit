@@ -19,6 +19,8 @@ class BooksShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardWhenTappedAround()
+        
         SegmentFontColor()
 
     }
@@ -56,4 +58,4 @@ class BooksShareViewController: UIViewController {
         
     }
 
-}   // #60
+}   // #62

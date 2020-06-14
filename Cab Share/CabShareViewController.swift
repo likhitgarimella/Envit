@@ -19,6 +19,8 @@ class CabShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardWhenTappedAround()
+        
         SegmentFontColor()
 
     }
@@ -56,4 +58,4 @@ class CabShareViewController: UIViewController {
         
     }
     
-}   // #60
+}   // #62
