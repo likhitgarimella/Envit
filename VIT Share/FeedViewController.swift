@@ -16,6 +16,9 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet var mentorSwitch: UISwitch!
     @IBOutlet var menteeSwitch: UISwitch!
     
+    @IBOutlet var mentorFeedView: UIView!
+    @IBOutlet var menteeFeedView: UIView!
+    
     // universal collection view
     @IBOutlet var feedCollectionView: UICollectionView!
     

@@ -64,6 +64,8 @@
 		024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C924964ED8006046B3 /* SF-Pro-Rounded-Medium.otf */; };
 		024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8CA24964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf */; };
 		024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D42496BAF2006046B3 /* MenteeModel.swift */; };
+		024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D62496D447006046B3 /* MentorFeedViewController.swift */; };
+		024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */; };
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
@@ -160,6 +162,8 @@
 		024FC8C924964ED8006046B3 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		024FC8CA24964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		024FC8D42496BAF2006046B3 /* MenteeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeModel.swift; sourceTree = "<group>"; };
+		024FC8D62496D447006046B3 /* MentorFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorFeedViewController.swift; sourceTree = "<group>"; };
+		024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeFeedViewController.swift; sourceTree = "<group>"; };
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
@@ -323,6 +327,8 @@
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
 				0216544F24941D44007F6A73 /* MentorModel.swift */,
 				024FC8D42496BAF2006046B3 /* MenteeModel.swift */,
+				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
+				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
 				02802BB824850709008BF296 /* FeedViewController.swift */,
 				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
 				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
@@ -620,6 +626,7 @@
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
+				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
 				0221E1352477C12F0022DCCB /* SPAlertIconPrivacyView.swift in Sources */,
 				02802BB924850709008BF296 /* FeedViewController.swift in Sources */,
 				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
@@ -628,6 +635,7 @@
 				02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */,
 				0221E12C2477C12F0022DCCB /* SPAlertIconErrorView.swift in Sources */,
 				0221E1322477C12F0022DCCB /* SPAlertIconFlagView.swift in Sources */,
+				024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */,
 				02E3A9AC2478DC4A00A9C18C /* CBTabItemDeselectAnimation.swift in Sources */,
 				024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */,
 				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
