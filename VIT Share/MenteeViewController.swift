@@ -74,4 +74,50 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #78
+    // Create a DB reference
+    var refMentees: DatabaseReference!
+    
+    // Submit button action
+    @IBAction func submitTapped(_ sender: UIButton) {
+        
+        if (domain.text!.isEmpty || postQueryTextView.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        // Writing data to DB
+        refMentees = Database.database().reference().child("Mentees").child("Details")
+        let key = refMentees.childByAutoId().key
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let mentor = ["1) id": key!, "2) Domain": domain.text!, "3) Post Query": postQueryTextView.text!, "4) Timestamp": timestamp, "5) uid": currentUserId] as [String : Any]
+        refMentees.child(key!).setValue(mentor)
+        
+        // Alert pod - Ride Added
+        let alertView = SPAlertView(title: "Your query has been posted", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
+        // Clear textfields after success
+        self.domain.text = ""
+        self.postQueryTextView.text = ""
+        
+        // And to enable back for a new input in textfield
+        self.domain.isEnabled = true
+        // self.experienceTextView.isEnabled = true
+        
+    }
+    
+}   // #124
