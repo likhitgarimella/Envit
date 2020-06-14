@@ -152,8 +152,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cab Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQQ-fD-hNA">
-                                <rect key="frame" x="20" y="40" width="131.66666666666666" height="36"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="30"/>
+                                <rect key="frame" x="20" y="40" width="135" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -677,7 +677,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <searchBar contentMode="redraw" fixedFrame="YES" scopeBarBackgroundImage="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="ozz-Ca-27Z">
+                                        <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ozz-Ca-27Z">
                                             <rect key="frame" x="12" y="12" width="390" height="56"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -735,45 +735,45 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0r-vP-vle">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="738.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of available seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-ra-jJ5">
-                                                <rect key="frame" x="20" y="216" width="206.33333333333334" height="28"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
+                                                <rect key="frame" x="20" y="217.66666666666666" width="212.66666666666666" height="28.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-0K-Hfl">
-                                                <rect key="frame" x="20" y="116" width="23.666666666666671" height="28"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
+                                                <rect key="frame" x="20" y="116.66666666666669" width="25" height="29"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI2-NE-zAV">
-                                                <rect key="frame" x="20" y="266" width="14.666666666666664" height="28"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
+                                                <rect key="frame" x="20" y="268.33333333333331" width="14.666666666666664" height="28.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gan-D8-bbm">
-                                                <rect key="frame" x="19.999999999999996" y="16" width="51.666666666666657" height="28"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="24"/>
+                                                <rect key="frame" x="20.000000000000004" y="16" width="53.333333333333343" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-Dx-J7O">
-                                                <rect key="frame" x="74.666666666666671" y="264" width="94.000000000000014" height="32"/>
+                                                <rect key="frame" x="74.666666666666671" y="266.33333333333331" width="94.000000000000014" height="32"/>
                                                 <connections>
                                                     <action selector="stepper:" destination="j0o-55-6OK" eventType="valueChanged" id="z1I-fh-E6x"/>
                                                 </connections>
                                             </stepper>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Date and Time" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-z5-EVy">
-                                                <rect key="frame" x="20" y="318" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="320.33333333333331" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="8qa-ok-vPY"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -783,12 +783,12 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ML-3J-xkx">
-                                                <rect key="frame" x="34" y="392" width="346" height="40"/>
+                                                <rect key="frame" x="34" y="394.33333333333331" width="346" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="sUA-yG-YBA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                 <state key="normal" title="SUBMIT">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -797,12 +797,12 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select location" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="T80-Jy-Ssq" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="154" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="155.66666666666666" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="kQI-9a-4m9"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -812,12 +812,12 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select location" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-gm-52L" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="54" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="54.666666666666657" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="VVw-DP-cOI"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -1066,25 +1066,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collectible" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-Qt-iFp">
-                                                <rect key="frame" x="47.999999999999993" y="301.66666666666669" width="70.333333333333314" height="19.333333333333314"/>
+                                                <rect key="frame" x="48" y="301.66666666666669" width="71" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhH-CG-pil">
-                                                <rect key="frame" x="19.999999999999996" y="349" width="52.666666666666657" height="28.666666666666686"/>
+                                                <rect key="frame" x="19.999999999999996" y="349.66666666666669" width="52.666666666666657" height="28.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xou-bf-lzS">
-                                                <rect key="frame" x="20" y="387.66666666666669" width="18.333333333333329" height="36"/>
+                                                <rect key="frame" x="20" y="388.33333333333331" width="18.333333333333329" height="36"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7l-x7-5fd">
-                                                <rect key="frame" x="54.333333333333343" y="385.33333333333331" width="80" height="40.666666666666686"/>
+                                                <rect key="frame" x="54.333333333333343" y="386" width="80" height="40.666666666666686"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="mPS-LC-peu"/>
@@ -1094,7 +1094,7 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8o-YO-Acw">
-                                                <rect key="frame" x="34" y="460" width="346" height="40"/>
+                                                <rect key="frame" x="34" y="460.66666666666669" width="346" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="IBs-vR-dqx"/>
@@ -1396,7 +1396,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6Al-SB-xhK"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                                 <state key="normal" title="SUBMIT">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1569,7 +1569,6 @@
         <segue reference="Hdy-ma-UKs"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Group 3" width="80" height="80"/>
         <image name="bell" width="30" height="30"/>
         <image name="chart" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>

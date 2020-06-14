@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="FontsFree-Net-SF-Pro-Rounded-Regular.ttf">
-            <string>SFRounded-Ultralight</string>
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -26,43 +29,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="224"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhw-nD-LHR">
-                                <rect key="frame" x="20" y="16" width="39" height="21"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="16" width="40" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Vellore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrV-mB-1tE">
-                                <rect key="frame" x="20" y="43" width="80.5" height="21"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="43.5" width="80.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNJ-Kk-1Oe">
-                                <rect key="frame" x="20" y="72" width="18" height="21"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="73" width="19" height="22"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Chennai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVL-Qc-Mg8">
-                                <rect key="frame" x="20" y="99" width="92.5" height="21"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="101" width="92.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Seats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtW-id-o6V">
-                                <rect key="frame" x="292.5" y="16" width="87.5" height="21"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="290" y="16" width="90" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iK-df-c7t">
-                                <rect key="frame" x="321.5" y="44" width="30" height="57.5"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="48"/>
+                                <rect key="frame" x="320.5" y="44.5" width="29.5" height="57.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG0-Tn-xcr">
-                                <rect key="frame" x="34" y="140" width="36" height="36"/>
+                                <rect key="frame" x="34" y="142.5" width="36" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="8hL-dO-vYg"/>
                                     <constraint firstAttribute="width" constant="36" id="GdZ-DF-tBN"/>
@@ -70,7 +73,7 @@
                                 <state key="normal" image="phone"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdX-5V-fy5">
-                                <rect key="frame" x="104" y="138.5" width="39" height="39"/>
+                                <rect key="frame" x="104" y="141" width="39" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="LLm-FQ-Pz1"/>
                                     <constraint firstAttribute="height" constant="39" id="wQM-Oq-pNa"/>
@@ -83,13 +86,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Pb8-SA-zQo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM d, h:mm a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-py-HGk">
-                                <rect key="frame" x="283.5" y="149" width="108.5" height="19"/>
-                                <fontDescription key="fontDescription" name="SFRounded-Ultralight" family="SF Pro Rounded" pointSize="16"/>
+                                <rect key="frame" x="283.5" y="148.5" width="108.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
