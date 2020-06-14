@@ -1619,17 +1619,15 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-zP-2gk">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-zP-2gk">
                                 <rect key="frame" x="0.0" y="96" width="414" height="640"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="eYh-gV-dDf" kind="embed" id="2hX-J6-khr"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-11-mvb">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-11-mvb">
                                 <rect key="frame" x="0.0" y="96" width="414" height="640"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="mgt-G0-9kN" kind="embed" id="HYO-AV-ztX"/>
@@ -1639,17 +1637,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hJg-Ss-3aG" firstAttribute="centerX" secondItem="FKN-9Z-zDL" secondAttribute="centerX" id="0Gv-ZH-kD2"/>
+                            <constraint firstItem="ezd-zP-2gk" firstAttribute="top" secondItem="aKP-8T-AIv" secondAttribute="bottom" constant="8" id="28r-eC-HrC"/>
                             <constraint firstItem="c9W-rg-heH" firstAttribute="leading" secondItem="80O-fZ-wjC" secondAttribute="trailing" constant="8" id="3mu-M3-nNF"/>
                             <constraint firstItem="c9W-rg-heH" firstAttribute="top" secondItem="h6Z-xy-tmf" secondAttribute="top" constant="57" id="5MI-hQ-eAI"/>
                             <constraint firstItem="aKP-8T-AIv" firstAttribute="centerY" secondItem="qxG-lq-lNr" secondAttribute="centerY" id="5uK-He-6xK"/>
                             <constraint firstItem="hJg-Ss-3aG" firstAttribute="top" secondItem="h6Z-xy-tmf" secondAttribute="top" constant="12" id="Ayz-Je-Sl9"/>
+                            <constraint firstItem="7Dq-11-mvb" firstAttribute="leading" secondItem="h6Z-xy-tmf" secondAttribute="leading" id="IfI-TV-tMn"/>
                             <constraint firstItem="aKP-8T-AIv" firstAttribute="leading" secondItem="qxG-lq-lNr" secondAttribute="trailing" constant="8" id="PZk-Ih-FP2"/>
                             <constraint firstItem="80O-fZ-wjC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aKP-8T-AIv" secondAttribute="trailing" constant="8" symbolic="YES" id="XX8-Pi-k9a"/>
                             <constraint firstItem="80O-fZ-wjC" firstAttribute="top" secondItem="h6Z-xy-tmf" secondAttribute="top" constant="60.666666666666657" id="Y21-f9-ACM"/>
+                            <constraint firstItem="ezd-zP-2gk" firstAttribute="trailing" secondItem="h6Z-xy-tmf" secondAttribute="trailing" id="kfW-O0-OLN"/>
                             <constraint firstItem="qxG-lq-lNr" firstAttribute="leading" secondItem="h6Z-xy-tmf" secondAttribute="leading" constant="30" id="kfu-u4-RmJ"/>
+                            <constraint firstItem="7Dq-11-mvb" firstAttribute="top" secondItem="aKP-8T-AIv" secondAttribute="bottom" constant="8" id="peU-QO-26A"/>
+                            <constraint firstItem="7Dq-11-mvb" firstAttribute="trailing" secondItem="h6Z-xy-tmf" secondAttribute="trailing" id="qAz-6W-hZS"/>
+                            <constraint firstItem="ezd-zP-2gk" firstAttribute="leading" secondItem="h6Z-xy-tmf" secondAttribute="leading" id="qDi-3B-ta9"/>
                             <constraint firstItem="80O-fZ-wjC" firstAttribute="centerY" secondItem="aKP-8T-AIv" secondAttribute="centerY" id="ql3-0B-CKz"/>
+                            <constraint firstItem="7Dq-11-mvb" firstAttribute="bottom" secondItem="h6Z-xy-tmf" secondAttribute="bottom" id="r0z-6j-DWM"/>
                             <constraint firstItem="qxG-lq-lNr" firstAttribute="top" secondItem="h6Z-xy-tmf" secondAttribute="top" constant="60" id="t42-Up-fRF"/>
                             <constraint firstItem="h6Z-xy-tmf" firstAttribute="trailing" secondItem="c9W-rg-heH" secondAttribute="trailing" constant="30.329999999999998" id="tV7-cr-ihq"/>
+                            <constraint firstItem="ezd-zP-2gk" firstAttribute="bottom" secondItem="h6Z-xy-tmf" secondAttribute="bottom" id="y3q-f8-BCk"/>
                             <constraint firstItem="80O-fZ-wjC" firstAttribute="centerY" secondItem="c9W-rg-heH" secondAttribute="centerY" id="zJP-HQ-efC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h6Z-xy-tmf"/>
@@ -1673,7 +1679,7 @@
                     <view key="view" contentMode="scaleToFill" id="fLw-1i-A7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1687,7 +1693,7 @@
                     <view key="view" contentMode="scaleToFill" id="LxZ-sN-fcV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

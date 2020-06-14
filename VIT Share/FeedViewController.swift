@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class FeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class FeedViewController: UIViewController {
     
     // Outlets
     @IBOutlet var mentorSwitch: UISwitch!
@@ -19,8 +19,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet var mentorFeedView: UIView!
     @IBOutlet var menteeFeedView: UIView!
     
-    // universal collection view
-    @IBOutlet var feedCollectionView: UICollectionView!
+    // @IBOutlet var feedCollectionView: UICollectionView!
     
     // switch properties
     func Switch() {
@@ -34,11 +33,31 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         menteeSwitch.setOn(!sender.isOn, animated: true)
         
+        if mentorSwitch.isOn == true {
+            mentorFeedView.alpha = 1
+            menteeFeedView.alpha = 0
+        }
+        
+        if menteeSwitch.isOn == true {
+            menteeFeedView.alpha = 1
+            mentorFeedView.alpha = 0
+        }
+        
     }
     
     @IBAction func enableMentee(_ sender: UISwitch) {
         
         mentorSwitch.setOn(!sender.isOn, animated: true)
+        
+        if mentorSwitch.isOn == true {
+            mentorFeedView.alpha = 1
+            menteeFeedView.alpha = 0
+        }
+        
+        if menteeSwitch.isOn == true {
+            menteeFeedView.alpha = 1
+            mentorFeedView.alpha = 0
+        }
         
     }
     
@@ -48,6 +67,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var refMentors: DatabaseReference!
     var refMentees: DatabaseReference!
     
+    /*
     
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -101,11 +121,15 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
     }
+ 
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Switch()
+        
+        /*
         
         // Register CollectionViewCell 'MentorPostCell' here
         feedCollectionView.register(UINib.init(nibName: "MentorPostCell", bundle: nil), forCellWithReuseIdentifier: "MentorPostCell")
@@ -168,7 +192,9 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
             }
             
         })
+ 
+        */
         
     }
     
-}   // #172
+}   // #201
