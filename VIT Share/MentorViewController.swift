@@ -21,7 +21,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     
     func BorderProp() {
         
-        // Textfield Border Property
+        // Textfield/Textview Border Property
         let myColor = UIColor.systemGray
         domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
@@ -36,7 +36,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     
     func CornerRadius() {
         
-        // Textfield Corner Radius Property
+        // Textfield/Textview Corner Radius Property
         domain.layer.cornerRadius = 4
         experienceTextView.layer.cornerRadius = 4
         prerequisites.layer.cornerRadius = 4
@@ -47,7 +47,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     
     func LeftPadding() {
         
-        // Create a padding view for Credits TextFields on LEFT
+        // Create a padding view for Textfields/Textviews on LEFT
         domain.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: domain.frame.height))
         domain.leftViewMode = .always
         prerequisites.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: prerequisites.frame.height))
@@ -65,7 +65,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
     }
     
-    func Properties() {
+    func TextViewProperties() {
         
         experienceTextView.backgroundColor = UIColor.white
         // padding for text view
@@ -82,9 +82,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         CornerRadius()
         LeftPadding()
         DropDownOptions()
-        Properties()
-        
-        // prerequisites.counterDelegate = self
+        TextViewProperties()
         
     }
     
@@ -138,4 +136,4 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
     }
 
-}   // #142
+}   // #140
