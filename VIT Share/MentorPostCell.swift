@@ -18,17 +18,20 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var domainName: UILabel!
     @IBOutlet var prerequisiteTextView: UITextView!
     
+    @IBOutlet var bottomView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         cardView.layer.cornerRadius = 10
+        bottomView.layer.cornerRadius = 10
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        // experienceTextView.layer.cornerRadius = 6
-        // courseTextView.layer.cornerRadius = 6
-        // prerequisiteTextView.layer.cornerRadius = 6
+        experienceTextView.layer.cornerRadius = 6
+        courseTextView.layer.cornerRadius = 6
+        prerequisiteTextView.layer.cornerRadius = 6
         experienceTextView.backgroundColor = UIColor.white
         courseTextView.backgroundColor = UIColor.white
         prerequisiteTextView.backgroundColor = UIColor.white
@@ -37,4 +40,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #41
+}   // #44

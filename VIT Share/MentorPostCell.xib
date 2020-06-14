@@ -22,10 +22,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MentorPostCell" id="gTV-IL-0wX" customClass="MentorPostCell" customModule="VIT_Share" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="428"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="428"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV8-OX-zAi">
@@ -49,7 +49,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-RZ-UfP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-RZ-UfP">
                                 <rect key="frame" x="16" y="45.5" width="318" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -129,16 +129,27 @@
                             <constraint firstAttribute="bottom" secondItem="qBN-8q-6Ny" secondAttribute="bottom" constant="16" id="yZe-Uj-rFD"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-Pe-h3I">
+                        <rect key="frame" x="16" y="380" width="120" height="40"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="CNG-ME-yjv"/>
+                            <constraint firstAttribute="width" constant="120" id="PiD-dX-ss3"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="WV7-Pe-h3I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="5Ts-ow-6AB"/>
                 <constraint firstAttribute="trailing" secondItem="dV8-OX-zAi" secondAttribute="trailing" id="8ia-Qs-tl6"/>
                 <constraint firstItem="dV8-OX-zAi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BW4-Is-wXG"/>
-                <constraint firstAttribute="bottom" secondItem="dV8-OX-zAi" secondAttribute="bottom" id="alJ-dw-SDJ"/>
-                <constraint firstItem="dV8-OX-zAi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="haR-0H-aeT"/>
+                <constraint firstAttribute="bottom" secondItem="dV8-OX-zAi" secondAttribute="bottom" constant="28" id="JsA-nS-07N"/>
+                <constraint firstItem="dV8-OX-zAi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lzj-K0-s1e"/>
+                <constraint firstAttribute="bottom" secondItem="WV7-Pe-h3I" secondAttribute="bottom" constant="8" id="w9K-4d-j5l"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="bottomView" destination="WV7-Pe-h3I" id="kAq-2P-9DE"/>
                 <outlet property="cardView" destination="dV8-OX-zAi" id="Bxn-N7-wQ1"/>
                 <outlet property="courseTextView" destination="6AZ-sN-Gt6" id="D48-Qk-WWD"/>
                 <outlet property="domainName" destination="z83-Rc-D1w" id="orm-eE-Zfy"/>
