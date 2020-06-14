@@ -4,7 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>FontsFree-Net-SFProDisplay-Medium-1.ttf</string>
+		<string>FontsFree-Net-SF-Pro-Rounded-Semibold.ttf</string>
+		<string>FontsFree-Net-SF-Pro-Rounded-Medium.ttf</string>
 		<string>FontsFree-Net-SF-Pro-Rounded-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

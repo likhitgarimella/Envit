@@ -26,9 +26,9 @@ class MentorPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        experienceTextView.layer.cornerRadius = 6
-        courseTextView.layer.cornerRadius = 6
-        prerequisiteTextView.layer.cornerRadius = 6
+        // experienceTextView.layer.cornerRadius = 6
+        // courseTextView.layer.cornerRadius = 6
+        // prerequisiteTextView.layer.cornerRadius = 6
         experienceTextView.backgroundColor = UIColor.white
         courseTextView.backgroundColor = UIColor.white
         prerequisiteTextView.backgroundColor = UIColor.white
