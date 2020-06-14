@@ -20,8 +20,16 @@ class MenteePostCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        cardView.layer.cornerRadius = 10
+        bottomView.layer.cornerRadius = 10
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        let screenWidth = UIScreen.main.bounds.size.width
+        widthConstraint.constant = screenWidth - (2 * 12)
         
+        postedQueryTextView.layer.cornerRadius = 6
+        postedQueryTextView.backgroundColor = UIColor.white
+        postedQueryTextView.dataDetectorTypes = .link
         
     }
 
-}   // #21
+}   // #36

@@ -51,26 +51,28 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
+        
+        let mentorCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
         
         // cell.hideAnimation()
         let mentor: TechModel
         mentor = techList[indexPath.row]
-        cell.domainName.text = mentor.domainText
-        cell.experienceTextView.text = mentor.experienceText
-        cell.courseTextView.text = mentor.coursesText
-        cell.prerequisiteTextView.text = mentor.prerequisitesText
+        mentorCell.domainName.text = mentor.domainText
+        mentorCell.experienceTextView.text = mentor.experienceText
+        mentorCell.courseTextView.text = mentor.coursesText
+        mentorCell.prerequisiteTextView.text = mentor.prerequisitesText
         
-        if let seconds = mentor.timestamp {
+        /* if let seconds = mentor.timestamp {
             // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
             let pastDate = Date(timeIntervalSince1970: seconds)
             // let dateFormatter = DateFormatter()
             // dateFormatter.dateFormat = "MMM d, h:mm a"
             // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
             // cell.timeAgo.text = pastDate.timeAgoDisplay()
-        }
+        } */
         
-        return cell
+        return mentorCell
+        
     }
 
     override func viewDidLoad() {
