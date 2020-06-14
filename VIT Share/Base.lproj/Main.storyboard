@@ -1704,6 +1704,9 @@
                             <constraint firstItem="avT-Pj-ocd" firstAttribute="top" secondItem="fLw-1i-A7r" secondAttribute="top" id="zgt-Qa-zDX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="menteeFeedCollectionView" destination="avT-Pj-ocd" id="Yac-b0-Nve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1716,12 +1719,38 @@
                     <view key="view" contentMode="scaleToFill" id="LxZ-sN-fcV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UWy-jQ-cZe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Myh-oX-Cgt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mgt-G0-9kN" id="YhA-ml-4dV"/>
+                                    <outlet property="delegate" destination="mgt-G0-9kN" id="OTP-RG-959"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UWy-jQ-cZe" firstAttribute="top" secondItem="LxZ-sN-fcV" secondAttribute="top" id="DH6-4J-WeF"/>
+                            <constraint firstAttribute="bottom" secondItem="UWy-jQ-cZe" secondAttribute="bottom" id="PwD-Cm-2QV"/>
+                            <constraint firstAttribute="trailing" secondItem="UWy-jQ-cZe" secondAttribute="trailing" id="RDo-vo-deK"/>
+                            <constraint firstItem="UWy-jQ-cZe" firstAttribute="leading" secondItem="LxZ-sN-fcV" secondAttribute="leading" id="uaA-Hd-hUk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mentorFeedCollectionView" destination="UWy-jQ-cZe" id="vNE-k8-V3U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2548" y="1403"/>
+            <point key="canvasLocation" x="2547.826086956522" y="1402.9891304347827"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
