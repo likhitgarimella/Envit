@@ -4,9 +4,15 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>FontsFree-Net-SF-Pro-Rounded-Semibold.ttf</string>
-		<string>FontsFree-Net-SF-Pro-Rounded-Medium.ttf</string>
-		<string>FontsFree-Net-SF-Pro-Rounded-Regular.ttf</string>
+		<string>SF-Pro-Rounded-Ultralight.otf</string>
+		<string>SF-Pro-Rounded-Thin.otf</string>
+		<string>SF-Pro-Rounded-Semibold.otf</string>
+		<string>SF-Pro-Rounded-Regular.otf</string>
+		<string>SF-Pro-Rounded-Medium.otf</string>
+		<string>SF-Pro-Rounded-Light.otf</string>
+		<string>SF-Pro-Rounded-Heavy.otf</string>
+		<string>SF-Pro-Rounded-Bold.otf</string>
+		<string>SF-Pro-Rounded-Black.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

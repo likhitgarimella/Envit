@@ -54,9 +54,15 @@
 		024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C711B2443B149002D9CCE /* LaunchScreen.storyboard */; };
 		024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71242443B48C002D9CCE /* SignUpViewController.swift */; };
 		024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024C71262443BCBB002D9CCE /* GoogleService-Info.plist */; };
-		024FC8BF249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8BC249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */; };
-		024FC8C0249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8BD249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Medium.ttf */; };
-		024FC8C1249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8BE249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */; };
+		024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C224964ED6006046B3 /* SF-Pro-Rounded-Regular.otf */; };
+		024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */; };
+		024FC8CD24964ED8006046B3 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C424964ED7006046B3 /* SF-Pro-Rounded-Bold.otf */; };
+		024FC8CE24964ED8006046B3 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C524964ED7006046B3 /* SF-Pro-Rounded-Black.otf */; };
+		024FC8CF24964ED8006046B3 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C624964ED7006046B3 /* SF-Pro-Rounded-Thin.otf */; };
+		024FC8D024964ED8006046B3 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C724964ED7006046B3 /* SF-Pro-Rounded-Ultralight.otf */; };
+		024FC8D124964ED8006046B3 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C824964ED8006046B3 /* SF-Pro-Rounded-Light.otf */; };
+		024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C924964ED8006046B3 /* SF-Pro-Rounded-Medium.otf */; };
+		024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8CA24964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf */; };
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
@@ -143,9 +149,15 @@
 		024C711E2443B149002D9CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024C71242443B48C002D9CCE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		024C71262443BCBB002D9CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		024FC8BC249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
-		024FC8BD249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Medium.ttf"; sourceTree = "<group>"; };
-		024FC8BE249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
+		024FC8C224964ED6006046B3 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		024FC8C424964ED7006046B3 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		024FC8C524964ED7006046B3 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		024FC8C624964ED7006046B3 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		024FC8C724964ED7006046B3 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		024FC8C824964ED8006046B3 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		024FC8C924964ED8006046B3 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		024FC8CA24964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
@@ -402,9 +414,15 @@
 		02F46AC62444F712001668A3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				024FC8BD249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Medium.ttf */,
-				024FC8BC249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf */,
-				024FC8BE249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf */,
+				024FC8C524964ED7006046B3 /* SF-Pro-Rounded-Black.otf */,
+				024FC8C424964ED7006046B3 /* SF-Pro-Rounded-Bold.otf */,
+				024FC8CA24964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf */,
+				024FC8C824964ED8006046B3 /* SF-Pro-Rounded-Light.otf */,
+				024FC8C924964ED8006046B3 /* SF-Pro-Rounded-Medium.otf */,
+				024FC8C224964ED6006046B3 /* SF-Pro-Rounded-Regular.otf */,
+				024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */,
+				024FC8C624964ED7006046B3 /* SF-Pro-Rounded-Thin.otf */,
+				024FC8C724964ED7006046B3 /* SF-Pro-Rounded-Ultralight.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -488,16 +506,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */,
+				024FC8CD24964ED8006046B3 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
+				024FC8CF24964ED8006046B3 /* SF-Pro-Rounded-Thin.otf in Resources */,
+				024FC8D124964ED8006046B3 /* SF-Pro-Rounded-Light.otf in Resources */,
 				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
-				024FC8C0249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Medium.ttf in Resources */,
 				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
+				024FC8D024964ED8006046B3 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */,
+				024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
+				024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				02355CC1248106090062BA59 /* Cell4.xib in Resources */,
-				024FC8BF249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Regular.ttf in Resources */,
+				024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */,
+				024FC8CE24964ED8006046B3 /* SF-Pro-Rounded-Black.otf in Resources */,
 				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
-				024FC8C1249647F2006046B3 /* FontsFree-Net-SF-Pro-Rounded-Semibold.ttf in Resources */,
 				02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */,
 				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
 			);
