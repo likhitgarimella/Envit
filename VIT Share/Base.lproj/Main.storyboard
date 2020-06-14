@@ -1268,16 +1268,112 @@
             <objects>
                 <viewController id="2yx-Bv-AGp" customClass="MenteeViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qg-xz-Qa8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-GU-ANJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfx-vq-ooz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7r-7N-wHK">
+                                                <rect key="frame" x="20" y="16" width="80.333333333333329" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Query" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-Yq-Wfa">
+                                                <rect key="frame" x="19.999999999999993" y="116.66666666666669" width="115.33333333333331" height="29"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNR-C9-ZPn">
+                                                <rect key="frame" x="20" y="155.66666666666666" width="374" height="147.99999999999997"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="148" id="VCd-sB-mCz"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select domain" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="IN9-Fk-keU" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="54.666666666666657" width="274" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6WH-sZ-j4D"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTx-iB-lmW">
+                                                <rect key="frame" x="34" y="337.66666666666669" width="346" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LxN-at-JX3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lNR-C9-ZPn" firstAttribute="top" secondItem="9uX-Yq-Wfa" secondAttribute="bottom" constant="10" id="2SP-pu-nnc"/>
+                                            <constraint firstAttribute="trailing" secondItem="lNR-C9-ZPn" secondAttribute="trailing" constant="20" id="7cS-aD-Qgw"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="p7r-7N-wHK" secondAttribute="trailing" constant="20" symbolic="YES" id="8ZD-Ix-e2i"/>
+                                            <constraint firstItem="FTx-iB-lmW" firstAttribute="centerX" secondItem="dfx-vq-ooz" secondAttribute="centerX" id="DfD-b7-6Nk"/>
+                                            <constraint firstItem="9uX-Yq-Wfa" firstAttribute="top" secondItem="IN9-Fk-keU" secondAttribute="bottom" constant="22" id="JK1-dA-01k"/>
+                                            <constraint firstItem="IN9-Fk-keU" firstAttribute="top" secondItem="p7r-7N-wHK" secondAttribute="bottom" constant="10" id="KHQ-8d-Zeb"/>
+                                            <constraint firstItem="9uX-Yq-Wfa" firstAttribute="leading" secondItem="dfx-vq-ooz" secondAttribute="leading" constant="20" id="VLG-44-Vdy"/>
+                                            <constraint firstAttribute="bottom" secondItem="FTx-iB-lmW" secondAttribute="bottom" constant="322.32999999999998" id="Vto-ks-ntI"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9uX-Yq-Wfa" secondAttribute="trailing" constant="20" symbolic="YES" id="YgP-bk-0Ah"/>
+                                            <constraint firstItem="FTx-iB-lmW" firstAttribute="top" secondItem="lNR-C9-ZPn" secondAttribute="bottom" constant="34" id="cwl-1n-lQE"/>
+                                            <constraint firstItem="p7r-7N-wHK" firstAttribute="leading" secondItem="dfx-vq-ooz" secondAttribute="leading" constant="20" id="dSe-bv-GIE"/>
+                                            <constraint firstAttribute="right" secondItem="IN9-Fk-keU" secondAttribute="right" constant="120" id="fgv-u8-bTa"/>
+                                            <constraint firstItem="lNR-C9-ZPn" firstAttribute="leading" secondItem="dfx-vq-ooz" secondAttribute="leading" constant="20" id="irR-gL-zSN"/>
+                                            <constraint firstItem="FTx-iB-lmW" firstAttribute="left" secondItem="dfx-vq-ooz" secondAttribute="left" constant="34" id="lW2-J1-T84"/>
+                                            <constraint firstItem="IN9-Fk-keU" firstAttribute="left" secondItem="dfx-vq-ooz" secondAttribute="left" constant="20" id="lka-e0-oKc"/>
+                                            <constraint firstAttribute="right" secondItem="FTx-iB-lmW" secondAttribute="right" constant="34" id="vfQ-xY-qTv"/>
+                                            <constraint firstItem="p7r-7N-wHK" firstAttribute="top" secondItem="dfx-vq-ooz" secondAttribute="top" constant="16" id="zxy-aT-GYS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dfx-vq-ooz" firstAttribute="height" secondItem="2eq-GU-ANJ" secondAttribute="height" priority="250" id="2gC-vu-VYy"/>
+                                    <constraint firstItem="dfx-vq-ooz" firstAttribute="leading" secondItem="2eq-GU-ANJ" secondAttribute="leading" id="Eaj-nT-sdr"/>
+                                    <constraint firstItem="dfx-vq-ooz" firstAttribute="top" secondItem="2eq-GU-ANJ" secondAttribute="top" id="LsH-OG-Qk0"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfx-vq-ooz" secondAttribute="trailing" id="NIq-Jf-nw8"/>
+                                    <constraint firstItem="dfx-vq-ooz" firstAttribute="width" secondItem="2eq-GU-ANJ" secondAttribute="width" priority="750" id="QOJ-9T-pBx"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfx-vq-ooz" secondAttribute="bottom" id="hXX-uJ-51e"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2eq-GU-ANJ" firstAttribute="trailing" secondItem="Iqt-WN-uFA" secondAttribute="trailing" id="TJI-gP-OIY"/>
+                            <constraint firstItem="2eq-GU-ANJ" firstAttribute="leading" secondItem="Iqt-WN-uFA" secondAttribute="leading" id="eWh-3h-kku"/>
+                            <constraint firstItem="2eq-GU-ANJ" firstAttribute="bottom" secondItem="Iqt-WN-uFA" secondAttribute="bottom" id="q0x-GF-QrK"/>
+                            <constraint firstItem="2eq-GU-ANJ" firstAttribute="top" secondItem="Iqt-WN-uFA" secondAttribute="top" id="xXV-cC-jFE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Iqt-WN-uFA"/>
                     </view>
-                    <size key="freeformSize" width="414" height="736"/>
+                    <size key="freeformSize" width="414" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Gx-3BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="1721"/>
+            <point key="canvasLocation" x="1079.7101449275362" y="1747.0108695652175"/>
         </scene>
         <!--Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
@@ -1375,6 +1471,20 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPJ-Kj-5wa">
+                                                <rect key="frame" x="34" y="589.33333333333337" width="346" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6Al-SB-xhK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitTapped:" destination="yp1-MN-uM6" eventType="touchUpInside" id="dyL-BD-p0Y"/>
+                                                </connections>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select domain" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-1k-ICb" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="105.33333333333333" width="274" height="39.999999999999986"/>
                                                 <constraints>
@@ -1390,20 +1500,6 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPJ-Kj-5wa">
-                                                <rect key="frame" x="34" y="589.33333333333337" width="346" height="40"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="6Al-SB-xhK"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                                <state key="normal" title="SUBMIT">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="submitTapped:" destination="yp1-MN-uM6" eventType="touchUpInside" id="dyL-BD-p0Y"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
