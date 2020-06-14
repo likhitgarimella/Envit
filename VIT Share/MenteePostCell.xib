@@ -31,8 +31,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-Q7-Xof">
                         <rect key="frame" x="0.0" y="0.0" width="350" height="228"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likhit Garimella" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-EH-Qz2">
-                                <rect key="frame" x="16" y="16" width="122.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentee Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-EH-Qz2">
+                                <rect key="frame" x="16" y="16" width="111" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -89,6 +89,7 @@
                             <constraint firstItem="Joc-IQ-0Oy" firstAttribute="leading" secondItem="5k1-Q7-Xof" secondAttribute="leading" constant="16" id="nou-9J-8ym"/>
                             <constraint firstItem="La2-K0-Hed" firstAttribute="leading" secondItem="iZf-00-Px5" secondAttribute="trailing" id="p0t-GI-Fj7"/>
                             <constraint firstItem="2Og-EW-8cJ" firstAttribute="leading" secondItem="5k1-Q7-Xof" secondAttribute="leading" constant="16" id="u3g-el-ahi"/>
+                            <constraint firstAttribute="bottom" secondItem="2Og-EW-8cJ" secondAttribute="bottom" constant="55" id="u8q-Xm-zU3"/>
                             <constraint firstAttribute="trailing" secondItem="2Og-EW-8cJ" secondAttribute="trailing" constant="16" id="uis-lI-fBU"/>
                             <constraint firstAttribute="bottom" secondItem="EtL-Mn-PdB" secondAttribute="bottom" constant="20" id="wuD-9y-5Df"/>
                         </constraints>
