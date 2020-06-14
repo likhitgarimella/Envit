@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
 
 class FeedViewController: UIViewController {
     
@@ -18,8 +16,6 @@ class FeedViewController: UIViewController {
     
     @IBOutlet var mentorFeedView: UIView!
     @IBOutlet var menteeFeedView: UIView!
-    
-    // @IBOutlet var feedCollectionView: UICollectionView!
     
     // switch properties
     func Switch() {
@@ -62,44 +58,12 @@ class FeedViewController: UIViewController {
     }
     
     var mentorList = [MentorModel]()
-    var menteeList = [MenteeModel]()
     
     var refMentors: DatabaseReference!
-    var refMentees: DatabaseReference!
     
-    /*
     
-    // numberOfItemsInSection
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if menteeSwitch.isOn {
-            return menteeList.count
-        }
-        else {
-            return mentorList.count
-        }
-    }
-    
-    // cellForItemAt
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if menteeSwitch.isOn {
-            let menteeCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
-            // cell.hideAnimation()
-            let mentee: MenteeModel
-            mentee = menteeList[indexPath.row]
-            menteeCell.domainName.text = mentee.domainText
-            menteeCell.postedQueryTextView.text = mentee.postQueryText
-            /* if let seconds = mentor.timestamp {
-                // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
-                let pastDate = Date(timeIntervalSince1970: seconds)
-                // let dateFormatter = DateFormatter()
-                // dateFormatter.dateFormat = "MMM d, h:mm a"
-                // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
-                // cell.timeAgo.text = pastDate.timeAgoDisplay()
-            } */
-            return menteeCell
-        }
-        
+     /*
+     
         else {
             let mentorCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: "MentorPostCell", for: indexPath) as! MentorPostCell
             // cell.hideAnimation()
@@ -122,12 +86,13 @@ class FeedViewController: UIViewController {
         
     }
  
-    */
+     */
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Switch()
+        hideKeyboardWhenTappedAround()
         
         /*
         
@@ -136,14 +101,6 @@ class FeedViewController: UIViewController {
         if let flowLayout = feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
-        
-        // Register CollectionViewCell 'MenteePostCell' here
-        feedCollectionView.register(UINib.init(nibName: "MenteePostCell", bundle: nil), forCellWithReuseIdentifier: "MenteePostCell")
-        if let flowLayout = feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
-        }
-        
-        hideKeyboardWhenTappedAround()
         
         //
         refMentors = Database.database().reference().child("Mentors").child("Details")
@@ -171,27 +128,6 @@ class FeedViewController: UIViewController {
         })
         
         //
-        refMentees = Database.database().reference().child("Mentees").child("Details")
-        refMentees.observe(DataEventType.value, with: { (snapshot) in
-            
-            if snapshot.childrenCount > 0 {
-                
-                self.menteeList.removeAll()
-                for mentees in snapshot.children.allObjects as! [DataSnapshot] {
-                    let menteeObject = mentees.value as? [String: AnyObject]
-                    let menteeId = menteeObject?["1) id"]
-                    let menteeDomain  = menteeObject?["2) Domain"]
-                    let menteePost  = menteeObject?["3) Post Query"]
-                    let menteeTimestamp = menteeObject?["4) Timestamp"]
-                    
-                    let mentee = MenteeModel(id: menteeId as! String?, domainText: menteeDomain as! String?, postQueryText: menteePost as! String?, timestamp: menteeTimestamp as! Double?)
-                    self.menteeList.append(mentee)
-                }
-                self.feedCollectionView.reloadData()
-                
-            }
-            
-        })
  
         */
         
