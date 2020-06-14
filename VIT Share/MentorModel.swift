@@ -1,5 +1,5 @@
 //
-//  TechModel.swift
+//  MentorModel.swift
 //  VIT Share
 //
 //  Created by Likhit Garimella on 13/06/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TechModel {
+class MentorModel {
     
     var id: String?
     var domainText: String?

@@ -13,6 +13,7 @@ class MenteePostCell: UICollectionViewCell {
     // Outlets
     @IBOutlet var cardView: UIView!
     @IBOutlet var widthConstraint: NSLayoutConstraint!
+    @IBOutlet var domainName: UILabel!
     @IBOutlet var postedQueryTextView: UITextView!
     
     @IBOutlet var bottomView: UIView!
@@ -28,8 +29,9 @@ class MenteePostCell: UICollectionViewCell {
         
         postedQueryTextView.layer.cornerRadius = 6
         postedQueryTextView.backgroundColor = UIColor.white
+        
         postedQueryTextView.dataDetectorTypes = .link
         
     }
 
-}   // #36
+}   // #38
