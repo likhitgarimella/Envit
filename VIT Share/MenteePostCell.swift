@@ -9,6 +9,13 @@
 import UIKit
 
 class MenteePostCell: UICollectionViewCell {
+    
+    // Outlets
+    @IBOutlet var cardView: UIView!
+    @IBOutlet var widthConstraint: NSLayoutConstraint!
+    @IBOutlet var postedQueryTextView: UITextView!
+    
+    @IBOutlet var bottomView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
