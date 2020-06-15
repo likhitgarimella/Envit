@@ -257,7 +257,7 @@
                         <segue destination="8WI-uS-Drs" kind="relationship" relationship="viewControllers" id="Nmf-La-Xu7"/>
                         <segue destination="Qo3-6f-dJu" kind="relationship" relationship="viewControllers" id="AYk-hd-6oJ"/>
                         <segue destination="X4W-xC-QiQ" kind="relationship" relationship="viewControllers" id="efU-Vo-bxH"/>
-                        <segue destination="ft0-Wv-uBx" kind="relationship" relationship="viewControllers" id="738-Xb-NAM"/>
+                        <segue destination="hJB-cG-pTR" kind="relationship" relationship="viewControllers" id="738-Xb-NAM"/>
                         <segue destination="lRJ-Ug-21N" kind="relationship" relationship="viewControllers" id="ou4-Ns-6ui"/>
                     </connections>
                 </tabBarController>
@@ -535,7 +535,7 @@
             </objects>
             <point key="canvasLocation" x="-697" y="2057"/>
         </scene>
-        <!--Tech-->
+        <!--Tech Share View Controller-->
         <scene sceneID="oKh-hI-7Pp">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ft0-Wv-uBx" customClass="TechShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
@@ -544,20 +544,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-bX-VeO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-6R-g6d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-12-8O2">
-                                <rect key="frame" x="20" y="40" width="149" height="35"/>
+                                <rect key="frame" x="20" y="96" width="143.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-ho-5d0">
-                                <rect key="frame" x="20" y="95" width="374" height="32"/>
+                                <rect key="frame" x="20" y="152" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Feed"/>
@@ -576,28 +576,28 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqL-vu-B2r">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="QsU-5y-BBG" kind="embed" id="yz7-j7-mEU"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-QZ-0J8">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="2yx-Bv-AGp" kind="embed" id="FIx-jk-Ls6"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45h-zZ-5uF">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="yp1-MN-uM6" kind="embed" id="BuX-ZA-gx2"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-6J-5Su">
-                                <rect key="frame" x="0.0" y="134" width="414" height="533"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="T5f-2L-9Do" kind="embed" id="bPN-pu-4dP"/>
@@ -642,7 +642,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O8P-nZ-nad"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tech" image="heart" id="BJa-EF-Xot"/>
+                    <navigationItem key="navigationItem" id="LGb-9A-Ojc"/>
                     <connections>
                         <outlet property="feedView" destination="ahY-6J-5Su" id="035-i2-B6O"/>
                         <outlet property="menteeView" destination="XmZ-QZ-0J8" id="Dyu-nA-Rvo"/>
@@ -653,7 +653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVl-Gq-Jny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="1202"/>
+            <point key="canvasLocation" x="1563.768115942029" y="1201.6304347826087"/>
         </scene>
         <!--Find Ride View Controller-->
         <scene sceneID="MT9-HS-t4E">
@@ -1245,7 +1245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5746" y="781"/>
+            <point key="canvasLocation" x="6652.1739130434789" y="780.97826086956525"/>
         </scene>
         <!--Modify Tech View Controller-->
         <scene sceneID="YWx-jq-jFq">
@@ -1278,13 +1278,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="698.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7r-7N-wHK">
-                                                <rect key="frame" x="20" y="16" width="83" height="28"/>
+                                                <rect key="frame" x="20" y="16" width="80.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Query" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uX-Yq-Wfa">
-                                                <rect key="frame" x="19.999999999999993" y="116" width="120.33333333333331" height="28"/>
+                                                <rect key="frame" x="20.000000000000007" y="116" width="114.66666666666669" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1395,28 +1395,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-ax-Tyl">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="895.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be a Mentor. Share your work." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-cV-aeJ">
-                                                <rect key="frame" x="20" y="16" width="325" height="28"/>
+                                                <rect key="frame" x="20" y="16" width="306" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nl-Is-wDV">
-                                                <rect key="frame" x="20" y="66" width="83" height="28"/>
+                                                <rect key="frame" x="20" y="66.666666666666671" width="80.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-Qo-N5J">
-                                                <rect key="frame" x="20.000000000000007" y="166" width="119.66666666666669" height="28"/>
+                                                <rect key="frame" x="19.999999999999993" y="166.66666666666666" width="115.33333333333331" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj2-cY-tQz">
-                                                <rect key="frame" x="20" y="204" width="374" height="148"/>
+                                                <rect key="frame" x="20" y="204.66666666666663" width="374" height="148"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="148" id="Obc-Qt-XCO"/>
@@ -1427,13 +1427,13 @@
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prerequisites" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKZ-Fz-SkX">
-                                                <rect key="frame" x="20" y="374" width="139.33333333333334" height="28"/>
+                                                <rect key="frame" x="20" y="374.66666666666669" width="134.66666666666666" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Prerequisites (if any)" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="fLF-qC-JXs" customClass="TextFieldCounter" customModule="VIT_Share" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="412" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="412.66666666666669" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="DNZ-QA-Bve"/>
                                                 </constraints>
@@ -1459,13 +1459,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses Recommended" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8N-x3-d2F">
-                                                <rect key="frame" x="20" y="474" width="260.66666666666669" height="28"/>
+                                                <rect key="frame" x="19.999999999999986" y="474.66666666666669" width="249.66666666666663" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Course links (if any)" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="htt-OV-dJf">
-                                                <rect key="frame" x="20" y="512" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="512.66666666666663" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ndv-bU-b1f"/>
                                                 </constraints>
@@ -1480,7 +1480,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPJ-Kj-5wa">
-                                                <rect key="frame" x="34" y="586" width="346" height="40"/>
+                                                <rect key="frame" x="34" y="586.66666666666663" width="346" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6Al-SB-xhK"/>
@@ -1494,7 +1494,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select domain" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-1k-ICb" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="104" width="274" height="40"/>
+                                                <rect key="frame" x="20" y="104.66666666666667" width="274" height="40.000000000000014"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="zG2-3G-Gc4"/>
                                                 </constraints>
@@ -1588,13 +1588,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJg-Ss-3aG">
-                                <rect key="frame" x="162.33333333333334" y="12" width="89.666666666666657" height="24"/>
+                                <rect key="frame" x="164.33333333333334" y="12" width="85.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-8T-AIv">
-                                <rect key="frame" x="102" y="57" width="51" height="31"/>
+                                <rect key="frame" x="100" y="57" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="enableMentor:" destination="T5f-2L-9Do" eventType="valueChanged" id="1L4-jp-WZd"/>
@@ -1608,13 +1608,13 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-lq-lNr">
-                                <rect key="frame" x="30" y="60" width="64" height="25"/>
+                                <rect key="frame" x="30" y="60" width="62" height="25"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" text="Mentee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80O-fZ-wjC">
-                                <rect key="frame" x="259.33333333333331" y="60.666666666666664" width="67.333333333333314" height="23.666666666666664"/>
+                                <rect key="frame" x="261" y="60.666666666666664" width="65.666666666666686" height="23.666666666666664"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1670,7 +1670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30a-mQ-tD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="1202"/>
+            <point key="canvasLocation" x="2507.2463768115945" y="1201.6304347826087"/>
         </scene>
         <!--Mentee Feed View Controller-->
         <scene sceneID="53b-gV-1ur">
@@ -1712,7 +1712,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2547.826086956522" y="741.84782608695662"/>
+            <point key="canvasLocation" x="3455.072463768116" y="741.84782608695662"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oau-4n-wFQ">
@@ -1728,7 +1728,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyj-Zu-TiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3487" y="703"/>
+            <point key="canvasLocation" x="4394.202898550725" y="741.84782608695662"/>
         </scene>
         <!--Mentor Feed View Controller-->
         <scene sceneID="7Rv-u6-BoU">
@@ -1770,7 +1770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2547.826086956522" y="1402.9891304347827"/>
+            <point key="canvasLocation" x="3455.072463768116" y="1402.9891304347827"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RBL-4Y-fwh">
@@ -1786,7 +1786,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8u8-Qv-9lE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3487" y="1442"/>
+            <point key="canvasLocation" x="4394.202898550725" y="1402.9891304347827"/>
+        </scene>
+        <!--Tech-->
+        <scene sceneID="sPG-aL-RV4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hJB-cG-pTR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tech" image="heart" id="BJa-EF-Xot"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LUM-aT-xXd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ft0-Wv-uBx" kind="relationship" relationship="rootViewController" id="Mb2-4r-aNr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ki-8yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.52173913043487" y="1201.6304347826087"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

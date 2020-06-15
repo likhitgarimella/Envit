@@ -19,6 +19,9 @@ class MenteePostCell: UICollectionViewCell {
     @IBOutlet var bottomView: UIView!
     @IBOutlet var menteeLikeImageView: UIImageView!
     @IBOutlet var menteeCommentImageView: UIImageView!
+    
+    // linking mentee feed VC & mentee post cell
+    var menteeFeedVC: MenteeFeedViewController?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,4 +39,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #40
+}   // #43

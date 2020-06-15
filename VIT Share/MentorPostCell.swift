@@ -22,6 +22,9 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var mentorLikeImageView: UIImageView!
     @IBOutlet var mentorCommentImageView: UIImageView!
     
+    // linking mentor feed VC & mentor post cell
+    var mentorFeedVC: MentorFeedViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -40,6 +43,17 @@ class MentorPostCell: UICollectionViewCell {
         
         courseTextView.dataDetectorTypes = .link
         
+        // Tap gesture for comment image on tap
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
+        mentorCommentImageView.addGestureRecognizer(tapGesture)
+        mentorCommentImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func commentImageViewTouch() {
+        
+        mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: nil)
+        
     }
 
-}   // #46
+}   // #60

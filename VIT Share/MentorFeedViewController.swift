@@ -38,6 +38,8 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
             // cell.timeAgo.text = pastDate.timeAgoDisplay()
         } */
+        // linking mentor feed VC & mentor post cell
+        mentorCell.mentorFeedVC = self
         return mentorCell
         
     }
@@ -80,4 +82,4 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-}   // #84
+}   // #86
