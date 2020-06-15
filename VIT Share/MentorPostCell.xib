@@ -132,24 +132,23 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-Pe-h3I">
                         <rect key="frame" x="16" y="380" width="120" height="40"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="VMf-s2-wmT">
-                                <rect key="frame" x="20" y="9" width="32" height="22"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon1" translatesAutoresizingMaskIntoConstraints="NO" id="VMf-s2-wmT">
+                                <rect key="frame" x="24" y="10" width="24" height="20"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment" translatesAutoresizingMaskIntoConstraints="NO" id="X0r-Ct-A5J">
-                                <rect key="frame" x="68" y="8" width="28" height="24"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon2" translatesAutoresizingMaskIntoConstraints="NO" id="X0r-Ct-A5J">
+                                <rect key="frame" x="66" y="9" width="25" height="22"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="X0r-Ct-A5J" firstAttribute="top" secondItem="WV7-Pe-h3I" secondAttribute="top" constant="9" id="5jt-9o-5GG"/>
                             <constraint firstAttribute="height" constant="40" id="CNG-ME-yjv"/>
-                            <constraint firstItem="VMf-s2-wmT" firstAttribute="leading" secondItem="WV7-Pe-h3I" secondAttribute="leading" constant="20" id="CRs-LS-ZaH"/>
-                            <constraint firstItem="X0r-Ct-A5J" firstAttribute="top" secondItem="WV7-Pe-h3I" secondAttribute="top" constant="8" id="Nq6-Kc-bnM"/>
+                            <constraint firstAttribute="bottom" secondItem="X0r-Ct-A5J" secondAttribute="bottom" constant="9" id="KhA-l6-Gnj"/>
+                            <constraint firstItem="VMf-s2-wmT" firstAttribute="leading" secondItem="WV7-Pe-h3I" secondAttribute="leading" constant="24" id="N8f-bd-Tzc"/>
                             <constraint firstAttribute="width" constant="120" id="PiD-dX-ss3"/>
-                            <constraint firstItem="X0r-Ct-A5J" firstAttribute="leading" secondItem="VMf-s2-wmT" secondAttribute="trailing" constant="16" id="UnK-Jg-E1W"/>
-                            <constraint firstAttribute="bottom" secondItem="X0r-Ct-A5J" secondAttribute="bottom" constant="8" id="bh1-SG-FAx"/>
-                            <constraint firstAttribute="trailing" secondItem="X0r-Ct-A5J" secondAttribute="trailing" constant="24" id="dqP-Ut-XzQ"/>
-                            <constraint firstAttribute="bottom" secondItem="VMf-s2-wmT" secondAttribute="bottom" constant="9" id="j8b-Jb-EnG"/>
-                            <constraint firstItem="VMf-s2-wmT" firstAttribute="top" secondItem="WV7-Pe-h3I" secondAttribute="top" constant="9" id="lzv-Vp-5Ic"/>
+                            <constraint firstAttribute="bottom" secondItem="VMf-s2-wmT" secondAttribute="bottom" constant="10" id="air-xT-TQm"/>
+                            <constraint firstItem="X0r-Ct-A5J" firstAttribute="leading" secondItem="VMf-s2-wmT" secondAttribute="trailing" constant="18" id="cCc-sX-QFt"/>
+                            <constraint firstItem="VMf-s2-wmT" firstAttribute="top" secondItem="WV7-Pe-h3I" secondAttribute="top" constant="10" id="dxa-ga-x7e"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -176,7 +175,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="comment" width="28" height="24"/>
-        <image name="like" width="32" height="24"/>
+        <image name="Icon1" width="24" height="20"/>
+        <image name="Icon2" width="25" height="22"/>
     </resources>
 </document>
