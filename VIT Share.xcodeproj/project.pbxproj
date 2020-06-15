@@ -89,6 +89,8 @@
 		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
 		02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */; };
 		02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */; };
+		02C7748D249811400037E693 /* CommentsInMenteeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */; };
+		02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */; };
 		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
 		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
@@ -189,6 +191,8 @@
 		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
 		02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorPostFeed.swift; sourceTree = "<group>"; };
 		02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteePostFeed.swift; sourceTree = "<group>"; };
+		02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteeTableViewCell.swift; sourceTree = "<group>"; };
+		02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorTableViewCell.swift; sourceTree = "<group>"; };
 		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
@@ -339,7 +343,9 @@
 				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
 				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
 				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
+				02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */,
 				02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */,
+				02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */,
 				02802BBA24857862008BF296 /* TextFieldCounter.swift */,
 				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
 				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
@@ -591,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C7748D249811400037E693 /* CommentsInMenteeTableViewCell.swift in Sources */,
 				0221E1292477C12F0022DCCB /* SPAlertIconStarView.swift in Sources */,
 				029FB8012475A3E60053D916 /* Extensions.swift in Sources */,
 				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
@@ -614,6 +621,7 @@
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				02355CC0248106090062BA59 /* Cell4.swift in Sources */,
 				02802BB72484BADA008BF296 /* ModifyTechViewController.swift in Sources */,
+				02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */,
 				02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */,
 				02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,

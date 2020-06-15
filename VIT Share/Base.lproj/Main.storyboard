@@ -1707,28 +1707,12 @@
                     </view>
                     <connections>
                         <outlet property="menteeFeedCollectionView" destination="avT-Pj-ocd" id="Yac-b0-Nve"/>
-                        <segue destination="vaT-bb-xDq" kind="show" identifier="commentsInMenteeFeed" id="OBP-R5-IMX"/>
+                        <segue destination="wkw-4z-u78" kind="show" identifier="commentsInMenteeFeed" id="fNc-hj-TD4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3455.072463768116" y="741.84782608695662"/>
-        </scene>
-        <!--Comments In Mentee Post Feed-->
-        <scene sceneID="oau-4n-wFQ">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vaT-bb-xDq" customClass="CommentsInMenteePostFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dIQ-VA-5jS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="N17-F0-mcj"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4M4-8e-EFu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lyj-Zu-TiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4394.202898550725" y="741.84782608695662"/>
         </scene>
         <!--Mentor Feed View Controller-->
         <scene sceneID="7Rv-u6-BoU">
@@ -1807,6 +1791,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ki-8yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.52173913043487" y="1201.6304347826087"/>
+        </scene>
+        <!--Comments In Mentee Post Feed-->
+        <scene sceneID="ucF-04-03M">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="wkw-4z-u78" customClass="CommentsInMenteePostFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="POE-f7-S7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-1d-tFJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="590"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell1" rowHeight="80" id="0XD-xD-MKs" customClass="CommentsInMenteeTableViewCell" customModule="VIT_Share" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0XD-xD-MKs" id="FeH-0H-lqE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC9-JO-shg">
+                                                    <rect key="frame" x="40.000000000000007" y="11" width="78.666666666666686" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-bG-EVn">
+                                                    <rect key="frame" x="40.000000000000007" y="39" width="70.666666666666686" height="18.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9M-3T-0Gb">
+                                                    <rect key="frame" x="20" y="68" width="374" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="kwf-Bf-r2x"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JK4-bG-EVn" firstAttribute="leading" secondItem="FeH-0H-lqE" secondAttribute="leadingMargin" constant="20" id="2QQ-h3-IOw"/>
+                                                <constraint firstItem="t9M-3T-0Gb" firstAttribute="trailing" secondItem="FeH-0H-lqE" secondAttribute="trailingMargin" id="7Ft-v2-NMP"/>
+                                                <constraint firstItem="mC9-JO-shg" firstAttribute="leading" secondItem="FeH-0H-lqE" secondAttribute="leadingMargin" constant="20" id="F3L-mb-YaO"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mC9-JO-shg" secondAttribute="trailing" constant="20" symbolic="YES" id="HTt-pr-9kW"/>
+                                                <constraint firstItem="mC9-JO-shg" firstAttribute="top" secondItem="FeH-0H-lqE" secondAttribute="topMargin" id="RO8-Wy-MON"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JK4-bG-EVn" secondAttribute="trailing" constant="20" symbolic="YES" id="a9L-xY-Nod"/>
+                                                <constraint firstItem="t9M-3T-0Gb" firstAttribute="top" secondItem="JK4-bG-EVn" secondAttribute="bottom" constant="10.33" id="fdh-7K-StS"/>
+                                                <constraint firstItem="t9M-3T-0Gb" firstAttribute="bottom" secondItem="FeH-0H-lqE" secondAttribute="bottomMargin" id="gze-li-Duw"/>
+                                                <constraint firstItem="t9M-3T-0Gb" firstAttribute="leading" secondItem="FeH-0H-lqE" secondAttribute="leadingMargin" id="nnO-Sr-MQL"/>
+                                                <constraint firstItem="JK4-bG-EVn" firstAttribute="top" secondItem="mC9-JO-shg" secondAttribute="bottom" constant="8" id="pIe-zI-VDs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wkw-4z-u78" id="9rZ-cn-7V9"/>
+                                    <outlet property="delegate" destination="wkw-4z-u78" id="ndA-wW-6Ow"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzU-sJ-h05">
+                                <rect key="frame" x="0.0" y="590" width="414" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-KM-nSh">
+                                        <rect key="frame" x="8" y="8" width="338" height="34"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-Lo-M3l">
+                                        <rect key="frame" x="366" y="9.6666666666666288" width="40" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="8pi-Yn-WjB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="centerY" secondItem="YzU-sJ-h05" secondAttribute="centerY" id="431-3O-m0N"/>
+                                    <constraint firstAttribute="trailing" secondItem="YeC-Lo-M3l" secondAttribute="trailing" constant="8" id="4Fd-yo-Guy"/>
+                                    <constraint firstAttribute="height" constant="50" id="KgY-Gn-eBb"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZLr-KM-nSh" secondAttribute="bottom" constant="8" id="N3p-S3-d0h"/>
+                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="leading" secondItem="YzU-sJ-h05" secondAttribute="leading" constant="8" id="q4q-bz-BQk"/>
+                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="leading" secondItem="ZLr-KM-nSh" secondAttribute="trailing" constant="20" id="scr-0M-c5C"/>
+                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="top" secondItem="YzU-sJ-h05" secondAttribute="top" constant="8" id="uKQ-Rv-msD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i3d-1d-tFJ" firstAttribute="leading" secondItem="Gpp-YL-2mQ" secondAttribute="leading" id="1wN-4a-coa"/>
+                            <constraint firstItem="i3d-1d-tFJ" firstAttribute="trailing" secondItem="Gpp-YL-2mQ" secondAttribute="trailing" id="2j6-3U-b7e"/>
+                            <constraint firstItem="YzU-sJ-h05" firstAttribute="leading" secondItem="Gpp-YL-2mQ" secondAttribute="leading" id="OCe-nw-hVd"/>
+                            <constraint firstItem="YzU-sJ-h05" firstAttribute="bottom" secondItem="Gpp-YL-2mQ" secondAttribute="bottom" id="dbi-5E-TS9"/>
+                            <constraint firstItem="YzU-sJ-h05" firstAttribute="top" secondItem="i3d-1d-tFJ" secondAttribute="bottom" id="eyt-2L-mdA"/>
+                            <constraint firstItem="YzU-sJ-h05" firstAttribute="trailing" secondItem="Gpp-YL-2mQ" secondAttribute="trailing" id="fR7-AE-6Ry"/>
+                            <constraint firstItem="i3d-1d-tFJ" firstAttribute="top" secondItem="POE-f7-S7r" secondAttribute="top" id="xc8-T9-DEo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gpp-YL-2mQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8lA-uR-elU"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="dbi-5E-TS9" id="DOi-pc-eCG"/>
+                        <outlet property="commentTextField" destination="ZLr-KM-nSh" id="Sex-8X-2HK"/>
+                        <outlet property="commentsInMenteePostFeedTableView" destination="i3d-1d-tFJ" id="IwN-Bl-6dq"/>
+                        <outlet property="sendOutlet" destination="YeC-Lo-M3l" id="TmK-gm-S28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5b5-Uj-oWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4436" y="742"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
