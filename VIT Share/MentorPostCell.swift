@@ -19,6 +19,8 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var prerequisiteTextView: UITextView!
     
     @IBOutlet var bottomView: UIView!
+    @IBOutlet var mentorLikeImageView: UIImageView!
+    @IBOutlet var mentorCommentImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,4 +42,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #44
+}   // #46

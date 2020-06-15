@@ -17,6 +17,8 @@ class MenteePostCell: UICollectionViewCell {
     @IBOutlet var postedQueryTextView: UITextView!
     
     @IBOutlet var bottomView: UIView!
+    @IBOutlet var menteeLikeImageView: UIImageView!
+    @IBOutlet var menteeCommentImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,4 +36,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #38
+}   // #40

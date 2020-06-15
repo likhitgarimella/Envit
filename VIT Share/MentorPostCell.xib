@@ -168,6 +168,8 @@
                 <outlet property="courseTextView" destination="6AZ-sN-Gt6" id="D48-Qk-WWD"/>
                 <outlet property="domainName" destination="z83-Rc-D1w" id="orm-eE-Zfy"/>
                 <outlet property="experienceTextView" destination="9wp-RZ-UfP" id="euI-OR-mL6"/>
+                <outlet property="mentorCommentImageView" destination="X0r-Ct-A5J" id="QIp-lV-k38"/>
+                <outlet property="mentorLikeImageView" destination="VMf-s2-wmT" id="ENu-bu-GQu"/>
                 <outlet property="prerequisiteTextView" destination="Fkq-tW-aOJ" id="a9F-yn-ZTN"/>
                 <outlet property="widthConstraint" destination="fTR-iG-BNU" id="Nnc-Oz-GB9"/>
             </connections>
