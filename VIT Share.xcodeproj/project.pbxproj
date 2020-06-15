@@ -87,6 +87,8 @@
 		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
 		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
 		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
+		02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */; };
+		02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */; };
 		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
 		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
@@ -185,6 +187,8 @@
 		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
+		02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorPostFeed.swift; sourceTree = "<group>"; };
+		02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteePostFeed.swift; sourceTree = "<group>"; };
 		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
@@ -325,15 +329,17 @@
 				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
+				02802BB824850709008BF296 /* FeedViewController.swift */,
 				0216544F24941D44007F6A73 /* MentorModel.swift */,
 				024FC8D42496BAF2006046B3 /* MenteeModel.swift */,
+				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
+				02B96D92248665B2000C7D48 /* MenteePostCell.xib */,
+				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
+				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
 				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
 				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
-				02802BB824850709008BF296 /* FeedViewController.swift */,
-				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
-				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
-				02B96D92248665B2000C7D48 /* MenteePostCell.xib */,
-				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
+				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
+				02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */,
 				02802BBA24857862008BF296 /* TextFieldCounter.swift */,
 				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
 				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
@@ -602,12 +608,14 @@
 				02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */,
 				0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */,
 				02E3A9AE2478DC4A00A9C18C /* CBTabBarButton.swift in Sources */,
+				02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */,
 				0221E1262477C12F0022DCCB /* SPAlertIconHeartView.swift in Sources */,
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				02355CC0248106090062BA59 /* Cell4.swift in Sources */,
 				02802BB72484BADA008BF296 /* ModifyTechViewController.swift in Sources */,
 				02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */,
+				02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
 				0221E1252477C12F0022DCCB /* SPAlertIconAddView.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,

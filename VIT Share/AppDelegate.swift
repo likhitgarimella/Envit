@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Status bar color
+        
+        // In Info.plist...
+        // View controller-based status bar appearance -> NO
+        
         /* UIApplication.shared.isStatusBarHidden = false
         if #available(iOS 13.0, *) {
             UIApplication.shared.statusBarStyle = .darkContent
@@ -56,4 +60,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-}   // #60
+}   // #64
