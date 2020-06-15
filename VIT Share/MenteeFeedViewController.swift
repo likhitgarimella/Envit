@@ -36,6 +36,8 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
             // cell.timeAgo.text = pastDate.timeAgoDisplay()
         } */
+        // linking mentee feed VC & mentee post cell
+        menteeCell.menteeFeedVC = self
         return menteeCell
         
     }
@@ -76,4 +78,4 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-}   // #80
+}   // #82

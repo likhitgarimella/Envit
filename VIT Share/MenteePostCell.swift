@@ -37,6 +37,17 @@ class MenteePostCell: UICollectionViewCell {
         
         postedQueryTextView.dataDetectorTypes = .link
         
+        // Tap gesture for comment image on tap
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
+        menteeCommentImageView.addGestureRecognizer(tapGesture)
+        menteeCommentImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func commentImageViewTouch() {
+        
+        menteeFeedVC?.performSegue(withIdentifier: "commentsInMenteeFeed", sender: nil)
+        
     }
 
-}   // #43
+}   // #54

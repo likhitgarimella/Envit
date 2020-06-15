@@ -551,13 +551,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-12-8O2">
-                                <rect key="frame" x="20" y="96" width="143.66666666666666" height="36"/>
+                                <rect key="frame" x="20" y="56" width="143.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-ho-5d0">
-                                <rect key="frame" x="20" y="152" width="374" height="32"/>
+                                <rect key="frame" x="20" y="112" width="374" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="Feed"/>
@@ -576,28 +576,28 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqL-vu-B2r">
-                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="QsU-5y-BBG" kind="embed" id="yz7-j7-mEU"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-QZ-0J8">
-                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="2yx-Bv-AGp" kind="embed" id="FIx-jk-Ls6"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45h-zZ-5uF">
-                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="yp1-MN-uM6" kind="embed" id="BuX-ZA-gx2"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-6J-5Su">
-                                <rect key="frame" x="0.0" y="191" width="414" height="476"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="T5f-2L-9Do" kind="embed" id="bPN-pu-4dP"/>
@@ -625,7 +625,7 @@
                             <constraint firstItem="XmZ-QZ-0J8" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="bmk-Bb-lzc"/>
                             <constraint firstItem="XmZ-QZ-0J8" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="cyc-Fy-rYv"/>
                             <constraint firstItem="fB8-6R-g6d" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="f1D-pv-dDD"/>
-                            <constraint firstItem="qrB-12-8O2" firstAttribute="top" secondItem="O8P-nZ-nad" secondAttribute="top" constant="40" id="f1s-gD-R70"/>
+                            <constraint firstItem="qrB-12-8O2" firstAttribute="top" secondItem="O8P-nZ-nad" secondAttribute="top" id="f1s-gD-R70"/>
                             <constraint firstItem="XmZ-QZ-0J8" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="f2F-bT-tdm"/>
                             <constraint firstItem="SVK-ho-5d0" firstAttribute="centerX" secondItem="D7e-eB-W87" secondAttribute="centerX" id="jCq-7S-NYI"/>
                             <constraint firstItem="O8P-nZ-nad" firstAttribute="right" secondItem="SVK-ho-5d0" secondAttribute="right" constant="20" id="lpV-Dh-qJS"/>
@@ -1245,7 +1245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6652.1739130434789" y="780.97826086956525"/>
+            <point key="canvasLocation" x="5822" y="781"/>
         </scene>
         <!--Modify Tech View Controller-->
         <scene sceneID="YWx-jq-jFq">
@@ -1797,6 +1797,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LUM-aT-xXd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
