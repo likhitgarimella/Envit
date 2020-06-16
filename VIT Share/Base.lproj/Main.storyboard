@@ -1817,13 +1817,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC9-JO-shg">
-                                                    <rect key="frame" x="40" y="11" width="73" height="20"/>
+                                                    <rect key="frame" x="40" y="11.000000000000002" width="73" height="18.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-bG-EVn">
-                                                    <rect key="frame" x="40.000000000000007" y="39" width="66.666666666666686" height="18.666666666666671"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1864,8 +1864,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzU-sJ-h05">
                                 <rect key="frame" x="0.0" y="590" width="414" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-KM-nSh">
-                                        <rect key="frame" x="8" y="8" width="338" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-KM-nSh">
+                                        <rect key="frame" x="20" y="5" width="326" height="40"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1875,10 +1875,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-Lo-M3l">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-Lo-M3l">
                                         <rect key="frame" x="366" y="9.6666666666666288" width="40" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="8pi-Yn-WjB"/>
+                                            <constraint firstAttribute="width" constant="40" id="QDb-n7-iaZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Send">
@@ -1894,10 +1894,10 @@
                                     <constraint firstItem="YeC-Lo-M3l" firstAttribute="centerY" secondItem="YzU-sJ-h05" secondAttribute="centerY" id="431-3O-m0N"/>
                                     <constraint firstAttribute="trailing" secondItem="YeC-Lo-M3l" secondAttribute="trailing" constant="8" id="4Fd-yo-Guy"/>
                                     <constraint firstAttribute="height" constant="50" id="KgY-Gn-eBb"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZLr-KM-nSh" secondAttribute="bottom" constant="8" id="N3p-S3-d0h"/>
-                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="leading" secondItem="YzU-sJ-h05" secondAttribute="leading" constant="8" id="q4q-bz-BQk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZLr-KM-nSh" secondAttribute="bottom" constant="5" id="N3p-S3-d0h"/>
+                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="leading" secondItem="YzU-sJ-h05" secondAttribute="leading" constant="20" id="q4q-bz-BQk"/>
                                     <constraint firstItem="YeC-Lo-M3l" firstAttribute="leading" secondItem="ZLr-KM-nSh" secondAttribute="trailing" constant="20" id="scr-0M-c5C"/>
-                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="top" secondItem="YzU-sJ-h05" secondAttribute="top" constant="8" id="uKQ-Rv-msD"/>
+                                    <constraint firstItem="ZLr-KM-nSh" firstAttribute="top" secondItem="YzU-sJ-h05" secondAttribute="top" constant="5" id="uKQ-Rv-msD"/>
                                 </constraints>
                             </view>
                         </subviews>

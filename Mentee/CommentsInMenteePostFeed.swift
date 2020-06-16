@@ -62,10 +62,28 @@ class CommentsInMenteePostFeed: UIViewController {
         
     }
     
+    func BorderProp() {
+        
+        // Textfield Border Property
+        let myColor = UIColor.systemGray
+        commentTextField.layer.borderColor = myColor.cgColor
+        commentTextField.layer.borderWidth = 2
+        
+    }
+    
+    func CornerRadius() {
+        
+        // Textfield Corner Radius Property
+        // commentTextField.layer.cornerRadius = 20
+        commentTextField.layer.cornerRadius = commentTextField.frame.size.height/2
+        commentTextField.clipsToBounds = true
+        
+    }
+    
     func LeftPadding() {
         
         // Create a padding view for Textfield on LEFT
-        commentTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: commentTextField.frame.height))
+        commentTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: commentTextField.frame.height))
         commentTextField.leftViewMode = .always
         
     }
@@ -77,6 +95,8 @@ class CommentsInMenteePostFeed: UIViewController {
         Properties()
         empty()
         handleTextField()
+        BorderProp()
+        CornerRadius()
         LeftPadding()
         loadComments()
         
@@ -212,4 +232,4 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         return cell
     }
     
-}   // #216
+}   // #236
