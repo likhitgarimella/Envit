@@ -307,6 +307,8 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
+				02D6B92B24996B270008B503 /* Mentor */,
+				02D6B92C24996B460008B503 /* Mentee */,
 				02DC18D5248299E500CBC10C /* Cab Share */,
 				02DC18D624829A8500CBC10C /* Books Share */,
 				024C710E2443B145002D9CCE /* Products */,
@@ -331,40 +333,54 @@
 				024C711B2443B149002D9CCE /* LaunchScreen.storyboard */,
 				024C71162443B145002D9CCE /* Main.storyboard */,
 				024C71192443B149002D9CCE /* Assets.xcassets */,
+				02D6B929249909170008B503 /* User.swift */,
 				02DC18D3248224C100CBC10C /* AuthService.swift */,
 				020A32FB244434F1006FE3E5 /* LoginViewController.swift */,
 				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
 				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
 				02E4C7BD24483C9F004CE7D5 /* SearchBarView.swift */,
 				02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */,
-				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				024A05522483A43C00CC06CB /* TechShareViewController.swift */,
 				02802BB824850709008BF296 /* FeedViewController.swift */,
-				0216544F24941D44007F6A73 /* MentorModel.swift */,
-				024FC8D42496BAF2006046B3 /* MenteeModel.swift */,
-				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
-				02B96D92248665B2000C7D48 /* MenteePostCell.xib */,
-				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
-				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
-				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
-				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
-				02D6B929249909170008B503 /* User.swift */,
-				02D6B9252498E10F0008B503 /* MenteeComments.swift */,
-				02D6B9272498E13B0008B503 /* MentorComments.swift */,
-				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
-				02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */,
-				02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */,
-				02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */,
 				02802BBA24857862008BF296 /* TextFieldCounter.swift */,
-				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
-				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
 				02802BB62484BADA008BF296 /* ModifyTechViewController.swift */,
+				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
 				029FB8002475A3E60053D916 /* Extensions.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
 			);
 			path = "VIT Share";
+			sourceTree = "<group>";
+		};
+		02D6B92B24996B270008B503 /* Mentor */ = {
+			isa = PBXGroup;
+			children = (
+				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
+				0216544F24941D44007F6A73 /* MentorModel.swift */,
+				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
+				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
+				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
+				02D6B9272498E13B0008B503 /* MentorComments.swift */,
+				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
+				02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */,
+			);
+			path = Mentor;
+			sourceTree = "<group>";
+		};
+		02D6B92C24996B460008B503 /* Mentee */ = {
+			isa = PBXGroup;
+			children = (
+				02802BB42484BAB4008BF296 /* MenteeViewController.swift */,
+				024FC8D42496BAF2006046B3 /* MenteeModel.swift */,
+				02B96D92248665B2000C7D48 /* MenteePostCell.xib */,
+				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
+				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
+				02D6B9252498E10F0008B503 /* MenteeComments.swift */,
+				02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */,
+				02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */,
+			);
+			path = Mentee;
 			sourceTree = "<group>";
 		};
 		02DC18D5248299E500CBC10C /* Cab Share */ = {
