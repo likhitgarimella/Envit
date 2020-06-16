@@ -23,6 +23,8 @@ class CommentsInMenteePostFeed: UIViewController {
     
     var menteeComments = [MenteeComments]()
     
+    var users = [User]()
+    
     // Tab bar disappears
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -128,7 +130,7 @@ class CommentsInMenteePostFeed: UIViewController {
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        Database.database().reference().child("Users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
                 let user = User.transformUser(dict: dict)
                 self.users.append(user)
@@ -189,13 +191,17 @@ class CommentsInMenteePostFeed: UIViewController {
 extension CommentsInMenteePostFeed: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return menteeComments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell1", for: indexPath) as! CommentsInMenteeTableViewCell
         cell.backgroundColor = UIColor.white
+        let menteeComment = menteeComments[indexPath.row]
+        let user = users[indexPath.row]
+        cell.comment = menteeComment
+        cell.user = user
         return cell
     }
     
-}   // #202
+}   // #208
