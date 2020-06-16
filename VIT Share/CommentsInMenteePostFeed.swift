@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import JGProgressHUD
 
 class CommentsInMenteePostFeed: UIViewController {
     
@@ -19,6 +20,8 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBOutlet var sendOutlet: UIButton!
     
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
+    
+    var menteeComments = [MenteeComments]()
     
     // Tab bar disappears
     override func viewWillAppear(_ animated: Bool) {
@@ -64,6 +67,7 @@ class CommentsInMenteePostFeed: UIViewController {
         
         hideKeyboardWhenTappedAround()
         Properties()
+        empty()
         handleTextField()
         
         // Keyboard Show
@@ -91,6 +95,46 @@ class CommentsInMenteePostFeed: UIViewController {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
+        
+    }
+    
+    // displaying all comments for a post
+    func loadComments() {
+        
+        let menteePostCommentRef = Database.database().reference().child("Mentee-Post-Comments").child(self.postId)
+        menteePostCommentRef.observe(.childAdded, with: {
+            snapshot in
+            print("snapshot key")
+            print(snapshot.key)
+            Database.database().reference().child("Comments-In-Mentee-Post").child(snapshot.key).observe(.value, with: {
+                snapshotComment in
+                print("snapshot comment")
+                print(snapshotComment.value)
+                if let dict = snapshotComment.value as? [String: Any] {
+                    
+                    let newComment = MenteeComments.transformComment(dict: dict)
+                    self.fetchUser(uid: newComment.uid!, completed: {
+                        self.menteeComments.append(newComment)
+                        print(self.menteeComments)
+                        self.commentsInMenteePostFeedTableView.reloadData()
+                    })
+                    
+                }
+            })
+        })
+        
+    }
+    
+    /// it's job is to, given a user id, look up the corresponding user on db...
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                let user = User.transformUser(dict: dict)
+                self.users.append(user)
+                completed()
+            }
+        })
         
     }
     
@@ -154,4 +198,4 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         return cell
     }
     
-}   // #158
+}   // #202

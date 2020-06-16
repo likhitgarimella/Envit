@@ -96,6 +96,7 @@
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
 		02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9252498E10F0008B503 /* MenteeComments.swift */; };
 		02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9272498E13B0008B503 /* MentorComments.swift */; };
+		02D6B92A249909170008B503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B929249909170008B503 /* User.swift */; };
 		02DC18D4248224C100CBC10C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC18D3248224C100CBC10C /* AuthService.swift */; };
 		02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */; };
 		02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99E2478DC4700A9C18C /* CBTabItemBasicAnimation.swift */; };
@@ -200,6 +201,7 @@
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
 		02D6B9252498E10F0008B503 /* MenteeComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeComments.swift; sourceTree = "<group>"; };
 		02D6B9272498E13B0008B503 /* MentorComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorComments.swift; sourceTree = "<group>"; };
+		02D6B929249909170008B503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		02DC18D3248224C100CBC10C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		02E3A99B2478DC4700A9C18C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemSelectAnimation.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
 				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
 				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
+				02D6B929249909170008B503 /* User.swift */,
 				02D6B9252498E10F0008B503 /* MenteeComments.swift */,
 				02D6B9272498E13B0008B503 /* MentorComments.swift */,
 				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
@@ -671,6 +674,7 @@
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
 				0221E1232477C12F0022DCCB /* SPAlertIconBoltView.swift in Sources */,
 				02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */,
+				02D6B92A249909170008B503 /* User.swift in Sources */,
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
