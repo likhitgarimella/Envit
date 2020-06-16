@@ -100,7 +100,7 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBAction func sendButton(_ sender: UIButton) {
         
         let databaseRef = Database.database().reference()
-        let commentsRef = databaseRef.child("comments")
+        let commentsRef = databaseRef.child("Comments-In-Mentee-Post")
         // a unique id that is generated for every comment
         let newCommentId = commentsRef.childByAutoId().key
         let newCommentReference = commentsRef.child(newCommentId!)
@@ -116,7 +116,7 @@ class CommentsInMenteePostFeed: UIViewController {
                 return
             }
             // new node to map 'posts' & 'comments'
-            let postCommentRef = databaseRef.child("post-comments").child(self.postId).child(newCommentId!)
+            let postCommentRef = databaseRef.child("Mentee-Post-Comments").child(self.postId).child(newCommentId!)
             postCommentRef.setValue(true, withCompletionBlock: { (error, ref) in
                 if error != nil {
                     print(error!.localizedDescription)

@@ -94,6 +94,8 @@
 		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
 		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
+		02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9252498E10F0008B503 /* MenteeComments.swift */; };
+		02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9272498E13B0008B503 /* MentorComments.swift */; };
 		02DC18D4248224C100CBC10C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC18D3248224C100CBC10C /* AuthService.swift */; };
 		02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */; };
 		02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99E2478DC4700A9C18C /* CBTabItemBasicAnimation.swift */; };
@@ -196,6 +198,8 @@
 		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
+		02D6B9252498E10F0008B503 /* MenteeComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeComments.swift; sourceTree = "<group>"; };
+		02D6B9272498E13B0008B503 /* MentorComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorComments.swift; sourceTree = "<group>"; };
 		02DC18D3248224C100CBC10C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		02E3A99B2478DC4700A9C18C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemSelectAnimation.swift; sourceTree = "<group>"; };
@@ -342,6 +346,8 @@
 				02B96D91248665B2000C7D48 /* MenteePostCell.swift */,
 				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
 				024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */,
+				02D6B9252498E10F0008B503 /* MenteeComments.swift */,
+				02D6B9272498E13B0008B503 /* MentorComments.swift */,
 				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
 				02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */,
 				02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */,
@@ -603,6 +609,7 @@
 				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
 				02E3A9AD2478DC4A00A9C18C /* CBFlashyTabBar.swift in Sources */,
 				0221E1212477C12F0022DCCB /* SPAlertIconAnimatable.swift in Sources */,
+				02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */,
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
 				0221E1272477C12F0022DCCB /* SPAlertIconShuffleView.swift in Sources */,
 				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
@@ -658,6 +665,7 @@
 				0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */,
 				024A05532483A43C00CC06CB /* TechShareViewController.swift in Sources */,
 				0260C5FA2447CA340066C06C /* Cell.swift in Sources */,
+				02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */,
 				0221E12B2477C12F0022DCCB /* SPAlertIconLikeView.swift in Sources */,
 				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
