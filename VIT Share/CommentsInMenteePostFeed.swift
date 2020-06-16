@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
-import JGProgressHUD
 
 class CommentsInMenteePostFeed: UIViewController {
     
@@ -22,7 +21,6 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
     
     var menteeComments = [MenteeComments]()
-    
     var users = [User]()
     
     // Tab bar disappears
@@ -63,6 +61,14 @@ class CommentsInMenteePostFeed: UIViewController {
         sendOutlet.isEnabled = false
         
     }
+    
+    func LeftPadding() {
+        
+        // Create a padding view for Textfield on LEFT
+        commentTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: commentTextField.frame.height))
+        commentTextField.leftViewMode = .always
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +77,8 @@ class CommentsInMenteePostFeed: UIViewController {
         Properties()
         empty()
         handleTextField()
+        LeftPadding()
+        loadComments()
         
         // Keyboard Show
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -141,7 +149,7 @@ class CommentsInMenteePostFeed: UIViewController {
     }
     
     // dummy post id taken for example
-    let postId = "-M9eC2A08x4T_sSkoJ79"
+    let postId = "-M9o5UApAuGFRj8zHH14"
     
     @IBAction func sendButton(_ sender: UIButton) {
         
@@ -199,9 +207,9 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         cell.backgroundColor = UIColor.white
         let menteeComment = menteeComments[indexPath.row]
         let user = users[indexPath.row]
-        cell.comment = menteeComment
+        cell.menteeComment = menteeComment
         cell.user = user
         return cell
     }
     
-}   // #208
+}   // #216
