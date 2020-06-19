@@ -91,6 +91,12 @@ class CommentsInMenteePostFeed: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
+        // nav bar title
+        title = "Comments"
+        
         hideKeyboardWhenTappedAround()
         Properties()
         empty()
@@ -232,4 +238,4 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         return cell
     }
     
-}   // #236
+}   // #242
