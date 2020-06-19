@@ -1868,7 +1868,7 @@
                                 <rect key="frame" x="0.0" y="590" width="414" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-KM-nSh">
-                                        <rect key="frame" x="20" y="5" width="326" height="40"/>
+                                        <rect key="frame" x="20" y="5" width="322" height="40"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1879,27 +1879,35 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-Lo-M3l">
-                                        <rect key="frame" x="366" y="9.6666666666666288" width="40" height="31"/>
+                                        <rect key="frame" x="354" y="5" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="QDb-n7-iaZ"/>
+                                            <constraint firstAttribute="height" constant="40" id="u33-qa-hWH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Send">
+                                        <state key="normal">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="sendButton:" destination="wkw-4z-u78" eventType="touchUpInside" id="NUs-YC-JlN"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEt-ci-1TQ">
+                                        <rect key="frame" x="354" y="5" width="40" height="40"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="centerY" secondItem="YzU-sJ-h05" secondAttribute="centerY" id="431-3O-m0N"/>
-                                    <constraint firstAttribute="trailing" secondItem="YeC-Lo-M3l" secondAttribute="trailing" constant="8" id="4Fd-yo-Guy"/>
+                                    <constraint firstAttribute="trailing" secondItem="YeC-Lo-M3l" secondAttribute="trailing" constant="20" id="4Fd-yo-Guy"/>
+                                    <constraint firstItem="jEt-ci-1TQ" firstAttribute="trailing" secondItem="YeC-Lo-M3l" secondAttribute="trailing" id="EJb-lW-klV"/>
+                                    <constraint firstItem="jEt-ci-1TQ" firstAttribute="top" secondItem="YeC-Lo-M3l" secondAttribute="top" id="Ean-6y-1LZ"/>
+                                    <constraint firstItem="jEt-ci-1TQ" firstAttribute="bottom" secondItem="YeC-Lo-M3l" secondAttribute="bottom" id="IQ0-rR-oka"/>
                                     <constraint firstAttribute="height" constant="50" id="KgY-Gn-eBb"/>
                                     <constraint firstAttribute="bottom" secondItem="ZLr-KM-nSh" secondAttribute="bottom" constant="5" id="N3p-S3-d0h"/>
+                                    <constraint firstItem="jEt-ci-1TQ" firstAttribute="leading" secondItem="YeC-Lo-M3l" secondAttribute="leading" id="PYd-PK-3MT"/>
+                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="centerY" secondItem="ZLr-KM-nSh" secondAttribute="centerY" id="VGE-at-sID"/>
                                     <constraint firstItem="ZLr-KM-nSh" firstAttribute="leading" secondItem="YzU-sJ-h05" secondAttribute="leading" constant="20" id="q4q-bz-BQk"/>
-                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="leading" secondItem="ZLr-KM-nSh" secondAttribute="trailing" constant="20" id="scr-0M-c5C"/>
+                                    <constraint firstItem="YeC-Lo-M3l" firstAttribute="leading" secondItem="ZLr-KM-nSh" secondAttribute="trailing" constant="12" id="scr-0M-c5C"/>
                                     <constraint firstItem="ZLr-KM-nSh" firstAttribute="top" secondItem="YzU-sJ-h05" secondAttribute="top" constant="5" id="uKQ-Rv-msD"/>
                                 </constraints>
                             </view>
@@ -1922,12 +1930,13 @@
                         <outlet property="bottomConstraint" destination="dbi-5E-TS9" id="DOi-pc-eCG"/>
                         <outlet property="commentTextField" destination="ZLr-KM-nSh" id="Sex-8X-2HK"/>
                         <outlet property="commentsInMenteePostFeedTableView" destination="i3d-1d-tFJ" id="IwN-Bl-6dq"/>
+                        <outlet property="sendImage" destination="jEt-ci-1TQ" id="wu7-1o-mhn"/>
                         <outlet property="sendOutlet" destination="YeC-Lo-M3l" id="TmK-gm-S28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b5-Uj-oWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4436" y="742"/>
+            <point key="canvasLocation" x="4434.7826086956529" y="741.84782608695662"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

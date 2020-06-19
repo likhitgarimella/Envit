@@ -18,6 +18,8 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBOutlet var commentTextField: UITextField!
     @IBOutlet var sendOutlet: UIButton!
     
+    @IBOutlet var sendImage: UIImageView!
+    
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
     
     var menteeComments = [MenteeComments]()
@@ -52,12 +54,12 @@ class CommentsInMenteePostFeed: UIViewController {
     @objc func textFieldDidChange() {
         
         if let commentText = commentTextField.text, !commentText.isEmpty {
-            sendOutlet.setTitleColor(UIColor.systemBlue, for: .normal)
+            sendImage.image = UIImage(named: "sendComment")
             sendOutlet.isEnabled = true
             return
         }
         
-        sendOutlet.setTitleColor(UIColor.lightGray, for: .normal)
+        sendImage.image = UIImage(named: "disableComment")
         sendOutlet.isEnabled = false
         
     }
@@ -216,7 +218,7 @@ class CommentsInMenteePostFeed: UIViewController {
         
         self.commentTextField.text = ""
         self.sendOutlet.isEnabled = false
-        self.sendOutlet.setTitleColor(UIColor.lightGray, for: .normal)
+        sendImage.image = UIImage(named: "disableComment")
         
     }
     
@@ -238,4 +240,4 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         return cell
     }
     
-}   // #242
+}   // #244
