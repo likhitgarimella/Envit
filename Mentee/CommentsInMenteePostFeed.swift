@@ -22,6 +22,12 @@ class CommentsInMenteePostFeed: UIViewController {
     
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
     
+    // dummy post id taken for example
+    // let postId = "-M9o5UApAuGFRj8zHH14"
+    
+    // Initialise empty string
+    var postId: String!
+    
     var menteeComments = [MenteeComments]()
     var users = [User]()
     
@@ -139,6 +145,28 @@ class CommentsInMenteePostFeed: UIViewController {
     // displaying all comments for a post
     func loadComments() {
         
+        // let postCommentRef = Database.database().reference().child("post-comments").child(self.postId)
+        Api.MenteePostComment.REF_POST_COMMENTS.child(self.postId).observe(.childAdded, with: {
+            snapshot in
+            // print("snapshot key")
+            // print(snapshot.key)
+            
+            Api.MenteeComment.observeComments(withPostId: snapshot.key, completion: { comment in
+                self.fetchUser(uid: comment.uid!, completed: {
+                    self.menteeComments.append(comment)
+                    // print(self.comments)
+                    self.commentsInMenteePostFeedTableView.reloadData()
+                })
+            })
+            
+        })
+        
+    }
+    
+    /*
+    // displaying all comments for a post
+    func loadComments() {
+        
         let menteePostCommentRef = Database.database().reference().child("Mentee-Post-Comments").child(self.postId)
         menteePostCommentRef.observe(.childAdded, with: {
             snapshot in
@@ -161,31 +189,30 @@ class CommentsInMenteePostFeed: UIViewController {
             })
         })
         
-    }
+    }   */
     
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Database.database().reference().child("Users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        Api.User.obersveUser(withId: uid, completion: { (user) in
+            self.users.append(user)
+            completed()
+        })
+        
+        /*
+        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
                 let user = User.transformUser(dict: dict)
                 self.users.append(user)
                 completed()
             }
-        })
+        })  */
         
     }
     
-    // dummy post id taken for example
-    // let postId = "-M9o5UApAuGFRj8zHH14"
-    
-    // Initialise empty string
-    var postId: String!
-    
     @IBAction func sendButton(_ sender: UIButton) {
         
-        let databaseRef = Database.database().reference()
-        let commentsRef = databaseRef.child("Comments-In-Mentee-Post")
+        let commentsRef = Api.MenteeComment.REF_COMMENTS
         // a unique id that is generated for every comment
         let newCommentId = commentsRef.childByAutoId().key
         let newCommentReference = commentsRef.child(newCommentId!)
@@ -201,7 +228,7 @@ class CommentsInMenteePostFeed: UIViewController {
                 return
             }
             // new node to map 'posts' & 'comments'
-            let postCommentRef = databaseRef.child("Mentee-Post-Comments").child(self.postId).child(newCommentId!)
+            let postCommentRef = Api.MenteePostComment.REF_POST_COMMENTS.child(self.postId).child(newCommentId!)
             postCommentRef.setValue(true, withCompletionBlock: { (error, ref) in
                 if error != nil {
                     print(error!.localizedDescription)

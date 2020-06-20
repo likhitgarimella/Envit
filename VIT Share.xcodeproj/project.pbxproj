@@ -109,6 +109,8 @@
 		02E90B2C249D89C30094759C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B2A249D89C10094759C /* Api.swift */; };
 		02E90B2D249D89C30094759C /* MenteePostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B2B249D89C20094759C /* MenteePostApi.swift */; };
 		02E90B2F249D8CE50094759C /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B2E249D8CE40094759C /* UserApi.swift */; };
+		02E90B31249D9EB50094759C /* MenteeCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B30249D9EB50094759C /* MenteeCommentApi.swift */; };
+		02E90B33249DA1F20094759C /* MenteePostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */; };
 		4D578D3567D08131C8FFD5B2 /* Pods_VIT_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */; };
 /* End PBXBuildFile section */
 
@@ -221,6 +223,8 @@
 		02E90B2A249D89C10094759C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		02E90B2B249D89C20094759C /* MenteePostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteePostApi.swift; sourceTree = "<group>"; };
 		02E90B2E249D8CE40094759C /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		02E90B30249D9EB50094759C /* MenteeCommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteeCommentApi.swift; sourceTree = "<group>"; };
+		02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteePostCommentApi.swift; sourceTree = "<group>"; };
 		2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIT_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.release.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.release.xcconfig"; sourceTree = "<group>"; };
 		9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.debug.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.debug.xcconfig"; sourceTree = "<group>"; };
@@ -354,10 +358,12 @@
 				029FB8002475A3E60053D916 /* Extensions.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
-				02D6B929249909170008B503 /* User.swift */,
 				02E90B2A249D89C10094759C /* Api.swift */,
+				02D6B929249909170008B503 /* User.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
+				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
+				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
 			);
 			path = "VIT Share";
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
 				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
+				02E90B31249D9EB50094759C /* MenteeCommentApi.swift in Sources */,
 				0221E1352477C12F0022DCCB /* SPAlertIconPrivacyView.swift in Sources */,
 				02802BB924850709008BF296 /* FeedViewController.swift in Sources */,
 				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
@@ -705,6 +712,7 @@
 				02D6B92A249909170008B503 /* User.swift in Sources */,
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
+				02E90B33249DA1F20094759C /* MenteePostCommentApi.swift in Sources */,
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
 				02B96D93248665B2000C7D48 /* MenteePostCell.swift in Sources */,
 				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,

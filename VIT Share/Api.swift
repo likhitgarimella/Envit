@@ -14,7 +14,7 @@ struct Api {
     
     static var User = UserApi()
     static var MenteePost = MenteePostApi()
-    // static var Comment = CommentApi()
-    // static var PostComment = PostCommentApi()
+    static var MenteeComment = MenteeCommentApi()
+    static var MenteePostComment = MenteePostCommentApi()
     
 }   // #21

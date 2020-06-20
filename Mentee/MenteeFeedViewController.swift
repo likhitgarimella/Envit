@@ -85,6 +85,16 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
+    // prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "commentsInMenteeFeed" {
+            let commentVC = segue.destination as! CommentsInMenteePostFeed
+            //
+            let postId = sender as! String
+            commentVC.postId = postId
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
