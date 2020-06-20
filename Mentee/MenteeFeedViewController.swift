@@ -14,6 +14,8 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet var menteeFeedCollectionView: UICollectionView!
     
+    @IBOutlet var activityIndicatorView5: UIActivityIndicatorView!
+    
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menteePosts.count
@@ -22,11 +24,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        /* let menteeCell = menteeFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
-        let mentee: MenteeModel
-        mentee = menteeList[indexPath.row]
-        menteeCell.domainName.text = mentee.domainText
-        menteeCell.postedQueryTextView.text = mentee.postQueryText
+        /// Timestamp
         /* if let seconds = mentor.timestamp {
             // let timeStampDate = NSDate(timeIntervalSince1970: seconds)
             let pastDate = Date(timeIntervalSince1970: seconds)
@@ -35,9 +33,6 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             // cell.timeAgo.text = dateFormatter.string(from: timeStampDate as Date)
             // cell.timeAgo.text = pastDate.timeAgoDisplay()
         } */
-        // linking mentee feed VC & mentee post cell
-        menteeCell.menteeFeedVC = self
-        return menteeCell */
         
         let menteeCell = menteeFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
         let post = menteePosts[indexPath.row]
@@ -56,26 +51,33 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     // reference to store User class info
     var users = [User]()
     
+    // DB ref
     var refMentees: DatabaseReference!
     
+    // load mentee posts
     func loadPosts() {
+        
+        // start when loadPosts func starts
+        activityIndicatorView5.startAnimating()
         
         Api.MenteePost.observePosts { (post) in
             guard let postId = post.uid else {
                 return
             }
+            // fetch user data in mentee posts
             self.fetchUser(uid: postId, completed: {
                 self.menteePosts.append(post)
                 // print(self.posts)
-                // stop before tablew view reloads data
+                /// stop before tablew view reloads data
+                self.activityIndicatorView5.stopAnimating()
+                self.activityIndicatorView5.hidesWhenStopped = true
                 self.menteeFeedCollectionView.reloadData()
             })
         }
         
     }
     
-    /// it's job is to...
-    /// given a user id, look up the corresponding user on db...
+    /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
         Api.User.obersveUser(withId: uid, completion: { (user) in
@@ -85,7 +87,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-    // prepare for segue
+    // prepare for segue to comments vc
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "commentsInMenteeFeed" {
             let commentVC = segue.destination as! CommentsInMenteePostFeed
@@ -108,4 +110,4 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-}   // #82
+}   // #114

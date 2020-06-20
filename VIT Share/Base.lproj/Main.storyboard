@@ -1698,6 +1698,11 @@
                                     <outlet property="delegate" destination="eYh-gV-dDf" id="YBV-hk-Mvr"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="fbQ-w6-yN7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1709,6 +1714,7 @@
                         <viewLayoutGuide key="safeArea" id="gTT-0r-Xq2"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView5" destination="fbQ-w6-yN7" id="E4O-ns-A63"/>
                         <outlet property="menteeFeedCollectionView" destination="avT-Pj-ocd" id="Yac-b0-Nve"/>
                         <segue destination="wkw-4z-u78" kind="show" identifier="commentsInMenteeFeed" id="fNc-hj-TD4"/>
                     </connections>
