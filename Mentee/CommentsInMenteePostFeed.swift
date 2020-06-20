@@ -18,6 +18,7 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBOutlet var commentTextField: UITextField!
     @IBOutlet var sendOutlet: UIButton!
     
+    // image on send button
     @IBOutlet var sendImage: UIImageView!
     
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
@@ -163,34 +164,6 @@ class CommentsInMenteePostFeed: UIViewController {
         
     }
     
-    /*
-    // displaying all comments for a post
-    func loadComments() {
-        
-        let menteePostCommentRef = Database.database().reference().child("Mentee-Post-Comments").child(self.postId)
-        menteePostCommentRef.observe(.childAdded, with: {
-            snapshot in
-            print("snapshot key")
-            print(snapshot.key)
-            Database.database().reference().child("Comments-In-Mentee-Post").child(snapshot.key).observe(.value, with: {
-                snapshotComment in
-                print("snapshot comment")
-                print(snapshotComment.value)
-                if let dict = snapshotComment.value as? [String: Any] {
-                    
-                    let newComment = MenteeComments.transformComment(dict: dict)
-                    self.fetchUser(uid: newComment.uid!, completed: {
-                        self.menteeComments.append(newComment)
-                        print(self.menteeComments)
-                        self.commentsInMenteePostFeedTableView.reloadData()
-                    })
-                    
-                }
-            })
-        })
-        
-    }   */
-    
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
@@ -199,6 +172,7 @@ class CommentsInMenteePostFeed: UIViewController {
             completed()
         })
         
+        /// old code
         /*
         Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
@@ -213,21 +187,21 @@ class CommentsInMenteePostFeed: UIViewController {
     @IBAction func sendButton(_ sender: UIButton) {
         
         let commentsRef = Api.MenteeComment.REF_COMMENTS
-        // a unique id that is generated for every comment
+        /// a unique id that is generated for every comment
         let newCommentId = commentsRef.childByAutoId().key
         let newCommentReference = commentsRef.child(newCommentId!)
         guard let currentUser = Auth.auth().currentUser else {
             return
         }
-        // uid of a user
+        /// uid of a user
         let currentUserId = currentUser.uid
-        // put that string in db
+        /// put that string in db
         newCommentReference.setValue(["uid": currentUserId, "commentText": commentTextField.text!], withCompletionBlock: { (error, ref) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
             }
-            // new node to map 'posts' & 'comments'
+            /// new node to map 'posts' & 'comments'
             let postCommentRef = Api.MenteePostComment.REF_POST_COMMENTS.child(self.postId).child(newCommentId!)
             postCommentRef.setValue(true, withCompletionBlock: { (error, ref) in
                 if error != nil {
@@ -235,9 +209,9 @@ class CommentsInMenteePostFeed: UIViewController {
                     return
                 }
             })
-            // empty and disable after a comment is posted
+            /// empty and disable after a comment is posted
             self.empty()
-            // hide keyboard after comment is posted
+            /// hide keyboard after comment is posted
             self.view.endEditing(true)
         })
         
@@ -270,4 +244,4 @@ extension CommentsInMenteePostFeed: UITableViewDataSource {
         return cell
     }
     
-}   // #244
+}   // #248
