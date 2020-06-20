@@ -15,6 +15,7 @@ class MenteePostCell: UICollectionViewCell {
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     @IBOutlet var domainName: UILabel!
     @IBOutlet var postedQueryTextView: UITextView!
+    @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
     @IBOutlet var menteeLikeImageView: UIImageView!
@@ -22,19 +23,52 @@ class MenteePostCell: UICollectionViewCell {
     
     // linking mentee feed VC & mentee post cell
     var menteeFeedVC: MenteeFeedViewController?
+    
+    var menteePost: MenteeModel? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    /// when this user property is set..
+    /// we'll let the cell download the correspoding cell..
+    var user: User? {
+        didSet {
+            setupUserInfo()
+        }
+    }
+    
+    func updateView() {
+        
+        domainName.text = menteePost?.domainText
+        postedQueryTextView.text = menteePost?.postQueryText
+        
+        setupUserInfo()
+        
+    }
+    
+    func setupUserInfo() {
+        
+        nameLabel.text = user?.nameString
+        
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        nameLabel.text = ""
+        domainName.text = ""
+        postedQueryTextView.text = ""
+        
         cardView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
+        postedQueryTextView.layer.cornerRadius = 6
+        
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        postedQueryTextView.layer.cornerRadius = 6
         postedQueryTextView.backgroundColor = UIColor.white
-        
         postedQueryTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
@@ -46,7 +80,9 @@ class MenteePostCell: UICollectionViewCell {
     
     @objc func commentImageViewTouch() {
         
-        menteeFeedVC?.performSegue(withIdentifier: "commentsInMenteeFeed", sender: nil)
+        if let id = menteePost?.uid {
+            menteeFeedVC?.performSegue(withIdentifier: "commentsInMenteeFeed", sender: id)
+        }
         
     }
 

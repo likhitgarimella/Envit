@@ -16,14 +16,13 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return menteeList.count
+        return menteePosts.count
     }
     
     // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let menteeCell = menteeFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
-        
+        /* let menteeCell = menteeFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
         let mentee: MenteeModel
         mentee = menteeList[indexPath.row]
         menteeCell.domainName.text = mentee.domainText
@@ -38,12 +37,53 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         } */
         // linking mentee feed VC & mentee post cell
         menteeCell.menteeFeedVC = self
+        return menteeCell */
+        
+        let menteeCell = menteeFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "MenteePostCell", for: indexPath) as! MenteePostCell
+        let post = menteePosts[indexPath.row]
+        let user = users[indexPath.row]
+        menteeCell.menteePost = post
+        menteeCell.user = user
+        // linking home VC & home table view cell
+        menteeCell.menteeFeedVC = self
         return menteeCell
         
     }
     
-    var menteeList = [MenteeModel]()
+    // reference to store MenteeModel class info
+    var menteePosts = [MenteeModel]()
+    
+    // reference to store User class info
+    var users = [User]()
+    
     var refMentees: DatabaseReference!
+    
+    func loadPosts() {
+        
+        Api.MenteePost.observePosts { (post) in
+            guard let postId = post.uid else {
+                return
+            }
+            self.fetchUser(uid: postId, completed: {
+                self.menteePosts.append(post)
+                // print(self.posts)
+                // stop before tablew view reloads data
+                self.menteeFeedCollectionView.reloadData()
+            })
+        }
+        
+    }
+    
+    /// it's job is to...
+    /// given a user id, look up the corresponding user on db...
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        Api.User.obersveUser(withId: uid, completion: { (user) in
+            self.users.append(user)
+            completed()
+        })
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,27 +94,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
         
-        refMentees = Database.database().reference().child("Mentees").child("Details")
-        refMentees.observe(DataEventType.value, with: { (snapshot) in
-            
-            if snapshot.childrenCount > 0 {
-                
-                self.menteeList.removeAll()
-                for mentees in snapshot.children.allObjects as! [DataSnapshot] {
-                    let menteeObject = mentees.value as? [String: AnyObject]
-                    let menteeId = menteeObject?["1) id"]
-                    let menteeDomain  = menteeObject?["2) Domain"]
-                    let menteePost  = menteeObject?["3) Post Query"]
-                    let menteeTimestamp = menteeObject?["4) Timestamp"]
-                    
-                    let mentee = MenteeModel(id: menteeId as! String?, domainText: menteeDomain as! String?, postQueryText: menteePost as! String?, timestamp: menteeTimestamp as! Double?)
-                    self.menteeList.append(mentee)
-                }
-                self.menteeFeedCollectionView.reloadData()
-                
-            }
-            
-        })
+        loadPosts()
         
     }
     

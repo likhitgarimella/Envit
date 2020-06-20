@@ -125,6 +125,7 @@
                 <outlet property="domainName" destination="La2-K0-Hed" id="ctb-70-nVz"/>
                 <outlet property="menteeCommentImageView" destination="U8n-E9-f6t" id="hvS-uO-9xi"/>
                 <outlet property="menteeLikeImageView" destination="AZO-yI-mpP" id="iL5-GQ-BZL"/>
+                <outlet property="nameLabel" destination="tI0-EH-Qz2" id="8un-EF-LgJ"/>
                 <outlet property="postedQueryTextView" destination="2Og-EW-8cJ" id="sTR-Fz-Kfd"/>
                 <outlet property="widthConstraint" destination="Ocf-Nd-wjP" id="zDn-ir-Kyc"/>
             </connections>

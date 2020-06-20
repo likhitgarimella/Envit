@@ -177,7 +177,10 @@ class CommentsInMenteePostFeed: UIViewController {
     }
     
     // dummy post id taken for example
-    let postId = "-M9o5UApAuGFRj8zHH14"
+    // let postId = "-M9o5UApAuGFRj8zHH14"
+    
+    // Initialise empty string
+    var postId: String!
     
     @IBAction func sendButton(_ sender: UIButton) {
         
