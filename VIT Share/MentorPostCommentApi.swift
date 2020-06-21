@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import Firebase
+
+/// Write your own Api, to conveniently observe database data...
+
+class MentorPostCommentApi {
+    
+    var REF_POST_COMMENTS = Database.database().reference().child("Mentor-Post-Comments")
+    
+    func observePostComments(withPostId id: String) {
+        
+        
+        
+    }
+    
+}   // #25
