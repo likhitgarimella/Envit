@@ -9,11 +9,45 @@
 import UIKit
 
 class CommentsInMentorTableViewCell: UITableViewCell {
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var commentLabel: UILabel!
+    
+    var mentorComment: MentorComments? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    /// when this user property is set..
+    /// we'll let the cell download the correspoding cell..
+    var user: User? {
+        didSet {
+            setupUserInfo()
+        }
+    }
+    
+    func updateView() {
+        
+        commentLabel.text = mentorComment?.commentText
+        setupUserInfo()
+        
+    }
+    
+    /// New setupUserInfo() func
+    func setupUserInfo() {
+        
+        nameLabel.text = user?.nameString
+        
+    }
 
+    /// This is only called when a cell is loaded in a memory...
+    /// It's not called when a cell is reused later...
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
+        nameLabel.text = ""
+        commentLabel.text = ""
         
     }
 
@@ -24,4 +58,4 @@ class CommentsInMentorTableViewCell: UITableViewCell {
         
     }
 
-}   // #28
+}   // #62
