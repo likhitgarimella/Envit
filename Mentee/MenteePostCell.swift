@@ -138,7 +138,7 @@ class MenteePostCell: UICollectionViewCell {
         menteeCommentImageView.addGestureRecognizer(tapGesture)
         menteeCommentImageView.isUserInteractionEnabled = true
         
-        // Tap gesture for comment image on tap
+        // Tap gesture for like image on tap
         let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
         menteeLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
         menteeLikeImageView.isUserInteractionEnabled = true

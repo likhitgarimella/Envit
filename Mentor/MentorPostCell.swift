@@ -25,31 +25,72 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var mentorLikeImageView: UIImageView!
     @IBOutlet var mentorCommentImageView: UIImageView!
     
+    @IBOutlet var likeCountButton: UIButton!
+    
     // linking mentor feed VC & mentor post cell
     var mentorFeedVC: MentorFeedViewController?
+    
+    // db ref
+    var mentorPostRef: DatabaseReference!
+    
+    var mentorPost: MentorModel? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    /// when this user property is set..
+    /// we'll let the cell download the correspoding cell..
+    var user: User? {
+        didSet {
+            setupUserInfo()
+        }
+    }
+    
+    /// New setupUserInfo() func
+    func setupUserInfo() {
+        
+        nameLabel.text = user?.nameString
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // initial text
+        nameLabel.text = ""
+        domainName.text = ""
+        experienceTextView.text = ""
+        courseTextView.text = ""
+        prerequisiteTextView.text = ""
+        
+        // corner radius
         cardView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
+        experienceTextView.layer.cornerRadius = 6
+        courseTextView.layer.cornerRadius = 6
+        prerequisiteTextView.layer.cornerRadius = 6
+        
+        // constraint
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        experienceTextView.layer.cornerRadius = 6
-        courseTextView.layer.cornerRadius = 6
-        prerequisiteTextView.layer.cornerRadius = 6
+        // text view
         experienceTextView.backgroundColor = UIColor.white
         courseTextView.backgroundColor = UIColor.white
         prerequisiteTextView.backgroundColor = UIColor.white
-        
         courseTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
         mentorCommentImageView.addGestureRecognizer(tapGesture)
         mentorCommentImageView.isUserInteractionEnabled = true
+        
+        // Tap gesture for like image on tap
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
+        mentorLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        mentorLikeImageView.isUserInteractionEnabled = true
         
     }
     
@@ -59,4 +100,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #63
+}   // #104
