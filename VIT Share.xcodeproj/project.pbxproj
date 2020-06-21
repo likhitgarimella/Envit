@@ -111,6 +111,9 @@
 		02E90B2F249D8CE50094759C /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B2E249D8CE40094759C /* UserApi.swift */; };
 		02E90B31249D9EB50094759C /* MenteeCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B30249D9EB50094759C /* MenteeCommentApi.swift */; };
 		02E90B33249DA1F20094759C /* MenteePostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */; };
+		02E90B35249ED96C0094759C /* MentorPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B34249ED96C0094759C /* MentorPostApi.swift */; };
+		02E90B37249ED9B10094759C /* MentorCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B36249ED9B00094759C /* MentorCommentApi.swift */; };
+		02E90B39249ED9D50094759C /* MentorPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */; };
 		4D578D3567D08131C8FFD5B2 /* Pods_VIT_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */; };
 /* End PBXBuildFile section */
 
@@ -225,6 +228,9 @@
 		02E90B2E249D8CE40094759C /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		02E90B30249D9EB50094759C /* MenteeCommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteeCommentApi.swift; sourceTree = "<group>"; };
 		02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteePostCommentApi.swift; sourceTree = "<group>"; };
+		02E90B34249ED96C0094759C /* MentorPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostApi.swift; sourceTree = "<group>"; };
+		02E90B36249ED9B00094759C /* MentorCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorCommentApi.swift; sourceTree = "<group>"; };
+		02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCommentApi.swift; sourceTree = "<group>"; };
 		2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIT_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.release.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.release.xcconfig"; sourceTree = "<group>"; };
 		9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.debug.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.debug.xcconfig"; sourceTree = "<group>"; };
@@ -362,8 +368,11 @@
 				02D6B929249909170008B503 /* User.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
+				02E90B34249ED96C0094759C /* MentorPostApi.swift */,
 				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
+				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
+				02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */,
 			);
 			path = "VIT Share";
 			sourceTree = "<group>";
@@ -372,13 +381,13 @@
 			isa = PBXGroup;
 			children = (
 				02802BB22484BA4F008BF296 /* MentorViewController.swift */,
-				0216544F24941D44007F6A73 /* MentorModel.swift */,
+				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
 				02B96D8E248659CF000C7D48 /* MentorPostCell.xib */,
 				02B96D8D248659CF000C7D48 /* MentorPostCell.swift */,
-				024FC8D62496D447006046B3 /* MentorFeedViewController.swift */,
-				02D6B9272498E13B0008B503 /* MentorComments.swift */,
 				02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */,
 				02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */,
+				0216544F24941D44007F6A73 /* MentorModel.swift */,
+				02D6B9272498E13B0008B503 /* MentorComments.swift */,
 			);
 			path = Mentor;
 			sourceTree = "<group>";
@@ -642,6 +651,7 @@
 				029FB8012475A3E60053D916 /* Extensions.swift in Sources */,
 				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
 				02E3A9AD2478DC4A00A9C18C /* CBFlashyTabBar.swift in Sources */,
+				02E90B35249ED96C0094759C /* MentorPostApi.swift in Sources */,
 				0221E1212477C12F0022DCCB /* SPAlertIconAnimatable.swift in Sources */,
 				02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */,
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
@@ -650,6 +660,7 @@
 				02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */,
 				02E3A9AF2478DC4A00A9C18C /* CBFlashyTabBarController.swift in Sources */,
 				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
+				02E90B37249ED9B10094759C /* MentorCommentApi.swift in Sources */,
 				0221E12F2477C12F0022DCCB /* SPAlertIconMessageView.swift in Sources */,
 				02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */,
 				0221E1312477C12F0022DCCB /* SPAlertIconBookmarkView.swift in Sources */,
@@ -696,6 +707,7 @@
 				0221E1322477C12F0022DCCB /* SPAlertIconFlagView.swift in Sources */,
 				024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */,
 				02E90B2F249D8CE50094759C /* UserApi.swift in Sources */,
+				02E90B39249ED9D50094759C /* MentorPostCommentApi.swift in Sources */,
 				02E3A9AC2478DC4A00A9C18C /* CBTabItemDeselectAnimation.swift in Sources */,
 				024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */,
 				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,

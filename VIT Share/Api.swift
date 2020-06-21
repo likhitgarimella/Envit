@@ -14,11 +14,19 @@ struct Api {
     
     /// Firebase node - Users
     static var User = UserApi()
+    
     /// Firebase node - Mentees-Details
     static var MenteePost = MenteePostApi()
     /// Firebase node - Comments-In-Mentee-Post
     static var MenteeComment = MenteeCommentApi()
     /// Firebase node - Mentee-Post-Comments
     static var MenteePostComment = MenteePostCommentApi()
+    
+    /// Firebase node - Mentees-Details
+    static var MentorPost = MentorPostApi()
+    /// Firebase node - Comments-In-Mentee-Post
+    static var MentorComment = MentorCommentApi()
+    /// Firebase node - Mentee-Post-Comments
+    static var MentorPostComment = MentorPostCommentApi()
     
 }   // #25
