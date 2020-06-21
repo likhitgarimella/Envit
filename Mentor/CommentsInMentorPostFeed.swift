@@ -143,4 +143,45 @@ class CommentsInMentorPostFeed: UIViewController {
         
     }
     
-}   // #147
+    // displaying all comments for a post
+    func loadComments() {
+        
+        // let postCommentRef = Database.database().reference().child("post-comments").child(self.postId)
+        Api.MentorPostComment.REF_POST_COMMENTS.child(self.postId).observe(.childAdded, with: {
+            snapshot in
+            // print("snapshot key")
+            // print(snapshot.key)
+            
+            Api.MentorComment.observeComments(withPostId: snapshot.key, completion: { comment in
+                self.fetchUser(uid: comment.uid!, completed: {
+                    self.mentorComments.append(comment)
+                    // print(self.comments)
+                    self.commentsInMentorPostFeedTableView.reloadData()
+                })
+            })
+            
+        })
+        
+    }
+    
+    /// it's job is to, given a user id, look up the corresponding user on db...
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        Api.User.obersveUser(withId: uid, completion: { (user) in
+            self.users.append(user)
+            completed()
+        })
+        
+        /// old code
+        /*
+        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                let user = User.transformUser(dict: dict)
+                self.users.append(user)
+                completed()
+            }
+        })  */
+        
+    }
+    
+}   // #188
