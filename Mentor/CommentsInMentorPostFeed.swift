@@ -226,4 +226,22 @@ class CommentsInMentorPostFeed: UIViewController {
         
     }
     
-}   // #230
+}
+
+extension CommentsInMentorPostFeed: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mentorComments.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell2", for: indexPath) as! CommentsInMentorTableViewCell
+        cell.backgroundColor = UIColor.white
+        let mentorComment = mentorComments[indexPath.row]
+        let user = users[indexPath.row]
+        cell.mentorComment = mentorComment
+        cell.user = user
+        return cell
+    }
+    
+}   // #248
