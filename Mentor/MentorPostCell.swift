@@ -157,7 +157,9 @@ class MentorPostCell: UICollectionViewCell {
     
     @objc func commentImageViewTouch() {
         
-        mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: nil)
+        if let id = mentorPost?.uid {
+            mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: id)
+        }
         
     }
     
@@ -206,4 +208,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #210
+}   // #212
