@@ -22,6 +22,27 @@ class CommentsInMentorPostFeed: UIViewController {
     @IBOutlet var sendImage: UIImageView!
     
     @IBOutlet var bottomConstraint: NSLayoutConstraint!
+    
+    // dummy post id taken for example
+    // let postId = "-M9o5UApAuGFRj8zHH14"
+    
+    // Initialise empty string
+    var postId: String!
+    
+    var mentorComments = [MentorComments]()
+    var users = [User]()
+    
+    // Tab bar disappears
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    // Tab bar appears
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.tabBarController?.tabBar.isHidden = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,4 +51,4 @@ class CommentsInMentorPostFeed: UIViewController {
         
     }
     
-}   // #34
+}   // #55
