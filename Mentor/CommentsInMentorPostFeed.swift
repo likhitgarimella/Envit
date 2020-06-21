@@ -100,15 +100,47 @@ class CommentsInMentorPostFeed: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
+        // nav bar title
+        title = "Comments"
+        
         hideKeyboardWhenTappedAround()
         Properties()
-        
+        empty()
         handleTextField()
         BorderProp()
         CornerRadius()
         LeftPadding()
+        loadComments()
         
+        // Keyboard Show
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        // Keyboard Hide
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
-}   // #115
+    // Keyboard Show
+    @objc func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        
+    }
+    
+    // Keyboard Hide
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+        
+    }
+    
+}   // #147
