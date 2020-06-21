@@ -217,4 +217,13 @@ class CommentsInMentorPostFeed: UIViewController {
         
     }
     
-}   // #221
+    // empty and disable after a comment is posted
+    func empty() {
+        
+        self.commentTextField.text = ""
+        self.sendOutlet.isEnabled = false
+        sendImage.image = UIImage(named: "disableComment")
+        
+    }
+    
+}   // #230
