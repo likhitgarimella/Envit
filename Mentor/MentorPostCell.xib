@@ -32,19 +32,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQD-q2-DUv">
-                                <rect key="frame" x="16" y="16" width="108" height="21"/>
+                                <rect key="frame" x="16" y="16" width="110.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDy-Gu-dUg">
-                                <rect key="frame" x="261.5" y="16" width="11" height="21"/>
+                                <rect key="frame" x="260.5" y="16" width="11" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z83-Rc-D1w">
-                                <rect key="frame" x="272.5" y="16" width="61.5" height="21"/>
+                                <rect key="frame" x="271.5" y="16" width="62.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Recommended course" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSt-tY-Den">
-                                <rect key="frame" x="16" y="189" width="179.5" height="21"/>
+                                <rect key="frame" x="16" y="189" width="183.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="MMM d, h:mm a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-8q-6Ny">
-                                <rect key="frame" x="252.5" y="370" width="81.5" height="14"/>
+                                <rect key="frame" x="245" y="370" width="89" height="14"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -170,6 +170,7 @@
                 <outlet property="experienceTextView" destination="9wp-RZ-UfP" id="euI-OR-mL6"/>
                 <outlet property="mentorCommentImageView" destination="X0r-Ct-A5J" id="QIp-lV-k38"/>
                 <outlet property="mentorLikeImageView" destination="VMf-s2-wmT" id="ENu-bu-GQu"/>
+                <outlet property="nameLabel" destination="yQD-q2-DUv" id="ZdX-DS-LmB"/>
                 <outlet property="prerequisiteTextView" destination="Fkq-tW-aOJ" id="a9F-yn-ZTN"/>
                 <outlet property="widthConstraint" destination="fTR-iG-BNU" id="Nnc-Oz-GB9"/>
             </connections>

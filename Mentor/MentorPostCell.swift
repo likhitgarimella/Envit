@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class MentorPostCell: UICollectionViewCell {
     
     // Outlets
     @IBOutlet var cardView: UIView!
     @IBOutlet var widthConstraint: NSLayoutConstraint!
+    
+    @IBOutlet var domainName: UILabel!
     @IBOutlet var experienceTextView: UITextView!
     @IBOutlet var courseTextView: UITextView!
-    @IBOutlet var domainName: UILabel!
     @IBOutlet var prerequisiteTextView: UITextView!
+    @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
     @IBOutlet var mentorLikeImageView: UIImageView!
@@ -56,4 +59,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #60
+}   // #63
