@@ -86,6 +86,8 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         })
         
     }
+    
+    // prepare for segue to comments vc
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,4 +102,4 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-}   // #104
+}   // #106

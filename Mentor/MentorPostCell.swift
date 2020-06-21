@@ -47,6 +47,67 @@ class MentorPostCell: UICollectionViewCell {
         }
     }
     
+    func updateView() {
+        
+        domainName.text = mentorPost?.domainText
+        experienceTextView.text = mentorPost?.experienceText
+        courseTextView.text = mentorPost?.coursesText
+        prerequisiteTextView.text = mentorPost?.prerequisitesText
+        
+        setupUserInfo()
+        
+        /// Update like
+        updateLike(post: mentorPost!)
+        
+        /// Update like count
+        Api.MentorPost.REF_POSTS.child(mentorPost!.id!).observe(.childChanged, with: {
+            snapshot in
+            print(snapshot)
+            if let value = snapshot.value as? Int {
+                self.likeCountButton.setTitle("\(value) likes", for: .normal)
+            }
+        })
+        
+        /// Smoothly update like, when scrolling view
+        Api.MentorPost.REF_POSTS.child(mentorPost!.id!).observeSingleEvent(of: .value, with: {
+            snapshot in
+            if let dict = snapshot.value as? [String: Any] {
+                let post = MentorModel.transformMentorPost(dict: dict, key: snapshot.key)
+                self.updateLike(post: post)
+            }
+        })
+        
+    }
+    
+    func updateLike(post: MentorModel) {
+        
+        // print(post.isLiked)
+        /// we first checked if its true, and no one liked this post before..
+        /// or if probably someone did, but the current user did not..
+        /// then we display, non-selected like icon..
+        /// otherwise, display likeSelected icon..
+        let imageName = post.likes == nil || !post.isLiked! ? "Icon1" : "likeSelected"
+        mentorLikeImageView.image = UIImage(named: imageName)
+        /// Below commented snippet can be put in 1 line.. as above..
+        /* if post.isLiked == false {
+            likeImageView.image = UIImage(named: "like")
+        } else {
+            likeImageView.image = UIImage(named: "likeSelected")
+        } */
+        
+        // We now update like count
+        /// Use optional chaining with guard
+        guard let count = post.likeCount else {
+            return
+        }
+        if count != 0 {
+            likeCountButton.setTitle("\(count) likes", for: .normal)
+        } else {
+            likeCountButton.setTitle("0 likes", for: .normal)
+        }
+        
+    }
+    
     /// New setupUserInfo() func
     func setupUserInfo() {
         
@@ -99,5 +160,50 @@ class MentorPostCell: UICollectionViewCell {
         mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: nil)
         
     }
+    
+    @objc func likeImageViewTouch() {
+        
+        /// Scalable way of liking posts.. new method..
+        mentorPostRef = Api.MentorPost.REF_POSTS.child(mentorPost!.id!)
+        incrementLikes(forRef: mentorPostRef)
+        
+    }
+    
+    func incrementLikes(forRef ref: DatabaseReference) {
+        
+        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
+            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
+                // print("Value 1: \(currentData.value)")
+                var likes: Dictionary<String, Bool>
+                likes = post["likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["likeCount"] as? Int ?? 0
+                if let _ = likes[uid] {
+                    likeCount -= 1
+                    likes.removeValue(forKey: uid)
+                } else {
+                    likeCount += 1
+                    likes[uid] = true
+                }
+                post["likeCount"] = likeCount as AnyObject
+                post["likes"] = likes as AnyObject
+                
+                currentData.value = post
+                
+                return TransactionResult.success(withValue: currentData)
+            }
+            return TransactionResult.success(withValue: currentData)
+        }) { (error, committed, snapshot) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            // print("Value 2: \(snapshot?.value)")
+            if let dict = snapshot?.value as? [String: Any] {
+                let post = MentorModel.transformMentorPost(dict: dict, key: snapshot!.key)
+                self.updateLike(post: post)
+            }
+            
+        }
+        
+    }
 
-}   // #104
+}   // #210
