@@ -11,14 +11,16 @@ import Firebase
 
 class MenteeModel {
     
+    ///
     var domainText: String?
     var postQueryText: String?
-    // var videoUrl: String?
+    ///
     var uid: String?
     
     /// Remodel Post class, bcuz it currently doesn't have a post id property
     var id: String?
     
+    ///
     var likeCount: Int?
     var likes: Dictionary<String, Any>?
     
@@ -64,4 +66,4 @@ extension MenteeModel {
         
     }
     
-}   // #68
+}   // #70
