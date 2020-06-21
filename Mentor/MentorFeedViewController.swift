@@ -88,6 +88,14 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     // prepare for segue to comments vc
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "commentsInMentorFeed" {
+            let commentVC = segue.destination as! CommentsInMentorPostFeed
+            //
+            let postId = sender as! String
+            commentVC.postId = postId
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,4 +110,4 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-}   // #106
+}   // #114
