@@ -2059,6 +2059,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="DR1-pY-6x9"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="C9D-HP-gOc" id="9PX-Kp-om6"/>
+                        <outlet property="commentTextField" destination="Poi-8j-afE" id="Scg-vq-o9D"/>
+                        <outlet property="commentsInMentorPostFeedTableView" destination="IaE-MC-5zD" id="8A8-DT-0es"/>
+                        <outlet property="sendImage" destination="eVy-jb-slH" id="p3P-k2-7Hm"/>
+                        <outlet property="sendOutlet" destination="bEV-X4-sbp" id="hgg-C1-k0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZS-cj-odp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

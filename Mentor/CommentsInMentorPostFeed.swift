@@ -7,8 +7,21 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class CommentsInMentorPostFeed: UIViewController {
+    
+    @IBOutlet var commentsInMentorPostFeedTableView: UITableView!
+    
+    @IBOutlet var commentTextField: UITextField!
+    @IBOutlet var sendOutlet: UIButton!
+    
+    // image on send button
+    @IBOutlet var sendImage: UIImageView!
+    
+    @IBOutlet var bottomConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +30,4 @@ class CommentsInMentorPostFeed: UIViewController {
         
     }
     
-}   // #21
+}   // #34
