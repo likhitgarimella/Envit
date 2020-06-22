@@ -139,6 +139,12 @@ class MentorPostCell: UICollectionViewCell {
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.masksToBounds = false
         
+        bottomView.layer.shadowColor = UIColor.lightGray.cgColor
+        bottomView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        bottomView.layer.shadowRadius = 2.0
+        bottomView.layer.shadowOpacity = 0.5
+        bottomView.layer.masksToBounds = false
+        
         // constraint
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
@@ -216,4 +222,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #220
+}   // #226
