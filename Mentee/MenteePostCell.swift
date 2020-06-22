@@ -124,13 +124,19 @@ class MenteePostCell: UICollectionViewCell {
         bottomView.layer.cornerRadius = 10
         postedQueryTextView.layer.cornerRadius = 6
         
+        cardView.layer.shadowColor = UIColor.lightGray.cgColor
+        cardView.layer.shadowOffset = CGSize(width:2.0, height: 2.0)
+        cardView.layer.shadowRadius = 2.0
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.masksToBounds = false
+        
         // constraint
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
         // text view
-        postedQueryTextView.backgroundColor = UIColor.white
+        postedQueryTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
         postedQueryTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
@@ -198,4 +204,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #202
+}   // #208

@@ -22,35 +22,35 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenteePostCell" id="Ndw-JV-dJ7" customClass="MenteePostCell" customModule="VIT_Share" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="256"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="260"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="256"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="260"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-Q7-Xof">
-                        <rect key="frame" x="0.0" y="0.0" width="350" height="228"/>
+                        <rect key="frame" x="4" y="4" width="342" height="228"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentee Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-EH-Qz2">
-                                <rect key="frame" x="16" y="16" width="111" height="21"/>
+                                <rect key="frame" x="16" y="16" width="113.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZf-00-Px5">
-                                <rect key="frame" x="261.5" y="16" width="11" height="21"/>
+                                <rect key="frame" x="252.5" y="16" width="11" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La2-K0-Hed">
-                                <rect key="frame" x="272.5" y="16" width="61.5" height="21"/>
+                                <rect key="frame" x="263.5" y="16" width="62.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-EW-8cJ">
-                                <rect key="frame" x="16" y="45" width="318" height="128"/>
+                                <rect key="frame" x="16" y="45" width="310" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="BEH-hJ-6oU"/>
@@ -62,7 +62,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="MMM d, h:mm a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtL-Mn-PdB">
-                                <rect key="frame" x="252.5" y="194" width="81.5" height="14"/>
+                                <rect key="frame" x="237" y="194" width="89" height="14"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="12"/>
                                 <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -84,7 +84,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.96078431372549022" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="AZO-yI-mpP" firstAttribute="leading" secondItem="Joc-IQ-0Oy" secondAttribute="leading" constant="16" id="1mH-4T-k1X"/>
                                     <constraint firstItem="U8n-E9-f6t" firstAttribute="leading" secondItem="39q-1Z-gvX" secondAttribute="trailing" constant="12" id="3sQ-eY-yNC"/>
@@ -98,12 +98,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.96078431372549022" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="La2-K0-Hed" firstAttribute="top" secondItem="5k1-Q7-Xof" secondAttribute="top" constant="16" id="0XE-Y5-t3x"/>
                             <constraint firstItem="2Og-EW-8cJ" firstAttribute="top" secondItem="tI0-EH-Qz2" secondAttribute="bottom" constant="8" id="CWw-Oe-m1o"/>
                             <constraint firstItem="tI0-EH-Qz2" firstAttribute="leading" secondItem="5k1-Q7-Xof" secondAttribute="leading" constant="16" id="FMI-4A-QbL"/>
-                            <constraint firstAttribute="width" constant="350" id="Ocf-Nd-wjP"/>
+                            <constraint firstAttribute="width" constant="342" id="Ocf-Nd-wjP"/>
                             <constraint firstItem="tI0-EH-Qz2" firstAttribute="top" secondItem="5k1-Q7-Xof" secondAttribute="top" constant="16" id="RL7-Os-lWi"/>
                             <constraint firstAttribute="trailing" secondItem="La2-K0-Hed" secondAttribute="trailing" constant="16" id="ZHx-MP-lAb"/>
                             <constraint firstItem="iZf-00-Px5" firstAttribute="top" secondItem="5k1-Q7-Xof" secondAttribute="top" constant="16" id="c8d-fM-zOp"/>
@@ -119,11 +119,11 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="5k1-Q7-Xof" secondAttribute="trailing" id="CbO-gv-FIm"/>
+                <constraint firstAttribute="trailing" secondItem="5k1-Q7-Xof" secondAttribute="trailing" constant="4" id="CbO-gv-FIm"/>
                 <constraint firstItem="gsS-wB-Xs7" firstAttribute="bottom" secondItem="Joc-IQ-0Oy" secondAttribute="bottom" constant="8" id="Nqz-K0-YRB"/>
                 <constraint firstAttribute="bottom" secondItem="5k1-Q7-Xof" secondAttribute="bottom" constant="28" id="dNY-vg-e5L"/>
-                <constraint firstItem="5k1-Q7-Xof" firstAttribute="top" secondItem="Ndw-JV-dJ7" secondAttribute="top" id="jj3-NC-G1X"/>
-                <constraint firstItem="5k1-Q7-Xof" firstAttribute="leading" secondItem="Ndw-JV-dJ7" secondAttribute="leading" id="kbz-UD-Syd"/>
+                <constraint firstItem="5k1-Q7-Xof" firstAttribute="top" secondItem="Ndw-JV-dJ7" secondAttribute="top" constant="4" id="jj3-NC-G1X"/>
+                <constraint firstItem="5k1-Q7-Xof" firstAttribute="leading" secondItem="Ndw-JV-dJ7" secondAttribute="leading" constant="4" id="kbz-UD-Syd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="gsS-wB-Xs7"/>
             <size key="customSize" width="350" height="270"/>
@@ -138,7 +138,7 @@
                 <outlet property="postedQueryTextView" destination="2Og-EW-8cJ" id="sTR-Fz-Kfd"/>
                 <outlet property="widthConstraint" destination="Ocf-Nd-wjP" id="zDn-ir-Kyc"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="51.5625"/>
+            <point key="canvasLocation" x="37.681159420289859" y="39.508928571428569"/>
         </collectionViewCell>
     </objects>
     <resources>
