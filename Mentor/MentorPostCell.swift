@@ -132,15 +132,22 @@ class MentorPostCell: UICollectionViewCell {
         courseTextView.layer.cornerRadius = 6
         prerequisiteTextView.layer.cornerRadius = 6
         
+        // shadow properties
+        cardView.layer.shadowColor = UIColor.lightGray.cgColor
+        cardView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        cardView.layer.shadowRadius = 2.0
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.masksToBounds = false
+        
         // constraint
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
         // text view
-        experienceTextView.backgroundColor = UIColor.white
-        courseTextView.backgroundColor = UIColor.white
-        prerequisiteTextView.backgroundColor = UIColor.white
+        experienceTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
+        courseTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
+        prerequisiteTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
         courseTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
@@ -195,6 +202,7 @@ class MentorPostCell: UICollectionViewCell {
             }
             return TransactionResult.success(withValue: currentData)
         }) { (error, committed, snapshot) in
+            
             if let error = error {
                 print(error.localizedDescription)
             }
@@ -208,4 +216,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #212
+}   // #220

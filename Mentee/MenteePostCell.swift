@@ -124,8 +124,9 @@ class MenteePostCell: UICollectionViewCell {
         bottomView.layer.cornerRadius = 10
         postedQueryTextView.layer.cornerRadius = 6
         
+        // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
-        cardView.layer.shadowOffset = CGSize(width:2.0, height: 2.0)
+        cardView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         cardView.layer.shadowRadius = 2.0
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.masksToBounds = false
@@ -191,6 +192,7 @@ class MenteePostCell: UICollectionViewCell {
             }
             return TransactionResult.success(withValue: currentData)
         }) { (error, committed, snapshot) in
+            
             if let error = error {
                 print(error.localizedDescription)
             }
@@ -204,4 +206,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #208
+}   // #210
