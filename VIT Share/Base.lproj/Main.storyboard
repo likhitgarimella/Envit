@@ -527,14 +527,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lRJ-Ug-21N" customClass="ProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t1-hS-oK6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMT-MM-0aa">
-                                <rect key="frame" x="0.0" y="56" width="414" height="675"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="775"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qW-Nh-4V1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-MF-knD">
                                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
@@ -550,12 +550,124 @@
                                                     <constraint firstAttribute="height" constant="200" id="c2i-yb-MaZ"/>
                                                 </constraints>
                                             </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dO0-XK-Kzd">
+                                                <rect key="frame" x="20" y="420" width="374" height="53"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-ib-CxQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="660-Rv-081"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                                        <state key="normal" title="Edit Profile">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzp-0m-Yhh">
+                                                        <rect key="frame" x="0.0" y="52" width="374" height="1"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="2WY-c3-k5Z"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Jzp-0m-Yhh" firstAttribute="top" secondItem="Zf9-ib-CxQ" secondAttribute="bottom" constant="2" id="okL-kQ-yiY"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="l5s-Ww-ALP">
+                                                <rect key="frame" x="20" y="475" width="374" height="53"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdG-Rs-yy4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="fix-gs-KQp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                                        <state key="normal" title="Edit Profile">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgV-z5-SY5">
+                                                        <rect key="frame" x="0.0" y="52" width="374" height="1"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="3Hb-Hb-lqJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="EgV-z5-SY5" firstAttribute="top" secondItem="VdG-Rs-yy4" secondAttribute="bottom" constant="2" id="od5-gO-iRx"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="F6w-7v-kF0">
+                                                <rect key="frame" x="20" y="530" width="374" height="53"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-PC-fMG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="BHC-cd-IKs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                                        <state key="normal" title="Edit Profile">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-Ju-thU">
+                                                        <rect key="frame" x="0.0" y="52" width="374" height="1"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="VuG-P4-ycj"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="jDm-Ju-thU" firstAttribute="top" secondItem="9bL-PC-fMG" secondAttribute="bottom" constant="2" id="MEo-Xx-kQb"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HxV-NO-Iel">
+                                                <rect key="frame" x="20" y="585" width="374" height="53"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13T-eC-0jp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="sq0-th-GAx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                                        <state key="normal" title="Edit Profile">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfV-ix-H6E">
+                                                        <rect key="frame" x="0.0" y="52" width="374" height="1"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="eb7-GK-mjN"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="qfV-ix-H6E" firstAttribute="top" secondItem="13T-eC-0jp" secondAttribute="bottom" constant="2" id="U5e-Pv-GcV"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="l5s-Ww-ALP" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="1fo-zf-dXd"/>
+                                            <constraint firstItem="F6w-7v-kF0" firstAttribute="top" secondItem="l5s-Ww-ALP" secondAttribute="bottom" constant="2" id="6el-Zh-6t0"/>
+                                            <constraint firstAttribute="trailing" secondItem="l5s-Ww-ALP" secondAttribute="trailing" constant="20" id="FJM-hG-aOF"/>
+                                            <constraint firstItem="HxV-NO-Iel" firstAttribute="top" secondItem="F6w-7v-kF0" secondAttribute="bottom" constant="2" id="MYC-Yx-jdH"/>
                                             <constraint firstAttribute="trailing" secondItem="das-2O-srO" secondAttribute="trailing" constant="20" id="QQI-DB-mrS"/>
                                             <constraint firstItem="wsd-MF-knD" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="UMb-5I-c59"/>
+                                            <constraint firstItem="HxV-NO-Iel" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="ZrM-DM-TKy"/>
+                                            <constraint firstAttribute="trailing" secondItem="HxV-NO-Iel" secondAttribute="trailing" constant="20" id="aTt-jg-az3"/>
+                                            <constraint firstAttribute="trailing" secondItem="dO0-XK-Kzd" secondAttribute="trailing" constant="20" id="bJQ-F6-3Gb"/>
+                                            <constraint firstItem="F6w-7v-kF0" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="cd4-bb-EzK"/>
                                             <constraint firstItem="wsd-MF-knD" firstAttribute="top" secondItem="1qW-Nh-4V1" secondAttribute="top" constant="20" id="cdx-3h-Tix"/>
+                                            <constraint firstItem="l5s-Ww-ALP" firstAttribute="top" secondItem="dO0-XK-Kzd" secondAttribute="bottom" constant="2" id="nnB-vi-nMy"/>
+                                            <constraint firstAttribute="trailing" secondItem="F6w-7v-kF0" secondAttribute="trailing" constant="20" id="nvR-xY-XBX"/>
+                                            <constraint firstItem="dO0-XK-Kzd" firstAttribute="top" secondItem="das-2O-srO" secondAttribute="bottom" constant="60" id="pMB-K9-tjx"/>
+                                            <constraint firstItem="dO0-XK-Kzd" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="tAh-WG-JhU"/>
                                             <constraint firstItem="das-2O-srO" firstAttribute="top" secondItem="wsd-MF-knD" secondAttribute="bottom" constant="40" id="xCQ-Vs-E3h"/>
                                             <constraint firstItem="das-2O-srO" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="xMw-xg-sSI"/>
                                         </constraints>
@@ -582,7 +694,7 @@
                         <viewLayoutGuide key="safeArea" id="6lL-Ff-JK8"/>
                     </view>
                     <navigationItem key="navigationItem" id="QMA-Qv-PXh"/>
-                    <size key="freeformSize" width="414" height="800"/>
+                    <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="profileImage" destination="wsd-MF-knD" id="VmE-Sp-ibs"/>
                         <outlet property="userInfo" destination="das-2O-srO" id="gz7-nO-xCJ"/>
