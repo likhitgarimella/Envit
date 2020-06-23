@@ -2279,10 +2279,10 @@
             </objects>
             <point key="canvasLocation" x="-697.10144927536237" y="2055.9782608695655"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="TRk-dy-PID">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kpQ-x0-ch3" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kpQ-x0-ch3" customClass="EditProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sO8-bf-96P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2295,10 +2295,10 @@
             </objects>
             <point key="canvasLocation" x="-697" y="3081"/>
         </scene>
-        <!--View Controller-->
+        <!--My Posts View Controller-->
         <scene sceneID="mRy-Vq-YeA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ZaV-TJ-F2M" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ZaV-TJ-F2M" customClass="MyPostsViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euc-ei-ZXz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2311,10 +2311,10 @@
             </objects>
             <point key="canvasLocation" x="210" y="3081"/>
         </scene>
-        <!--View Controller-->
+        <!--Notifications View Controller-->
         <scene sceneID="uJA-lf-QvM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="luW-y8-xdL" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="luW-y8-xdL" customClass="NotificationsViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aTI-lf-VB0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2327,10 +2327,10 @@
             </objects>
             <point key="canvasLocation" x="1077" y="3081"/>
         </scene>
-        <!--View Controller-->
+        <!--Developers View Controller-->
         <scene sceneID="lmj-Xr-o5B">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kh7-TS-iFQ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kh7-TS-iFQ" customClass="DevelopersViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fe1-OP-Aet">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

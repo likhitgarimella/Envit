@@ -99,6 +99,10 @@
 		02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */; };
 		02D2DF5D24A1814E00A6A017 /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5824A1814D00A6A017 /* SF-Pro-Text-ThinItalic.otf */; };
 		02D2DF5E24A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5924A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf */; };
+		02D2DF6024A1A5AC00A6A017 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2DF5F24A1A5AC00A6A017 /* EditProfileViewController.swift */; };
+		02D2DF6224A1A65500A6A017 /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2DF6124A1A65500A6A017 /* MyPostsViewController.swift */; };
+		02D2DF6424A1A7B400A6A017 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2DF6324A1A7B400A6A017 /* NotificationsViewController.swift */; };
+		02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2DF6524A1A80700A6A017 /* DevelopersViewController.swift */; };
 		02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9252498E10F0008B503 /* MenteeComments.swift */; };
 		02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9272498E13B0008B503 /* MentorComments.swift */; };
 		02D6B92A249909170008B503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B929249909170008B503 /* User.swift */; };
@@ -217,6 +221,10 @@
 		02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5824A1814D00A6A017 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5924A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		02D2DF5F24A1A5AC00A6A017 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		02D2DF6124A1A65500A6A017 /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
+		02D2DF6324A1A7B400A6A017 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		02D2DF6524A1A80700A6A017 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		02D6B9252498E10F0008B503 /* MenteeComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeComments.swift; sourceTree = "<group>"; };
 		02D6B9272498E13B0008B503 /* MentorComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorComments.swift; sourceTree = "<group>"; };
 		02D6B929249909170008B503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -371,6 +379,10 @@
 				02802BB62484BADA008BF296 /* ModifyTechViewController.swift */,
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				020A330324443B07006FE3E5 /* ProfileViewController.swift */,
+				02D2DF5F24A1A5AC00A6A017 /* EditProfileViewController.swift */,
+				02D2DF6124A1A65500A6A017 /* MyPostsViewController.swift */,
+				02D2DF6324A1A7B400A6A017 /* NotificationsViewController.swift */,
+				02D2DF6524A1A80700A6A017 /* DevelopersViewController.swift */,
 				029FB8002475A3E60053D916 /* Extensions.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
@@ -698,6 +710,7 @@
 				02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */,
 				02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
+				02D2DF6024A1A5AC00A6A017 /* EditProfileViewController.swift in Sources */,
 				0221E1252477C12F0022DCCB /* SPAlertIconAddView.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
@@ -710,6 +723,7 @@
 				02272EBE244DC40F00AED173 /* Cell2.swift in Sources */,
 				0221E1242477C12F0022DCCB /* SPAlertIconEjectView.swift in Sources */,
 				0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */,
+				02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */,
 				0221E1332477C12F0022DCCB /* SPAlertIconRotateView.swift in Sources */,
 				02DC18D4248224C100CBC10C /* AuthService.swift in Sources */,
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
@@ -733,12 +747,14 @@
 				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
 				0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */,
 				024A05532483A43C00CC06CB /* TechShareViewController.swift in Sources */,
+				02D2DF6424A1A7B400A6A017 /* NotificationsViewController.swift in Sources */,
 				0260C5FA2447CA340066C06C /* Cell.swift in Sources */,
 				02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */,
 				02E90B2C249D89C30094759C /* Api.swift in Sources */,
 				0221E12B2477C12F0022DCCB /* SPAlertIconLikeView.swift in Sources */,
 				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
+				02D2DF6224A1A65500A6A017 /* MyPostsViewController.swift in Sources */,
 				0221E1232477C12F0022DCCB /* SPAlertIconBoltView.swift in Sources */,
 				02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */,
 				02D6B92A249909170008B503 /* User.swift in Sources */,
