@@ -529,14 +529,40 @@
                     <view key="view" contentMode="scaleToFill" id="9t1-hS-oK6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMT-MM-0aa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qW-Nh-4V1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1qW-Nh-4V1" secondAttribute="trailing" id="QEA-0f-xxv"/>
+                                    <constraint firstItem="1qW-Nh-4V1" firstAttribute="leading" secondItem="zMT-MM-0aa" secondAttribute="leading" id="VL8-xr-DqF"/>
+                                    <constraint firstItem="1qW-Nh-4V1" firstAttribute="top" secondItem="zMT-MM-0aa" secondAttribute="top" id="YdT-ft-IyL"/>
+                                    <constraint firstItem="1qW-Nh-4V1" firstAttribute="width" secondItem="zMT-MM-0aa" secondAttribute="width" priority="750" id="akg-vU-atW"/>
+                                    <constraint firstItem="1qW-Nh-4V1" firstAttribute="height" secondItem="zMT-MM-0aa" secondAttribute="height" priority="250" id="fJ5-hf-BJp"/>
+                                    <constraint firstAttribute="bottom" secondItem="1qW-Nh-4V1" secondAttribute="bottom" id="p4C-vg-KWv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zMT-MM-0aa" firstAttribute="trailing" secondItem="6lL-Ff-JK8" secondAttribute="trailing" id="BHb-KL-nDw"/>
+                            <constraint firstItem="zMT-MM-0aa" firstAttribute="bottom" secondItem="6lL-Ff-JK8" secondAttribute="bottom" id="JFs-iS-Op8"/>
+                            <constraint firstItem="zMT-MM-0aa" firstAttribute="top" secondItem="6lL-Ff-JK8" secondAttribute="top" id="Ocu-RC-iFX"/>
+                            <constraint firstItem="zMT-MM-0aa" firstAttribute="leading" secondItem="6lL-Ff-JK8" secondAttribute="leading" id="dtX-P1-wB6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6lL-Ff-JK8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="CRJ-wu-8gD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4m-Vy-e8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="2057"/>
+            <point key="canvasLocation" x="-697.10144927536237" y="2055.9782608695655"/>
         </scene>
         <!--Tech Share View Controller-->
         <scene sceneID="oKh-hI-7Pp">
@@ -1248,7 +1274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5822" y="781"/>
+            <point key="canvasLocation" x="3454" y="439"/>
         </scene>
         <!--Modify Tech View Controller-->
         <scene sceneID="YWx-jq-jFq">
@@ -1721,7 +1747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3455.072463768116" y="741.84782608695662"/>
+            <point key="canvasLocation" x="3454" y="1241"/>
         </scene>
         <!--Mentor Feed View Controller-->
         <scene sceneID="7Rv-u6-BoU">
@@ -1769,7 +1795,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3455" y="1441"/>
+            <point key="canvasLocation" x="3455" y="2017"/>
         </scene>
         <!--Tech-->
         <scene sceneID="sPG-aL-RV4">
@@ -1932,7 +1958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b5-Uj-oWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4434.7826086956529" y="741.84782608695662"/>
+            <point key="canvasLocation" x="4435" y="1241"/>
         </scene>
         <!--Comments In Mentor Post Feed-->
         <scene sceneID="zUh-dP-e1f">
@@ -2072,7 +2098,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZS-cj-odp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4435" y="1442"/>
+            <point key="canvasLocation" x="4435" y="2018"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
