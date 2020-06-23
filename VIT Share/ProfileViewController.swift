@@ -22,6 +22,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet var notificationsOutlet: UIButton!
     @IBOutlet var developersOutlet: UIButton!
     
+    @IBOutlet var logoutOutlet: UIButton!
+    
     func ProfileImageProp() {
         
         profileImage.layer.cornerRadius = 50
@@ -42,6 +44,12 @@ class ProfileViewController: UIViewController {
         
         
     }
+    
+    func LogoutButtonProp() {
+        
+        logoutOutlet.layer.cornerRadius = 10
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +60,7 @@ class ProfileViewController: UIViewController {
         ProfileImageProp()
         UserInfoUIViewProp()
         FourButtonsProperties()
+        LogoutButtonProp()
 
     }
     
@@ -79,4 +88,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #83
+}   // #92
