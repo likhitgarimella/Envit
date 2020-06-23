@@ -17,6 +17,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     
+    @IBOutlet var profileLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    @IBOutlet var mobileLabel: UILabel!
+    @IBOutlet var hostelLabel: UILabel!
+    @IBOutlet var blockLabel: UILabel!
+    
     @IBOutlet var editProfileOutlet: UIButton!
     @IBOutlet var myPostsOutlet: UIButton!
     @IBOutlet var notificationsOutlet: UIButton!
@@ -88,4 +94,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #92
+}   // #98
