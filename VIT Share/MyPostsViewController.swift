@@ -13,8 +13,12 @@ class MyPostsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
+        // nav bar title
+        title = "My Posts"
         
     }
     
-}   // #21
+}   // #25

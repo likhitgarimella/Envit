@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         // nav bar title
-        title = "Profile"
+        // title = "Profile"
         
         ProfileImageProp()
         UserInfoUIViewProp()

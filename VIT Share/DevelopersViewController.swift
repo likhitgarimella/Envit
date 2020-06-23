@@ -13,8 +13,12 @@ class DevelopersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
+        // nav bar title
+        title = "Developers"
         
     }
 
-}   // #21
+}   // #25
