@@ -527,15 +527,28 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lRJ-Ug-21N" customClass="ProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t1-hS-oK6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMT-MM-0aa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="731"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qW-Nh-4V1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="731"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-MF-knD">
+                                                <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="1LG-RU-0se"/>
+                                                    <constraint firstAttribute="height" constant="100" id="nZ6-CC-D83"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wsd-MF-knD" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="UMb-5I-c59"/>
+                                            <constraint firstItem="wsd-MF-knD" firstAttribute="top" secondItem="1qW-Nh-4V1" secondAttribute="top" constant="20" id="cdx-3h-Tix"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -559,6 +572,10 @@
                         <viewLayoutGuide key="safeArea" id="6lL-Ff-JK8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="CRJ-wu-8gD"/>
+                    <size key="freeformSize" width="414" height="800"/>
+                    <connections>
+                        <outlet property="profileImage" destination="wsd-MF-knD" id="VmE-Sp-ibs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4m-Vy-e8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2105,6 +2122,7 @@
         <segue reference="Hdy-ma-UKs"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Placeholder-image" width="200" height="200"/>
         <image name="bell" width="30" height="30"/>
         <image name="chart" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
