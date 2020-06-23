@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet var hostelLabel: UILabel!
     @IBOutlet var blockLabel: UILabel!
     
+    @IBOutlet var fourCellsView: UIView!
     @IBOutlet var editProfileOutlet: UIButton!
     @IBOutlet var myPostsOutlet: UIButton!
     @IBOutlet var notificationsOutlet: UIButton!
@@ -39,9 +40,10 @@ class ProfileViewController: UIViewController {
         
     }
     
-    func UserInfoUIViewProp() {
+    func UIViewProp() {
         
         userInfo.layer.cornerRadius = 10
+        fourCellsView.layer.cornerRadius = 10
         
     }
     
@@ -64,7 +66,7 @@ class ProfileViewController: UIViewController {
         // title = "Profile"
         
         ProfileImageProp()
-        UserInfoUIViewProp()
+        UIViewProp()
         FourButtonsProperties()
         LogoutButtonProp()
 
@@ -94,4 +96,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #98
+}   // #100
