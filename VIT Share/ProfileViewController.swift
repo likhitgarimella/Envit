@@ -50,5 +50,29 @@ class ProfileViewController: UIViewController {
         FourButtonsProperties()
 
     }
-
-}   // #55
+    
+    @IBAction func editProfileAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToEditProfile", sender: self)
+        
+    }
+    
+    @IBAction func myPostsAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToMyPosts", sender: self)
+        
+    }
+    
+    @IBAction func notificationsAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToNotifications", sender: self)
+        
+    }
+    
+    @IBAction func developersAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToDevelopers", sender: self)
+        
+    }
+    
+}   // #79

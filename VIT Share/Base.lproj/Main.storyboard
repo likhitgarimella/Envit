@@ -562,6 +562,9 @@
                                                         <state key="normal" title="Edit Profile">
                                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="editProfileAction:" destination="lRJ-Ug-21N" eventType="touchUpInside" id="ka2-a0-03I"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzp-0m-Yhh">
                                                         <rect key="frame" x="0.0" y="52" width="374" height="1"/>
@@ -587,6 +590,9 @@
                                                         <state key="normal" title="My posts">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="myPostsAction:" destination="lRJ-Ug-21N" eventType="touchUpInside" id="JuZ-4s-9Tj"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgV-z5-SY5">
                                                         <rect key="frame" x="0.0" y="52" width="374" height="1"/>
@@ -612,6 +618,9 @@
                                                         <state key="normal" title="Notifications">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="notificationsAction:" destination="lRJ-Ug-21N" eventType="touchUpInside" id="8VH-zm-lZv"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-Ju-thU">
                                                         <rect key="frame" x="0.0" y="52" width="374" height="1"/>
@@ -637,6 +646,9 @@
                                                         <state key="normal" title="Developers">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="developersAction:" destination="lRJ-Ug-21N" eventType="touchUpInside" id="g6O-ZP-6Py"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfV-ix-H6E">
                                                         <rect key="frame" x="0.0" y="52" width="374" height="1"/>
@@ -702,6 +714,10 @@
                         <outlet property="notificationsOutlet" destination="9bL-PC-fMG" id="NsX-3K-FIK"/>
                         <outlet property="profileImage" destination="wsd-MF-knD" id="VmE-Sp-ibs"/>
                         <outlet property="userInfo" destination="das-2O-srO" id="gz7-nO-xCJ"/>
+                        <segue destination="kpQ-x0-ch3" kind="show" identifier="goToEditProfile" id="4vP-qc-djO"/>
+                        <segue destination="ZaV-TJ-F2M" kind="show" identifier="goToMyPosts" id="jHj-Jp-T1B"/>
+                        <segue destination="luW-y8-xdL" kind="show" identifier="goToNotifications" id="xAP-40-HFQ"/>
+                        <segue destination="kh7-TS-iFQ" kind="show" identifier="goToDevelopers" id="AMC-gQ-GHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4m-Vy-e8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1423,7 +1439,7 @@
         <!--Modify Tech View Controller-->
         <scene sceneID="YWx-jq-jFq">
             <objects>
-                <viewController id="QsU-5y-BBG" customClass="ModifyTechViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QsU-5y-BBG" customClass="ModifyTechViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ADR-L0-1zI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2262,6 +2278,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdD-Pu-UG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-697.10144927536237" y="2055.9782608695655"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TRk-dy-PID">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="kpQ-x0-ch3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sO8-bf-96P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7iK-0o-56O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="elI-Te-yh3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlG-RL-rdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="3081"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mRy-Vq-YeA">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ZaV-TJ-F2M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="euc-ei-ZXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ra9-AC-6mP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v6M-Hx-I5B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Un-oa-T1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="3081"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uJA-lf-QvM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="luW-y8-xdL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTI-lf-VB0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="itK-8a-tbO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Dv-XM-FGr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyP-gz-Zea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="3081"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lmj-Xr-o5B">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="kh7-TS-iFQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fe1-OP-Aet">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vXG-OR-km2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YEk-Ze-yUP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78W-WD-aMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="3081"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
