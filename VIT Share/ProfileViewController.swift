@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     
     // Outlets
     @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var userInfo: UIView!
     
     func ProfileImageProp() {
         
@@ -21,12 +22,22 @@ class ProfileViewController: UIViewController {
         profileImage.layer.borderColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0).cgColor
         
     }
+    
+    func UserInfoUIViewProp() {
+        
+        userInfo.layer.cornerRadius = 10
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // nav bar title
+        title = "Profile"
+        
         ProfileImageProp()
+        UserInfoUIViewProp()
 
     }
 
-}   // #33
+}   // #44
