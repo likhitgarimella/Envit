@@ -20,6 +20,9 @@
         <array key="SF-Pro-Rounded-Semibold.otf">
             <string>SFProRounded-Semibold</string>
         </array>
+        <array key="SF-Pro-Text-MediumItalic.otf">
+            <string>SFProText-MediumItalic</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
@@ -543,6 +546,12 @@
                                                     <constraint firstAttribute="height" constant="100" id="nZ6-CC-D83"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-9e-GgY">
+                                                <rect key="frame" x="144" y="23" width="95.666666666666686" height="24"/>
+                                                <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="das-2O-srO">
                                                 <rect key="frame" x="20" y="160" width="374" height="200"/>
                                                 <color key="backgroundColor" red="0.86274509803921573" green="0.90588235294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -662,20 +671,32 @@
                                                     <constraint firstItem="qfV-ix-H6E" firstAttribute="top" secondItem="13T-eC-0jp" secondAttribute="bottom" constant="2" id="U5e-Pv-GcV"/>
                                                 </constraints>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X85-t4-gre">
+                                                <rect key="frame" x="144" y="51" width="82" height="38.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="32"/>
+                                                <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="l5s-Ww-ALP" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="1fo-zf-dXd"/>
                                             <constraint firstItem="F6w-7v-kF0" firstAttribute="top" secondItem="l5s-Ww-ALP" secondAttribute="bottom" constant="2" id="6el-Zh-6t0"/>
+                                            <constraint firstItem="X85-t4-gre" firstAttribute="leading" secondItem="wsd-MF-knD" secondAttribute="trailing" constant="24" id="Epk-YL-9Jo"/>
                                             <constraint firstAttribute="trailing" secondItem="l5s-Ww-ALP" secondAttribute="trailing" constant="20" id="FJM-hG-aOF"/>
                                             <constraint firstItem="HxV-NO-Iel" firstAttribute="top" secondItem="F6w-7v-kF0" secondAttribute="bottom" constant="2" id="MYC-Yx-jdH"/>
                                             <constraint firstAttribute="trailing" secondItem="das-2O-srO" secondAttribute="trailing" constant="20" id="QQI-DB-mrS"/>
+                                            <constraint firstItem="X85-t4-gre" firstAttribute="centerY" secondItem="wsd-MF-knD" secondAttribute="centerY" id="Sag-dL-9fV"/>
                                             <constraint firstItem="wsd-MF-knD" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="UMb-5I-c59"/>
                                             <constraint firstItem="HxV-NO-Iel" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="ZrM-DM-TKy"/>
                                             <constraint firstAttribute="trailing" secondItem="HxV-NO-Iel" secondAttribute="trailing" constant="20" id="aTt-jg-az3"/>
                                             <constraint firstAttribute="trailing" secondItem="dO0-XK-Kzd" secondAttribute="trailing" constant="20" id="bJQ-F6-3Gb"/>
                                             <constraint firstItem="F6w-7v-kF0" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="cd4-bb-EzK"/>
                                             <constraint firstItem="wsd-MF-knD" firstAttribute="top" secondItem="1qW-Nh-4V1" secondAttribute="top" constant="20" id="cdx-3h-Tix"/>
+                                            <constraint firstItem="9dF-9e-GgY" firstAttribute="leading" secondItem="X85-t4-gre" secondAttribute="leading" id="hiJ-TK-7VK"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X85-t4-gre" secondAttribute="trailing" constant="20" symbolic="YES" id="kYU-tj-8oh"/>
+                                            <constraint firstItem="X85-t4-gre" firstAttribute="top" secondItem="9dF-9e-GgY" secondAttribute="bottom" constant="4" id="lvr-OJ-efI"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dF-9e-GgY" secondAttribute="trailing" constant="20" symbolic="YES" id="n8A-uK-sA7"/>
                                             <constraint firstItem="l5s-Ww-ALP" firstAttribute="top" secondItem="dO0-XK-Kzd" secondAttribute="bottom" constant="2" id="nnB-vi-nMy"/>
                                             <constraint firstAttribute="trailing" secondItem="F6w-7v-kF0" secondAttribute="trailing" constant="20" id="nvR-xY-XBX"/>
                                             <constraint firstItem="dO0-XK-Kzd" firstAttribute="top" secondItem="das-2O-srO" secondAttribute="bottom" constant="60" id="pMB-K9-tjx"/>
@@ -711,9 +732,11 @@
                         <outlet property="developersOutlet" destination="13T-eC-0jp" id="0WX-YA-fRp"/>
                         <outlet property="editProfileOutlet" destination="Zf9-ib-CxQ" id="tJK-QY-PFh"/>
                         <outlet property="myPostsOutlet" destination="VdG-Rs-yy4" id="sbb-4n-vVG"/>
+                        <outlet property="nameLabel" destination="X85-t4-gre" id="9Ez-Ov-sQm"/>
                         <outlet property="notificationsOutlet" destination="9bL-PC-fMG" id="NsX-3K-FIK"/>
                         <outlet property="profileImage" destination="wsd-MF-knD" id="VmE-Sp-ibs"/>
                         <outlet property="userInfo" destination="das-2O-srO" id="gz7-nO-xCJ"/>
+                        <outlet property="welcomeLabel" destination="9dF-9e-GgY" id="qnp-i3-NeJ"/>
                         <segue destination="kpQ-x0-ch3" kind="show" identifier="goToEditProfile" id="4vP-qc-djO"/>
                         <segue destination="ZaV-TJ-F2M" kind="show" identifier="goToMyPosts" id="jHj-Jp-T1B"/>
                         <segue destination="luW-y8-xdL" kind="show" identifier="goToNotifications" id="xAP-40-HFQ"/>

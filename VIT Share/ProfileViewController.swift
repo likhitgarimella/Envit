@@ -13,6 +13,10 @@ class ProfileViewController: UIViewController {
     // Outlets
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var userInfo: UIView!
+    
+    @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    
     @IBOutlet var editProfileOutlet: UIButton!
     @IBOutlet var myPostsOutlet: UIButton!
     @IBOutlet var notificationsOutlet: UIButton!
@@ -75,4 +79,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #79
+}   // #83
