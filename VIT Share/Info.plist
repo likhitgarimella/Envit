@@ -22,6 +22,11 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SF-Pro-Text-LightItalic.otf</string>
+		<string>SF-Pro-Text-MediumItalic.otf</string>
+		<string>SF-Pro-Text-RegularItalic.otf</string>
+		<string>SF-Pro-Text-SemiboldItalic.otf</string>
+		<string>SF-Pro-Text-ThinItalic.otf</string>
 		<string>SF-Pro-Rounded-Ultralight.otf</string>
 		<string>SF-Pro-Rounded-Thin.otf</string>
 		<string>SF-Pro-Rounded-Semibold.otf</string>

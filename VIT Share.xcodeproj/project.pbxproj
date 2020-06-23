@@ -94,6 +94,11 @@
 		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
 		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
 		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
+		02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */; };
+		02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */; };
+		02D2DF5D24A1814E00A6A017 /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5824A1814D00A6A017 /* SF-Pro-Text-ThinItalic.otf */; };
+		02D2DF5E24A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5924A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf */; };
 		02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9252498E10F0008B503 /* MenteeComments.swift */; };
 		02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9272498E13B0008B503 /* MentorComments.swift */; };
 		02D6B92A249909170008B503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B929249909170008B503 /* User.swift */; };
@@ -207,6 +212,11 @@
 		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
+		02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		02D2DF5824A1814D00A6A017 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		02D2DF5924A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		02D6B9252498E10F0008B503 /* MenteeComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeComments.swift; sourceTree = "<group>"; };
 		02D6B9272498E13B0008B503 /* MentorComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorComments.swift; sourceTree = "<group>"; };
 		02D6B929249909170008B503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -493,6 +503,11 @@
 				024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */,
 				024FC8C624964ED7006046B3 /* SF-Pro-Rounded-Thin.otf */,
 				024FC8C724964ED7006046B3 /* SF-Pro-Rounded-Ultralight.otf */,
+				02D2DF5924A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf */,
+				02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */,
+				02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */,
+				02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */,
+				02D2DF5824A1814D00A6A017 /* SF-Pro-Text-ThinItalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -579,7 +594,10 @@
 				024FC8CD24964ED8006046B3 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
 				024FC8CF24964ED8006046B3 /* SF-Pro-Rounded-Thin.otf in Resources */,
+				02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				024FC8D124964ED8006046B3 /* SF-Pro-Rounded-Light.otf in Resources */,
+				02D2DF5D24A1814E00A6A017 /* SF-Pro-Text-ThinItalic.otf in Resources */,
 				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
 				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
 				024FC8D024964ED8006046B3 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
@@ -591,8 +609,10 @@
 				02355CC1248106090062BA59 /* Cell4.xib in Resources */,
 				024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				024FC8CE24964ED8006046B3 /* SF-Pro-Rounded-Black.otf in Resources */,
+				02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
 				02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */,
+				02D2DF5E24A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
