@@ -584,7 +584,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="fix-gs-KQp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                                        <state key="normal" title="Edit Profile">
+                                                        <state key="normal" title="My posts">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
@@ -609,7 +609,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="BHC-cd-IKs"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                                        <state key="normal" title="Edit Profile">
+                                                        <state key="normal" title="Notifications">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
@@ -634,7 +634,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="sq0-th-GAx"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
-                                                        <state key="normal" title="Edit Profile">
+                                                        <state key="normal" title="Developers">
                                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
@@ -696,6 +696,10 @@
                     <navigationItem key="navigationItem" id="QMA-Qv-PXh"/>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
+                        <outlet property="developersOutlet" destination="13T-eC-0jp" id="0WX-YA-fRp"/>
+                        <outlet property="editProfileOutlet" destination="Zf9-ib-CxQ" id="tJK-QY-PFh"/>
+                        <outlet property="myPostsOutlet" destination="VdG-Rs-yy4" id="sbb-4n-vVG"/>
+                        <outlet property="notificationsOutlet" destination="9bL-PC-fMG" id="NsX-3K-FIK"/>
                         <outlet property="profileImage" destination="wsd-MF-knD" id="VmE-Sp-ibs"/>
                         <outlet property="userInfo" destination="das-2O-srO" id="gz7-nO-xCJ"/>
                     </connections>

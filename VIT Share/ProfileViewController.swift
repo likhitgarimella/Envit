@@ -13,6 +13,10 @@ class ProfileViewController: UIViewController {
     // Outlets
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var userInfo: UIView!
+    @IBOutlet var editProfileOutlet: UIButton!
+    @IBOutlet var myPostsOutlet: UIButton!
+    @IBOutlet var notificationsOutlet: UIButton!
+    @IBOutlet var developersOutlet: UIButton!
     
     func ProfileImageProp() {
         
@@ -28,6 +32,12 @@ class ProfileViewController: UIViewController {
         userInfo.layer.cornerRadius = 10
         
     }
+    
+    func FourButtonsProperties() {
+        
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +47,8 @@ class ProfileViewController: UIViewController {
         
         ProfileImageProp()
         UserInfoUIViewProp()
+        FourButtonsProperties()
 
     }
 
-}   // #44
+}   // #55
