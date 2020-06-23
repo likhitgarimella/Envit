@@ -677,16 +677,31 @@
                                                 <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYw-iO-taE">
+                                                <rect key="frame" x="60" y="698" width="294" height="44"/>
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Kyl-X9-NTU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                                <state key="normal" title="Log out">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="FYw-iO-taE" firstAttribute="top" secondItem="HxV-NO-Iel" secondAttribute="bottom" constant="60" id="09G-to-b4d"/>
+                                            <constraint firstItem="FYw-iO-taE" firstAttribute="centerX" secondItem="1qW-Nh-4V1" secondAttribute="centerX" id="119-2i-OZe"/>
                                             <constraint firstItem="l5s-Ww-ALP" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="1fo-zf-dXd"/>
                                             <constraint firstItem="F6w-7v-kF0" firstAttribute="top" secondItem="l5s-Ww-ALP" secondAttribute="bottom" constant="2" id="6el-Zh-6t0"/>
                                             <constraint firstItem="X85-t4-gre" firstAttribute="leading" secondItem="wsd-MF-knD" secondAttribute="trailing" constant="24" id="Epk-YL-9Jo"/>
                                             <constraint firstAttribute="trailing" secondItem="l5s-Ww-ALP" secondAttribute="trailing" constant="20" id="FJM-hG-aOF"/>
+                                            <constraint firstItem="FYw-iO-taE" firstAttribute="left" secondItem="1qW-Nh-4V1" secondAttribute="left" constant="60" id="JTS-eZ-Rh9"/>
                                             <constraint firstItem="HxV-NO-Iel" firstAttribute="top" secondItem="F6w-7v-kF0" secondAttribute="bottom" constant="2" id="MYC-Yx-jdH"/>
                                             <constraint firstAttribute="trailing" secondItem="das-2O-srO" secondAttribute="trailing" constant="20" id="QQI-DB-mrS"/>
                                             <constraint firstItem="X85-t4-gre" firstAttribute="centerY" secondItem="wsd-MF-knD" secondAttribute="centerY" id="Sag-dL-9fV"/>
+                                            <constraint firstAttribute="right" secondItem="FYw-iO-taE" secondAttribute="right" constant="60" id="Tms-Am-rkv"/>
                                             <constraint firstItem="wsd-MF-knD" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="UMb-5I-c59"/>
                                             <constraint firstItem="HxV-NO-Iel" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="ZrM-DM-TKy"/>
                                             <constraint firstAttribute="trailing" secondItem="HxV-NO-Iel" secondAttribute="trailing" constant="20" id="aTt-jg-az3"/>
@@ -701,6 +716,7 @@
                                             <constraint firstAttribute="trailing" secondItem="F6w-7v-kF0" secondAttribute="trailing" constant="20" id="nvR-xY-XBX"/>
                                             <constraint firstItem="dO0-XK-Kzd" firstAttribute="top" secondItem="das-2O-srO" secondAttribute="bottom" constant="60" id="pMB-K9-tjx"/>
                                             <constraint firstItem="dO0-XK-Kzd" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="tAh-WG-JhU"/>
+                                            <constraint firstAttribute="bottom" secondItem="FYw-iO-taE" secondAttribute="bottom" constant="33" id="u7a-TP-bJa"/>
                                             <constraint firstItem="das-2O-srO" firstAttribute="top" secondItem="wsd-MF-knD" secondAttribute="bottom" constant="40" id="xCQ-Vs-E3h"/>
                                             <constraint firstItem="das-2O-srO" firstAttribute="leading" secondItem="1qW-Nh-4V1" secondAttribute="leading" constant="20" id="xMw-xg-sSI"/>
                                         </constraints>
