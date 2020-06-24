@@ -15,7 +15,7 @@ class TechShareViewController: UIViewController {
     @IBOutlet var feedView: UIView!
     @IBOutlet var mentorView: UIView!
     @IBOutlet var menteeView: UIView!
-    @IBOutlet var modifyView: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,27 +43,23 @@ class TechShareViewController: UIViewController {
             feedView.alpha = 1
             mentorView.alpha = 0
             menteeView.alpha = 0
-            modifyView.alpha = 0
         }
         if sender.selectedSegmentIndex == 1 {
             feedView.alpha = 0
             mentorView.alpha = 1
             menteeView.alpha = 0
-            modifyView.alpha = 0
         }
         if sender.selectedSegmentIndex == 2 {
             feedView.alpha = 0
             mentorView.alpha = 0
             menteeView.alpha = 1
-            modifyView.alpha = 0
         }
         if sender.selectedSegmentIndex == 3 {
             feedView.alpha = 0
             mentorView.alpha = 0
             menteeView.alpha = 0
-            modifyView.alpha = 1
         }
         
     }
 
-}   // #70
+}   // #66

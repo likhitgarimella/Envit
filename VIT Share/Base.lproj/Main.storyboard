@@ -864,7 +864,6 @@
                                     <segment title="Feed"/>
                                     <segment title="Mentor"/>
                                     <segment title="Mentee"/>
-                                    <segment title="Modify"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -876,13 +875,6 @@
                                     <action selector="switchSegment:" destination="ft0-Wv-uBx" eventType="valueChanged" id="4lT-B1-l3O"/>
                                 </connections>
                             </segmentedControl>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqL-vu-B2r">
-                                <rect key="frame" x="0.0" y="151" width="414" height="516"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="QsU-5y-BBG" kind="embed" id="yz7-j7-mEU"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-QZ-0J8">
                                 <rect key="frame" x="0.0" y="151" width="414" height="516"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -909,9 +901,7 @@
                         <constraints>
                             <constraint firstItem="qrB-12-8O2" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" constant="20" id="1NF-XJ-JRg"/>
                             <constraint firstItem="fB8-6R-g6d" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="1tb-8c-EIF"/>
-                            <constraint firstItem="sqL-vu-B2r" firstAttribute="leading" secondItem="O8P-nZ-nad" secondAttribute="leading" id="5eT-eY-vQF"/>
                             <constraint firstItem="Xhv-bX-VeO" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="6or-cB-xYq"/>
-                            <constraint firstItem="sqL-vu-B2r" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="Al3-bH-NU2"/>
                             <constraint firstItem="ahY-6J-5Su" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="Ayk-CH-ZzE"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="Bce-Hi-j5q"/>
                             <constraint firstItem="45h-zZ-5uF" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="KsY-4b-vbt"/>
@@ -937,8 +927,6 @@
                             <constraint firstItem="XmZ-QZ-0J8" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="qmZ-1j-bei"/>
                             <constraint firstItem="Xhv-bX-VeO" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="rhB-c1-dU6"/>
                             <constraint firstItem="ahY-6J-5Su" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="rjL-3L-coi"/>
-                            <constraint firstItem="sqL-vu-B2r" firstAttribute="top" secondItem="SVK-ho-5d0" secondAttribute="bottom" constant="8" id="uha-5Y-sXi"/>
-                            <constraint firstItem="sqL-vu-B2r" firstAttribute="bottom" secondItem="O8P-nZ-nad" secondAttribute="bottom" id="v34-sv-ijF"/>
                             <constraint firstItem="ahY-6J-5Su" firstAttribute="trailing" secondItem="O8P-nZ-nad" secondAttribute="trailing" id="vha-se-VvO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O8P-nZ-nad"/>
@@ -948,7 +936,6 @@
                         <outlet property="feedView" destination="ahY-6J-5Su" id="035-i2-B6O"/>
                         <outlet property="menteeView" destination="XmZ-QZ-0J8" id="Dyu-nA-Rvo"/>
                         <outlet property="mentorView" destination="45h-zZ-5uF" id="1Au-cG-9yu"/>
-                        <outlet property="modifyView" destination="sqL-vu-B2r" id="2By-ht-9C8"/>
                         <outlet property="segment" destination="SVK-ho-5d0" id="YbS-ff-K9t"/>
                     </connections>
                 </viewController>
@@ -1548,22 +1535,6 @@
             </objects>
             <point key="canvasLocation" x="3454" y="439"/>
         </scene>
-        <!--Modify Tech View Controller-->
-        <scene sceneID="YWx-jq-jFq">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QsU-5y-BBG" customClass="ModifyTechViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ADR-L0-1zI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="4OE-eE-ck2"/>
-                    </view>
-                    <size key="freeformSize" width="414" height="736"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ml1-mN-vvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076.8115942028987" y="2056.7934782608695"/>
-        </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
             <objects>
@@ -1682,7 +1653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Gx-3BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1984.057971014493" y="2041.3043478260872"/>
+            <point key="canvasLocation" x="1564" y="2041"/>
         </scene>
         <!--Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
@@ -1878,7 +1849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06g-1d-Nnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2952.1739130434785" y="2123.6413043478265"/>
+            <point key="canvasLocation" x="2507" y="2122"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="ByD-lt-4z1">
