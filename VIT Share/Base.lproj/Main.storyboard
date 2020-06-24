@@ -1537,13 +1537,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collaborate and share your projects." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cco-fe-m8m">
-                                <rect key="frame" x="20" y="114" width="341" height="27"/>
+                                <rect key="frame" x="20" y="120" width="341" height="27"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-CU-cKl">
-                                <rect key="frame" x="70" y="157" width="274" height="36"/>
+                                <rect key="frame" x="76" y="167" width="262" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <state key="normal" title="Add project">
                                     <color key="titleColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
@@ -1553,23 +1553,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="bottom" secondItem="4Bv-zA-Qh6" secondAttribute="bottom" id="0Gn-6o-hKK"/>
-                            <constraint firstItem="qNK-CU-cKl" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="70" id="9U1-cT-2gT"/>
-                            <constraint firstItem="cco-fe-m8m" firstAttribute="top" secondItem="COm-lf-jYp" secondAttribute="bottom" constant="22" id="NFo-e9-heg"/>
+                            <constraint firstItem="qNK-CU-cKl" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="76" id="9U1-cT-2gT"/>
+                            <constraint firstItem="cco-fe-m8m" firstAttribute="top" secondItem="COm-lf-jYp" secondAttribute="bottom" constant="28" id="NFo-e9-heg"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" id="T2i-uR-hcu"/>
                             <constraint firstItem="COm-lf-jYp" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" constant="20" id="W2n-wf-bI3"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="trailing" secondItem="4Bv-zA-Qh6" secondAttribute="trailing" id="Z3Q-Rq-KRs"/>
-                            <constraint firstItem="qNK-CU-cKl" firstAttribute="top" secondItem="cco-fe-m8m" secondAttribute="bottom" constant="16" id="ZFv-ME-NFe"/>
+                            <constraint firstItem="qNK-CU-cKl" firstAttribute="top" secondItem="cco-fe-m8m" secondAttribute="bottom" constant="20" id="ZFv-ME-NFe"/>
                             <constraint firstItem="COm-lf-jYp" firstAttribute="top" secondItem="4Bv-zA-Qh6" secondAttribute="top" id="akn-tN-GU6"/>
                             <constraint firstItem="4Bv-zA-Qh6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="COm-lf-jYp" secondAttribute="trailing" symbolic="YES" id="bOQ-fx-35l"/>
                             <constraint firstItem="qNK-CU-cKl" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="cgZ-Pb-cH2"/>
                             <constraint firstItem="4Bv-zA-Qh6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cco-fe-m8m" secondAttribute="trailing" symbolic="YES" id="daa-jD-uAw"/>
                             <constraint firstItem="cco-fe-m8m" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" constant="20" id="gMC-Ww-FZz"/>
-                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="qNK-CU-cKl" secondAttribute="right" constant="70" id="x55-QX-V6K"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="qNK-CU-cKl" secondAttribute="right" constant="76" id="x55-QX-V6K"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="top" secondItem="4Bv-zA-Qh6" secondAttribute="top" id="zCS-oq-agr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Bv-zA-Qh6"/>
                     </view>
                     <navigationItem key="navigationItem" id="Znw-JZ-lHq"/>
+                    <connections>
+                        <outlet property="addProjectOutlet" destination="qNK-CU-cKl" id="y7M-iR-oh0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
