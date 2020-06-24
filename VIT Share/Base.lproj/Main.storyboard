@@ -265,7 +265,7 @@
                     <connections>
                         <segue destination="8WI-uS-Drs" kind="relationship" relationship="viewControllers" id="Nmf-La-Xu7"/>
                         <segue destination="Qo3-6f-dJu" kind="relationship" relationship="viewControllers" id="AYk-hd-6oJ"/>
-                        <segue destination="X4W-xC-QiQ" kind="relationship" relationship="viewControllers" id="efU-Vo-bxH"/>
+                        <segue destination="8Ux-MR-Oh6" kind="relationship" relationship="viewControllers" id="efU-Vo-bxH"/>
                         <segue destination="hJB-cG-pTR" kind="relationship" relationship="viewControllers" id="738-Xb-NAM"/>
                         <segue destination="JmO-nq-Vi1" kind="relationship" relationship="viewControllers" id="ou4-Ns-6ui"/>
                     </connections>
@@ -599,7 +599,7 @@
                                                 <constraints>
                                                     <constraint firstItem="4CF-5J-dGX" firstAttribute="leading" secondItem="das-2O-srO" secondAttribute="leading" constant="20" id="2T6-ZD-7hK"/>
                                                     <constraint firstItem="aFi-Mg-2SV" firstAttribute="centerY" secondItem="ZsP-wX-jZi" secondAttribute="centerY" id="9Cz-0W-bWc"/>
-                                                    <constraint firstItem="aFi-Mg-2SV" firstAttribute="leading" secondItem="ZsP-wX-jZi" secondAttribute="trailing" id="9sd-Ht-OjS"/>
+                                                    <constraint firstItem="aFi-Mg-2SV" firstAttribute="left" secondItem="ZsP-wX-jZi" secondAttribute="right" id="9sd-Ht-OjS"/>
                                                     <constraint firstItem="ZsP-wX-jZi" firstAttribute="leading" secondItem="das-2O-srO" secondAttribute="leading" constant="20" id="Asl-Qq-7G8"/>
                                                     <constraint firstItem="ZsP-wX-jZi" firstAttribute="top" secondItem="gae-9W-yGj" secondAttribute="bottom" constant="16" id="Bmi-6e-mHv"/>
                                                     <constraint firstItem="gae-9W-yGj" firstAttribute="top" secondItem="fjy-2M-A6a" secondAttribute="bottom" constant="16" id="Ip2-ln-Wvs"/>
@@ -852,7 +852,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-12-8O2">
-                                <rect key="frame" x="20" y="56" width="143.66666666666666" height="36"/>
+                                <rect key="frame" x="20" y="56" width="144" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1519,21 +1519,34 @@
             </objects>
             <point key="canvasLocation" x="2045" y="117"/>
         </scene>
-        <!--Projects-->
+        <!--Projects Share View Controller-->
         <scene sceneID="K1r-M0-83q">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="X4W-xC-QiQ" customClass="ProjectsShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ECU-NN-MtA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COm-lf-jYp">
+                                <rect key="frame" x="20" y="56" width="173" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="COm-lf-jYp" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" constant="20" id="W2n-wf-bI3"/>
+                            <constraint firstItem="COm-lf-jYp" firstAttribute="top" secondItem="4Bv-zA-Qh6" secondAttribute="top" id="akn-tN-GU6"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="COm-lf-jYp" secondAttribute="trailing" symbolic="YES" id="bOQ-fx-35l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Bv-zA-Qh6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Projects" image="coins" id="yKy-1l-XwD"/>
+                    <navigationItem key="navigationItem" id="Znw-JZ-lHq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3454" y="439"/>
+            <point key="canvasLocation" x="4360.8695652173919" y="438.58695652173918"/>
         </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
@@ -2429,6 +2442,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78W-WD-aMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1984" y="3081"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="tVX-Is-HQ4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ux-MR-Oh6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Projects" image="coins" id="yKy-1l-XwD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YRw-XT-dkH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X4W-xC-QiQ" kind="relationship" relationship="rootViewController" id="fpA-n3-pFu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yid-aX-osJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3453.6231884057975" y="438.58695652173918"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
