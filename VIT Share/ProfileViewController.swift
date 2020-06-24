@@ -31,6 +31,12 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet var logoutOutlet: UIButton!
     
+    var user: User? {
+        didSet {
+            updateView()
+        }
+    }
+    
     func ProfileImageProp() {
         
         profileImage.layer.cornerRadius = 50
@@ -47,9 +53,18 @@ class ProfileViewController: UIViewController {
         
     }
     
-    func FourButtonsProperties() {
+    func fetchUser() {
         
+        /// observeCurrentUser
+        Api.User.observeCurrentUser { (user) in
+            self.user = user
+        }
         
+    }
+    
+    func updateView() {
+        
+        self.nameLabel.text = user!.nameString
         
     }
     
@@ -67,9 +82,10 @@ class ProfileViewController: UIViewController {
         
         ProfileImageProp()
         UIViewProp()
-        FourButtonsProperties()
         LogoutButtonProp()
-
+        
+        fetchUser()
+        
     }
     
     @IBAction func editProfileAction(_ sender: UIButton) {
@@ -96,4 +112,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #100
+}   // #116
