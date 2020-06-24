@@ -65,6 +65,8 @@ class ProfileViewController: UIViewController {
     func updateView() {
         
         self.nameLabel.text = user!.nameString
+        self.emailLabel.text = user!.emailString
+        self.mobileLabel.text = user!.phoneString
         
     }
     
@@ -112,4 +114,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #116
+}   // #118

@@ -555,6 +555,12 @@
                                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X85-t4-gre">
+                                                <rect key="frame" x="144" y="51" width="25.333333333333343" height="38.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="32"/>
+                                                <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="das-2O-srO">
                                                 <rect key="frame" x="20" y="152" width="374" height="200"/>
                                                 <subviews>
@@ -564,14 +570,14 @@
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likhit.garimella2018@vitstudent.ac.in" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjy-2M-A6a">
-                                                        <rect key="frame" x="20" y="68" width="263.33333333333331" height="19.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjy-2M-A6a">
+                                                        <rect key="frame" x="20" y="68" width="13" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9003760414" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gae-9W-yGj">
-                                                        <rect key="frame" x="19.999999999999993" y="103.33333333333331" width="109.33333333333331" height="21.666666666666671"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gae-9W-yGj">
+                                                        <rect key="frame" x="20" y="103.33333333333331" width="14.666666666666664" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -607,12 +613,6 @@
                                                     <constraint firstItem="fjy-2M-A6a" firstAttribute="top" secondItem="4CF-5J-dGX" secondAttribute="bottom" constant="16" id="si7-eb-AlV"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X85-t4-gre">
-                                                <rect key="frame" x="144" y="51" width="82" height="38.333333333333343"/>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="32"/>
-                                                <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-HK-5WB">
                                                 <rect key="frame" x="20" y="384" width="374" height="230"/>
                                                 <subviews>

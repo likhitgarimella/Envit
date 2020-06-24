@@ -24,8 +24,8 @@ extension User {
         let user = User()
         user.nameString = dict["1) Name"] as? String
         user.emailString = dict["2) Email"] as? String
-        user.phoneString = dict["1) Phone"] as? String
-        user.blockString = dict["2) Block"] as? String
+        user.phoneString = dict["3) Phone"] as? String
+        user.blockString = dict["4) Block"] as? String
         return user
         
     }
