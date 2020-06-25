@@ -550,7 +550,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-9e-GgY">
-                                                <rect key="frame" x="144" y="23.333333333333329" width="95.666666666666686" height="24"/>
+                                                <rect key="frame" x="144" y="23.333333333333329" width="88.333333333333314" height="24"/>
                                                 <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -565,7 +565,7 @@
                                                 <rect key="frame" x="20" y="152" width="374" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CF-5J-dGX">
-                                                        <rect key="frame" x="20" y="28" width="79" height="24"/>
+                                                        <rect key="frame" x="20" y="28" width="82" height="24"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1342,19 +1342,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New/Unused" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-Gu-RCg">
-                                                <rect key="frame" x="47.999999999999993" y="260.66666666666669" width="88.333333333333314" height="19.333333333333314"/>
+                                                <rect key="frame" x="47.999999999999993" y="260.66666666666669" width="93.333333333333314" height="19.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good/Used" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiU-Uo-jvF">
-                                                <rect key="frame" x="208" y="261" width="78" height="19.333333333333314"/>
+                                                <rect key="frame" x="213" y="261" width="83" height="19.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collectible" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-Qt-iFp">
-                                                <rect key="frame" x="48.000000000000007" y="299.66666666666669" width="70.666666666666686" height="18.666666666666686"/>
+                                                <rect key="frame" x="47.999999999999993" y="299.66666666666669" width="75.333333333333314" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1531,37 +1531,40 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COm-lf-jYp">
-                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
+                                <rect key="frame" x="20" y="56" width="180.66666666666666" height="35"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collaborate and share your projects." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cco-fe-m8m">
-                                <rect key="frame" x="20" y="120.00000000000001" width="340.66666666666669" height="25.666666666666671"/>
+                                <rect key="frame" x="20" y="119.00000000000001" width="357.66666666666669" height="25.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for projects?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-ZU-Kfx">
-                                <rect key="frame" x="97.666666666666686" y="445" width="219" height="27"/>
+                                <rect key="frame" x="92.666666666666671" y="447.66666666666669" width="228.66666666666663" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J - Component projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNi-tJ-EBN">
-                                <rect key="frame" x="95" y="556" width="224" height="27"/>
+                                <rect key="frame" x="90.333333333333329" y="557.33333333333337" width="233.66666666666669" height="25.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-CU-cKl">
-                                <rect key="frame" x="76" y="165.66666666666666" width="262" height="44"/>
+                                <rect key="frame" x="76" y="164.66666666666666" width="262" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="GuY-lk-2VB"/>
                                 </constraints>
                                 <state key="normal" image="add">
                                     <color key="titleColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addProjectAction:" destination="X4W-xC-QiQ" eventType="touchUpInside" id="O4O-xA-Zzc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-4R-lBN">
                                 <rect key="frame" x="76" y="603" width="262" height="44"/>
@@ -1575,7 +1578,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLx-GX-TIC">
-                                <rect key="frame" x="76" y="492" width="262" height="44"/>
+                                <rect key="frame" x="76" y="493.33333333333326" width="262" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="xHd-mf-nVO"/>
@@ -1622,26 +1625,62 @@
                         <outlet property="addProjectOutlet" destination="qNK-CU-cKl" id="y7M-iR-oh0"/>
                         <outlet property="jComponentOutlet" destination="hkd-4R-lBN" id="paj-Lt-StN"/>
                         <outlet property="newProjectsOutlet" destination="MLx-GX-TIC" id="AH7-k2-fZe"/>
+                        <segue destination="cUP-s3-Cdp" kind="show" identifier="goToAddProject" id="27L-qt-UH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4360.8695652173919" y="438.58695652173918"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Project View Controller-->
         <scene sceneID="gxj-C9-rmv">
             <objects>
-                <viewController id="cUP-s3-Cdp" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cUP-s3-Cdp" customClass="AddProjectViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PBu-9l-pkz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1001"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-Ql-zNQ">
+                                <rect key="frame" x="0.0" y="56" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upt-q2-sWF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG2" translatesAutoresizingMaskIntoConstraints="NO" id="PRh-pq-rbP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="trailing" secondItem="Upt-q2-sWF" secondAttribute="trailing" id="3LA-6k-eNr"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="width" secondItem="EJZ-Ql-zNQ" secondAttribute="width" priority="750" id="7Jn-Bq-OAs"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="trailing" secondItem="EJZ-Ql-zNQ" secondAttribute="trailing" id="9k5-ix-j6N"/>
+                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="leading" secondItem="Upt-q2-sWF" secondAttribute="leading" id="H0x-JM-gcH"/>
+                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="top" secondItem="Upt-q2-sWF" secondAttribute="top" id="V57-cU-6dv"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="top" secondItem="EJZ-Ql-zNQ" secondAttribute="top" id="bqD-r7-qXC"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="height" secondItem="EJZ-Ql-zNQ" secondAttribute="height" priority="250" id="kDs-kb-UQ1"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="leading" secondItem="EJZ-Ql-zNQ" secondAttribute="leading" id="pUt-h0-57s"/>
+                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="bottom" secondItem="EJZ-Ql-zNQ" secondAttribute="bottom" id="rbp-db-sXN"/>
+                                    <constraint firstAttribute="bottom" secondItem="PRh-pq-rbP" secondAttribute="bottom" id="xKv-lY-sud"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="bottom" secondItem="i9a-xK-IU6" secondAttribute="bottom" id="6et-vz-WOB"/>
+                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="trailing" secondItem="i9a-xK-IU6" secondAttribute="trailing" id="RRZ-2t-XPq"/>
+                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="leading" secondItem="i9a-xK-IU6" secondAttribute="leading" id="eq4-bf-7Ci"/>
+                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="top" secondItem="i9a-xK-IU6" secondAttribute="top" id="lNJ-JK-vFW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="i9a-xK-IU6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="w6U-6R-Vrt"/>
+                    <size key="freeformSize" width="414" height="1021"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spE-0h-74n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5230" y="439"/>
+            <point key="canvasLocation" x="5237.68115942029" y="438.179347826087"/>
         </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
@@ -2199,7 +2238,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-bG-EVn">
-                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="70.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2339,7 +2378,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-hg-v7t">
-                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="70.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2567,6 +2606,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG1" width="414" height="896"/>
+        <image name="BG2" width="414" height="896"/>
         <image name="Placeholder-image" width="200" height="200"/>
         <image name="add" width="129" height="20"/>
         <image name="bell" width="30" height="30"/>

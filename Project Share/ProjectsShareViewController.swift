@@ -38,4 +38,10 @@ class ProjectsShareViewController: UIViewController {
         
     }
     
-}   // #42
+    @IBAction func addProjectAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToAddProject", sender: self)
+        
+    }
+    
+}   // #48

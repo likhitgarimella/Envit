@@ -74,6 +74,7 @@
 		02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BBA24857862008BF296 /* TextFieldCounter.swift */; };
 		0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286BCE6244F072D00680B19 /* RidesModel.swift */; };
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
+		02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A502C824A4744F001E4F25 /* AddProjectViewController.swift */; };
 		02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF2244677CD004742B1 /* FindRideViewController.swift */; };
 		02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */; };
 		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
@@ -195,6 +196,7 @@
 		02802BBA24857862008BF296 /* TextFieldCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCounter.swift; sourceTree = "<group>"; };
 		0286BCE6244F072D00680B19 /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02A502C824A4744F001E4F25 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		02B0EBF2244677CD004742B1 /* FindRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
@@ -395,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
+				02A502C824A4744F001E4F25 /* AddProjectViewController.swift */,
 			);
 			path = "Project Share";
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
 				0221E12D2477C12F0022DCCB /* SPAlertIconQuestionView.swift in Sources */,
+				02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */,
 				0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */,
 				0221E1342477C12F0022DCCB /* SPAlertIconDocView.swift in Sources */,
 				020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */,
