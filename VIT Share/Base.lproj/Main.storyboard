@@ -2658,7 +2658,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter project title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-JD-hfj">
-                                                <rect key="frame" x="20" y="56.666666666666657" width="374" height="44"/>
+                                                <rect key="frame" x="20" y="52.666666666666657" width="374" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="BWK-7r-LO4"/>
                                                 </constraints>
@@ -2667,15 +2667,42 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" red="0.396078431372549" green="0.46666666666666667" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-gC-bBt">
+                                                <rect key="frame" x="20" y="124.66666666666667" width="128" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
+                                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select role" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-Gn-IFM" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="169.33333333333334" width="274" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="dp6-MD-IJc"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" red="0.396078431372549" green="0.46666666666666667" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="RdH-JD-hfj" secondAttribute="trailing" constant="20" id="JHJ-bn-7aw"/>
-                                            <constraint firstItem="RdH-JD-hfj" firstAttribute="leading" secondItem="KCy-F0-NLs" secondAttribute="leading" constant="20" id="bzY-Bo-AS9"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I9q-gC-bBt" secondAttribute="trailing" constant="20" symbolic="YES" id="3sJ-X3-V83"/>
+                                            <constraint firstItem="WLv-Gn-IFM" firstAttribute="top" secondItem="I9q-gC-bBt" secondAttribute="bottom" constant="16" id="8fg-zc-oHp"/>
+                                            <constraint firstAttribute="right" secondItem="WLv-Gn-IFM" secondAttribute="right" constant="120" id="Dcf-77-7zj"/>
+                                            <constraint firstAttribute="right" secondItem="RdH-JD-hfj" secondAttribute="right" constant="20" id="JHJ-bn-7aw"/>
+                                            <constraint firstItem="WLv-Gn-IFM" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="20" id="NWg-XX-Njp"/>
+                                            <constraint firstItem="RdH-JD-hfj" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="20" id="bzY-Bo-AS9"/>
+                                            <constraint firstItem="I9q-gC-bBt" firstAttribute="top" secondItem="RdH-JD-hfj" secondAttribute="bottom" constant="28" id="g2d-xE-aeP"/>
+                                            <constraint firstItem="I9q-gC-bBt" firstAttribute="leading" secondItem="KCy-F0-NLs" secondAttribute="leading" constant="20" id="iM9-ZQ-EkB"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnK-ec-uqo">
@@ -2689,7 +2716,7 @@
                                     <constraint firstItem="KCy-F0-NLs" firstAttribute="height" secondItem="TQe-cK-9cZ" secondAttribute="height" priority="250" id="46W-Ca-5ly"/>
                                     <constraint firstItem="KCy-F0-NLs" firstAttribute="leading" secondItem="TQe-cK-9cZ" secondAttribute="leading" id="4eH-SX-y5h"/>
                                     <constraint firstItem="dnK-ec-uqo" firstAttribute="leading" secondItem="TQe-cK-9cZ" secondAttribute="leading" constant="20" id="6oa-j0-7IO"/>
-                                    <constraint firstItem="RdH-JD-hfj" firstAttribute="top" secondItem="dnK-ec-uqo" secondAttribute="bottom" constant="20" id="7JC-lw-Ygg"/>
+                                    <constraint firstItem="RdH-JD-hfj" firstAttribute="top" secondItem="dnK-ec-uqo" secondAttribute="bottom" constant="16" id="7JC-lw-Ygg"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dnK-ec-uqo" secondAttribute="trailing" constant="20" symbolic="YES" id="aP9-5A-Zvx"/>
                                     <constraint firstItem="dnK-ec-uqo" firstAttribute="top" secondItem="TQe-cK-9cZ" secondAttribute="top" constant="8" id="fR4-Qr-9yI"/>
                                     <constraint firstAttribute="bottom" secondItem="KCy-F0-NLs" secondAttribute="bottom" id="fg8-Pg-YYR"/>
@@ -2709,6 +2736,10 @@
                         <viewLayoutGuide key="safeArea" id="9pY-Kn-ghc"/>
                     </view>
                     <size key="freeformSize" width="414" height="775"/>
+                    <connections>
+                        <outlet property="projectTitle" destination="RdH-JD-hfj" id="kWn-e6-bDu"/>
+                        <outlet property="roleOption" destination="WLv-Gn-IFM" id="Ikf-Ov-S2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0j-ac-Qmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
