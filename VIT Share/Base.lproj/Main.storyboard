@@ -1625,7 +1625,7 @@
                         <outlet property="addProjectOutlet" destination="qNK-CU-cKl" id="y7M-iR-oh0"/>
                         <outlet property="jComponentOutlet" destination="hkd-4R-lBN" id="paj-Lt-StN"/>
                         <outlet property="newProjectsOutlet" destination="MLx-GX-TIC" id="AH7-k2-fZe"/>
-                        <segue destination="cUP-s3-Cdp" kind="show" identifier="goToAddProject" id="27L-qt-UH6"/>
+                        <segue destination="k41-cG-LN1" kind="show" identifier="goToAddProject" id="ZaU-u2-IUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1633,96 +1633,66 @@
             <point key="canvasLocation" x="4360.8695652173919" y="438.58695652173918"/>
         </scene>
         <!--Add Project View Controller-->
-        <scene sceneID="gxj-C9-rmv">
+        <scene sceneID="11e-H7-9Do">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cUP-s3-Cdp" customClass="AddProjectViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PBu-9l-pkz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1001"/>
+                <viewController modalPresentationStyle="fullScreen" id="k41-cG-LN1" customClass="AddProjectViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taf-AK-4Hr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-Ql-zNQ">
-                                <rect key="frame" x="0.0" y="56" width="414" height="896"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upt-q2-sWF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG2" translatesAutoresizingMaskIntoConstraints="NO" id="PRh-pq-rbP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-c2-cnj">
-                                        <rect key="frame" x="20" y="0.0" width="172.33333333333334" height="36"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
-                                        <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-s0-vq4">
-                                        <rect key="frame" x="20" y="76" width="129" height="22"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J - Component" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJf-f3-iZ0">
-                                        <rect key="frame" x="20" y="126" width="119" height="22"/>
-                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6WN-z7-Scv">
-                                        <rect key="frame" x="181" y="71.666666666666671" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-EL-b2k">
-                                        <rect key="frame" x="181" y="121.66666666666666" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    </switch>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="6WN-z7-Scv" firstAttribute="centerY" secondItem="SgE-s0-vq4" secondAttribute="centerY" id="1CP-xW-49t"/>
-                                    <constraint firstItem="MJf-f3-iZ0" firstAttribute="leading" secondItem="EJZ-Ql-zNQ" secondAttribute="leading" constant="20" id="2jf-4c-wfk"/>
-                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="trailing" secondItem="Upt-q2-sWF" secondAttribute="trailing" id="3LA-6k-eNr"/>
-                                    <constraint firstItem="xqF-EL-b2k" firstAttribute="centerY" secondItem="MJf-f3-iZ0" secondAttribute="centerY" id="5pH-Nb-qb5"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="width" secondItem="EJZ-Ql-zNQ" secondAttribute="width" priority="750" id="7Jn-Bq-OAs"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="trailing" secondItem="EJZ-Ql-zNQ" secondAttribute="trailing" id="9k5-ix-j6N"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5KZ-c2-cnj" secondAttribute="trailing" constant="20" symbolic="YES" id="Fra-Pe-mTQ"/>
-                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="leading" secondItem="Upt-q2-sWF" secondAttribute="leading" id="H0x-JM-gcH"/>
-                                    <constraint firstItem="6WN-z7-Scv" firstAttribute="leading" secondItem="SgE-s0-vq4" secondAttribute="trailing" constant="32" id="PBZ-3o-D4L"/>
-                                    <constraint firstItem="5KZ-c2-cnj" firstAttribute="leading" secondItem="EJZ-Ql-zNQ" secondAttribute="leading" constant="20" id="UNm-D5-xHz"/>
-                                    <constraint firstItem="PRh-pq-rbP" firstAttribute="top" secondItem="Upt-q2-sWF" secondAttribute="top" id="V57-cU-6dv"/>
-                                    <constraint firstItem="SgE-s0-vq4" firstAttribute="top" secondItem="5KZ-c2-cnj" secondAttribute="bottom" constant="40" id="WFU-Zy-oby"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="top" secondItem="EJZ-Ql-zNQ" secondAttribute="top" id="bqD-r7-qXC"/>
-                                    <constraint firstItem="xqF-EL-b2k" firstAttribute="leading" secondItem="MJf-f3-iZ0" secondAttribute="trailing" constant="42" id="iFF-y5-csc"/>
-                                    <constraint firstItem="5KZ-c2-cnj" firstAttribute="top" secondItem="EJZ-Ql-zNQ" secondAttribute="top" id="j8j-8n-olY"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="height" secondItem="EJZ-Ql-zNQ" secondAttribute="height" priority="250" id="kDs-kb-UQ1"/>
-                                    <constraint firstItem="SgE-s0-vq4" firstAttribute="leading" secondItem="EJZ-Ql-zNQ" secondAttribute="leading" constant="20" id="l0A-1T-cqi"/>
-                                    <constraint firstItem="MJf-f3-iZ0" firstAttribute="top" secondItem="SgE-s0-vq4" secondAttribute="bottom" constant="28" id="ngW-1H-0b9"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="leading" secondItem="EJZ-Ql-zNQ" secondAttribute="leading" id="pUt-h0-57s"/>
-                                    <constraint firstItem="xqF-EL-b2k" firstAttribute="centerX" secondItem="6WN-z7-Scv" secondAttribute="centerX" id="q0I-6J-7V7"/>
-                                    <constraint firstItem="Upt-q2-sWF" firstAttribute="bottom" secondItem="EJZ-Ql-zNQ" secondAttribute="bottom" id="rbp-db-sXN"/>
-                                    <constraint firstAttribute="bottom" secondItem="PRh-pq-rbP" secondAttribute="bottom" id="xKv-lY-sud"/>
-                                </constraints>
-                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgk-IB-75p">
+                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-J1-iHJ">
+                                <rect key="frame" x="20" y="132" width="129" height="22"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J - Component" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enQ-qJ-E3w">
+                                <rect key="frame" x="20" y="182" width="119" height="22"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RzD-gT-TeE">
+                                <rect key="frame" x="179" y="127.66666666666669" width="51" height="31"/>
+                                <color key="onTintColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-lx-HmX">
+                                <rect key="frame" x="179" y="177.66666666666666" width="51" height="31"/>
+                                <color key="onTintColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="bottom" secondItem="i9a-xK-IU6" secondAttribute="bottom" id="6et-vz-WOB"/>
-                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="trailing" secondItem="i9a-xK-IU6" secondAttribute="trailing" id="RRZ-2t-XPq"/>
-                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="leading" secondItem="i9a-xK-IU6" secondAttribute="leading" id="eq4-bf-7Ci"/>
-                            <constraint firstItem="EJZ-Ql-zNQ" firstAttribute="top" secondItem="i9a-xK-IU6" secondAttribute="top" id="lNJ-JK-vFW"/>
+                            <constraint firstItem="0dY-lx-HmX" firstAttribute="centerX" secondItem="RzD-gT-TeE" secondAttribute="centerX" id="7Ee-2k-be1"/>
+                            <constraint firstItem="RzD-gT-TeE" firstAttribute="centerY" secondItem="LIl-J1-iHJ" secondAttribute="centerY" id="8Xl-3I-3mz"/>
+                            <constraint firstItem="0dY-lx-HmX" firstAttribute="leading" secondItem="enQ-qJ-E3w" secondAttribute="trailing" constant="40" id="9sW-QW-Mjz"/>
+                            <constraint firstItem="fgk-IB-75p" firstAttribute="top" secondItem="ROd-HZ-vkh" secondAttribute="top" id="FuW-cP-21m"/>
+                            <constraint firstItem="ROd-HZ-vkh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fgk-IB-75p" secondAttribute="trailing" symbolic="YES" id="PNM-m1-ggK"/>
+                            <constraint firstItem="LIl-J1-iHJ" firstAttribute="leading" secondItem="ROd-HZ-vkh" secondAttribute="leading" constant="20" id="UiH-dw-vBk"/>
+                            <constraint firstItem="RzD-gT-TeE" firstAttribute="leading" secondItem="LIl-J1-iHJ" secondAttribute="trailing" constant="30" id="W8l-Nb-xuk"/>
+                            <constraint firstItem="0dY-lx-HmX" firstAttribute="centerY" secondItem="enQ-qJ-E3w" secondAttribute="centerY" id="YyR-tX-HfD"/>
+                            <constraint firstItem="LIl-J1-iHJ" firstAttribute="top" secondItem="fgk-IB-75p" secondAttribute="bottom" constant="40" id="i8P-eI-mNv"/>
+                            <constraint firstItem="enQ-qJ-E3w" firstAttribute="top" secondItem="LIl-J1-iHJ" secondAttribute="bottom" constant="28" id="kVV-IT-Ddy"/>
+                            <constraint firstItem="fgk-IB-75p" firstAttribute="leading" secondItem="ROd-HZ-vkh" secondAttribute="leading" constant="20" id="tVT-K0-MWy"/>
+                            <constraint firstItem="enQ-qJ-E3w" firstAttribute="leading" secondItem="ROd-HZ-vkh" secondAttribute="leading" constant="20" id="ubf-oN-oHp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="i9a-xK-IU6"/>
+                        <viewLayoutGuide key="safeArea" id="ROd-HZ-vkh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="w6U-6R-Vrt"/>
-                    <size key="freeformSize" width="414" height="1021"/>
+                    <navigationItem key="navigationItem" id="fW5-2F-NQ5"/>
                     <connections>
-                        <outlet property="jComponentSwitch" destination="xqF-EL-b2k" id="kRu-OF-eVz"/>
-                        <outlet property="personalProjectSwitch" destination="6WN-z7-Scv" id="QC9-Fk-at3"/>
+                        <outlet property="jComponentSwitch" destination="0dY-lx-HmX" id="S8s-jw-SM4"/>
+                        <outlet property="personalProjectSwitch" destination="RzD-gT-TeE" id="vDV-vU-6X4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="spE-0h-74n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bs-Pu-MBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5237.68115942029" y="438.179347826087"/>
+            <point key="canvasLocation" x="5279" y="454"/>
         </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
@@ -2648,7 +2618,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG1" width="414" height="896"/>
-        <image name="BG2" width="414" height="896"/>
         <image name="Placeholder-image" width="200" height="200"/>
         <image name="add" width="129" height="20"/>
         <image name="bell" width="30" height="30"/>
