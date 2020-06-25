@@ -1628,6 +1628,21 @@
             </objects>
             <point key="canvasLocation" x="4360.8695652173919" y="438.58695652173918"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gxj-C9-rmv">
+            <objects>
+                <viewController id="cUP-s3-Cdp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBu-9l-pkz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="i9a-xK-IU6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spE-0h-74n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5230" y="439"/>
+        </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
             <objects>
