@@ -17,9 +17,7 @@ class ProjectsShareViewController: UIViewController {
     
     func AddProjectBtnProp() {
         
-        addProjectOutlet.layer.cornerRadius = 10
-        addProjectOutlet.layer.borderWidth = 2.5
-        addProjectOutlet.layer.borderColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0).cgColor
+        addProjectOutlet.layer.cornerRadius = 22
         
     }
     
@@ -44,4 +42,4 @@ class ProjectsShareViewController: UIViewController {
         
     }
     
-}   // #48
+}   // #46
