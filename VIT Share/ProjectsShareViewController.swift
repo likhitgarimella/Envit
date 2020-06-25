@@ -12,6 +12,8 @@ class ProjectsShareViewController: UIViewController {
     
     // Outlets
     @IBOutlet var addProjectOutlet: UIButton!
+    @IBOutlet var newProjectsOutlet: UIButton!
+    @IBOutlet var jComponentOutlet: UIButton!
     
     func AddProjectBtnProp() {
         
@@ -20,12 +22,20 @@ class ProjectsShareViewController: UIViewController {
         addProjectOutlet.layer.borderColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0).cgColor
         
     }
+    
+    func OtherBtnProp() {
+        
+        newProjectsOutlet.layer.cornerRadius = 10
+        jComponentOutlet.layer.cornerRadius = 10
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         AddProjectBtnProp()
+        OtherBtnProp()
         
     }
     
-}   // #32
+}   // #42
