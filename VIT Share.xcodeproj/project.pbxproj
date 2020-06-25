@@ -66,6 +66,8 @@
 		024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D42496BAF2006046B3 /* MenteeModel.swift */; };
 		024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D62496D447006046B3 /* MentorFeedViewController.swift */; };
 		024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */; };
+		025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */; };
+		025F79DC24A56A200052C9E1 /* JComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DB24A56A200052C9E1 /* JComponentViewController.swift */; };
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
@@ -188,6 +190,8 @@
 		024FC8D42496BAF2006046B3 /* MenteeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeModel.swift; sourceTree = "<group>"; };
 		024FC8D62496D447006046B3 /* MentorFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorFeedViewController.swift; sourceTree = "<group>"; };
 		024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeFeedViewController.swift; sourceTree = "<group>"; };
+		025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectViewController.swift; sourceTree = "<group>"; };
+		025F79DB24A56A200052C9E1 /* JComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentViewController.swift; sourceTree = "<group>"; };
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
@@ -398,6 +402,8 @@
 			children = (
 				024A05502483A41300CC06CB /* ProjectsShareViewController.swift */,
 				02A502C824A4744F001E4F25 /* AddProjectViewController.swift */,
+				025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */,
+				025F79DB24A56A200052C9E1 /* JComponentViewController.swift */,
 			);
 			path = "Project Share";
 			sourceTree = "<group>";
@@ -727,6 +733,7 @@
 				0221E1262477C12F0022DCCB /* SPAlertIconHeartView.swift in Sources */,
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
+				025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */,
 				02355CC0248106090062BA59 /* Cell4.swift in Sources */,
 				02E90B2D249D89C30094759C /* MenteePostApi.swift in Sources */,
 				02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */,
@@ -786,6 +793,7 @@
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
 				02E90B33249DA1F20094759C /* MenteePostCommentApi.swift in Sources */,
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
+				025F79DC24A56A200052C9E1 /* JComponentViewController.swift in Sources */,
 				02B96D93248665B2000C7D48 /* MenteePostCell.swift in Sources */,
 				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
