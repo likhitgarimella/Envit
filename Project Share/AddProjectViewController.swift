@@ -9,6 +9,10 @@
 import UIKit
 
 class AddProjectViewController: UIViewController {
+    
+    // Switch Outlets
+    @IBOutlet var personalProjectSwitch: UISwitch!
+    @IBOutlet var jComponentSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +21,4 @@ class AddProjectViewController: UIViewController {
         
     }
     
-}   // #21
+}   // #25
