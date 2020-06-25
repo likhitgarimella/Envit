@@ -63,9 +63,12 @@ class AddProjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
         Switch()
         hideKeyboardWhenTappedAround()
         
     }
     
-}   // #72
+}   // #75
