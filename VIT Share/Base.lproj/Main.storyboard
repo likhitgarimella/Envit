@@ -2918,6 +2918,12 @@
                         <viewLayoutGuide key="safeArea" id="RLk-Qf-DHd"/>
                     </view>
                     <size key="freeformSize" width="414" height="775"/>
+                    <connections>
+                        <outlet property="addProjectOutlet" destination="Xi6-EY-jgc" id="avW-v9-hDY"/>
+                        <outlet property="courseTitle" destination="Ouj-QF-upE" id="5AA-5B-yJ3"/>
+                        <outlet property="projDescTextView" destination="xRC-5N-oKf" id="pxh-qN-x38"/>
+                        <outlet property="projectTitle" destination="Om1-Yt-Qpy" id="5E9-KD-mlY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7E5-Oe-8or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
