@@ -1648,7 +1648,48 @@
                     <view key="view" contentMode="scaleToFill" id="T2K-a4-qfg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-jt-bcD">
+                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
+                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewv-6W-wzs">
+                                <rect key="frame" x="20" y="122" width="160" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IGE-Ot-eWb"/>
+                                    <constraint firstAttribute="width" constant="160" id="WPZ-lm-iQ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="J_Component">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L70-P1-Klq">
+                                <rect key="frame" x="234" y="122" width="160" height="30"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.90588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="4qD-93-7If"/>
+                                    <constraint firstAttribute="height" constant="30" id="VFF-CX-3Ty"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Project Request">
+                                    <color key="titleColor" red="0.396078431372549" green="0.46666666666666667" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OAl-E4-mHB" firstAttribute="trailing" secondItem="L70-P1-Klq" secondAttribute="trailing" constant="20" id="aTg-pN-Zdn"/>
+                            <constraint firstItem="OAl-E4-mHB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrG-jt-bcD" secondAttribute="trailing" symbolic="YES" id="nvi-Hg-Ijq"/>
+                            <constraint firstItem="L70-P1-Klq" firstAttribute="centerY" secondItem="ewv-6W-wzs" secondAttribute="centerY" id="oYM-mi-Jpk"/>
+                            <constraint firstItem="SrG-jt-bcD" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" constant="20" id="r5e-BO-a0w"/>
+                            <constraint firstItem="SrG-jt-bcD" firstAttribute="top" secondItem="OAl-E4-mHB" secondAttribute="top" id="seh-hw-rSg"/>
+                            <constraint firstItem="ewv-6W-wzs" firstAttribute="top" secondItem="SrG-jt-bcD" secondAttribute="bottom" constant="30" id="xdF-Wv-ZDB"/>
+                            <constraint firstItem="ewv-6W-wzs" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" constant="20" id="yMb-Wm-7ac"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OAl-E4-mHB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GJO-5v-2lI"/>
@@ -1656,36 +1697,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-sa-M0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6335" y="439"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="RIH-5v-R4x">
-            <objects>
-                <viewController id="Mwb-KJ-CZm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Jh-8i-mPe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="mjv-XR-1fP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JjK-R7-Yzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7528" y="907"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fke-4X-Wfq">
-            <objects>
-                <viewController id="wsh-8y-KeA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="21a-F7-IXc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="7HW-Sl-ud8"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jc-nN-JJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7528" y="117"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="11e-H7-9Do">
