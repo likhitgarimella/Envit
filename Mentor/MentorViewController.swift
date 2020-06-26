@@ -59,7 +59,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     
     func DropDownOptions() {
         
-        // DropDown Options For Credits TextFields
+        // DropDown Options For TextField
         domain.optionArray = ["iOS", "Android", "Web", "Node.js", "ML", "Flutter", "React", "Design"]
         domain.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         

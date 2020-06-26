@@ -13,6 +13,7 @@ class PersonalProjectViewController: UIViewController {
     // Outlets
     @IBOutlet var projectTitle: UITextField!
     @IBOutlet var roleOption: DropDown!
+    @IBOutlet var projDescTextView: UITextView!
     
     func BorderProp() {
         
@@ -22,6 +23,8 @@ class PersonalProjectViewController: UIViewController {
         projectTitle.layer.borderWidth = 1.6
         roleOption.layer.borderColor = myColor.cgColor
         roleOption.layer.borderWidth = 1.6
+        projDescTextView.layer.borderColor = myColor.cgColor
+        projDescTextView.layer.borderWidth = 1.6
         
     }
     
@@ -30,6 +33,7 @@ class PersonalProjectViewController: UIViewController {
         // Textfield Corner Radius Property
         projectTitle.layer.cornerRadius = 4
         roleOption.layer.cornerRadius = 22
+        projDescTextView.layer.cornerRadius = 4
 
         
     }
@@ -44,6 +48,22 @@ class PersonalProjectViewController: UIViewController {
         
     }
     
+    func DropDownOptions() {
+        
+        // DropDown Options For TextField
+        roleOption.optionArray = ["iOS developer", "Android developer", "Web developer", "Content writer", "Media partner"]
+        roleOption.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
+        
+    }
+    
+    func TextViewProperties() {
+        
+        projDescTextView.backgroundColor = UIColor.white
+        // padding for text view
+        projDescTextView.textContainerInset = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 8)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +71,9 @@ class PersonalProjectViewController: UIViewController {
         BorderProp()
         CornerRadius()
         LeftPadding()
+        DropDownOptions()
+        TextViewProperties()
         
     }
     
-}   // #58
+}   // #80

@@ -2648,14 +2648,14 @@
             <objects>
                 <viewController id="niv-JP-QNM" customClass="PersonalProjectViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R5O-tg-bhG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQe-cK-9cZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCy-F0-NLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter project title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-JD-hfj">
                                                 <rect key="frame" x="20" y="52.666666666666657" width="374" height="44"/>
@@ -2677,6 +2677,34 @@
                                                 <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-pb-mJW">
+                                                <rect key="frame" x="20" y="241.33333333333334" width="194" height="29.000000000000028"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
+                                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg8-zx-02M">
+                                                <rect key="frame" x="20" y="286.33333333333331" width="374" height="148"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="148" id="Cma-Jl-Lr2"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWW-DM-0zI">
+                                                <rect key="frame" x="76" y="466.33333333333331" width="262" height="44"/>
+                                                <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="myc-Dc-RVR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                                <state key="normal" title="Add project">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select role" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-Gn-IFM" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="169.33333333333334" width="274" height="44"/>
                                                 <constraints>
@@ -2696,13 +2724,23 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I9q-gC-bBt" secondAttribute="trailing" constant="20" symbolic="YES" id="3sJ-X3-V83"/>
+                                            <constraint firstItem="IWW-DM-0zI" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="76" id="4x3-JS-uqN"/>
+                                            <constraint firstAttribute="right" secondItem="IWW-DM-0zI" secondAttribute="right" constant="76" id="8GL-ZP-tlH"/>
                                             <constraint firstItem="WLv-Gn-IFM" firstAttribute="top" secondItem="I9q-gC-bBt" secondAttribute="bottom" constant="16" id="8fg-zc-oHp"/>
                                             <constraint firstAttribute="right" secondItem="WLv-Gn-IFM" secondAttribute="right" constant="120" id="Dcf-77-7zj"/>
+                                            <constraint firstAttribute="right" secondItem="Bg8-zx-02M" secondAttribute="right" constant="20" id="F4k-rH-BFG"/>
+                                            <constraint firstItem="T0G-pb-mJW" firstAttribute="top" secondItem="WLv-Gn-IFM" secondAttribute="bottom" constant="28" id="HJm-wY-rhc"/>
                                             <constraint firstAttribute="right" secondItem="RdH-JD-hfj" secondAttribute="right" constant="20" id="JHJ-bn-7aw"/>
+                                            <constraint firstItem="IWW-DM-0zI" firstAttribute="top" secondItem="Bg8-zx-02M" secondAttribute="bottom" constant="32" id="M91-8U-QOw"/>
+                                            <constraint firstItem="Bg8-zx-02M" firstAttribute="top" secondItem="T0G-pb-mJW" secondAttribute="bottom" constant="16" id="NEY-5h-EOL"/>
                                             <constraint firstItem="WLv-Gn-IFM" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="20" id="NWg-XX-Njp"/>
+                                            <constraint firstItem="T0G-pb-mJW" firstAttribute="leading" secondItem="KCy-F0-NLs" secondAttribute="leading" constant="20" id="QFg-uR-wQH"/>
                                             <constraint firstItem="RdH-JD-hfj" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="20" id="bzY-Bo-AS9"/>
                                             <constraint firstItem="I9q-gC-bBt" firstAttribute="top" secondItem="RdH-JD-hfj" secondAttribute="bottom" constant="28" id="g2d-xE-aeP"/>
                                             <constraint firstItem="I9q-gC-bBt" firstAttribute="leading" secondItem="KCy-F0-NLs" secondAttribute="leading" constant="20" id="iM9-ZQ-EkB"/>
+                                            <constraint firstItem="Bg8-zx-02M" firstAttribute="left" secondItem="KCy-F0-NLs" secondAttribute="left" constant="20" id="laH-qb-gW0"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T0G-pb-mJW" secondAttribute="trailing" constant="20" symbolic="YES" id="nZm-we-3ch"/>
+                                            <constraint firstItem="IWW-DM-0zI" firstAttribute="centerX" secondItem="KCy-F0-NLs" secondAttribute="centerX" id="pqE-Qi-7fS"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnK-ec-uqo">
@@ -2735,8 +2773,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9pY-Kn-ghc"/>
                     </view>
-                    <size key="freeformSize" width="414" height="775"/>
+                    <size key="freeformSize" width="414" height="675"/>
                     <connections>
+                        <outlet property="projDescTextView" destination="Bg8-zx-02M" id="sZu-g0-lOC"/>
                         <outlet property="projectTitle" destination="RdH-JD-hfj" id="kWn-e6-bDu"/>
                         <outlet property="roleOption" destination="WLv-Gn-IFM" id="Ikf-Ov-S2Q"/>
                     </connections>
