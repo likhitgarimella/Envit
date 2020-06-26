@@ -1663,9 +1663,12 @@
                                     <constraint firstAttribute="width" constant="160" id="WPZ-lm-iQ6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
-                                <state key="normal" title="J_Component">
+                                <state key="normal" title="J-Component">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="jcAction:" destination="hcz-gh-K5w" eventType="touchUpInside" id="UdM-Py-hTB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L70-P1-Klq">
                                 <rect key="frame" x="234" y="122" width="160" height="30"/>
@@ -1678,25 +1681,56 @@
                                 <state key="normal" title="Project Request">
                                     <color key="titleColor" red="0.396078431372549" green="0.46666666666666667" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="prAction:" destination="hcz-gh-K5w" eventType="touchUpInside" id="gG6-Vq-e5g"/>
+                                </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEN-lQ-28s">
+                                <rect key="frame" x="0.0" y="160" width="414" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="bN5-8B-ll6" kind="embed" id="byr-A0-yvV"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPU-7h-eJQ">
+                                <rect key="frame" x="0.0" y="160" width="414" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="dcn-fV-2XQ" kind="embed" id="Cjn-Wi-opU"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OAl-E4-mHB" firstAttribute="trailing" secondItem="L70-P1-Klq" secondAttribute="trailing" constant="20" id="aTg-pN-Zdn"/>
+                            <constraint firstItem="RPU-7h-eJQ" firstAttribute="top" secondItem="ewv-6W-wzs" secondAttribute="bottom" constant="8" id="4Nr-bv-OWa"/>
+                            <constraint firstItem="RPU-7h-eJQ" firstAttribute="trailing" secondItem="OAl-E4-mHB" secondAttribute="trailing" id="LTR-92-AhP"/>
+                            <constraint firstItem="GEN-lQ-28s" firstAttribute="bottom" secondItem="OAl-E4-mHB" secondAttribute="bottom" id="Tsk-KL-fxp"/>
+                            <constraint firstItem="GEN-lQ-28s" firstAttribute="top" secondItem="ewv-6W-wzs" secondAttribute="bottom" constant="8" id="V8u-de-XFD"/>
+                            <constraint firstItem="OAl-E4-mHB" firstAttribute="right" secondItem="L70-P1-Klq" secondAttribute="right" constant="20" id="aTg-pN-Zdn"/>
+                            <constraint firstItem="GEN-lQ-28s" firstAttribute="trailing" secondItem="OAl-E4-mHB" secondAttribute="trailing" id="lFC-An-2AO"/>
+                            <constraint firstItem="RPU-7h-eJQ" firstAttribute="bottom" secondItem="OAl-E4-mHB" secondAttribute="bottom" id="ncX-T1-hZC"/>
                             <constraint firstItem="OAl-E4-mHB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrG-jt-bcD" secondAttribute="trailing" symbolic="YES" id="nvi-Hg-Ijq"/>
                             <constraint firstItem="L70-P1-Klq" firstAttribute="centerY" secondItem="ewv-6W-wzs" secondAttribute="centerY" id="oYM-mi-Jpk"/>
                             <constraint firstItem="SrG-jt-bcD" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" constant="20" id="r5e-BO-a0w"/>
                             <constraint firstItem="SrG-jt-bcD" firstAttribute="top" secondItem="OAl-E4-mHB" secondAttribute="top" id="seh-hw-rSg"/>
+                            <constraint firstItem="RPU-7h-eJQ" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" id="syC-Jd-Zpu"/>
                             <constraint firstItem="ewv-6W-wzs" firstAttribute="top" secondItem="SrG-jt-bcD" secondAttribute="bottom" constant="30" id="xdF-Wv-ZDB"/>
-                            <constraint firstItem="ewv-6W-wzs" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" constant="20" id="yMb-Wm-7ac"/>
+                            <constraint firstItem="ewv-6W-wzs" firstAttribute="left" secondItem="OAl-E4-mHB" secondAttribute="left" constant="20" id="yMb-Wm-7ac"/>
+                            <constraint firstItem="GEN-lQ-28s" firstAttribute="leading" secondItem="OAl-E4-mHB" secondAttribute="leading" id="yji-uL-h5q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OAl-E4-mHB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GJO-5v-2lI"/>
+                    <connections>
+                        <outlet property="jcFeed" destination="RPU-7h-eJQ" id="lRX-eo-k00"/>
+                        <outlet property="jcOutlet" destination="ewv-6W-wzs" id="0Z6-sW-YmC"/>
+                        <outlet property="jcRequest" destination="GEN-lQ-28s" id="Ocj-Gi-2KW"/>
+                        <outlet property="prRequest" destination="L70-P1-Klq" id="9Lw-eH-Jrp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-sa-M0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6335" y="439"/>
+            <point key="canvasLocation" x="6334.7826086956529" y="438.58695652173918"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="11e-H7-9Do">
@@ -3009,6 +3043,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdk-f2-dfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6336" y="-320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yY3-V1-gcc">
+            <objects>
+                <viewController id="bN5-8B-ll6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PrO-hy-b0k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="507"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-9K-uKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7199" y="813"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wjj-Xh-7ny">
+            <objects>
+                <viewController id="dcn-fV-2XQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T5t-J1-xAL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="507"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxr-Rl-4og" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7199" y="210"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
