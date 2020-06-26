@@ -1730,7 +1730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-sa-M0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6334.7826086956529" y="438.58695652173918"/>
+            <point key="canvasLocation" x="5899" y="439"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="11e-H7-9Do">
@@ -3035,14 +3035,44 @@
                     <view key="view" contentMode="scaleToFill" id="bjk-bG-AqN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-i1-ZwY">
+                                <rect key="frame" x="20" y="132" width="160" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.90588235289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="EKt-Dz-KmK"/>
+                                    <constraint firstAttribute="height" constant="30" id="nNA-GA-d3U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                <state key="normal" title="Personal Projects">
+                                    <color key="titleColor" red="0.39607843139999999" green="0.46666666670000001" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="prAction:" destination="hcz-gh-K5w" eventType="touchUpInside" id="4ZC-XF-Guf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lL-Vs-zR8">
+                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
+                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8lL-Vs-zR8" firstAttribute="leading" secondItem="L0K-ch-VSo" secondAttribute="leading" constant="20" id="9KP-b4-6ek"/>
+                            <constraint firstItem="nfs-i1-ZwY" firstAttribute="leading" secondItem="L0K-ch-VSo" secondAttribute="leading" constant="20" id="M1J-xQ-I0x"/>
+                            <constraint firstItem="L0K-ch-VSo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8lL-Vs-zR8" secondAttribute="trailing" symbolic="YES" id="eMS-si-3QJ"/>
+                            <constraint firstItem="8lL-Vs-zR8" firstAttribute="top" secondItem="L0K-ch-VSo" secondAttribute="top" id="reO-0Y-GvO"/>
+                            <constraint firstItem="nfs-i1-ZwY" firstAttribute="top" secondItem="8lL-Vs-zR8" secondAttribute="bottom" constant="40" id="vwo-Dq-Hto"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="L0K-ch-VSo"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dp6-Br-eW0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdk-f2-dfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6336" y="-320"/>
+            <point key="canvasLocation" x="5899" y="-320"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yY3-V1-gcc">
@@ -3056,7 +3086,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-9K-uKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7199" y="813"/>
+            <point key="canvasLocation" x="6858" y="813"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wjj-Xh-7ny">
@@ -3070,7 +3100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxr-Rl-4og" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7199" y="210"/>
+            <point key="canvasLocation" x="6859" y="211"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
