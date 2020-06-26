@@ -42,4 +42,16 @@ class ProjectsShareViewController: UIViewController {
         
     }
     
-}   // #46
+    @IBAction func findNewProjectsAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToFindNewProjects", sender: self)
+        
+    }
+    
+    @IBAction func findJComponentAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToFindJComponent", sender: self)
+        
+    }
+    
+}   // #58
