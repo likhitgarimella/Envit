@@ -1531,31 +1531,31 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COm-lf-jYp">
-                                <rect key="frame" x="20" y="56" width="180.66666666666666" height="35"/>
+                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collaborate and share your projects." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cco-fe-m8m">
-                                <rect key="frame" x="20" y="119.00000000000001" width="357.66666666666669" height="25.666666666666671"/>
+                                <rect key="frame" x="20" y="120.00000000000001" width="340.66666666666669" height="25.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for projects?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-ZU-Kfx">
-                                <rect key="frame" x="92.666666666666671" y="447.66666666666669" width="228.66666666666663" height="25.666666666666686"/>
+                                <rect key="frame" x="97.666666666666671" y="447.66666666666669" width="218.66666666666663" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J - Component projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNi-tJ-EBN">
-                                <rect key="frame" x="90.333333333333329" y="557.33333333333337" width="233.66666666666669" height="25.666666666666629"/>
+                                <rect key="frame" x="95.333333333333329" y="557.33333333333337" width="223.66666666666669" height="25.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-CU-cKl">
-                                <rect key="frame" x="120" y="164.66666666666666" width="174" height="44"/>
+                                <rect key="frame" x="120" y="165.66666666666666" width="174" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="GuY-lk-2VB"/>
@@ -1574,7 +1574,7 @@
                                     <constraint firstAttribute="height" constant="44" id="xnX-jF-wh3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" title="Find J-Component">
+                                <state key="normal" image="findjc">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1588,7 +1588,7 @@
                                     <constraint firstAttribute="height" constant="44" id="xHd-mf-nVO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" title="Find new projects">
+                                <state key="normal" image="findnewpro">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1641,10 +1641,10 @@
             </objects>
             <point key="canvasLocation" x="4361" y="439"/>
         </scene>
-        <!--View Controller-->
+        <!--FindJ Component View Controller-->
         <scene sceneID="Vbi-2e-RTR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hcz-gh-K5w" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hcz-gh-K5w" customClass="FindJComponentViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2K-a4-qfg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2983,10 +2983,10 @@
             </objects>
             <point key="canvasLocation" x="4842" y="-346"/>
         </scene>
-        <!--View Controller-->
+        <!--Find New Projects View Controller-->
         <scene sceneID="nDc-vp-R0u">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dCF-ZT-3C4" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dCF-ZT-3C4" customClass="FindNewProjectsViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bjk-bG-AqN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3010,6 +3010,8 @@
         <image name="bell" width="30" height="30"/>
         <image name="chart" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
+        <image name="findjc" width="154" height="19"/>
+        <image name="findnewpro" width="142" height="19"/>
         <image name="heart" width="30" height="30"/>
         <image name="profile" width="23" height="26"/>
         <image name="sample" width="1106" height="810"/>

@@ -68,6 +68,8 @@
 		024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */; };
 		025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */; };
 		025F79DC24A56A200052C9E1 /* JComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DB24A56A200052C9E1 /* JComponentViewController.swift */; };
+		025F79DE24A62F320052C9E1 /* FindNewProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */; };
+		025F79E024A62F830052C9E1 /* FindJComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */; };
 		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
 		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
@@ -192,6 +194,8 @@
 		024FC8D82496D470006046B3 /* MenteeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeFeedViewController.swift; sourceTree = "<group>"; };
 		025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectViewController.swift; sourceTree = "<group>"; };
 		025F79DB24A56A200052C9E1 /* JComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentViewController.swift; sourceTree = "<group>"; };
+		025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewProjectsViewController.swift; sourceTree = "<group>"; };
+		025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindJComponentViewController.swift; sourceTree = "<group>"; };
 		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
@@ -345,11 +349,11 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
-				02A502C624A46868001E4F25 /* Profile */,
 				02A502C524A46837001E4F25 /* Project Share */,
 				02A502C724A468F9001E4F25 /* Tech Share */,
 				02D6B92B24996B270008B503 /* Mentor */,
 				02D6B92C24996B460008B503 /* Mentee */,
+				02A502C624A46868001E4F25 /* Profile */,
 				02DC18D5248299E500CBC10C /* Cab Share */,
 				02DC18D624829A8500CBC10C /* Books Share */,
 				024C710E2443B145002D9CCE /* Products */,
@@ -404,6 +408,8 @@
 				02A502C824A4744F001E4F25 /* AddProjectViewController.swift */,
 				025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */,
 				025F79DB24A56A200052C9E1 /* JComponentViewController.swift */,
+				025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */,
+				025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */,
 			);
 			path = "Project Share";
 			sourceTree = "<group>";
@@ -774,6 +780,7 @@
 				02E90B2F249D8CE50094759C /* UserApi.swift in Sources */,
 				02E90B39249ED9D50094759C /* MentorPostCommentApi.swift in Sources */,
 				02E3A9AC2478DC4A00A9C18C /* CBTabItemDeselectAnimation.swift in Sources */,
+				025F79E024A62F830052C9E1 /* FindJComponentViewController.swift in Sources */,
 				024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */,
 				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
 				0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */,
@@ -799,6 +806,7 @@
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
 				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
 				02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */,
+				025F79DE24A62F320052C9E1 /* FindNewProjectsViewController.swift in Sources */,
 				0216545024941D44007F6A73 /* MentorModel.swift in Sources */,
 				020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */,
 				02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */,
