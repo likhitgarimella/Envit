@@ -2648,14 +2648,14 @@
             <objects>
                 <viewController id="niv-JP-QNM" customClass="PersonalProjectViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R5O-tg-bhG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQe-cK-9cZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCy-F0-NLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter project title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdH-JD-hfj">
                                                 <rect key="frame" x="20" y="52.666666666666657" width="374" height="44"/>
@@ -2729,6 +2729,7 @@
                                             <constraint firstItem="WLv-Gn-IFM" firstAttribute="top" secondItem="I9q-gC-bBt" secondAttribute="bottom" constant="16" id="8fg-zc-oHp"/>
                                             <constraint firstAttribute="right" secondItem="WLv-Gn-IFM" secondAttribute="right" constant="120" id="Dcf-77-7zj"/>
                                             <constraint firstAttribute="right" secondItem="Bg8-zx-02M" secondAttribute="right" constant="20" id="F4k-rH-BFG"/>
+                                            <constraint firstAttribute="bottom" secondItem="IWW-DM-0zI" secondAttribute="bottom" constant="264.67000000000002" id="Gri-Kk-7kA"/>
                                             <constraint firstItem="T0G-pb-mJW" firstAttribute="top" secondItem="WLv-Gn-IFM" secondAttribute="bottom" constant="28" id="HJm-wY-rhc"/>
                                             <constraint firstAttribute="right" secondItem="RdH-JD-hfj" secondAttribute="right" constant="20" id="JHJ-bn-7aw"/>
                                             <constraint firstItem="IWW-DM-0zI" firstAttribute="top" secondItem="Bg8-zx-02M" secondAttribute="bottom" constant="32" id="M91-8U-QOw"/>
@@ -2773,8 +2774,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9pY-Kn-ghc"/>
                     </view>
-                    <size key="freeformSize" width="414" height="675"/>
+                    <size key="freeformSize" width="414" height="775"/>
                     <connections>
+                        <outlet property="addProjectOutlet" destination="IWW-DM-0zI" id="JWE-Xo-dls"/>
                         <outlet property="projDescTextView" destination="Bg8-zx-02M" id="sZu-g0-lOC"/>
                         <outlet property="projectTitle" destination="RdH-JD-hfj" id="kWn-e6-bDu"/>
                         <outlet property="roleOption" destination="WLv-Gn-IFM" id="Ikf-Ov-S2Q"/>

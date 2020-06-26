@@ -14,6 +14,7 @@ class PersonalProjectViewController: UIViewController {
     @IBOutlet var projectTitle: UITextField!
     @IBOutlet var roleOption: DropDown!
     @IBOutlet var projDescTextView: UITextView!
+    @IBOutlet var addProjectOutlet: UIButton!
     
     func BorderProp() {
         
@@ -34,7 +35,7 @@ class PersonalProjectViewController: UIViewController {
         projectTitle.layer.cornerRadius = 4
         roleOption.layer.cornerRadius = 22
         projDescTextView.layer.cornerRadius = 4
-
+        addProjectOutlet.layer.cornerRadius = 10
         
     }
     
@@ -76,4 +77,4 @@ class PersonalProjectViewController: UIViewController {
         
     }
     
-}   // #80
+}   // #81
