@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class JComponentViewController: UIViewController {
     
@@ -68,4 +70,52 @@ class JComponentViewController: UIViewController {
         
     }
     
-}   // #72
+    // Create a DB reference
+    var refJComponentPosts: DatabaseReference!
+    
+    // Submit button action
+    @IBAction func addProjectTapped(_ sender: UIButton) {
+        
+        if (projectTitle.text!.isEmpty || courseTitle.text!.isEmpty || projDescTextView.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        // Writing data to DB
+        refJComponentPosts = Database.database().reference().child("J-Component Projects").child("Details")
+        let key = refJComponentPosts.childByAutoId().key
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let project = ["1) id": key!, "2) Title": projectTitle.text!, "3) Course": courseTitle.text!, "4) Description": projDescTextView.text!, "5) Timestamp": timestamp, "6) uid": currentUserId] as [String : Any]
+        refJComponentPosts.child(key!).setValue(project)
+        
+        // Alert pod - Project Added
+        let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
+        // Clear textfields after success
+        self.projectTitle.text = ""
+        self.courseTitle.text = ""
+        self.projDescTextView.text = ""
+        
+        // And to enable back for a new input in textfield
+        self.projectTitle.isEnabled = true
+        self.courseTitle.isEnabled = true
+        // self.projDescTextView.isEnabled = true
+        
+    }
+    
+}   // #122

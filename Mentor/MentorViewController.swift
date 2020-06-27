@@ -117,7 +117,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         let mentor = ["1) id": key!, "2) Domain": domain.text!, "3) Experience": experienceTextView.text!, "4) Prerequisites": prerequisites.text!, "5) Courses": courses.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
         refMentors.child(key!).setValue(mentor)
         
-        // Alert pod - Ride Added
+        // Alert pod - Work Added
         let alertView = SPAlertView(title: "Your work has been added", message: nil, preset: SPAlertPreset.done)
         alertView.duration = 1.2
         alertView.present()

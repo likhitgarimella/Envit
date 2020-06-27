@@ -2966,6 +2966,9 @@
                                                 <state key="normal" title="Add project">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="addProjectTapped:" destination="NxO-Lg-76B" eventType="touchUpInside" id="5Yf-su-lVs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

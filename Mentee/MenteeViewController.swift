@@ -105,7 +105,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         let mentee = ["1) id": key!, "2) Domain": domain.text!, "3) Post Query": postQueryTextView.text!, "4) Timestamp": timestamp, "5) uid": currentUserId] as [String : Any]
         refMentees.child(key!).setValue(mentee)
         
-        // Alert pod - Ride Added
+        // Alert pod - Query Added
         let alertView = SPAlertView(title: "Your query has been posted", message: nil, preset: SPAlertPreset.done)
         alertView.duration = 1.2
         alertView.present()
