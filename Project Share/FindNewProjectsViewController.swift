@@ -9,12 +9,25 @@
 import UIKit
 
 class FindNewProjectsViewController: UIViewController {
+    
+    // Outlets
+    @IBOutlet var persProj: UIButton!
+    
+    func GeneralProp() {
+        
+        persProj.layer.cornerRadius = 15
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
+        hideKeyboardWhenTappedAround()
+        GeneralProp()
         
     }
     
-}   // #21
+}   // #34
