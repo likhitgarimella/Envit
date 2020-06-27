@@ -1,5 +1,5 @@
 //
-//  PersonalProjectPostApi.swift
+//  PersonalProjectModel.swift
 //  VIT Share
 //
 //  Created by Likhit Garimella on 28/06/20.
@@ -8,10 +8,8 @@
 
 import Foundation
 
-/// Write your own Api, to conveniently observe database data...
-
-class PersonalProjectPostApi {
+class PersonalProjectModel {
     
     
     
-}   // #18
+}   // #16

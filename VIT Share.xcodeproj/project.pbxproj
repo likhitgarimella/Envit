@@ -17,6 +17,7 @@
 		022001A524A7D1F700C60462 /* PersProjPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001A324A7D1F700C60462 /* PersProjPostCell.swift */; };
 		022001A624A7D1F700C60462 /* PersProjPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022001A424A7D1F700C60462 /* PersProjPostCell.xib */; };
 		022001A824A7E32700C60462 /* PersonalProjectPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */; };
+		022001AC24A7EAA100C60462 /* PersonalProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001AB24A7EAA100C60462 /* PersonalProjectModel.swift */; };
 		0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */; };
 		0221E11F2477C12F0022DCCB /* SPAlertHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */; };
 		0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E1002477C12D0022DCCB /* SPAlertLayout.swift */; };
@@ -146,6 +147,7 @@
 		022001A324A7D1F700C60462 /* PersProjPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjPostCell.swift; sourceTree = "<group>"; };
 		022001A424A7D1F700C60462 /* PersProjPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersProjPostCell.xib; sourceTree = "<group>"; };
 		022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectPostApi.swift; sourceTree = "<group>"; };
+		022001AB24A7EAA100C60462 /* PersonalProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectModel.swift; sourceTree = "<group>"; };
 		0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
 		0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertHaptic.swift; sourceTree = "<group>"; };
 		0221E1002477C12D0022DCCB /* SPAlertLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertLayout.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */,
 				022001A424A7D1F700C60462 /* PersProjPostCell.xib */,
 				022001A324A7D1F700C60462 /* PersProjPostCell.swift */,
+				022001AB24A7EAA100C60462 /* PersonalProjectModel.swift */,
 			);
 			path = "Personal Project";
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 				02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */,
 				0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */,
 				0221E1342477C12F0022DCCB /* SPAlertIconDocView.swift in Sources */,
+				022001AC24A7EAA100C60462 /* PersonalProjectModel.swift in Sources */,
 				020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */,
 				0221E11F2477C12F0022DCCB /* SPAlertHaptic.swift in Sources */,
 				02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */,
