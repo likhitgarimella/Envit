@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class PersonalProjectViewController: UIViewController {
     
@@ -52,7 +54,7 @@ class PersonalProjectViewController: UIViewController {
     func DropDownOptions() {
         
         // DropDown Options For TextField
-        roleOption.optionArray = ["iOS developer", "Android developer", "Web developer", "Content writer", "Media partner"]
+        roleOption.optionArray = ["iOS developer", "Android developer", "Web developer", "Designer", "Content writer", "Media partner"]
         roleOption.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
     }
@@ -77,4 +79,54 @@ class PersonalProjectViewController: UIViewController {
         
     }
     
-}   // #81
+    // Create a DB reference
+    var refPersProjPosts: DatabaseReference!
+    
+    // Submit button action
+    @IBAction func addProjectTapped(_ sender: UIButton) {
+        
+        sender.flash()
+        
+        if (projectTitle.text!.isEmpty || roleOption.text!.isEmpty || projDescTextView.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        // Writing data to DB
+        refPersProjPosts = Database.database().reference().child("Personal Projects").child("Details")
+        let key = refPersProjPosts.childByAutoId().key
+        
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
+        
+        // Current user uid
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let currentUserId = currentUser.uid
+        
+        let project = ["1) id": key!, "2) Title": projectTitle.text!, "3) Role": roleOption.text!, "4) Description": projDescTextView.text!, "5) Timestamp": timestamp, "6) uid": currentUserId] as [String : Any]
+        refPersProjPosts.child(key!).setValue(project)
+        
+        // Alert pod - Project Added
+        let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
+        alertView.duration = 1.2
+        alertView.present()
+        
+        // Clear textfields after success
+        self.projectTitle.text = ""
+        self.roleOption.text = ""
+        self.projDescTextView.text = ""
+        
+        // And to enable back for a new input in textfield
+        self.projectTitle.isEnabled = true
+        self.roleOption.isEnabled = true
+        // self.projDescTextView.isEnabled = true
+        
+    }
+    
+}   // #133
