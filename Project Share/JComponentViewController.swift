@@ -76,6 +76,8 @@ class JComponentViewController: UIViewController {
     // Submit button action
     @IBAction func addProjectTapped(_ sender: UIButton) {
         
+        sender.flash()
+        
         if (projectTitle.text!.isEmpty || courseTitle.text!.isEmpty || projDescTextView.text!.isEmpty) {
             // Alert for empty fields
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
@@ -118,4 +120,4 @@ class JComponentViewController: UIViewController {
         
     }
     
-}   // #122
+}   // #124
