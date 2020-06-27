@@ -14,6 +14,9 @@
 		0216545024941D44007F6A73 /* MentorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0216544F24941D44007F6A73 /* MentorModel.swift */; };
 		022001A024A7078300C60462 /* JComponentFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220019F24A7078300C60462 /* JComponentFeed.swift */; };
 		022001A224A707AE00C60462 /* ProjectRequestFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001A124A707AE00C60462 /* ProjectRequestFeed.swift */; };
+		022001A524A7D1F700C60462 /* PersProjPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001A324A7D1F700C60462 /* PersProjPostCell.swift */; };
+		022001A624A7D1F700C60462 /* PersProjPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022001A424A7D1F700C60462 /* PersProjPostCell.xib */; };
+		022001A824A7E32700C60462 /* PersonalProjectPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */; };
 		0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */; };
 		0221E11F2477C12F0022DCCB /* SPAlertHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */; };
 		0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E1002477C12D0022DCCB /* SPAlertLayout.swift */; };
@@ -140,6 +143,9 @@
 		0216544F24941D44007F6A73 /* MentorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorModel.swift; sourceTree = "<group>"; };
 		0220019F24A7078300C60462 /* JComponentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentFeed.swift; sourceTree = "<group>"; };
 		022001A124A707AE00C60462 /* ProjectRequestFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRequestFeed.swift; sourceTree = "<group>"; };
+		022001A324A7D1F700C60462 /* PersProjPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjPostCell.swift; sourceTree = "<group>"; };
+		022001A424A7D1F700C60462 /* PersProjPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersProjPostCell.xib; sourceTree = "<group>"; };
+		022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProjectPostApi.swift; sourceTree = "<group>"; };
 		0221E0FE2477C12D0022DCCB /* SPAlertPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertPreset.swift; sourceTree = "<group>"; };
 		0221E0FF2477C12D0022DCCB /* SPAlertHaptic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertHaptic.swift; sourceTree = "<group>"; };
 		0221E1002477C12D0022DCCB /* SPAlertLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertLayout.swift; sourceTree = "<group>"; };
@@ -401,6 +407,7 @@
 				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
 				02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */,
+				022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */,
 			);
 			path = "VIT Share";
 			sourceTree = "<group>";
@@ -413,6 +420,8 @@
 				025F79D724A569780052C9E1 /* PersonalProjectViewController.swift */,
 				025F79DB24A56A200052C9E1 /* JComponentViewController.swift */,
 				025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */,
+				022001A424A7D1F700C60462 /* PersProjPostCell.xib */,
+				022001A324A7D1F700C60462 /* PersProjPostCell.swift */,
 				025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */,
 				0220019F24A7078300C60462 /* JComponentFeed.swift */,
 				022001A124A707AE00C60462 /* ProjectRequestFeed.swift */,
@@ -655,6 +664,7 @@
 				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
 				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
 				024FC8D024964ED8006046B3 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
+				022001A624A7D1F700C60462 /* PersProjPostCell.xib in Resources */,
 				02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */,
 				024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
@@ -769,6 +779,7 @@
 				02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */,
 				0221E1332477C12F0022DCCB /* SPAlertIconRotateView.swift in Sources */,
 				02DC18D4248224C100CBC10C /* AuthService.swift in Sources */,
+				022001A524A7D1F700C60462 /* PersProjPostCell.swift in Sources */,
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
@@ -789,6 +800,7 @@
 				02E3A9AC2478DC4A00A9C18C /* CBTabItemDeselectAnimation.swift in Sources */,
 				025F79E024A62F830052C9E1 /* FindJComponentViewController.swift in Sources */,
 				024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */,
+				022001A824A7E32700C60462 /* PersonalProjectPostApi.swift in Sources */,
 				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
 				0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */,
 				024A05532483A43C00CC06CB /* TechShareViewController.swift in Sources */,

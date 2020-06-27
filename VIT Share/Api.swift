@@ -29,4 +29,7 @@ struct Api {
     /// Firebase node - Mentee-Post-Comments
     static var MentorPostComment = MentorPostCommentApi()
     
-}   // #25
+    /// Firebase node - Personal Projects-Details
+    static var PersonalProjectPost = PersonalProjectPostApi()
+    
+}   // #36
