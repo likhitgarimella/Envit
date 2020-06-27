@@ -3077,10 +3077,10 @@
             </objects>
             <point key="canvasLocation" x="5899" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Project Request Feed-->
         <scene sceneID="yY3-V1-gcc">
             <objects>
-                <viewController id="bN5-8B-ll6" sceneMemberID="viewController">
+                <viewController id="bN5-8B-ll6" customClass="ProjectRequestFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PrO-hy-b0k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3092,10 +3092,10 @@
             </objects>
             <point key="canvasLocation" x="6858" y="813"/>
         </scene>
-        <!--View Controller-->
+        <!--Component Feed-->
         <scene sceneID="Wjj-Xh-7ny">
             <objects>
-                <viewController id="dcn-fV-2XQ" sceneMemberID="viewController">
+                <viewController id="dcn-fV-2XQ" customClass="JComponentFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T5t-J1-xAL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
