@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PersProjPostCell: UICollectionViewCell {
 
@@ -17,4 +18,4 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #21
+}   // #22
