@@ -60,6 +60,34 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         persProj.layer.cornerRadius = 15
         
     }
+    
+    // load personal project posts
+    func loadPosts() {
+        
+        Api.PersonalProjectPost.observePosts { (post) in
+            guard let postId = post.uid else {
+                return
+            }
+            // fetch user data in mentor posts
+            self.fetchUser(uid: postId, completed: {
+                self.personalProjectsPosts.append(post)
+                // print(self.posts)
+                /// stop before tablew view reloads data
+                self.personalProjectsFeedCollectionView.reloadData()
+            })
+        }
+        
+    }
+    
+    /// it's job is to, given a user id, look up the corresponding user on db...
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        Api.User.obersveUser(withId: uid, completion: { (user) in
+            self.users.append(user)
+            completed()
+        })
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +104,8 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
         
+        loadPosts()
+        
     }
     
-}   // #82
+}   // #112

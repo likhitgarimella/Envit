@@ -34,8 +34,18 @@ class PersProjPostCell: UICollectionViewCell {
     
     var persProjPost: PersonalProjectModel? {
         didSet {
-            
+            updateView()
         }
+    }
+    
+    func updateView() {
+        
+        roleName.text = persProjPost?.role
+        projectName.text = persProjPost?.projectTitle
+        descriptionLabel.text = persProjPost?.projDesc
+        
+        setupUserInfo()
+        
     }
     
     /// when this user property is set..
@@ -86,4 +96,4 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #90
+}   // #100
