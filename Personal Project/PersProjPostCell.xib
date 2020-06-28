@@ -41,44 +41,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-Iu-Zq4">
-                                <rect key="frame" x="20" y="41" width="47" height="22"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="41" width="52.5" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" red="0.396078431372549" green="0.46666666666666667" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="looking for" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBz-9B-Qrd">
-                                <rect key="frame" x="20" y="79" width="62" height="15"/>
+                                <rect key="frame" x="20" y="81" width="62" height="15"/>
                                 <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-VX-sH0">
-                                <rect key="frame" x="20" y="104" width="36" height="22"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                                <rect key="frame" x="20" y="106" width="39" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEk-cw-weh">
-                                <rect key="frame" x="20" y="142" width="42" height="15"/>
+                                <rect key="frame" x="20" y="146" width="42" height="15"/>
                                 <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyJ-2O-Vu7">
-                                <rect key="frame" x="20" y="167" width="57" height="22"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyJ-2O-Vu7">
+                                <rect key="frame" x="20" y="171" width="62.5" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" red="0.39607843139999999" green="0.46666666670000001" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5e-Sx-upf">
-                                <rect key="frame" x="20" y="205" width="66" height="15"/>
+                                <rect key="frame" x="20" y="211" width="66" height="15"/>
                                 <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project share app in which users can collaborate and share their projects." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-hi-DV7">
-                                <rect key="frame" x="20" y="230" width="302" height="33.5"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project share app in which users can collaborate and share their projects." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-hi-DV7">
+                                <rect key="frame" x="20" y="236" width="302" height="38.5"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
                                 <color key="textColor" red="0.39607843139999999" green="0.46666666670000001" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nbO-Iu-Zq4" firstAttribute="top" secondItem="sqS-bK-Uah" secondAttribute="bottom" constant="10" id="3PN-ZU-xLU"/>
                             <constraint firstItem="tqp-VX-sH0" firstAttribute="top" secondItem="hBz-9B-Qrd" secondAttribute="bottom" constant="10" id="3vE-iO-Hle"/>
@@ -105,9 +105,9 @@
                             <constraint firstItem="hBz-9B-Qrd" firstAttribute="top" secondItem="nbO-Iu-Zq4" secondAttribute="bottom" constant="16" id="WwJ-cP-8vU"/>
                             <constraint firstAttribute="trailing" secondItem="rWk-hi-DV7" secondAttribute="trailing" constant="20" id="ZMR-OC-mW1"/>
                             <constraint firstItem="rWk-hi-DV7" firstAttribute="top" secondItem="t5e-Sx-upf" secondAttribute="bottom" constant="10" id="c0E-Jd-fq3"/>
-                            <constraint firstAttribute="bottom" secondItem="rWk-hi-DV7" secondAttribute="bottom" constant="56.5" id="gSI-QA-Vir"/>
                             <constraint firstAttribute="width" constant="342" id="jsU-jq-uWB"/>
                             <constraint firstItem="mEk-cw-weh" firstAttribute="leading" secondItem="Vs2-4C-Mra" secondAttribute="leading" constant="20" id="lsy-dv-QIi"/>
+                            <constraint firstAttribute="bottom" secondItem="rWk-hi-DV7" secondAttribute="bottom" constant="45.5" id="mCC-U6-EZz"/>
                             <constraint firstItem="EyJ-2O-Vu7" firstAttribute="top" secondItem="mEk-cw-weh" secondAttribute="bottom" constant="10" id="ouH-e8-oz6"/>
                             <constraint firstItem="EyJ-2O-Vu7" firstAttribute="leading" secondItem="Vs2-4C-Mra" secondAttribute="leading" constant="20" id="pP7-ZO-U88"/>
                             <constraint firstItem="t5e-Sx-upf" firstAttribute="leading" secondItem="Vs2-4C-Mra" secondAttribute="leading" constant="20" id="skO-Jw-2pA"/>
