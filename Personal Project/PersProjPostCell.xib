@@ -157,6 +157,18 @@
                 <constraint firstAttribute="trailing" secondItem="Vs2-4C-Mra" secondAttribute="trailing" constant="4" id="r4f-6a-a9r"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Aso-YI-4rE"/>
+            <connections>
+                <outlet property="bottomView" destination="kGQ-74-X36" id="Vf1-Vl-GFs"/>
+                <outlet property="cardView" destination="Vs2-4C-Mra" id="EO2-NO-5sp"/>
+                <outlet property="descriptionLabel" destination="rWk-hi-DV7" id="kmS-Xe-Z8v"/>
+                <outlet property="likeCountButton" destination="li7-SW-S65" id="z1U-m3-DA0"/>
+                <outlet property="mentorCommentImageView" destination="Fzh-9D-2Kl" id="gZ9-Bc-IUJ"/>
+                <outlet property="mentorLikeImageView" destination="9tq-r0-vIo" id="vCz-xK-uqX"/>
+                <outlet property="personName" destination="nbO-Iu-Zq4" id="2UP-b5-Ad8"/>
+                <outlet property="projectName" destination="EyJ-2O-Vu7" id="hE7-Oa-Hyc"/>
+                <outlet property="roleName" destination="tqp-VX-sH0" id="TRv-aL-W3E"/>
+                <outlet property="widthConstraint" destination="jsU-jq-uWB" id="0Ml-aD-Suk"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>
         </collectionViewCell>
     </objects>
