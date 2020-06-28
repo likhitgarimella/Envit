@@ -7,11 +7,25 @@
 //
 
 import Foundation
+import Firebase
 
 /// Write your own Api, to conveniently observe database data...
 
 class PersonalProjectPostApi {
     
+    var REF_PERS_PROJ_POSTS = Database.database().reference().child("Personal Projects").child("Details")
     
+    func observePosts(completion: @escaping (PersonalProjectModel) -> Void) {
+        
+        REF_PERS_PROJ_POSTS.observe(.childAdded, with: { (snapshot) in
+            
+            if let dict = snapshot.value as? [String: Any] {
+                let newPost = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot.key)
+                completion(newPost)
+            }
+            
+        })
+        
+    }
     
-}   // #18
+}   // #32
