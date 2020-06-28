@@ -31,5 +31,7 @@ struct Api {
     
     /// Firebase node - Personal Projects-Details
     static var PersonalProjectPost = PersonalProjectPostApi()
+    /// Firebase node - J-Component Projects-Details
+    static var JComponentProjectPost = JComponentProjectPostApi()
     
-}   // #36
+}   // #38
