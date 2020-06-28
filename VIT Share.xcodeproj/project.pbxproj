@@ -96,6 +96,8 @@
 		02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B96D92248665B2000C7D48 /* MenteePostCell.xib */; };
 		02BA546924A8A82200F3DFA5 /* JComponentProjectPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA546824A8A82200F3DFA5 /* JComponentProjectPostApi.swift */; };
 		02BA546B24A8A9BD00F3DFA5 /* JComponentProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA546A24A8A9BD00F3DFA5 /* JComponentProjectModel.swift */; };
+		02BA546E24A91D6E00F3DFA5 /* JCompProjPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA546C24A91D6E00F3DFA5 /* JCompProjPostCell.swift */; };
+		02BA546F24A91D6E00F3DFA5 /* JCompProjPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BA546D24A91D6E00F3DFA5 /* JCompProjPostCell.xib */; };
 		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
 		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
 		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
@@ -230,6 +232,8 @@
 		02B96D92248665B2000C7D48 /* MenteePostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenteePostCell.xib; sourceTree = "<group>"; };
 		02BA546824A8A82200F3DFA5 /* JComponentProjectPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentProjectPostApi.swift; sourceTree = "<group>"; };
 		02BA546A24A8A9BD00F3DFA5 /* JComponentProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentProjectModel.swift; sourceTree = "<group>"; };
+		02BA546C24A91D6E00F3DFA5 /* JCompProjPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjPostCell.swift; sourceTree = "<group>"; };
+		02BA546D24A91D6E00F3DFA5 /* JCompProjPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCompProjPostCell.xib; sourceTree = "<group>"; };
 		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
@@ -306,8 +310,10 @@
 			children = (
 				025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */,
 				0220019F24A7078300C60462 /* JComponentFeed.swift */,
-				022001A124A707AE00C60462 /* ProjectRequestFeed.swift */,
 				02BA546A24A8A9BD00F3DFA5 /* JComponentProjectModel.swift */,
+				02BA546D24A91D6E00F3DFA5 /* JCompProjPostCell.xib */,
+				02BA546C24A91D6E00F3DFA5 /* JCompProjPostCell.swift */,
+				022001A124A707AE00C60462 /* ProjectRequestFeed.swift */,
 			);
 			path = "J-Component";
 			sourceTree = "<group>";
@@ -692,6 +698,7 @@
 				022001A624A7D1F700C60462 /* PersProjPostCell.xib in Resources */,
 				02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */,
 				024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */,
+				02BA546F24A91D6E00F3DFA5 /* JCompProjPostCell.xib in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
 				024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */,
@@ -807,6 +814,7 @@
 				02DC18D4248224C100CBC10C /* AuthService.swift in Sources */,
 				022001A524A7D1F700C60462 /* PersProjPostCell.swift in Sources */,
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
+				02BA546E24A91D6E00F3DFA5 /* JCompProjPostCell.swift in Sources */,
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
 				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
