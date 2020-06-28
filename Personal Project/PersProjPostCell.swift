@@ -21,8 +21,8 @@ class PersProjPostCell: UICollectionViewCell {
     @IBOutlet var descriptionLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
-    @IBOutlet var mentorLikeImageView: UIImageView!
-    @IBOutlet var mentorCommentImageView: UIImageView!
+    @IBOutlet var projectLikeImageView: UIImageView!
+    @IBOutlet var projectCommentImageView: UIImageView!
     
     @IBOutlet var likeCountButton: UIButton!
     
@@ -38,6 +38,14 @@ class PersProjPostCell: UICollectionViewCell {
         }
     }
     
+    /// when this user property is set..
+    /// we'll let the cell download the correspoding cell..
+    var user: User? {
+        didSet {
+            setupUserInfo()
+        }
+    }
+    
     func updateView() {
         
         roleName.text = persProjPost?.role
@@ -46,14 +54,56 @@ class PersProjPostCell: UICollectionViewCell {
         
         setupUserInfo()
         
+        /// Update like
+        updateLike(post: persProjPost!)
+        
+        /// Update like count
+        Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!).observe(.childChanged, with: {
+            snapshot in
+            print(snapshot)
+            if let value = snapshot.value as? Int {
+                self.likeCountButton.setTitle("\(value) likes", for: .normal)
+            }
+        })
+        
+        /// Smoothly update like, when scrolling view
+        Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!).observeSingleEvent(of: .value, with: {
+            snapshot in
+            if let dict = snapshot.value as? [String: Any] {
+                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot.key)
+                self.updateLike(post: post)
+            }
+        })
+        
     }
     
-    /// when this user property is set..
-    /// we'll let the cell download the correspoding cell..
-    var user: User? {
-        didSet {
-            setupUserInfo()
+    func updateLike(post: PersonalProjectModel) {
+        
+        // print(post.isLiked)
+        /// we first checked if its true, and no one liked this post before..
+        /// or if probably someone did, but the current user did not..
+        /// then we display, non-selected like icon..
+        /// otherwise, display likeSelected icon..
+        let imageName = post.likes == nil || !post.isLiked! ? "Icon1" : "likeSelected"
+        projectLikeImageView.image = UIImage(named: imageName)
+        /// Below commented snippet can be put in 1 line.. as above..
+        /* if post.isLiked == false {
+            likeImageView.image = UIImage(named: "like")
+        } else {
+            likeImageView.image = UIImage(named: "likeSelected")
+        } */
+        
+        // We now update like count
+        /// Use optional chaining with guard
+        guard let count = post.likeCount else {
+            return
         }
+        if count != 0 {
+            likeCountButton.setTitle("\(count) likes", for: .normal)
+        } else {
+            likeCountButton.setTitle("0 likes", for: .normal)
+        }
+        
     }
     
     /// New setupUserInfo() func
@@ -96,4 +146,4 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #100
+}   // #150
