@@ -41,7 +41,7 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         persProjCell.persProjPost = post
         persProjCell.user = user
         // linking home VC & home table view cell
-        persProjCell.mentorFeedVC = self
+        persProjCell.persProjFeedVC = self
         return persProjCell
         
     }
@@ -70,6 +70,12 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         hideKeyboardWhenTappedAround()
         GeneralProp()
         
+        // Register CollectionViewCell 'PersProjPostCell' here
+        personalProjectsFeedCollectionView.register(UINib.init(nibName: "PersProjPostCell", bundle: nil), forCellWithReuseIdentifier: "PersProjPostCell")
+        if let flowLayout = personalProjectsFeedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+        
     }
     
-}   // #76
+}   // #82
