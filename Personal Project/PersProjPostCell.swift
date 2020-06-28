@@ -144,6 +144,57 @@ class PersProjPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
+        // Tap gesture for like image on tap
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
+        projectLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        projectLikeImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func likeImageViewTouch() {
+        
+        /// Scalable way of liking posts.. new method..
+        persProjectsRef = Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!)
+        incrementLikes(forRef: persProjectsRef)
+        
+    }
+    
+    func incrementLikes(forRef ref: DatabaseReference) {
+        
+        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
+            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
+                // print("Value 1: \(currentData.value)")
+                var likes: Dictionary<String, Bool>
+                likes = post["likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["likeCount"] as? Int ?? 0
+                if let _ = likes[uid] {
+                    likeCount -= 1
+                    likes.removeValue(forKey: uid)
+                } else {
+                    likeCount += 1
+                    likes[uid] = true
+                }
+                post["likeCount"] = likeCount as AnyObject
+                post["likes"] = likes as AnyObject
+                
+                currentData.value = post
+                
+                return TransactionResult.success(withValue: currentData)
+            }
+            return TransactionResult.success(withValue: currentData)
+        }) { (error, committed, snapshot) in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            // print("Value 2: \(snapshot?.value)")
+            if let dict = snapshot?.value as? [String: Any] {
+                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot!.key)
+                self.updateLike(post: post)
+            }
+            
+        }
+        
     }
 
-}   // #150
+}   // #201
