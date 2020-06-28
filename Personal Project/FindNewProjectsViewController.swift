@@ -12,10 +12,11 @@ import FirebaseDatabase
 
 class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    // Outlets
     @IBOutlet var persProj: UIButton!
     
     @IBOutlet var personalProjectsFeedCollectionView: UICollectionView!
+    
+    @IBOutlet var activityIndicatorView7: UIActivityIndicatorView!
     
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +65,9 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
     // load personal project posts
     func loadPosts() {
         
+        // start when loadPosts func starts
+        activityIndicatorView7.startAnimating()
+        
         Api.PersonalProjectPost.observePosts { (post) in
             guard let postId = post.uid else {
                 return
@@ -73,6 +77,8 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
                 self.personalProjectsPosts.append(post)
                 // print(self.posts)
                 /// stop before tablew view reloads data
+                self.activityIndicatorView7.stopAnimating()
+                self.activityIndicatorView7.hidesWhenStopped = true
                 self.personalProjectsFeedCollectionView.reloadData()
             })
         }
@@ -108,4 +114,4 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         
     }
     
-}   // #112
+}   // #118
