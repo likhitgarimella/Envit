@@ -3365,8 +3365,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="ASW-Tu-x4S" id="ZQt-IR-Sxw"/>
+                                            <outlet property="nameLabel" destination="eye-8a-Z0B" id="fmr-FA-a7x"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2cV-lV-eUp" id="E5g-KL-49D"/>
+                                    <outlet property="delegate" destination="2cV-lV-eUp" id="cRU-UX-nFQ"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joC-rq-bAE">
                                 <rect key="frame" x="0.0" y="458" width="414" height="50"/>
