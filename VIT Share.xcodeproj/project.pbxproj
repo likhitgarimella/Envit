@@ -101,6 +101,9 @@
 		02BA547124A9609D00F3DFA5 /* CommentsInPersProjFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547024A9609D00F3DFA5 /* CommentsInPersProjFeed.swift */; };
 		02BA547324A960E600F3DFA5 /* CommentsInPersProjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547224A960E600F3DFA5 /* CommentsInPersProjTableViewCell.swift */; };
 		02BA547524A9616E00F3DFA5 /* PersProjectComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547424A9616E00F3DFA5 /* PersProjectComments.swift */; };
+		02BA547724A9B91E00F3DFA5 /* JCompProjectComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547624A9B91E00F3DFA5 /* JCompProjectComments.swift */; };
+		02BA547924A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547824A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift */; };
+		02BA547B24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547A24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift */; };
 		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
 		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
 		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
@@ -240,6 +243,9 @@
 		02BA547024A9609D00F3DFA5 /* CommentsInPersProjFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInPersProjFeed.swift; sourceTree = "<group>"; };
 		02BA547224A960E600F3DFA5 /* CommentsInPersProjTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInPersProjTableViewCell.swift; sourceTree = "<group>"; };
 		02BA547424A9616E00F3DFA5 /* PersProjectComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjectComments.swift; sourceTree = "<group>"; };
+		02BA547624A9B91E00F3DFA5 /* JCompProjectComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjectComments.swift; sourceTree = "<group>"; };
+		02BA547824A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInJCompProjFeed.swift; sourceTree = "<group>"; };
+		02BA547A24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInJCompProjTableViewCell.swift; sourceTree = "<group>"; };
 		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
@@ -321,9 +327,12 @@
 				025F79DB24A56A200052C9E1 /* JComponentViewController.swift */,
 				025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */,
 				0220019F24A7078300C60462 /* JComponentFeed.swift */,
-				02BA546A24A8A9BD00F3DFA5 /* JComponentProjectModel.swift */,
 				02BA546D24A91D6E00F3DFA5 /* JCompProjPostCell.xib */,
 				02BA546C24A91D6E00F3DFA5 /* JCompProjPostCell.swift */,
+				02BA547824A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift */,
+				02BA547A24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift */,
+				02BA546A24A8A9BD00F3DFA5 /* JComponentProjectModel.swift */,
+				02BA547624A9B91E00F3DFA5 /* JCompProjectComments.swift */,
 				022001A124A707AE00C60462 /* ProjectRequestFeed.swift */,
 			);
 			path = "J-Component";
@@ -804,6 +813,7 @@
 				02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */,
 				020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */,
 				02D2DF6024A1A5AC00A6A017 /* EditProfileViewController.swift in Sources */,
+				02BA547B24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift in Sources */,
 				0221E1252477C12F0022DCCB /* SPAlertIconAddView.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
@@ -858,10 +868,12 @@
 				0221E12B2477C12F0022DCCB /* SPAlertIconLikeView.swift in Sources */,
 				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
+				02BA547724A9B91E00F3DFA5 /* JCompProjectComments.swift in Sources */,
 				02D2DF6224A1A65500A6A017 /* MyPostsViewController.swift in Sources */,
 				0221E1232477C12F0022DCCB /* SPAlertIconBoltView.swift in Sources */,
 				02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */,
 				02D6B92A249909170008B503 /* User.swift in Sources */,
+				02BA547924A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift in Sources */,
 				02BA546B24A8A9BD00F3DFA5 /* JComponentProjectModel.swift in Sources */,
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
