@@ -47,7 +47,7 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         
     }
     
-    // reference to store MentorModel class info
+    // reference to store PersonalProjectModel class info
     var personalProjectsPosts = [PersonalProjectModel]()
     
     // reference to store User class info
