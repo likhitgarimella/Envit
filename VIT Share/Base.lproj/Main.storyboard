@@ -3143,6 +3143,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dcn-fV-2XQ" id="yuR-Ta-ets"/>
+                                    <outlet property="delegate" destination="dcn-fV-2XQ" id="hE5-PE-ajp"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3219,6 +3223,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YYn-1L-Ntw" id="bVO-Dn-cwv"/>
+                                    <outlet property="delegate" destination="YYn-1L-Ntw" id="ng8-sL-JuC"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjE-nl-2IE">
                                 <rect key="frame" x="0.0" y="686" width="414" height="50"/>
