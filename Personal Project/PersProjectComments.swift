@@ -10,4 +10,20 @@ import Foundation
 
 class PersProjectComments {
     
-}   // #14
+    var commentText: String?
+    var uid: String?
+    
+}
+
+extension PersProjectComments {
+    
+    static func transformComment(dict: [String: Any]) -> PersProjectComments {
+        
+        let comment = PersProjectComments()
+        comment.commentText = dict["commentText"] as? String
+        comment.uid = dict["uid"] as? String
+        return comment
+        
+    }
+    
+}   // #30
