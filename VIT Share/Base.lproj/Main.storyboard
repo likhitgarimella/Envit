@@ -3103,7 +3103,7 @@
                         <outlet property="activityIndicatorView7" destination="xcY-hb-ysJ" id="3si-kb-SNp"/>
                         <outlet property="persProj" destination="nfs-i1-ZwY" id="I5n-NM-9f5"/>
                         <outlet property="personalProjectsFeedCollectionView" destination="3ci-3H-xfj" id="Hbq-Vm-9q3"/>
-                        <segue destination="YYn-1L-Ntw" kind="show" id="54G-VX-MEU"/>
+                        <segue destination="YYn-1L-Ntw" kind="show" identifier="commentsInPerProFeed" id="54G-VX-MEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdk-f2-dfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

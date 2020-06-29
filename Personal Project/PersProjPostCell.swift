@@ -144,10 +144,23 @@ class PersProjPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
+        // Tap gesture for comment image on tap
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
+        projectCommentImageView.addGestureRecognizer(tapGesture)
+        projectCommentImageView.isUserInteractionEnabled = true
+        
         // Tap gesture for like image on tap
         let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
         projectLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
         projectLikeImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func commentImageViewTouch() {
+        
+        if let id = persProjPost?.uid {
+            persProjFeedVC?.performSegue(withIdentifier: "commentsInPerProFeed", sender: id)
+        }
         
     }
     
@@ -197,4 +210,4 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #201
+}   // #214
