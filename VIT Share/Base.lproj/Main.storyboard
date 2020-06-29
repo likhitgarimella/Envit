@@ -3148,6 +3148,11 @@
                                     <outlet property="delegate" destination="dcn-fV-2XQ" id="hE5-PE-ajp"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="d80-n6-1xD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -3159,6 +3164,7 @@
                         <viewLayoutGuide key="safeArea" id="996-s6-nBO"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView8" destination="d80-n6-1xD" id="bkH-yq-G1a"/>
                         <outlet property="jCompProjectsFeedCollectionView" destination="Iw3-xU-r3d" id="ID5-iM-5U5"/>
                     </connections>
                 </viewController>

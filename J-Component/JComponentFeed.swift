@@ -14,6 +14,8 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet var jCompProjectsFeedCollectionView: UICollectionView!
     
+    @IBOutlet var activityIndicatorView8: UIActivityIndicatorView!
+    
     // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return jCompProjectsPosts.count
@@ -55,6 +57,9 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
     // load jcomp project posts
     func loadPosts() {
         
+        // start when loadPosts func starts
+        activityIndicatorView8.startAnimating()
+        
         Api.JComponentProjectPost.observePosts { (post) in
             guard let postId = post.uid else {
                 return
@@ -64,6 +69,8 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
                 self.jCompProjectsPosts.append(post)
                 // print(self.posts)
                 /// stop before tablew view reloads data
+                self.activityIndicatorView8.stopAnimating()
+                self.activityIndicatorView8.hidesWhenStopped = true
                 self.jCompProjectsFeedCollectionView.reloadData()
             })
         }
@@ -98,4 +105,4 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-}   // #102
+}   // #109
