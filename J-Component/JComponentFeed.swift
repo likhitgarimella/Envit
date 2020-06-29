@@ -9,6 +9,8 @@
 import UIKit
 
 class JComponentFeed: UIViewController {
+    
+    @IBOutlet var jCompProjectsFeedCollectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +19,4 @@ class JComponentFeed: UIViewController {
         
     }
     
-}   // #21
+}   // #23

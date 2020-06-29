@@ -3132,13 +3132,35 @@
                     <view key="view" contentMode="scaleToFill" id="T5t-J1-xAL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-xU-r3d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M7i-Bm-EjZ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iw3-xU-r3d" firstAttribute="top" secondItem="996-s6-nBO" secondAttribute="top" id="2as-K2-0uK"/>
+                            <constraint firstItem="Iw3-xU-r3d" firstAttribute="trailing" secondItem="996-s6-nBO" secondAttribute="trailing" id="3ab-V2-MJ0"/>
+                            <constraint firstItem="Iw3-xU-r3d" firstAttribute="leading" secondItem="996-s6-nBO" secondAttribute="leading" id="4dO-lX-Luq"/>
+                            <constraint firstItem="Iw3-xU-r3d" firstAttribute="bottom" secondItem="996-s6-nBO" secondAttribute="bottom" id="Mx7-Cu-z86"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="996-s6-nBO"/>
                     </view>
+                    <connections>
+                        <outlet property="jCompProjectsFeedCollectionView" destination="Iw3-xU-r3d" id="ID5-iM-5U5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxr-Rl-4og" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6859" y="211"/>
+            <point key="canvasLocation" x="6857.971014492754" y="210.32608695652175"/>
         </scene>
         <!--Comments In Pers Proj Feed-->
         <scene sceneID="U7E-UP-m1Q">
