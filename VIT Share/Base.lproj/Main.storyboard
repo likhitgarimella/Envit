@@ -3221,6 +3221,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="czx-GR-kZa" id="f7B-P9-inL"/>
+                                            <outlet property="nameLabel" destination="npW-Y8-Wa0" id="U45-0v-4DC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

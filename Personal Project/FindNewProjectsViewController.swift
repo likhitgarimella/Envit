@@ -95,7 +95,6 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         
     }
     
-    /*
     // prepare for segue to comments vc
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "commentsInPerProFeed" {
@@ -105,7 +104,6 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
             commentVC.postId = postId
         }
     }
-    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,4 +124,4 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
         
     }
     
-}   // #130
+}   // #128
