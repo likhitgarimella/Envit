@@ -7,9 +7,57 @@
 //
 
 import Foundation
+import Firebase
 
 class JComponentProjectModel {
     
+    ///
+    var projectTitle: String?
+    var courseTitle: String?
+    var projDesc: String?
+    ///
+    var uid: String?
     
+    /// Remodel Post class, bcuz it currently doesn't have a post id property
+    var id: String?
     
-}   // #16
+    ///
+    var likeCount: Int?
+    var likes: Dictionary<String, Any>?
+    
+    var isLiked: Bool?
+    
+}
+
+extension JComponentProjectModel {
+    
+    static func transformJCompProjPost(dict: [String: Any], key: String) -> JComponentProjectModel {
+        
+        let jcompProjPost = JComponentProjectModel()
+        /// Remodel Post class, bcuz it currently doesn't have a post id property
+        jcompProjPost.id = key
+        jcompProjPost.projectTitle = dict["2) Title"] as? String
+        jcompProjPost.courseTitle = dict["3) Course"] as? String
+        jcompProjPost.projDesc = dict["4) Description"] as? String
+        jcompProjPost.uid = dict["6) uid"] as? String
+        
+        jcompProjPost.likeCount = dict["likeCount"] as? Int
+        jcompProjPost.likes = dict["likes"] as? Dictionary<String, Any>
+        
+        if let currentUserId = Auth.auth().currentUser?.uid {
+            if jcompProjPost.likes != nil {
+                /* if post.likes[currentUserId] != nil {
+                    post.isLiked = true
+                } else {
+                    post.isLiked = false
+                } */
+                /// Above commented snippet can be put in 1 line.. as below..
+                jcompProjPost.isLiked = jcompProjPost.likes![currentUserId] != nil
+            }
+        }
+        
+        return jcompProjPost
+        
+    }
+    
+}   // #64

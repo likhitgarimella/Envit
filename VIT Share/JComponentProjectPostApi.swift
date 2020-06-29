@@ -19,10 +19,10 @@ class JComponentProjectPostApi {
         
         REF_JCOMP_PROJ_POSTS.observe(.childAdded, with: { (snapshot) in
             
-            /* if let dict = snapshot.value as? [String: Any] {
+            if let dict = snapshot.value as? [String: Any] {
                 let newPost = JComponentProjectModel.transformJCompProjPost(dict: dict, key: snapshot.key)
                 completion(newPost)
-            } */
+            }
             
         })
         
