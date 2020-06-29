@@ -43,12 +43,102 @@ class CommentsInPersProjFeed: UIViewController {
         super.viewWillDisappear(true)
         self.tabBarController?.tabBar.isHidden = false
     }
+    
+    func Properties() {
+        
+        commentsInPersProjFeedTableView.backgroundColor = UIColor.white
+        commentsInPersProjFeedTableView.estimatedRowHeight = 80
+        commentsInPersProjFeedTableView.rowHeight = UITableView.automaticDimension
+        
+    }
+    
+    func handleTextField() {
+        
+        commentTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        
+    }
+    
+    @objc func textFieldDidChange() {
+        
+        if let commentText = commentTextField.text, !commentText.isEmpty {
+            sendImage.image = UIImage(named: "sendComment")
+            sendOutlet.isEnabled = true
+            return
+        }
+        
+        sendImage.image = UIImage(named: "disableComment")
+        sendOutlet.isEnabled = false
+        
+    }
+    
+    func BorderProp() {
+        
+        // Textfield Border Property
+        let myColor = UIColor.systemGray
+        commentTextField.layer.borderColor = myColor.cgColor
+        commentTextField.layer.borderWidth = 2
+        
+    }
+    
+    func CornerRadius() {
+        
+        // Textfield Corner Radius Property
+        // commentTextField.layer.cornerRadius = 20
+        commentTextField.layer.cornerRadius = commentTextField.frame.size.height/2
+        commentTextField.clipsToBounds = true
+        
+    }
+    
+    func LeftPadding() {
+        
+        // Create a padding view for Textfield on LEFT
+        commentTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: commentTextField.frame.height))
+        commentTextField.leftViewMode = .always
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
+        // nav bar title
+        title = "Comments"
+        
+        hideKeyboardWhenTappedAround()
+        Properties()
+        handleTextField()
+        BorderProp()
+        CornerRadius()
+        LeftPadding()
+        
+        // Keyboard Show
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        // Keyboard Hide
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
-}   // #55
+    // Keyboard Show
+    @objc func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        
+    }
+    
+    // Keyboard Hide
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+        
+    }
+    
+}   // #145
