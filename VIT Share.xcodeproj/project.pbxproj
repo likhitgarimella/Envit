@@ -51,6 +51,10 @@
 		02272EBF244DC40F00AED173 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02272EBD244DC40F00AED173 /* Cell2.xib */; };
 		02355CC0248106090062BA59 /* Cell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02355CBE248106090062BA59 /* Cell4.swift */; };
 		02355CC1248106090062BA59 /* Cell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02355CBF248106090062BA59 /* Cell4.xib */; };
+		023CB4F924AAC6CC002FFF74 /* PersProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */; };
+		023CB4FB24AAC753002FFF74 /* PersProjPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */; };
+		023CB4FD24AAC781002FFF74 /* JCompProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */; };
+		023CB4FF24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */; };
 		024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A05502483A41300CC06CB /* ProjectsShareViewController.swift */; };
 		024A05532483A43C00CC06CB /* TechShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A05522483A43C00CC06CB /* TechShareViewController.swift */; };
 		024C71112443B145002D9CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71102443B145002D9CCE /* AppDelegate.swift */; };
@@ -191,6 +195,10 @@
 		02272EBD244DC40F00AED173 /* Cell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell2.xib; sourceTree = "<group>"; };
 		02355CBE248106090062BA59 /* Cell4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell4.swift; sourceTree = "<group>"; };
 		02355CBF248106090062BA59 /* Cell4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell4.xib; sourceTree = "<group>"; };
+		023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjCommentApi.swift; sourceTree = "<group>"; };
+		023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjPostCommentApi.swift; sourceTree = "<group>"; };
+		023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjCommentApi.swift; sourceTree = "<group>"; };
+		023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjPostCommentApi.swift; sourceTree = "<group>"; };
 		024A05502483A41300CC06CB /* ProjectsShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsShareViewController.swift; sourceTree = "<group>"; };
 		024A05522483A43C00CC06CB /* TechShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechShareViewController.swift; sourceTree = "<group>"; };
 		024C710D2443B145002D9CCE /* VIT Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIT Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,13 +466,17 @@
 				02D6B929249909170008B503 /* User.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
-				02E90B34249ED96C0094759C /* MentorPostApi.swift */,
 				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
-				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
+				02E90B34249ED96C0094759C /* MentorPostApi.swift */,
+				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */,
 				022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */,
+				023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */,
+				023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */,
 				02BA546824A8A82200F3DFA5 /* JComponentProjectPostApi.swift */,
+				023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */,
+				023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */,
 			);
 			path = "VIT Share";
 			sourceTree = "<group>";
@@ -783,6 +795,7 @@
 				02C7748D249811400037E693 /* CommentsInMenteeTableViewCell.swift in Sources */,
 				0221E1292477C12F0022DCCB /* SPAlertIconStarView.swift in Sources */,
 				029FB8012475A3E60053D916 /* Extensions.swift in Sources */,
+				023CB4F924AAC6CC002FFF74 /* PersProjCommentApi.swift in Sources */,
 				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
 				02E3A9AD2478DC4A00A9C18C /* CBFlashyTabBar.swift in Sources */,
 				02E90B35249ED96C0094759C /* MentorPostApi.swift in Sources */,
@@ -790,6 +803,7 @@
 				02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */,
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
 				0221E1272477C12F0022DCCB /* SPAlertIconShuffleView.swift in Sources */,
+				023CB4FD24AAC781002FFF74 /* JCompProjCommentApi.swift in Sources */,
 				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
 				02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */,
 				02E3A9AF2478DC4A00A9C18C /* CBFlashyTabBarController.swift in Sources */,
@@ -842,6 +856,7 @@
 				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
 				02E90B31249D9EB50094759C /* MenteeCommentApi.swift in Sources */,
 				0221E1352477C12F0022DCCB /* SPAlertIconPrivacyView.swift in Sources */,
+				023CB4FB24AAC753002FFF74 /* PersProjPostCommentApi.swift in Sources */,
 				02802BB924850709008BF296 /* FeedViewController.swift in Sources */,
 				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
 				022001A224A707AE00C60462 /* ProjectRequestFeed.swift in Sources */,
@@ -876,6 +891,7 @@
 				02BA547924A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift in Sources */,
 				02BA546B24A8A9BD00F3DFA5 /* JComponentProjectModel.swift in Sources */,
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,
+				023CB4FF24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift in Sources */,
 				0221E1222477C12F0022DCCB /* SPAlertView.swift in Sources */,
 				02E90B33249DA1F20094759C /* MenteePostCommentApi.swift in Sources */,
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
