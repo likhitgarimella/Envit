@@ -184,4 +184,46 @@ class CommentsInPersProjFeed: UIViewController {
         
     }
     
-}   // #188
+    @IBAction func sendButton(_ sender: UIButton) {
+        
+        let commentsRef = Api.PersProjComment.REF_COMMENTS
+        /// a unique id that is generated for every comment
+        let newCommentId = commentsRef.childByAutoId().key
+        let newCommentReference = commentsRef.child(newCommentId!)
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        /// uid of a user
+        let currentUserId = currentUser.uid
+        /// put that string in db
+        newCommentReference.setValue(["uid": currentUserId, "commentText": commentTextField.text!], withCompletionBlock: { (error, ref) in
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+            }
+            /// new node to map 'posts' & 'comments'
+            let postCommentRef = Api.PersProjPostComment.REF_POST_COMMENTS.child(self.postId).child(newCommentId!)
+            postCommentRef.setValue(true, withCompletionBlock: { (error, ref) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    return
+                }
+            })
+            /// empty and disable after a comment is posted
+            self.empty()
+            /// hide keyboard after comment is posted
+            self.view.endEditing(true)
+        })
+        
+    }
+    
+    // empty and disable after a comment is posted
+    func empty() {
+        
+        self.commentTextField.text = ""
+        self.sendOutlet.isEnabled = false
+        sendImage.image = UIImage(named: "disableComment")
+        
+    }
+    
+}   // #230
