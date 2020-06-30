@@ -169,8 +169,8 @@ open class SPAlertView: UIView {
             addSubview(subtitleLabel)
         }
         
-        let darkModeColor = UIColor(red: 127 / 255, green: 127 / 255, blue: 129 / 255, alpha: 1)
-        let lightModeColor = UIColor(red: 88 / 255, green: 87 / 255, blue: 88 / 255, alpha: 1)
+        let darkModeColor = UIColor(red: 228 / 255, green: 228 / 255, blue: 228 / 255, alpha: 1)
+        let lightModeColor = UIColor(red: 60 / 255, green: 60 / 255, blue: 60 / 255, alpha: 1)
         let color = isDarkMode ? darkModeColor : lightModeColor
         iconView?.tintColor = color
         titleLabel?.textColor = color
