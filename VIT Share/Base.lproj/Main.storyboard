@@ -3438,6 +3438,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="nrG-Dn-ksM"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="6HG-BE-pPA" id="GpA-u9-BfS"/>
+                        <outlet property="commentTextField" destination="S8b-Fi-DYA" id="A7a-DL-tkd"/>
+                        <outlet property="commentsInJCompProjFeedTableView" destination="hvI-zd-Dgr" id="8Cu-c5-TKg"/>
+                        <outlet property="sendImage" destination="eTP-ee-UBA" id="ob0-p3-uEp"/>
+                        <outlet property="sendOutlet" destination="ZE0-5d-PmH" id="rZP-YT-P4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cud-zQ-jTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
