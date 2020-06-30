@@ -7,7 +7,25 @@
 //
 
 import Foundation
+import Firebase
+
+/// Write your own Api, to conveniently observe database data...
 
 class JCompProjCommentApi {
     
-}   // #14
+    var REF_COMMENTS = Database.database().reference().child("Comments-In-JComp-Projects")
+    
+    func observeComments(withPostId id: String, completion: @escaping (JCompProjectComments) -> Void) {
+        
+        REF_COMMENTS.child(id).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if let dict = snapshot.value as? [String: Any] {
+                let newComment = JCompProjectComments.transformComment(dict: dict)
+                completion(newComment)
+            }
+            
+        })
+        
+    }
+    
+}   // #32
