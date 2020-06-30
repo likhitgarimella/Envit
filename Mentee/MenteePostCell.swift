@@ -126,10 +126,16 @@ class MenteePostCell: UICollectionViewCell {
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
-        cardView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         cardView.layer.shadowRadius = 2.0
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.masksToBounds = false
+        
+        bottomView.layer.shadowColor = UIColor.lightGray.cgColor
+        bottomView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        bottomView.layer.shadowRadius = 1.0
+        bottomView.layer.shadowOpacity = 0.32
+        bottomView.layer.masksToBounds = false
         
         // constraint
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -206,4 +212,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #210
+}   // #216
