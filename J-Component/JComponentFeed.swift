@@ -86,6 +86,17 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
         })
         
     }
+    
+    
+    // prepare for segue to comments vc
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "commentsInJProFeed" {
+            let commentVC = segue.destination as! CommentsInJCompProjFeed
+            //
+            let postId = sender as! String
+            commentVC.postId = postId
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,4 +116,4 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-}   // #109
+}   // #120
