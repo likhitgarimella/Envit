@@ -29,7 +29,7 @@ class CommentsInPersProjFeed: UIViewController {
     // Initialise empty string
     var postId: String!
     
-    var mentorComments = [PersProjectComments]()
+    var persProjComments = [PersProjectComments]()
     var users = [User]()
     
     // Tab bar disappears
@@ -108,10 +108,12 @@ class CommentsInPersProjFeed: UIViewController {
         
         hideKeyboardWhenTappedAround()
         Properties()
+        empty()
         handleTextField()
         BorderProp()
         CornerRadius()
         LeftPadding()
+        loadComments()
         
         // Keyboard Show
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -141,4 +143,45 @@ class CommentsInPersProjFeed: UIViewController {
         
     }
     
-}   // #145
+    // displaying all comments for a post
+    func loadComments() {
+        
+        // let postCommentRef = Database.database().reference().child("post-comments").child(self.postId)
+        Api.PersProjPostComment.REF_POST_COMMENTS.child(self.postId).observe(.childAdded, with: {
+            snapshot in
+            // print("snapshot key")
+            // print(snapshot.key)
+            
+            Api.PersProjComment.observeComments(withPostId: snapshot.key, completion: { comment in
+                self.fetchUser(uid: comment.uid!, completed: {
+                    self.persProjComments.append(comment)
+                    // print(self.comments)
+                    self.commentsInPersProjFeedTableView.reloadData()
+                })
+            })
+            
+        })
+        
+    }
+    
+    /// it's job is to, given a user id, look up the corresponding user on db...
+    func fetchUser(uid: String, completed: @escaping () -> Void) {
+        
+        Api.User.obersveUser(withId: uid, completion: { (user) in
+            self.users.append(user)
+            completed()
+        })
+        
+        /// old code
+        /*
+        Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                let user = User.transformUser(dict: dict)
+                self.users.append(user)
+                completed()
+            }
+        })  */
+        
+    }
+    
+}   // #188
