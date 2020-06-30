@@ -226,4 +226,22 @@ class CommentsInJCompProjFeed: UIViewController {
         
     }
     
-}   // #186
+}
+
+extension CommentsInJCompProjFeed: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jCompProjComments.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell4", for: indexPath) as! CommentsInJCompProjTableViewCell
+        cell.backgroundColor = UIColor.white
+        let projectComment = jCompProjComments[indexPath.row]
+        let user = users[indexPath.row]
+        cell.projectComment = projectComment
+        cell.user = user
+        return cell
+    }
+    
+}   // #248
