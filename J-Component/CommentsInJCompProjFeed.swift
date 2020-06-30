@@ -43,12 +43,76 @@ class CommentsInJCompProjFeed: UIViewController {
         super.viewWillDisappear(true)
         self.tabBarController?.tabBar.isHidden = false
     }
+    
+    func Properties() {
+        
+        commentsInJCompProjFeedTableView.backgroundColor = UIColor.white
+        commentsInJCompProjFeedTableView.estimatedRowHeight = 80
+        commentsInJCompProjFeedTableView.rowHeight = UITableView.automaticDimension
+        
+    }
+    
+    func handleTextField() {
+        
+        commentTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        
+    }
+    
+    @objc func textFieldDidChange() {
+        
+        if let commentText = commentTextField.text, !commentText.isEmpty {
+            sendImage.image = UIImage(named: "sendComment")
+            sendOutlet.isEnabled = true
+            return
+        }
+        
+        sendImage.image = UIImage(named: "disableComment")
+        sendOutlet.isEnabled = false
+        
+    }
+    
+    func BorderProp() {
+        
+        // Textfield Border Property
+        let myColor = UIColor.systemGray
+        commentTextField.layer.borderColor = myColor.cgColor
+        commentTextField.layer.borderWidth = 2
+        
+    }
+    
+    func CornerRadius() {
+        
+        // Textfield Corner Radius Property
+        // commentTextField.layer.cornerRadius = 20
+        commentTextField.layer.cornerRadius = commentTextField.frame.size.height/2
+        commentTextField.clipsToBounds = true
+        
+    }
+    
+    func LeftPadding() {
+        
+        // Create a padding view for Textfield on LEFT
+        commentTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: commentTextField.frame.height))
+        commentTextField.leftViewMode = .always
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
+        // nav bar title
+        title = "Comments"
+        
+        hideKeyboardWhenTappedAround()
+        Properties()
+        handleTextField()
+        BorderProp()
+        CornerRadius()
+        LeftPadding()
         
     }
     
-}   // #55
+}   // #119
