@@ -144,6 +144,70 @@ class JCompProjPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
+        // Tap gesture for comment image on tap
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
+        projectCommentImageView.addGestureRecognizer(tapGesture)
+        projectCommentImageView.isUserInteractionEnabled = true
+        
+        // Tap gesture for like image on tap
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(likeImageViewTouch))
+        projectLikeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        projectLikeImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func commentImageViewTouch() {
+        
+        if let id = jCompProjPost?.uid {
+            jCompProjFeedVC?.performSegue(withIdentifier: "commentsInJProFeed", sender: id)
+        }
+        
+    }
+    
+    @objc func likeImageViewTouch() {
+        
+        /// Scalable way of liking posts.. new method..
+        jCompProjectsRef = Api.JComponentProjectPost.REF_JCOMP_PROJ_POSTS.child(jCompProjPost!.id!)
+        incrementLikes(forRef: jCompProjectsRef)
+        
+    }
+    
+    func incrementLikes(forRef ref: DatabaseReference) {
+        
+        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
+            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
+                // print("Value 1: \(currentData.value)")
+                var likes: Dictionary<String, Bool>
+                likes = post["likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["likeCount"] as? Int ?? 0
+                if let _ = likes[uid] {
+                    likeCount -= 1
+                    likes.removeValue(forKey: uid)
+                } else {
+                    likeCount += 1
+                    likes[uid] = true
+                }
+                post["likeCount"] = likeCount as AnyObject
+                post["likes"] = likes as AnyObject
+                
+                currentData.value = post
+                
+                return TransactionResult.success(withValue: currentData)
+            }
+            return TransactionResult.success(withValue: currentData)
+        }) { (error, committed, snapshot) in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            // print("Value 2: \(snapshot?.value)")
+            if let dict = snapshot?.value as? [String: Any] {
+                let post = JComponentProjectModel.transformJCompProjPost(dict: dict, key: snapshot!.key)
+                self.updateLike(post: post)
+            }
+            
+        }
+        
     }
 
-}   // #150
+}   // #214
