@@ -226,4 +226,22 @@ class CommentsInPersProjFeed: UIViewController {
         
     }
     
-}   // #230
+}
+
+extension CommentsInPersProjFeed: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return persProjComments.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell3", for: indexPath) as! CommentsInPersProjTableViewCell
+        cell.backgroundColor = UIColor.white
+        let projectComment = persProjComments[indexPath.row]
+        let user = users[indexPath.row]
+        cell.projectComment = projectComment
+        cell.user = user
+        return cell
+    }
+    
+}   // #248
