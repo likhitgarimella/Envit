@@ -28,34 +28,40 @@ class ProjectRequestFeed: UIViewController {
     
     @IBAction func addCourseAction(_ sender: UIButton) {
         
-        // Alert
+        /// Alert
         let alertController = UIAlertController(title: "Enter course title", message: "", preferredStyle: .alert)
-        // Add textfield
+        /// Add textfield
         alertController.addTextField(configurationHandler: courseFunc(textField:))
         
-        // Ok action
+        /// Ok action
         let okAction = UIAlertAction(title: "Add course", style: .default) { (_) in
             
         }
-        // Cancel action
+        /// Cancel action
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
             
         }
         
-        // Adding Ok action
+        /// AlertView font
+        let titleFont = [NSAttributedString.Key.font: UIFont(name: "SFProRounded-Medium", size: 18.0)!]
+        let titleAttrString = NSMutableAttributedString(string: "Enter course title", attributes: titleFont)
+        alertController.setValue(titleAttrString, forKey: "attributedTitle")
+        
+        /// Adding Ok action
         alertController.addAction(okAction)
-        // Adding Cancel action
+        /// Adding Cancel action
         alertController.addAction(cancelAction)
-        // Present alert controller
+        /// Present alert controller
         present(alertController, animated: true, completion: nil)
         
     }
     
-    // Textfield prop
+    /// Textfield prop
     func courseFunc(textField: UITextField!) {
-        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 32)
         textField.addConstraint(heightConstraint)
         textField.minimumFontSize = 18
+        textField.font = UIFont(name: "SFProRounded-Regular", size: 16.0)
     }
     
-}   // #62
+}   // #68
