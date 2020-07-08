@@ -3135,6 +3135,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="addCourseAction:" destination="bN5-8B-ll6" eventType="touchUpInside" id="rUw-DP-R25"/>
                                     <action selector="addProjectAction:" destination="X4W-xC-QiQ" eventType="touchUpInside" id="dE0-lK-KWg"/>
                                 </connections>
                             </button>

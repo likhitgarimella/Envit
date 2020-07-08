@@ -26,4 +26,36 @@ class ProjectRequestFeed: UIViewController {
         
     }
     
-}   // #30
+    @IBAction func addCourseAction(_ sender: UIButton) {
+        
+        // Alert
+        let alertController = UIAlertController(title: "Enter course title", message: "", preferredStyle: .alert)
+        // Add textfield
+        alertController.addTextField(configurationHandler: courseFunc(textField:))
+        
+        // Ok action
+        let okAction = UIAlertAction(title: "Add course", style: .default) { (_) in
+            
+        }
+        // Cancel action
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
+            
+        }
+        
+        // Adding Ok action
+        alertController.addAction(okAction)
+        // Adding Cancel action
+        alertController.addAction(cancelAction)
+        // Present alert controller
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    // Textfield prop
+    func courseFunc(textField: UITextField!) {
+        let heightConstraint = NSLayoutConstraint(item: textField!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        textField.addConstraint(heightConstraint)
+        textField.minimumFontSize = 18
+    }
+    
+}   // #62
