@@ -9,12 +9,21 @@
 import UIKit
 
 class ProjectRequestFeed: UIViewController {
+    
+    // Outlets
+    @IBOutlet var addCourseOutlet: UIButton!
+    
+    func AddCourseBtnProp() {
+        
+        addCourseOutlet.layer.cornerRadius = 22
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        AddCourseBtnProp()
         
     }
     
-}   // #21
+}   // #30

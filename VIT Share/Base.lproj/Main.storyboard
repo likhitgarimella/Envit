@@ -3150,6 +3150,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nRB-OE-Dd7"/>
                     </view>
+                    <connections>
+                        <outlet property="addCourseOutlet" destination="rHv-rO-whY" id="hBC-au-eTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-9K-uKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
