@@ -15,14 +15,9 @@ class ProjectsShareViewController: UIViewController {
     @IBOutlet var newProjectsOutlet: UIButton!
     @IBOutlet var jComponentOutlet: UIButton!
     
-    func AddProjectBtnProp() {
+    func ButtonsProp() {
         
         addProjectOutlet.layer.cornerRadius = 22
-        
-    }
-    
-    func OtherBtnProp() {
-        
         newProjectsOutlet.layer.cornerRadius = 10
         jComponentOutlet.layer.cornerRadius = 10
         
@@ -31,8 +26,7 @@ class ProjectsShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AddProjectBtnProp()
-        OtherBtnProp()
+        ButtonsProp()
         
     }
     
@@ -54,4 +48,4 @@ class ProjectsShareViewController: UIViewController {
         
     }
     
-}   // #58
+}   // #52

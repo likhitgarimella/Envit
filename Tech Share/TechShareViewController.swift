@@ -11,55 +11,23 @@ import UIKit
 class TechShareViewController: UIViewController {
     
     // Outlets
-    @IBOutlet var segment: UISegmentedControl!
-    @IBOutlet var feedView: UIView!
-    @IBOutlet var mentorView: UIView!
-    @IBOutlet var menteeView: UIView!
+    @IBOutlet var goToFeedOutlet: UIButton!
+    @IBOutlet var mentorOutlet: UIButton!
+    @IBOutlet var menteeOutlet: UIButton!
     
+    func ButtonsProp() {
+        
+        goToFeedOutlet.layer.cornerRadius = 22
+        mentorOutlet.layer.cornerRadius = 10
+        menteeOutlet.layer.cornerRadius = 10
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hideKeyboardWhenTappedAround()
-        
-        SegmentFontColor()
-        
-    }
-    
-    func SegmentFontColor() {
-        
-        // Selected option color
-        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .selected)
-        
-        // Color of other options
-        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .normal)
-        
-    }
-    
-    // Switch Index of Segmented Control
-    @IBAction func switchSegment(_ sender: UISegmentedControl) {
-        
-        if sender.selectedSegmentIndex == 0 {
-            feedView.alpha = 1
-            mentorView.alpha = 0
-            menteeView.alpha = 0
-        }
-        if sender.selectedSegmentIndex == 1 {
-            feedView.alpha = 0
-            mentorView.alpha = 1
-            menteeView.alpha = 0
-        }
-        if sender.selectedSegmentIndex == 2 {
-            feedView.alpha = 0
-            mentorView.alpha = 0
-            menteeView.alpha = 1
-        }
-        if sender.selectedSegmentIndex == 3 {
-            feedView.alpha = 0
-            mentorView.alpha = 0
-            menteeView.alpha = 0
-        }
+        ButtonsProp()
         
     }
 
-}   // #66
+}   // #24
