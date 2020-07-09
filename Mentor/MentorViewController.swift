@@ -24,7 +24,8 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
         // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
-        domain.layer.borderColor = myColor.cgColor
+        let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
+        domain.layer.borderColor = dropdownColor.cgColor
         domain.layer.borderWidth = 1.6
         experienceTextView.layer.borderColor = myColor.cgColor
         experienceTextView.layer.borderWidth = 1.6
@@ -39,7 +40,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
         // Textfield/Textview Corner Radius Property
         beMentor.layer.cornerRadius = 15
-        domain.layer.cornerRadius = 4
+        domain.layer.cornerRadius = 22
         experienceTextView.layer.cornerRadius = 4
         prerequisites.layer.cornerRadius = 4
         courses.layer.cornerRadius = 4
@@ -141,4 +142,4 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
     }
 
-}   // #140
+}   // #146

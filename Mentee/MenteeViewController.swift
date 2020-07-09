@@ -13,6 +13,7 @@ import FirebaseDatabase
 class MenteeViewController: UIViewController, UITextFieldDelegate {
     
     // Outlets
+    @IBOutlet var beMentee: UIButton!
     @IBOutlet var domain: DropDown!
     @IBOutlet var postQueryTextView: UITextView!
     @IBOutlet var submitOutlet: UIButton!
@@ -20,8 +21,9 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
     func BorderProp() {
         
         // Textfield/Textview Border Property
-        let myColor = UIColor.systemGray
-        domain.layer.borderColor = myColor.cgColor
+        let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
+        let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
+        domain.layer.borderColor = dropdownColor.cgColor
         domain.layer.borderWidth = 1.6
         postQueryTextView.layer.borderColor = myColor.cgColor
         postQueryTextView.layer.borderWidth = 1.6
@@ -31,7 +33,8 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
     func CornerRadius() {
         
         // Textfield/Textview Corner Radius Property
-        domain.layer.cornerRadius = 4
+        beMentee.layer.cornerRadius = 15
+        domain.layer.cornerRadius = 22
         postQueryTextView.layer.cornerRadius = 4
         submitOutlet.layer.cornerRadius = 6
         
@@ -63,6 +66,9 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
         hideKeyboardWhenTappedAround()
         
@@ -120,4 +126,4 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #124
+}   // #130
