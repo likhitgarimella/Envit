@@ -3487,10 +3487,10 @@
             </objects>
             <point key="canvasLocation" x="7965" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Tech Share View Controller-->
         <scene sceneID="Hp5-X1-pkW">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nHm-LH-6eE" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nHm-LH-6eE" customClass="TechShareViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EDw-eL-tBi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3528,7 +3528,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="55q-lD-zPc"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" image="goToFeed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -3539,7 +3539,7 @@
                                     <constraint firstAttribute="height" constant="44" id="E20-g0-OMw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal">
+                                <state key="normal" image="mentee">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -3550,7 +3550,7 @@
                                     <constraint firstAttribute="height" constant="44" id="d7T-UK-LTk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal">
+                                <state key="normal" image="mentor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -3606,7 +3606,10 @@
         <image name="coins" width="30" height="30"/>
         <image name="findjc" width="154" height="19"/>
         <image name="findnewpro" width="142" height="19"/>
+        <image name="goToFeed" width="71" height="14"/>
         <image name="heart" width="30" height="30"/>
+        <image name="mentee" width="62" height="16"/>
+        <image name="mentor" width="59" height="16"/>
         <image name="profile" width="23" height="26"/>
         <image name="sample" width="1106" height="810"/>
         <image name="shape" width="10" height="17"/>
