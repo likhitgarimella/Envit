@@ -550,13 +550,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dF-9e-GgY">
-                                                <rect key="frame" x="144" y="23.333333333333329" width="88.333333333333314" height="24"/>
+                                                <rect key="frame" x="144" y="23" width="96" height="24"/>
                                                 <fontDescription key="fontDescription" name="SFProText-MediumItalic" family="SF Pro Text" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X85-t4-gre">
-                                                <rect key="frame" x="144" y="51.333333333333329" width="27" height="37.333333333333329"/>
+                                                <rect key="frame" x="144" y="51" width="25.333333333333343" height="38.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="32"/>
                                                 <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -565,31 +565,31 @@
                                                 <rect key="frame" x="20" y="152" width="374" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CF-5J-dGX">
-                                                        <rect key="frame" x="20" y="28" width="82" height="24"/>
+                                                        <rect key="frame" x="20" y="28" width="79" height="24"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjy-2M-A6a">
-                                                        <rect key="frame" x="20" y="68" width="13.666666666666664" height="18.666666666666671"/>
+                                                        <rect key="frame" x="20" y="68" width="13" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gae-9W-yGj">
-                                                        <rect key="frame" x="20" y="102.66666666666669" width="15.333333333333336" height="21"/>
+                                                        <rect key="frame" x="20" y="103.33333333333331" width="14.666666666666664" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MH - " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-wX-jZi">
-                                                        <rect key="frame" x="20" y="139.66666666666669" width="51" height="23.333333333333343"/>
+                                                        <rect key="frame" x="20.000000000000004" y="141" width="48.333333333333343" height="24"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q Block" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFi-Mg-2SV">
-                                                        <rect key="frame" x="71" y="139.66666666666669" width="71.666666666666686" height="23.333333333333343"/>
+                                                        <rect key="frame" x="68.333333333333343" y="141" width="68.333333333333343" height="24"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -875,23 +875,14 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-QZ-0J8">
                                 <rect key="frame" x="0.0" y="95" width="414" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="2yx-Bv-AGp" kind="embed" id="FIx-jk-Ls6"/>
-                                </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45h-zZ-5uF">
                                 <rect key="frame" x="0.0" y="95" width="414" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="yp1-MN-uM6" kind="embed" id="BuX-ZA-gx2"/>
-                                </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-6J-5Su">
                                 <rect key="frame" x="0.0" y="95" width="414" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="T5f-2L-9Do" kind="embed" id="bPN-pu-4dP"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -932,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVl-Gq-Jny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906" y="1202"/>
+            <point key="canvasLocation" x="4435" y="3081"/>
         </scene>
         <!--Find Ride View Controller-->
         <scene sceneID="MT9-HS-t4E">
@@ -1818,13 +1809,13 @@
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
             <objects>
-                <viewController id="2yx-Bv-AGp" customClass="MenteeViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2yx-Bv-AGp" customClass="MenteeViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qg-xz-Qa8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-GU-ANJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="575"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfx-vq-ooz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="698.33333333333337"/>
@@ -1924,6 +1915,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iqt-WN-uFA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AFC-vn-R5O"/>
                     <size key="freeformSize" width="414" height="700"/>
                     <connections>
                         <outlet property="domain" destination="IN9-Fk-keU" id="57M-jN-ThJ"/>
@@ -1933,18 +1925,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Gx-3BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="2041"/>
+            <point key="canvasLocation" x="1906" y="1997"/>
         </scene>
         <!--Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
             <objects>
-                <viewController id="yp1-MN-uM6" customClass="MentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yp1-MN-uM6" customClass="MentorViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XvC-W9-APF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYv-Hu-uew">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="775"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-ax-Tyl">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1968,7 +1960,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj2-cY-tQz">
-                                                <rect key="frame" x="20" y="204.66666666666663" width="374" height="148"/>
+                                                <rect key="frame" x="20" y="204.66666666666669" width="374" height="148"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="148" id="Obc-Qt-XCO"/>
@@ -2011,7 +2003,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses Recommended" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8N-x3-d2F">
-                                                <rect key="frame" x="19.999999999999986" y="474.66666666666669" width="249.66666666666663" height="28"/>
+                                                <rect key="frame" x="19.999999999999986" y="474.66666666666663" width="249.66666666666663" height="28"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="24"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2046,7 +2038,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select domain" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-1k-ICb" customClass="DropDown" customModule="VIT_Share" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="104.66666666666667" width="274" height="40.000000000000014"/>
+                                                <rect key="frame" x="20" y="104.66666666666666" width="274" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="zG2-3G-Gc4"/>
                                                 </constraints>
@@ -2118,6 +2110,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="veh-Wx-0vZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xvh-WA-hGs"/>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="courses" destination="htt-OV-dJf" id="7a0-xQ-lBR"/>
@@ -2129,57 +2122,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06g-1d-Nnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2507" y="2122"/>
+            <point key="canvasLocation" x="1022" y="2079"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="ByD-lt-4z1">
             <objects>
-                <viewController id="T5f-2L-9Do" customClass="FeedViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="T5f-2L-9Do" customClass="FeedViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FKN-9Z-zDL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJg-Ss-3aG">
-                                <rect key="frame" x="164.33333333333334" y="12" width="85.333333333333343" height="24"/>
+                                <rect key="frame" x="164.33333333333334" y="68" width="85.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-8T-AIv">
-                                <rect key="frame" x="100" y="57" width="51" height="31"/>
+                                <rect key="frame" x="100" y="113" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="enableMentor:" destination="T5f-2L-9Do" eventType="valueChanged" id="1L4-jp-WZd"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-rg-heH">
-                                <rect key="frame" x="334.66666666666669" y="57" width="51" height="31"/>
+                                <rect key="frame" x="334.66666666666669" y="113" width="51" height="31"/>
                                 <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="enableMentee:" destination="T5f-2L-9Do" eventType="valueChanged" id="A9v-EY-rZJ"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-lq-lNr">
-                                <rect key="frame" x="30" y="60" width="62" height="25"/>
+                                <rect key="frame" x="30" y="116" width="62" height="25"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" text="Mentee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80O-fZ-wjC">
-                                <rect key="frame" x="261" y="60.666666666666664" width="65.666666666666686" height="23.666666666666664"/>
+                                <rect key="frame" x="261" y="116.66666666666667" width="65.666666666666686" height="23.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-zP-2gk">
-                                <rect key="frame" x="0.0" y="96" width="414" height="640"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="eYh-gV-dDf" kind="embed" id="2hX-J6-khr"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-11-mvb">
-                                <rect key="frame" x="0.0" y="96" width="414" height="640"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="mgt-G0-9kN" kind="embed" id="HYO-AV-ztX"/>
@@ -2212,6 +2205,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h6Z-xy-tmf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Khr-Yy-271"/>
                     <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="menteeFeedView" destination="ezd-zP-2gk" id="iT6-b6-Ang"/>
@@ -2222,18 +2216,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30a-mQ-tD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2670" y="1202"/>
+            <point key="canvasLocation" x="2303" y="1202"/>
         </scene>
         <!--Mentee Feed View Controller-->
         <scene sceneID="53b-gV-1ur">
             <objects>
                 <viewController id="eYh-gV-dDf" customClass="MenteeFeedViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fLw-1i-A7r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="avT-Pj-ocd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8dB-39-ex8">
                                     <size key="itemSize" width="128" height="128"/>
@@ -2270,18 +2264,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3454" y="1241"/>
+            <point key="canvasLocation" x="3454" y="1202"/>
         </scene>
         <!--Mentor Feed View Controller-->
         <scene sceneID="7Rv-u6-BoU">
             <objects>
                 <viewController id="mgt-G0-9kN" customClass="MentorFeedViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LxZ-sN-fcV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UWy-jQ-cZe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Myh-oX-Cgt">
                                     <size key="itemSize" width="128" height="128"/>
@@ -2318,7 +2312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4360.8695652173919" y="2016.8478260869567"/>
+            <point key="canvasLocation" x="3454" y="1973"/>
         </scene>
         <!--Tech-->
         <scene sceneID="sPG-aL-RV4">
@@ -2348,11 +2342,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="wkw-4z-u78" customClass="CommentsInMenteePostFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POE-f7-S7r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-1d-tFJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="590"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="465"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2371,7 +2365,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-bG-EVn">
-                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="70.666666666666686" height="20"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2410,7 +2404,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzU-sJ-h05">
-                                <rect key="frame" x="0.0" y="590" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="465" width="414" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-KM-nSh">
                                         <rect key="frame" x="20" y="5" width="322" height="40"/>
@@ -2481,18 +2475,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b5-Uj-oWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4435" y="1241"/>
+            <point key="canvasLocation" x="4435" y="1202"/>
         </scene>
         <!--Comments In Mentor Post Feed-->
         <scene sceneID="zUh-dP-e1f">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="e8Y-7U-NoJ" customClass="CommentsInMentorPostFeed" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="58g-qe-h8M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IaE-MC-5zD">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="590"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="465"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2511,7 +2505,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-hg-v7t">
-                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="70.666666666666686" height="20"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2550,7 +2544,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGj-hc-tou">
-                                <rect key="frame" x="0.0" y="590" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="465" width="414" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Poi-8j-afE">
                                         <rect key="frame" x="20" y="5" width="322" height="40"/>
@@ -2621,7 +2615,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZS-cj-odp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5342.0289855072469" y="2017.663043478261"/>
+            <point key="canvasLocation" x="4435" y="1973"/>
         </scene>
         <!--Profile-->
         <scene sceneID="V0t-TA-6VJ">
@@ -3510,6 +3504,9 @@
                                 <state key="normal" image="goToFeed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="goToFeedAction:" destination="nHm-LH-6eE" eventType="touchUpInside" id="eaj-4e-Kil"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Mentor. Share your work." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWa-Fs-W7K">
                                 <rect key="frame" x="40.333333333333343" y="447.66666666666669" width="333.66666666666663" height="25.666666666666686"/>
@@ -3527,6 +3524,9 @@
                                 <state key="normal" image="mentor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="mentorAction:" destination="nHm-LH-6eE" eventType="touchUpInside" id="eE9-7X-OZa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Mentor. Post your queries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-Rg-sG1">
                                 <rect key="frame" x="56.666666666666657" y="557.33333333333337" width="301" height="25.666666666666629"/>
@@ -3544,6 +3544,9 @@
                                 <state key="normal" image="mentee">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="menteeAction:" destination="nHm-LH-6eE" eventType="touchUpInside" id="YP0-Fb-Ix5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3582,6 +3585,9 @@
                         <outlet property="goToFeedOutlet" destination="aZc-8c-SNF" id="oXj-24-zzw"/>
                         <outlet property="menteeOutlet" destination="V3h-fB-coZ" id="hjg-ic-8Ns"/>
                         <outlet property="mentorOutlet" destination="mrD-BT-qtd" id="nuK-KS-LcF"/>
+                        <segue destination="yp1-MN-uM6" kind="show" identifier="goToMentor" id="kUq-Z9-h6i"/>
+                        <segue destination="2yx-Bv-AGp" kind="show" identifier="goToMentee" id="J4z-iD-rIs"/>
+                        <segue destination="T5f-2L-9Do" kind="show" identifier="goToFeed" id="tLo-a0-j0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVh-M8-96m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

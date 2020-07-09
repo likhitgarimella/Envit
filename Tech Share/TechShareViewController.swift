@@ -29,5 +29,23 @@ class TechShareViewController: UIViewController {
         ButtonsProp()
         
     }
+    
+    @IBAction func goToFeedAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToFeed", sender: self)
+        
+    }
+    
+    @IBAction func mentorAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToMentor", sender: self)
+        
+    }
+    
+    @IBAction func menteeAction(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToMentee", sender: self)
+        
+    }
 
-}   // #24
+}   // #52
