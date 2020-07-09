@@ -22,9 +22,10 @@ class PersonalProjectViewController: UIViewController {
         
         // Textfield Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
+        let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
         projectTitle.layer.borderColor = myColor.cgColor
         projectTitle.layer.borderWidth = 1.6
-        roleOption.layer.borderColor = myColor.cgColor
+        roleOption.layer.borderColor = dropdownColor.cgColor
         roleOption.layer.borderWidth = 1.6
         projDescTextView.layer.borderColor = myColor.cgColor
         projDescTextView.layer.borderWidth = 1.6
@@ -54,7 +55,7 @@ class PersonalProjectViewController: UIViewController {
     func DropDownOptions() {
         
         // DropDown Options For TextField
-        roleOption.optionArray = ["iOS developer", "Android developer", "Web developer", "Designer", "Content writer", "Media partner"]
+        roleOption.optionArray = ["iOS developer", "Android developer", "Web developer", "Backend developer", "UI-UX designer", "Content writer", "Media partner"]
         roleOption.selectedRowColor = UIColor(red: 220.0/255.0, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
         
     }
@@ -129,4 +130,4 @@ class PersonalProjectViewController: UIViewController {
         
     }
     
-}   // #133
+}   // #134
