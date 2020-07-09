@@ -13,6 +13,7 @@ import FirebaseDatabase
 class MentorViewController: UIViewController, UITextViewDelegate {
     
     // Outlets
+    @IBOutlet var beMentor: UIButton!
     @IBOutlet var domain: DropDown!
     @IBOutlet var experienceTextView: UITextView!
     @IBOutlet var prerequisites: UITextField!
@@ -37,6 +38,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     func CornerRadius() {
         
         // Textfield/Textview Corner Radius Property
+        beMentor.layer.cornerRadius = 15
         domain.layer.cornerRadius = 4
         experienceTextView.layer.cornerRadius = 4
         prerequisites.layer.cornerRadius = 4
@@ -75,6 +77,9 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
         hideKeyboardWhenTappedAround()
         
