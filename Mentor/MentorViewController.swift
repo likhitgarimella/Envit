@@ -24,8 +24,8 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
         // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
-        let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
-        domain.layer.borderColor = dropdownColor.cgColor
+        // let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
+        domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
         experienceTextView.layer.borderColor = myColor.cgColor
         experienceTextView.layer.borderWidth = 1.6

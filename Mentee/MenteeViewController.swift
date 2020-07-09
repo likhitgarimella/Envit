@@ -22,8 +22,8 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         
         // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
-        let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
-        domain.layer.borderColor = dropdownColor.cgColor
+        // let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
+        domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
         postQueryTextView.layer.borderColor = myColor.cgColor
         postQueryTextView.layer.borderWidth = 1.6
