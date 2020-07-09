@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		020A32FC244434F1006FE3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FB244434F1006FE3E5 /* LoginViewController.swift */; };
-		020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */; };
-		020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */; };
 		020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A330324443B07006FE3E5 /* ProfileViewController.swift */; };
 		0216545024941D44007F6A73 /* MentorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0216544F24941D44007F6A73 /* MentorModel.swift */; };
 		022001A024A7078300C60462 /* JComponentFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220019F24A7078300C60462 /* JComponentFeed.swift */; };
@@ -47,10 +45,6 @@
 		0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11B2477C12E0022DCCB /* SPAlertIconRepeatView.swift */; };
 		0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11C2477C12E0022DCCB /* SPAlertIconMoonView.swift */; };
 		0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11D2477C12E0022DCCB /* SPAlert.swift */; };
-		02272EBE244DC40F00AED173 /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02272EBC244DC40F00AED173 /* Cell2.swift */; };
-		02272EBF244DC40F00AED173 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02272EBD244DC40F00AED173 /* Cell2.xib */; };
-		02355CC0248106090062BA59 /* Cell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02355CBE248106090062BA59 /* Cell4.swift */; };
-		02355CC1248106090062BA59 /* Cell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02355CBF248106090062BA59 /* Cell4.xib */; };
 		023CB4F924AAC6CC002FFF74 /* PersProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */; };
 		023CB4FB24AAC753002FFF74 /* PersProjPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */; };
 		023CB4FD24AAC781002FFF74 /* JCompProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */; };
@@ -80,18 +74,12 @@
 		025F79DC24A56A200052C9E1 /* JComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DB24A56A200052C9E1 /* JComponentViewController.swift */; };
 		025F79DE24A62F320052C9E1 /* FindNewProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */; };
 		025F79E024A62F830052C9E1 /* FindJComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */; };
-		0260C5FA2447CA340066C06C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260C5F82447CA340066C06C /* Cell.swift */; };
-		0260C5FB2447CA340066C06C /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0260C5F92447CA340066C06C /* Cell.xib */; };
 		02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB22484BA4F008BF296 /* MentorViewController.swift */; };
 		02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB42484BAB4008BF296 /* MenteeViewController.swift */; };
 		02802BB924850709008BF296 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB824850709008BF296 /* FeedViewController.swift */; };
 		02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BBA24857862008BF296 /* TextFieldCounter.swift */; };
-		0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286BCE6244F072D00680B19 /* RidesModel.swift */; };
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
 		02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A502C824A4744F001E4F25 /* AddProjectViewController.swift */; };
-		02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF2244677CD004742B1 /* FindRideViewController.swift */; };
-		02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */; };
-		02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF624467826004742B1 /* ModifyRideViewController.swift */; };
 		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
 		02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */; };
 		02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B96D8D248659CF000C7D48 /* MentorPostCell.swift */; };
@@ -108,16 +96,10 @@
 		02BA547724A9B91E00F3DFA5 /* JCompProjectComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547624A9B91E00F3DFA5 /* JCompProjectComments.swift */; };
 		02BA547924A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547824A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift */; };
 		02BA547B24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA547A24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift */; };
-		02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD522473655B001BE3F9 /* BooksModel.swift */; };
-		02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCDD5424736844001BE3F9 /* Cell3.swift */; };
-		02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02BCDD5524736844001BE3F9 /* Cell3.xib */; };
 		02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */; };
 		02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */; };
 		02C7748D249811400037E693 /* CommentsInMenteeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */; };
 		02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */; };
-		02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA964246E609800481AB4 /* BuyViewController.swift */; };
-		02CCA967246E610300481AB4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA966246E610300481AB4 /* PostViewController.swift */; };
-		02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */; };
 		02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */; };
 		02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */; };
 		02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */; };
@@ -152,8 +134,6 @@
 
 /* Begin PBXFileReference section */
 		020A32FB244434F1006FE3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabShareViewController.swift; sourceTree = "<group>"; };
-		020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksShareViewController.swift; sourceTree = "<group>"; };
 		020A330324443B07006FE3E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0216544F24941D44007F6A73 /* MentorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorModel.swift; sourceTree = "<group>"; };
 		0220019F24A7078300C60462 /* JComponentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentFeed.swift; sourceTree = "<group>"; };
@@ -191,10 +171,6 @@
 		0221E11B2477C12E0022DCCB /* SPAlertIconRepeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconRepeatView.swift; sourceTree = "<group>"; };
 		0221E11C2477C12E0022DCCB /* SPAlertIconMoonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconMoonView.swift; sourceTree = "<group>"; };
 		0221E11D2477C12E0022DCCB /* SPAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlert.swift; sourceTree = "<group>"; };
-		02272EBC244DC40F00AED173 /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
-		02272EBD244DC40F00AED173 /* Cell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell2.xib; sourceTree = "<group>"; };
-		02355CBE248106090062BA59 /* Cell4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell4.swift; sourceTree = "<group>"; };
-		02355CBF248106090062BA59 /* Cell4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell4.xib; sourceTree = "<group>"; };
 		023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjCommentApi.swift; sourceTree = "<group>"; };
 		023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjPostCommentApi.swift; sourceTree = "<group>"; };
 		023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjCommentApi.swift; sourceTree = "<group>"; };
@@ -226,18 +202,12 @@
 		025F79DB24A56A200052C9E1 /* JComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JComponentViewController.swift; sourceTree = "<group>"; };
 		025F79DD24A62F320052C9E1 /* FindNewProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewProjectsViewController.swift; sourceTree = "<group>"; };
 		025F79DF24A62F830052C9E1 /* FindJComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindJComponentViewController.swift; sourceTree = "<group>"; };
-		0260C5F82447CA340066C06C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		0260C5F92447CA340066C06C /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		02802BB22484BA4F008BF296 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
 		02802BB42484BAB4008BF296 /* MenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeViewController.swift; sourceTree = "<group>"; };
 		02802BB824850709008BF296 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		02802BBA24857862008BF296 /* TextFieldCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCounter.swift; sourceTree = "<group>"; };
-		0286BCE6244F072D00680B19 /* RidesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesModel.swift; sourceTree = "<group>"; };
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02A502C824A4744F001E4F25 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
-		02B0EBF2244677CD004742B1 /* FindRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRideViewController.swift; sourceTree = "<group>"; };
-		02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRideViewController.swift; sourceTree = "<group>"; };
-		02B0EBF624467826004742B1 /* ModifyRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRideViewController.swift; sourceTree = "<group>"; };
 		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHRadioButton.swift; sourceTree = "<group>"; };
 		02B96D8D248659CF000C7D48 /* MentorPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCell.swift; sourceTree = "<group>"; };
@@ -254,16 +224,10 @@
 		02BA547624A9B91E00F3DFA5 /* JCompProjectComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjectComments.swift; sourceTree = "<group>"; };
 		02BA547824A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInJCompProjFeed.swift; sourceTree = "<group>"; };
 		02BA547A24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInJCompProjTableViewCell.swift; sourceTree = "<group>"; };
-		02BCDD522473655B001BE3F9 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
-		02BCDD5424736844001BE3F9 /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
-		02BCDD5524736844001BE3F9 /* Cell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell3.xib; sourceTree = "<group>"; };
 		02C774882498068D0037E693 /* CommentsInMentorPostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorPostFeed.swift; sourceTree = "<group>"; };
 		02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteePostFeed.swift; sourceTree = "<group>"; };
 		02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteeTableViewCell.swift; sourceTree = "<group>"; };
 		02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorTableViewCell.swift; sourceTree = "<group>"; };
-		02CCA964246E609800481AB4 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
-		02CCA966246E610300481AB4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyBooksViewController.swift; sourceTree = "<group>"; };
 		02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
@@ -428,8 +392,6 @@
 				02D6B92B24996B270008B503 /* Mentor */,
 				02D6B92C24996B460008B503 /* Mentee */,
 				02A502C624A46868001E4F25 /* Profile */,
-				02DC18D5248299E500CBC10C /* Cab Share */,
-				02DC18D624829A8500CBC10C /* Books Share */,
 				024C710E2443B145002D9CCE /* Products */,
 				7F240E75B7C0609C05F44065 /* Pods */,
 				A152D71F50EE75777C88DE5D /* Frameworks */,
@@ -539,38 +501,6 @@
 				02D6B9252498E10F0008B503 /* MenteeComments.swift */,
 			);
 			path = Mentee;
-			sourceTree = "<group>";
-		};
-		02DC18D5248299E500CBC10C /* Cab Share */ = {
-			isa = PBXGroup;
-			children = (
-				020A32FD24443A6B006FE3E5 /* CabShareViewController.swift */,
-				0260C5F92447CA340066C06C /* Cell.xib */,
-				0260C5F82447CA340066C06C /* Cell.swift */,
-				02272EBD244DC40F00AED173 /* Cell2.xib */,
-				02272EBC244DC40F00AED173 /* Cell2.swift */,
-				0286BCE6244F072D00680B19 /* RidesModel.swift */,
-				02B0EBF2244677CD004742B1 /* FindRideViewController.swift */,
-				02B0EBF4244677F6004742B1 /* OfferRideViewController.swift */,
-				02B0EBF624467826004742B1 /* ModifyRideViewController.swift */,
-			);
-			path = "Cab Share";
-			sourceTree = "<group>";
-		};
-		02DC18D624829A8500CBC10C /* Books Share */ = {
-			isa = PBXGroup;
-			children = (
-				020A32FF24443A8A006FE3E5 /* BooksShareViewController.swift */,
-				02BCDD5524736844001BE3F9 /* Cell3.xib */,
-				02BCDD5424736844001BE3F9 /* Cell3.swift */,
-				02355CBF248106090062BA59 /* Cell4.xib */,
-				02355CBE248106090062BA59 /* Cell4.swift */,
-				02BCDD522473655B001BE3F9 /* BooksModel.swift */,
-				02CCA964246E609800481AB4 /* BuyViewController.swift */,
-				02CCA966246E610300481AB4 /* PostViewController.swift */,
-				02CCA968246E615000481AB4 /* ModifyBooksViewController.swift */,
-			);
-			path = "Books Share";
 			sourceTree = "<group>";
 		};
 		02E3A9992478DC4600A9C18C /* CBFlashyTabBarController */ = {
@@ -716,13 +646,11 @@
 			files = (
 				024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */,
 				024FC8CD24964ED8006046B3 /* SF-Pro-Rounded-Bold.otf in Resources */,
-				0260C5FB2447CA340066C06C /* Cell.xib in Resources */,
 				024FC8CF24964ED8006046B3 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */,
 				02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				024FC8D124964ED8006046B3 /* SF-Pro-Rounded-Light.otf in Resources */,
 				02D2DF5D24A1814E00A6A017 /* SF-Pro-Text-ThinItalic.otf in Resources */,
-				02272EBF244DC40F00AED173 /* Cell2.xib in Resources */,
 				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
 				024FC8D024964ED8006046B3 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				022001A624A7D1F700C60462 /* PersProjPostCell.xib in Resources */,
@@ -732,12 +660,10 @@
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
 				024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */,
-				02355CC1248106090062BA59 /* Cell4.xib in Resources */,
 				024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				024FC8CE24964ED8006046B3 /* SF-Pro-Rounded-Black.otf in Resources */,
 				02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				024C711A2443B149002D9CCE /* Assets.xcassets in Resources */,
-				02BCDD5724736844001BE3F9 /* Cell3.xib in Resources */,
 				02D2DF5E24A1814E00A6A017 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				024C71182443B145002D9CCE /* Main.storyboard in Resources */,
 			);
@@ -804,23 +730,18 @@
 				0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */,
 				0221E1272477C12F0022DCCB /* SPAlertIconShuffleView.swift in Sources */,
 				023CB4FD24AAC781002FFF74 /* JCompProjCommentApi.swift in Sources */,
-				02CCA967246E610300481AB4 /* PostViewController.swift in Sources */,
 				02802BB32484BA4F008BF296 /* MentorViewController.swift in Sources */,
 				02E3A9AF2478DC4A00A9C18C /* CBFlashyTabBarController.swift in Sources */,
 				02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */,
 				02E90B37249ED9B10094759C /* MentorCommentApi.swift in Sources */,
 				0221E12F2477C12F0022DCCB /* SPAlertIconMessageView.swift in Sources */,
-				02BCDD532473655B001BE3F9 /* BooksModel.swift in Sources */,
 				0221E1312477C12F0022DCCB /* SPAlertIconBookmarkView.swift in Sources */,
-				02B0EBF5244677F6004742B1 /* OfferRideViewController.swift in Sources */,
-				0286BCE7244F072D00680B19 /* RidesModel.swift in Sources */,
 				02E3A9AE2478DC4A00A9C18C /* CBTabBarButton.swift in Sources */,
 				02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */,
 				0221E1262477C12F0022DCCB /* SPAlertIconHeartView.swift in Sources */,
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */,
-				02355CC0248106090062BA59 /* Cell4.swift in Sources */,
 				02E90B2D249D89C30094759C /* MenteePostApi.swift in Sources */,
 				02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */,
 				02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */,
@@ -836,12 +757,9 @@
 				0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */,
 				0221E1342477C12F0022DCCB /* SPAlertIconDocView.swift in Sources */,
 				022001AC24A7EAA100C60462 /* PersonalProjectModel.swift in Sources */,
-				020A330024443A8A006FE3E5 /* BooksShareViewController.swift in Sources */,
 				0221E11F2477C12F0022DCCB /* SPAlertHaptic.swift in Sources */,
 				02BA547324A960E600F3DFA5 /* CommentsInPersProjTableViewCell.swift in Sources */,
-				02BCDD5624736844001BE3F9 /* Cell3.swift in Sources */,
 				02BA547124A9609D00F3DFA5 /* CommentsInPersProjFeed.swift in Sources */,
-				02272EBE244DC40F00AED173 /* Cell2.swift in Sources */,
 				0221E1242477C12F0022DCCB /* SPAlertIconEjectView.swift in Sources */,
 				0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */,
 				02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */,
@@ -858,11 +776,9 @@
 				0221E1352477C12F0022DCCB /* SPAlertIconPrivacyView.swift in Sources */,
 				023CB4FB24AAC753002FFF74 /* PersProjPostCommentApi.swift in Sources */,
 				02802BB924850709008BF296 /* FeedViewController.swift in Sources */,
-				02CCA969246E615000481AB4 /* ModifyBooksViewController.swift in Sources */,
 				022001A224A707AE00C60462 /* ProjectRequestFeed.swift in Sources */,
 				0221E1372477C12F0022DCCB /* SPAlertIconDoneView.swift in Sources */,
 				02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */,
-				02B0EBF3244677CD004742B1 /* FindRideViewController.swift in Sources */,
 				0221E12C2477C12F0022DCCB /* SPAlertIconErrorView.swift in Sources */,
 				0221E1322477C12F0022DCCB /* SPAlertIconFlagView.swift in Sources */,
 				02BA546924A8A82200F3DFA5 /* JComponentProjectPostApi.swift in Sources */,
@@ -873,11 +789,9 @@
 				025F79E024A62F830052C9E1 /* FindJComponentViewController.swift in Sources */,
 				024FC8D52496BAF3006046B3 /* MenteeModel.swift in Sources */,
 				022001A824A7E32700C60462 /* PersonalProjectPostApi.swift in Sources */,
-				02B0EBF724467826004742B1 /* ModifyRideViewController.swift in Sources */,
 				0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */,
 				024A05532483A43C00CC06CB /* TechShareViewController.swift in Sources */,
 				02D2DF6424A1A7B400A6A017 /* NotificationsViewController.swift in Sources */,
-				0260C5FA2447CA340066C06C /* Cell.swift in Sources */,
 				02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */,
 				02E90B2C249D89C30094759C /* Api.swift in Sources */,
 				0221E12B2477C12F0022DCCB /* SPAlertIconLikeView.swift in Sources */,
@@ -900,11 +814,9 @@
 				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
 				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
-				02CCA965246E609800481AB4 /* BuyViewController.swift in Sources */,
 				025F79DE24A62F320052C9E1 /* FindNewProjectsViewController.swift in Sources */,
 				022001A024A7078300C60462 /* JComponentFeed.swift in Sources */,
 				0216545024941D44007F6A73 /* MentorModel.swift in Sources */,
-				020A32FE24443A6B006FE3E5 /* CabShareViewController.swift in Sources */,
 				02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
