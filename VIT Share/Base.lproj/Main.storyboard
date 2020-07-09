@@ -26,6 +26,9 @@
         <array key="SF-Pro-Text-MediumItalic.otf">
             <string>SFProText-MediumItalic</string>
         </array>
+        <array key="SF-Pro-Text-SemiboldItalic.otf">
+            <string>SFProText-SemiboldItalic</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
@@ -2069,14 +2072,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJg-Ss-3aG">
-                                <rect key="frame" x="164.33333333333334" y="68" width="85.333333333333343" height="24"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJg-Ss-3aG">
+                                <rect key="frame" x="158.33333333333334" y="68" width="97.666666666666657" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProText-SemiboldItalic" family="SF Pro Text" pointSize="20"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-8T-AIv">
-                                <rect key="frame" x="100" y="113" width="51" height="31"/>
+                                <rect key="frame" x="95.333333333333329" y="113" width="50.999999999999986" height="31"/>
                                 <color key="onTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="enableMentor:" destination="T5f-2L-9Do" eventType="valueChanged" id="1L4-jp-WZd"/>
@@ -2090,14 +2093,14 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-lq-lNr">
-                                <rect key="frame" x="30" y="116" width="62" height="25"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <rect key="frame" x="30.000000000000004" y="116" width="57.333333333333343" height="25"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" text="Mentee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80O-fZ-wjC">
-                                <rect key="frame" x="261" y="116.66666666666667" width="65.666666666666686" height="23.666666666666671"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                <rect key="frame" x="266" y="116.66666666666667" width="60.666666666666686" height="23.666666666666671"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
