@@ -23,7 +23,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     func BorderProp() {
         
         // Textfield/Textview Border Property
-        let myColor = UIColor.systemGray
+        let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
         domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
         experienceTextView.layer.borderColor = myColor.cgColor
