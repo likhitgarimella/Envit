@@ -1922,35 +1922,47 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW2-8f-ruK">
                                                         <rect key="frame" x="0.0" y="0.0" width="68" height="42"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="jsY-Rj-Tkq"/>
                                                             <constraint firstAttribute="width" constant="68" id="kVm-zs-UKU"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="buttonOneAction:" destination="phN-2Q-2CK" eventType="touchUpInside" id="hDW-kL-KHX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTA-dL-KPo">
                                                         <rect key="frame" x="88" y="0.0" width="68" height="42"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="fx7-71-Cy9"/>
                                                             <constraint firstAttribute="width" constant="68" id="sLs-Rb-jxC"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="buttonTwoAction:" destination="phN-2Q-2CK" eventType="touchUpInside" id="r0H-nT-Pyk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usm-QQ-Fiv">
                                                         <rect key="frame" x="176" y="0.0" width="68" height="42"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="68" id="RFu-me-9Kj"/>
                                                             <constraint firstAttribute="height" constant="42" id="ulc-2Q-E5l"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="buttonThreeAction:" destination="phN-2Q-2CK" eventType="touchUpInside" id="cgV-I9-Lv4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-Qj-BLK">
                                                         <rect key="frame" x="264" y="0.0" width="68" height="42"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="42" id="U9M-ux-dVk"/>
                                                             <constraint firstAttribute="width" constant="68" id="jDf-Io-z6R"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="buttonFourAction:" destination="phN-2Q-2CK" eventType="touchUpInside" id="8hu-mS-BFI"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
