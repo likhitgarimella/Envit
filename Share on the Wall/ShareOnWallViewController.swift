@@ -26,11 +26,23 @@ class ShareOnWallViewController: UIViewController {
         insideView.layer.cornerRadius = 5
         selectPhotoImage.image = UIImage(named: "selectPhoto")
         
-        // Inital state for buttons
+        // MARK: - Inital state for buttons
+        
         buttonOne.setImage(UIImage(named: "redOn"), for: .normal)
+        /// red color
         buttonOne.tintColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
+        
         buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
+        /// blue color
         buttonTwo.tintColor = UIColor(red: 158/255, green: 205/255, blue: 251/255, alpha: 1.0)
+        
+        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
+        /// purple color
+        buttonThree.tintColor = UIColor(red: 220/255, green: 200/255, blue: 255/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "greenOff"), for: .normal)
+        /// green color
+        buttonFour.tintColor = UIColor(red: 182/255, green: 231/255, blue: 206/255, alpha: 1.0)
         
     }
     
@@ -66,4 +78,4 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-}   // #70
+}   // #82
