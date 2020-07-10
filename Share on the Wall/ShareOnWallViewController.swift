@@ -26,6 +26,7 @@ class ShareOnWallViewController: UIViewController {
         selectPhotoImage.image = UIImage(named: "selectPhoto")
         
         // MARK: - Inital state
+        
         /// red color
         photoView.backgroundColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
         
@@ -134,6 +135,25 @@ class ShareOnWallViewController: UIViewController {
     
     @IBAction func buttonFourAction(_ sender: UIButton) {
         
+        /// green color
+        photoView.backgroundColor = UIColor(red: 182/255, green: 231/255, blue: 206/255, alpha: 1.0)
+        
+        buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
+        /// red color
+        buttonOne.tintColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
+        
+        buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
+        /// blue color
+        buttonTwo.tintColor = UIColor(red: 158/255, green: 205/255, blue: 251/255, alpha: 1.0)
+        
+        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
+        /// purple color
+        buttonThree.tintColor = UIColor(red: 220/255, green: 200/255, blue: 255/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "greenOn"), for: .normal)
+        /// green color
+        buttonFour.tintColor = UIColor(red: 182/255, green: 231/255, blue: 206/255, alpha: 1.0)
+        
     }
     
-}   // #140
+}   // #160
