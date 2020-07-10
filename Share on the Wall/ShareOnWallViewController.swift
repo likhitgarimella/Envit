@@ -24,6 +24,7 @@ class ShareOnWallViewController: UIViewController {
         photoView.layer.cornerRadius = 10
         insideView.layer.cornerRadius = 5
         selectPhotoImage.image = UIImage(named: "selectPhoto")
+        selectPhotoImage.layer.cornerRadius = 5
         
         // MARK: - Inital state
         
@@ -48,19 +49,12 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-    func Conditions() {
-        
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hideKeyboardWhenTappedAround()
         
         Properties()
-        Conditions()
         
     }
     
@@ -156,4 +150,4 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-}   // #160
+}   // #154
