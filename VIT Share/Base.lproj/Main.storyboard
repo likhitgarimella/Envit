@@ -161,6 +161,8 @@
                         <segue destination="hJB-cG-pTR" kind="relationship" relationship="viewControllers" id="a5N-Yl-fdY"/>
                         <segue destination="8Ux-MR-Oh6" kind="relationship" relationship="viewControllers" id="t4p-mk-Ewn"/>
                         <segue destination="ec2-4N-58L" kind="relationship" relationship="viewControllers" id="rWe-cL-B4h"/>
+                        <segue destination="15Z-FM-gIC" kind="relationship" relationship="viewControllers" id="tJi-bc-m6d"/>
+                        <segue destination="JmO-nq-Vi1" kind="relationship" relationship="viewControllers" id="c6c-hA-Lzz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8Q-Fb-e8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -318,11 +320,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lRJ-Ug-21N" customClass="ProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t1-hS-oK6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="841"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="821"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMT-MM-0aa">
-                                <rect key="frame" x="0.0" y="44" width="414" height="797"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qW-Nh-4V1">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
@@ -442,7 +444,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-N7-6Yv">
-                                                        <rect key="frame" x="344" y="78.666666666666686" width="10" height="17"/>
+                                                        <rect key="frame" x="344" y="78.666666666666629" width="10" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="737-y8-XDE"/>
                                                             <constraint firstAttribute="width" constant="10" id="RuG-Q4-nEv"/>
@@ -832,7 +834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-sa-M0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5292.753623188406" y="1617.3913043478262"/>
+            <point key="canvasLocation" x="6200.0000000000009" y="1617.3913043478262"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="11e-H7-9Do">
@@ -1770,7 +1772,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="CRJ-wu-8gD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FtN-2u-tnS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -1791,7 +1793,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="kpQ-x0-ch3" customClass="EditProfileViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sO8-bf-96P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7iK-0o-56O"/>
@@ -1807,7 +1809,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ZaV-TJ-F2M" customClass="MyPostsViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euc-ei-ZXz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ra9-AC-6mP"/>
@@ -1823,7 +1825,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="luW-y8-xdL" customClass="NotificationsViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aTI-lf-VB0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="itK-8a-tbO"/>
@@ -1839,7 +1841,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="kh7-TS-iFQ" customClass="DevelopersViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fe1-OP-Aet">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vXG-OR-km2"/>
@@ -1865,6 +1867,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obx-zO-mxb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045" y="1202"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6li-rq-4ih">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="phN-2Q-2CK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOl-ti-qmt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z1m-aq-St6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tEO-En-6xJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="2044"/>
         </scene>
         <!--Projects-->
         <scene sceneID="tVX-Is-HQ4">
@@ -2304,7 +2322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-9K-uKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6731.884057971015" y="1710.733695652174"/>
+            <point key="canvasLocation" x="7639.130434782609" y="1710.733695652174"/>
         </scene>
         <!--Component Feed-->
         <scene sceneID="Wjj-Xh-7ny">
@@ -2779,6 +2797,29 @@
             </objects>
             <point key="canvasLocation" x="1029" y="1201"/>
         </scene>
+        <!--Share-->
+        <scene sceneID="UqD-aQ-6Dd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="15Z-FM-gIC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Share" image="heart" id="En6-Kq-Jg3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2NG-zu-eeD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="phN-2Q-2CK" kind="relationship" relationship="rootViewController" id="ToD-xe-gPg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6x-gS-YpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="2044"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="4e8-lt-oAl"/>
@@ -2794,6 +2835,7 @@
         <image name="findjc" width="154" height="19"/>
         <image name="findnewpro" width="142" height="19"/>
         <image name="goToFeed" width="71" height="14"/>
+        <image name="heart" width="30" height="30"/>
         <image name="mentee" width="62" height="16"/>
         <image name="mentor" width="59" height="16"/>
         <image name="profile" width="23" height="26"/>
