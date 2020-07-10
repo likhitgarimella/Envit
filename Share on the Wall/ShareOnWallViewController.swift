@@ -9,12 +9,31 @@
 import UIKit
 
 class ShareOnWallViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    // Outlets
+    @IBOutlet var photoView: UIView!
+    @IBOutlet var insideView: UIView!
+    
+    func Properties() {
+        
+        photoView.layer.cornerRadius = 10
+        photoView.backgroundColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
+        insideView.layer.cornerRadius = 10
+        
+    }
+    
+    func Conditions() {
         
         
         
     }
     
-}   // #21
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Properties()
+        Conditions()
+        
+    }
+    
+}   // #40

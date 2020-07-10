@@ -1890,9 +1890,21 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sg0-G1-ias">
                                                 <rect key="frame" x="75" y="72" width="264" height="304"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-KB-mlm">
+                                                        <rect key="frame" x="4" y="4" width="256" height="256"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="256" id="ICe-0b-a8v"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="304" id="MD7-QA-iAa"/>
+                                                    <constraint firstItem="6Qb-KB-mlm" firstAttribute="leading" secondItem="sg0-G1-ias" secondAttribute="leading" constant="4" id="W92-cC-BJ7"/>
+                                                    <constraint firstItem="6Qb-KB-mlm" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="top" constant="4" id="cuz-k4-uae"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6Qb-KB-mlm" secondAttribute="trailing" constant="4" id="kIz-q0-V22"/>
                                                     <constraint firstAttribute="width" constant="264" id="onW-dG-o80"/>
                                                 </constraints>
                                             </view>
@@ -1928,6 +1940,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="tEO-En-6xJ"/>
                     <size key="freeformSize" width="414" height="900"/>
+                    <connections>
+                        <outlet property="insideView" destination="6Qb-KB-mlm" id="jSS-sc-z2X"/>
+                        <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
