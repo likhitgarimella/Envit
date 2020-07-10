@@ -1893,9 +1893,18 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-KB-mlm">
                                                         <rect key="frame" x="4" y="4" width="256" height="256"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Lsi-Ym-Jnc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                                                            </imageView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstItem="Lsi-Ym-Jnc" firstAttribute="top" secondItem="6Qb-KB-mlm" secondAttribute="top" id="BIe-h1-j8o"/>
                                                             <constraint firstAttribute="height" constant="256" id="ICe-0b-a8v"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Lsi-Ym-Jnc" secondAttribute="trailing" id="TvZ-HD-IoC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Lsi-Ym-Jnc" secondAttribute="bottom" id="Z0I-22-f3L"/>
+                                                            <constraint firstItem="Lsi-Ym-Jnc" firstAttribute="leading" secondItem="6Qb-KB-mlm" secondAttribute="leading" id="d3I-k3-MFn"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -1943,6 +1952,7 @@
                     <connections>
                         <outlet property="insideView" destination="6Qb-KB-mlm" id="jSS-sc-z2X"/>
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
+                        <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2905,6 +2915,7 @@
         <image name="mentor" width="59" height="16"/>
         <image name="profile" width="23" height="26"/>
         <image name="sample" width="1106" height="810"/>
+        <image name="selectPhoto" width="182" height="112"/>
         <image name="shape" width="10" height="17"/>
     </resources>
 </document>
