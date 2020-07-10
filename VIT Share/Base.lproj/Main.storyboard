@@ -1894,7 +1894,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-KB-mlm">
                                                         <rect key="frame" x="4" y="4" width="256" height="256"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsi-Ym-Jnc">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Lsi-Ym-Jnc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
                                                             </imageView>
                                                         </subviews>
@@ -2970,6 +2970,7 @@
         <image name="mentor" width="59" height="16"/>
         <image name="profile" width="23" height="26"/>
         <image name="sample" width="1106" height="810"/>
+        <image name="selectPhoto" width="256" height="256"/>
         <image name="shape" width="10" height="17"/>
     </resources>
 </document>
