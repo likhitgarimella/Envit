@@ -100,6 +100,7 @@
 		02C7748B2498071D0037E693 /* CommentsInMenteePostFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */; };
 		02C7748D249811400037E693 /* CommentsInMenteeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */; };
 		02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */; };
+		02CAF42024B84499008A7874 /* ShareOnWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */; };
 		02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */; };
 		02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */; };
 		02D2DF5C24A1814E00A6A017 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */; };
@@ -228,6 +229,7 @@
 		02C7748A2498071D0037E693 /* CommentsInMenteePostFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteePostFeed.swift; sourceTree = "<group>"; };
 		02C7748C249811400037E693 /* CommentsInMenteeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMenteeTableViewCell.swift; sourceTree = "<group>"; };
 		02C7748E2498117C0037E693 /* CommentsInMentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInMentorTableViewCell.swift; sourceTree = "<group>"; };
+		02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOnWallViewController.swift; sourceTree = "<group>"; };
 		02D2DF5524A1814D00A6A017 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5624A1814D00A6A017 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		02D2DF5724A1814D00A6A017 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
@@ -385,12 +387,13 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
-				02A502C524A46837001E4F25 /* Project Share */,
-				022001A924A7E4A600C60462 /* Personal Project */,
-				022001AA24A7E4C300C60462 /* J-Component */,
 				02A502C724A468F9001E4F25 /* Tech Share */,
 				02D6B92B24996B270008B503 /* Mentor */,
 				02D6B92C24996B460008B503 /* Mentee */,
+				02A502C524A46837001E4F25 /* Project Share */,
+				022001A924A7E4A600C60462 /* Personal Project */,
+				022001AA24A7E4C300C60462 /* J-Component */,
+				02CAF41E24B84442008A7874 /* Share on the Wall */,
 				02A502C624A46868001E4F25 /* Profile */,
 				024C710E2443B145002D9CCE /* Products */,
 				7F240E75B7C0609C05F44065 /* Pods */,
@@ -471,6 +474,14 @@
 				02802BB824850709008BF296 /* FeedViewController.swift */,
 			);
 			path = "Tech Share";
+			sourceTree = "<group>";
+		};
+		02CAF41E24B84442008A7874 /* Share on the Wall */ = {
+			isa = PBXGroup;
+			children = (
+				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
+			);
+			path = "Share on the Wall";
 			sourceTree = "<group>";
 		};
 		02D6B92B24996B270008B503 /* Mentor */ = {
@@ -742,6 +753,7 @@
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */,
+				02CAF42024B84499008A7874 /* ShareOnWallViewController.swift in Sources */,
 				02E90B2D249D89C30094759C /* MenteePostApi.swift in Sources */,
 				02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */,
 				02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */,
