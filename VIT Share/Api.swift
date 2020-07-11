@@ -13,7 +13,7 @@ import Foundation
 struct Api {
     
     /// Firebase node - Users
-    static var User = UserApi()
+    static var UserDet = UserApi()
     
     /// Firebase node - Mentees-Details
     static var MenteePost = MenteePostApi()

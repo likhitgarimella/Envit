@@ -15,12 +15,12 @@ class UserApi {
     
     var REF_USERS = Database.database().reference().child("Users")
     
-    func obersveUser(withId uid: String, completion: @escaping (User) -> Void) {
+    func obersveUser(withId uid: String, completion: @escaping (AppUser) -> Void) {
         
         REF_USERS.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
             if let dict = snapshot.value as? [String:Any] {
-                let user = User.transformUser(dict: dict)
+                let user = AppUser.transformUser(dict: dict)
                 completion(user)
             }
             
@@ -29,7 +29,7 @@ class UserApi {
     }
     
     ///
-    func observeCurrentUser(completion: @escaping (User) -> Void) {
+    func observeCurrentUser(completion: @escaping (AppUser) -> Void) {
         
         guard let currentUser = Auth.auth().currentUser else {
              return
@@ -38,7 +38,7 @@ class UserApi {
         REF_USERS.child(currentUser.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
             if let dict = snapshot.value as? [String:Any] {
-                let user = User.transformUser(dict: dict)
+                let user = AppUser.transformUser(dict: dict)
                 completion(user)
             }
             

@@ -114,7 +114,7 @@
 		02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2DF6524A1A80700A6A017 /* DevelopersViewController.swift */; };
 		02D6B9262498E10F0008B503 /* MenteeComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9252498E10F0008B503 /* MenteeComments.swift */; };
 		02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B9272498E13B0008B503 /* MentorComments.swift */; };
-		02D6B92A249909170008B503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B929249909170008B503 /* User.swift */; };
+		02D6B92A249909170008B503 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6B929249909170008B503 /* AppUser.swift */; };
 		02DC18D4248224C100CBC10C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC18D3248224C100CBC10C /* AuthService.swift */; };
 		02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */; };
 		02E3A9AA2478DC4A00A9C18C /* CBTabItemBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A99E2478DC4700A9C18C /* CBTabItemBasicAnimation.swift */; };
@@ -245,7 +245,7 @@
 		02D2DF6524A1A80700A6A017 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		02D6B9252498E10F0008B503 /* MenteeComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeComments.swift; sourceTree = "<group>"; };
 		02D6B9272498E13B0008B503 /* MentorComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorComments.swift; sourceTree = "<group>"; };
-		02D6B929249909170008B503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		02D6B929249909170008B503 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		02DC18D3248224C100CBC10C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		02E3A99B2478DC4700A9C18C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		02E3A99D2478DC4700A9C18C /* CBTabItemSelectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabItemSelectAnimation.swift; sourceTree = "<group>"; };
@@ -432,7 +432,7 @@
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
 				02E90B2A249D89C10094759C /* Api.swift */,
-				02D6B929249909170008B503 /* User.swift */,
+				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
 				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
@@ -821,7 +821,7 @@
 				02D2DF6224A1A65500A6A017 /* MyPostsViewController.swift in Sources */,
 				0221E1232477C12F0022DCCB /* SPAlertIconBoltView.swift in Sources */,
 				02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */,
-				02D6B92A249909170008B503 /* User.swift in Sources */,
+				02D6B92A249909170008B503 /* AppUser.swift in Sources */,
 				02BA547924A9B9AF00F3DFA5 /* CommentsInJCompProjFeed.swift in Sources */,
 				02BA546B24A8A9BD00F3DFA5 /* JComponentProjectModel.swift in Sources */,
 				0221E1302477C12F0022DCCB /* SPAlertIconDislikeView.swift in Sources */,

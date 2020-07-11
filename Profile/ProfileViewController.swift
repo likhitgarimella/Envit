@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet var logoutOutlet: UIButton!
     
-    var user: User? {
+    var user: AppUser? {
         didSet {
             updateView()
         }
@@ -56,7 +56,7 @@ class ProfileViewController: UIViewController {
     func fetchUser() {
         
         /// observeCurrentUser
-        Api.User.observeCurrentUser { (user) in
+        Api.UserDet.observeCurrentUser { (user) in
             self.user = user
         }
         

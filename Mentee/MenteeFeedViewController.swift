@@ -49,7 +49,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     var menteePosts = [MenteeModel]()
     
     // reference to store User class info
-    var users = [User]()
+    var users = [AppUser]()
     
     // DB ref
     var refMentees: DatabaseReference!
@@ -80,7 +80,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Api.User.obersveUser(withId: uid, completion: { (user) in
+        Api.UserDet.obersveUser(withId: uid, completion: { (user) in
             self.users.append(user)
             completed()
         })

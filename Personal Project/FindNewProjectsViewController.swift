@@ -51,7 +51,7 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
     var personalProjectsPosts = [PersonalProjectModel]()
     
     // reference to store User class info
-    var users = [User]()
+    var users = [AppUser]()
     
     // DB ref
     var refPersProjects: DatabaseReference!
@@ -88,7 +88,7 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Api.User.obersveUser(withId: uid, completion: { (user) in
+        Api.UserDet.obersveUser(withId: uid, completion: { (user) in
             self.users.append(user)
             completed()
         })

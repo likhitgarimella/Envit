@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  AppUser.swift
 //  VIT Share
 //
 //  Created by Likhit Garimella on 16/06/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+class AppUser {
     
     var nameString: String?
     var emailString: String?
@@ -17,11 +17,11 @@ class User {
     
 }
 
-extension User {
+extension AppUser {
     
-    static func transformUser(dict: [String: Any]) -> User {
+    static func transformUser(dict: [String: Any]) -> AppUser {
         
-        let user = User()
+        let user = AppUser()
         user.nameString = dict["1) Name"] as? String
         user.emailString = dict["2) Email"] as? String
         user.phoneString = dict["3) Phone"] as? String

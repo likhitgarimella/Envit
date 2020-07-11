@@ -21,7 +21,7 @@ class CommentsInPersProjTableViewCell: UITableViewCell {
     
     /// when this user property is set..
     /// we'll let the cell download the correspoding cell..
-    var user: User? {
+    var user: AppUser? {
         didSet {
             setupUserInfo()
         }

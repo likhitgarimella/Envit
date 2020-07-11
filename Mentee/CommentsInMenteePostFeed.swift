@@ -30,7 +30,7 @@ class CommentsInMenteePostFeed: UIViewController {
     var postId: String!
     
     var menteeComments = [MenteeComments]()
-    var users = [User]()
+    var users = [AppUser]()
     
     // Tab bar disappears
     override func viewWillAppear(_ animated: Bool) {
@@ -167,7 +167,7 @@ class CommentsInMenteePostFeed: UIViewController {
     /// it's job is to, given a user id, look up the corresponding user on db...
     func fetchUser(uid: String, completed: @escaping () -> Void) {
         
-        Api.User.obersveUser(withId: uid, completion: { (user) in
+        Api.UserDet.obersveUser(withId: uid, completion: { (user) in
             self.users.append(user)
             completed()
         })
