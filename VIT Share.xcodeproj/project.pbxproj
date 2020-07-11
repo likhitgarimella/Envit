@@ -484,8 +484,8 @@
 		02CAF41E24B84442008A7874 /* Share on the Wall */ = {
 			isa = PBXGroup;
 			children = (
-				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
 				02AB10D124B98DC700D1824D /* Post.swift */,
+				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
 			);
 			path = "Share on the Wall";
 			sourceTree = "<group>";
