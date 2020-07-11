@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class MentorViewController: UIViewController, UITextViewDelegate {
     
@@ -115,7 +115,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
         // Current user uid
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = Api.UserDet.CURRENT_USER else {
             return
         }
         let currentUserId = currentUser.uid

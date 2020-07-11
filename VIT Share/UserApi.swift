@@ -46,6 +46,14 @@ class UserApi {
         
     }
     
+    ///
+    var CURRENT_USER: User? {
+        if let currentUser = Auth.auth().currentUser {
+            return currentUser
+        }
+        return nil
+    }
+    
     var REF_CURRENT_USER: DatabaseReference? {
         
         guard let currentUser = Auth.auth().currentUser else {
@@ -56,4 +64,4 @@ class UserApi {
         
     }
     
-}   // #60
+}   // #68
