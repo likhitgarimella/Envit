@@ -81,6 +81,7 @@
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
 		02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A502C824A4744F001E4F25 /* AddProjectViewController.swift */; };
 		02AB10D024B98C5F00D1824D /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10CF24B98C5F00D1824D /* PostApi.swift */; };
+		02AB10D224B98DC700D1824D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10D124B98DC700D1824D /* Post.swift */; };
 		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
 		02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */; };
 		02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B96D8D248659CF000C7D48 /* MentorPostCell.swift */; };
@@ -211,6 +212,7 @@
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02A502C824A4744F001E4F25 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		02AB10CF24B98C5F00D1824D /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		02AB10D124B98DC700D1824D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHRadioButton.swift; sourceTree = "<group>"; };
 		02B96D8D248659CF000C7D48 /* MentorPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCell.swift; sourceTree = "<group>"; };
@@ -389,13 +391,13 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
+				02CAF41E24B84442008A7874 /* Share on the Wall */,
 				02A502C724A468F9001E4F25 /* Tech Share */,
 				02D6B92B24996B270008B503 /* Mentor */,
 				02D6B92C24996B460008B503 /* Mentee */,
 				02A502C524A46837001E4F25 /* Project Share */,
 				022001A924A7E4A600C60462 /* Personal Project */,
 				022001AA24A7E4C300C60462 /* J-Component */,
-				02CAF41E24B84442008A7874 /* Share on the Wall */,
 				02A502C624A46868001E4F25 /* Profile */,
 				024C710E2443B145002D9CCE /* Products */,
 				7F240E75B7C0609C05F44065 /* Pods */,
@@ -483,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
+				02AB10D124B98DC700D1824D /* Post.swift */,
 			);
 			path = "Share on the Wall";
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				02E90B37249ED9B10094759C /* MentorCommentApi.swift in Sources */,
 				02AB10D024B98C5F00D1824D /* PostApi.swift in Sources */,
 				0221E12F2477C12F0022DCCB /* SPAlertIconMessageView.swift in Sources */,
+				02AB10D224B98DC700D1824D /* Post.swift in Sources */,
 				0221E1312477C12F0022DCCB /* SPAlertIconBookmarkView.swift in Sources */,
 				02E3A9AE2478DC4A00A9C18C /* CBTabBarButton.swift in Sources */,
 				02C774892498068D0037E693 /* CommentsInMentorPostFeed.swift in Sources */,
