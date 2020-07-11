@@ -132,6 +132,10 @@
 		02E90B35249ED96C0094759C /* MentorPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B34249ED96C0094759C /* MentorPostApi.swift */; };
 		02E90B37249ED9B10094759C /* MentorCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B36249ED9B00094759C /* MentorCommentApi.swift */; };
 		02E90B39249ED9D50094759C /* MentorPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */; };
+		02E9B87524BA133C00F5D9E3 /* HelperServiceMentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */; };
+		02E9B87724BA135F00F5D9E3 /* HelperServiceMentee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */; };
+		02E9B87924BA138500F5D9E3 /* HelperServicePP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */; };
+		02E9B87B24BA139300F5D9E3 /* HelperServiceJC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */; };
 		4D578D3567D08131C8FFD5B2 /* Pods_VIT_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */; };
 /* End PBXBuildFile section */
 
@@ -267,6 +271,10 @@
 		02E90B34249ED96C0094759C /* MentorPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostApi.swift; sourceTree = "<group>"; };
 		02E90B36249ED9B00094759C /* MentorCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorCommentApi.swift; sourceTree = "<group>"; };
 		02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCommentApi.swift; sourceTree = "<group>"; };
+		02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperServiceMentor.swift; sourceTree = "<group>"; };
+		02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperServiceMentee.swift; sourceTree = "<group>"; };
+		02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperServicePP.swift; sourceTree = "<group>"; };
+		02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperServiceJC.swift; sourceTree = "<group>"; };
 		2A02082E460E2A362F80980C /* Pods_VIT_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIT_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323C805C0863B707B8739713 /* Pods-VIT Share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.release.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.release.xcconfig"; sourceTree = "<group>"; };
 		9671EFD50445B4B08D11AE7C /* Pods-VIT Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIT Share.debug.xcconfig"; path = "Target Support Files/Pods-VIT Share/Pods-VIT Share.debug.xcconfig"; sourceTree = "<group>"; };
@@ -421,7 +429,6 @@
 				024C711B2443B149002D9CCE /* LaunchScreen.storyboard */,
 				024C71162443B145002D9CCE /* Main.storyboard */,
 				024C71192443B149002D9CCE /* Assets.xcassets */,
-				02DC18D3248224C100CBC10C /* AuthService.swift */,
 				020A32FB244434F1006FE3E5 /* LoginViewController.swift */,
 				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
 				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
@@ -431,6 +438,11 @@
 				029FB8002475A3E60053D916 /* Extensions.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
+				02DC18D3248224C100CBC10C /* AuthService.swift */,
+				02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */,
+				02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */,
+				02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */,
+				02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */,
 				02E90B2A249D89C10094759C /* Api.swift */,
 				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
@@ -771,6 +783,7 @@
 				02BA547B24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift in Sources */,
 				0221E1252477C12F0022DCCB /* SPAlertIconAddView.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
+				02E9B87B24BA139300F5D9E3 /* HelperServiceJC.swift in Sources */,
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
 				0221E12D2477C12F0022DCCB /* SPAlertIconQuestionView.swift in Sources */,
 				02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */,
@@ -785,6 +798,7 @@
 				02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */,
 				0221E1332477C12F0022DCCB /* SPAlertIconRotateView.swift in Sources */,
 				02DC18D4248224C100CBC10C /* AuthService.swift in Sources */,
+				02E9B87524BA133C00F5D9E3 /* HelperServiceMentor.swift in Sources */,
 				022001A524A7D1F700C60462 /* PersProjPostCell.swift in Sources */,
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
 				02BA547524A9616E00F3DFA5 /* PersProjectComments.swift in Sources */,
@@ -803,6 +817,7 @@
 				0221E1322477C12F0022DCCB /* SPAlertIconFlagView.swift in Sources */,
 				02BA546924A8A82200F3DFA5 /* JComponentProjectPostApi.swift in Sources */,
 				024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */,
+				02E9B87924BA138500F5D9E3 /* HelperServicePP.swift in Sources */,
 				02E90B2F249D8CE50094759C /* UserApi.swift in Sources */,
 				02E90B39249ED9D50094759C /* MentorPostCommentApi.swift in Sources */,
 				02E3A9AC2478DC4A00A9C18C /* CBTabItemDeselectAnimation.swift in Sources */,
@@ -818,6 +833,7 @@
 				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
 				02BA547724A9B91E00F3DFA5 /* JCompProjectComments.swift in Sources */,
+				02E9B87724BA135F00F5D9E3 /* HelperServiceMentee.swift in Sources */,
 				02D2DF6224A1A65500A6A017 /* MyPostsViewController.swift in Sources */,
 				0221E1232477C12F0022DCCB /* SPAlertIconBoltView.swift in Sources */,
 				02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */,
