@@ -3,13 +3,11 @@ VIT Share
 </h1>
 
 ### _list: -_
+* discover
+* share on wall
 * tech share
 * project share
-* post share
-* discover
 * profile
-* (cab share)
-* (forum share)
 
 ### _frontend: -_
 
