@@ -45,7 +45,11 @@ struct Api {
     static var JCompProjPostComment = JCompProjPostCommentApi()
     
     
+    ///
+    static var MyMentorPosts = MyMentorPostsApi()
+    
+    
     /// Firebase node - Posts-Details
     static var Post = PostApi()
     
-}   // #52
+}   // #56
