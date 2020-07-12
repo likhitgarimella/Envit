@@ -17,18 +17,18 @@ class HelperServiceMentor {
             return
         }
         let currentUserId = currentUser.uid
+        // Creating a timestamp
+        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         // put that download url string in db
-        newPostReference.setValue(["uid": currentUserId, "photoUrl": photoUrl, "caption": caption], withCompletionBlock: { (error, ref) in
+        
+        newPostReference.setValue(["uid": currentUserId, "2) Domain": domainText, "3) Experience": experienceText, "4) Prerequisites": prerequisitesText, "5) Courses": coursesText, "6) Timestamp": timestamp], withCompletionBlock: { (error, ref) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
             }
             
-            Api.Feed.REF_FEED.child(Api.UserDet.CURRENT_USER!.uid).child(newPostId!).setValue(true)
-            // Database.database().reference().child("feed").child(Api.UserDet.CURRENT_USER!.uid).child(newPostId!).setValue(true)
-            
             // reference for my posts
-            let myPostRef = Api.MyPosts.REF_MYPOSTS.child(currentUserId).child(newPostId!)
+            let myPostRef = Api.MyMentorPosts.REF_MYPOSTS.child(currentUserId).child(newPostId!)
             myPostRef.setValue(true, withCompletionBlock: {
                 (error, ref) in
                 if error != nil {
