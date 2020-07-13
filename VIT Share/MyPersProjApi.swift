@@ -1,8 +1,8 @@
 //
-//  MyMentorPostsApi.swift
+//  MyPersProjApi.swift
 //  VIT Share
 //
-//  Created by Likhit Garimella on 12/07/20.
+//  Created by Likhit Garimella on 13/07/20.
 //  Copyright © 2020 Likhit Garimella. All rights reserved.
 //
 
@@ -12,8 +12,8 @@ import Firebase
 
 /// Write your own Api, to conveniently observe database data...
 
-class MyMentorPostsApi {
+class MyPersProjApi {
     
-    var REF_MYPOSTS = Database.database().reference().child("My-Mentor-Posts")
+    var REF_MYPOSTS = Database.database().reference().child("My-Pers-Projects")
 
 }   // #20

@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     

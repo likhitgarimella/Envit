@@ -83,6 +83,9 @@
 		02AB10D024B98C5F00D1824D /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10CF24B98C5F00D1824D /* PostApi.swift */; };
 		02AB10D224B98DC700D1824D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10D124B98DC700D1824D /* Post.swift */; };
 		02B0EBF924467C0D004742B1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0EBF824467C0D004742B1 /* iOSDropDown.swift */; };
+		02B27EE524BC87E1002ECFC9 /* MyMenteePostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */; };
+		02B27EE724BC8859002ECFC9 /* MyPersProjApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */; };
+		02B27EE924BC88B6002ECFC9 /* MyJCompProjApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */; };
 		02B5CBCD2472273F008B5F80 /* LTHRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */; };
 		02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B96D8D248659CF000C7D48 /* MentorPostCell.swift */; };
 		02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B96D8E248659CF000C7D48 /* MentorPostCell.xib */; };
@@ -219,6 +222,9 @@
 		02AB10CF24B98C5F00D1824D /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
 		02AB10D124B98DC700D1824D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		02B0EBF824467C0D004742B1 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
+		02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenteePostsApi.swift; sourceTree = "<group>"; };
+		02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersProjApi.swift; sourceTree = "<group>"; };
+		02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJCompProjApi.swift; sourceTree = "<group>"; };
 		02B5CBCC2472273F008B5F80 /* LTHRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHRadioButton.swift; sourceTree = "<group>"; };
 		02B96D8D248659CF000C7D48 /* MentorPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorPostCell.swift; sourceTree = "<group>"; };
 		02B96D8E248659CF000C7D48 /* MentorPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentorPostCell.xib; sourceTree = "<group>"; };
@@ -446,9 +452,12 @@
 				02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */,
 				02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */,
 				02E90B2A249D89C10094759C /* Api.swift */,
-				02F84B1424BAEB01003EF494 /* MyMentorPostsApi.swift */,
 				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
+				02F84B1424BAEB01003EF494 /* MyMentorPostsApi.swift */,
+				02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */,
+				02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */,
+				02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
 				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
 				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
@@ -777,6 +786,7 @@
 				0221E1362477C12F0022DCCB /* SPAlertIconCartView.swift in Sources */,
 				02802BB52484BAB4008BF296 /* MenteeViewController.swift in Sources */,
 				025F79D824A569780052C9E1 /* PersonalProjectViewController.swift in Sources */,
+				02B27EE524BC87E1002ECFC9 /* MyMenteePostsApi.swift in Sources */,
 				02CAF42024B84499008A7874 /* ShareOnWallViewController.swift in Sources */,
 				02E90B2D249D89C30094759C /* MenteePostApi.swift in Sources */,
 				02C7748F2498117C0037E693 /* CommentsInMentorTableViewCell.swift in Sources */,
@@ -798,6 +808,7 @@
 				02BA547324A960E600F3DFA5 /* CommentsInPersProjTableViewCell.swift in Sources */,
 				02BA547124A9609D00F3DFA5 /* CommentsInPersProjFeed.swift in Sources */,
 				0221E1242477C12F0022DCCB /* SPAlertIconEjectView.swift in Sources */,
+				02B27EE724BC8859002ECFC9 /* MyPersProjApi.swift in Sources */,
 				0221E11E2477C12F0022DCCB /* SPAlertPreset.swift in Sources */,
 				02D2DF6624A1A80700A6A017 /* DevelopersViewController.swift in Sources */,
 				0221E1332477C12F0022DCCB /* SPAlertIconRotateView.swift in Sources */,
@@ -835,6 +846,7 @@
 				02E90B2C249D89C30094759C /* Api.swift in Sources */,
 				0221E12B2477C12F0022DCCB /* SPAlertIconLikeView.swift in Sources */,
 				024C71112443B145002D9CCE /* AppDelegate.swift in Sources */,
+				02B27EE924BC88B6002ECFC9 /* MyJCompProjApi.swift in Sources */,
 				0221E1282477C12F0022DCCB /* SPAlertIconSearchView.swift in Sources */,
 				02BA547724A9B91E00F3DFA5 /* JCompProjectComments.swift in Sources */,
 				02E9B87724BA135F00F5D9E3 /* HelperServiceMentee.swift in Sources */,
