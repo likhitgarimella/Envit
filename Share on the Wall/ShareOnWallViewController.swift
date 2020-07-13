@@ -60,6 +60,10 @@ class ShareOnWallViewController: UIViewController {
     
     @IBAction func buttonOneAction(_ sender: UIButton) {
         
+        let taptic1 = UIImpactFeedbackGenerator(style: .medium)
+        taptic1.prepare()
+        taptic1.impactOccurred()
+        
         /// red color
         photoView.backgroundColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
         
@@ -82,6 +86,10 @@ class ShareOnWallViewController: UIViewController {
     }
     
     @IBAction func buttonTwoAction(_ sender: UIButton) {
+        
+        let taptic2 = UIImpactFeedbackGenerator(style: .medium)
+        taptic2.prepare()
+        taptic2.impactOccurred()
         
         /// blue color
         photoView.backgroundColor = UIColor(red: 158/255, green: 205/255, blue: 251/255, alpha: 1.0)
@@ -106,6 +114,10 @@ class ShareOnWallViewController: UIViewController {
     
     @IBAction func buttonThreeAction(_ sender: UIButton) {
         
+        let taptic3 = UIImpactFeedbackGenerator(style: .medium)
+        taptic3.prepare()
+        taptic3.impactOccurred()
+        
         /// purple color
         photoView.backgroundColor = UIColor(red: 220/255, green: 200/255, blue: 255/255, alpha: 1.0)
         
@@ -129,6 +141,10 @@ class ShareOnWallViewController: UIViewController {
     
     @IBAction func buttonFourAction(_ sender: UIButton) {
         
+        let taptic4 = UIImpactFeedbackGenerator(style: .medium)
+        taptic4.prepare()
+        taptic4.impactOccurred()
+        
         /// green color
         photoView.backgroundColor = UIColor(red: 182/255, green: 231/255, blue: 206/255, alpha: 1.0)
         
@@ -150,4 +166,4 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-}   // #154
+}   // #170

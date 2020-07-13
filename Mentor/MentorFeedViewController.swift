@@ -52,7 +52,7 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     var users = [AppUser]()
     
     // DB ref
-    var refMentors: DatabaseReference!
+    // --- var refMentors: DatabaseReference!
     
     // load mentor posts
     func loadPosts() {
