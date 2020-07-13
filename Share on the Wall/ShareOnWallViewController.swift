@@ -13,11 +13,15 @@ class ShareOnWallViewController: UIViewController {
     // Outlets
     @IBOutlet var photoView: UIView!
     @IBOutlet var insideView: UIView!
+    
     @IBOutlet var selectPhotoImage: UIImageView!
+    
     @IBOutlet var buttonOne: UIButton!
     @IBOutlet var buttonTwo: UIButton!
     @IBOutlet var buttonThree: UIButton!
     @IBOutlet var buttonFour: UIButton!
+    
+    var selectedImage: UIImage?
     
     func Properties() {
         
@@ -55,6 +59,32 @@ class ShareOnWallViewController: UIViewController {
         hideKeyboardWhenTappedAround()
         
         Properties()
+        
+        // Add gesture for image
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
+        selectPhotoImage.addGestureRecognizer(tapGesture)
+        selectPhotoImage.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func handleSelectPhoto() {
+        
+        let pickerController = UIImagePickerController()
+        // To get access to selected media files, add delegate
+        pickerController.delegate = self
+        /// presenting it in full screen bcuz...
+        /// i want the view to change...
+        /// so that viewWillAppear will work...
+        pickerController.modalPresentationStyle = .fullScreen
+        // present photo library
+        present(pickerController, animated: true, completion: nil)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
         
     }
     
@@ -166,4 +196,20 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-}   // #170
+}
+
+extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // Selected image to display it in our image view
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            // Store this img in an instance variable
+            selectedImage = image
+            // set image's imageView to selected image
+            selectPhotoImage.image = image
+        }
+        print("Image selected from library")
+        dismiss(animated: true, completion: nil)
+    }
+    
+}   // #216
