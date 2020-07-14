@@ -92,9 +92,6 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
     }
     
-    // Create a DB reference
-    // --- var refMentors: DatabaseReference!
-    
     // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
@@ -107,10 +104,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
             return
         }
         
-        // Writing data to DB
-        // --- refMentors = Database.database().reference().child("Mentors").child("Details")
-        // --- let key = refMentors.childByAutoId().key
-        
+        /*
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
@@ -119,27 +113,27 @@ class MentorViewController: UIViewController, UITextViewDelegate {
             return
         }
         let currentUserId = currentUser.uid
+        */
         
-        // --- let mentor = ["1) id": key!, "2) Domain": domain.text!, "3) Experience": experienceTextView.text!, "4) Prerequisites": prerequisites.text!, "5) Courses": courses.text!, "6) Timestamp": timestamp, "7) uid": currentUserId] as [String : Any]
-        // --- refMentors.child(key!).setValue(mentor)
-        
-        // Alert pod - Work Added
-        let alertView = SPAlertView(title: "Your work has been added", message: nil, preset: SPAlertPreset.done)
-        alertView.duration = 1.2
-        alertView.present()
-        
-        // Clear textfields after success
-        self.domain.text = ""
-        self.experienceTextView.text = ""
-        self.prerequisites.text = ""
-        self.courses.text = ""
-        
-        // And to enable back for a new input in textfield
-        self.domain.isEnabled = true
-        // self.experienceTextView.isEnabled = true
-        self.prerequisites.isEnabled = true
-        self.courses.isEnabled = true
+        HelperServiceMentor.uploadDataToServer(domainText: domain.text!, experienceText: experienceTextView.text!, prerequisitesText: prerequisites.text!, coursesText: courses.text!, onSuccess: {
+            // Alert pod - Work Added
+            let alertView = SPAlertView(title: "Your work has been added", message: nil, preset: SPAlertPreset.done)
+            alertView.duration = 1.2
+            alertView.present()
+            
+            // Clear textfields after success
+            self.domain.text = ""
+            self.experienceTextView.text = ""
+            self.prerequisites.text = ""
+            self.courses.text = ""
+            
+            // And to enable back for a new input in textfield
+            self.domain.isEnabled = true
+            // self.experienceTextView.isEnabled = true
+            self.prerequisites.isEnabled = true
+            self.courses.isEnabled = true
+        })
         
     }
 
-}   // #146
+}   // #140

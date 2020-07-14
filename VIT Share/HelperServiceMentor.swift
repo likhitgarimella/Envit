@@ -10,6 +10,12 @@ import Foundation
 
 class HelperServiceMentor {
     
+    static func uploadDataToServer(domainText: String, experienceText: String, prerequisitesText: String, coursesText: String, onSuccess: @escaping () -> Void) {
+        
+        self.sendDataToDatabase(domainText: domainText, experienceText: experienceText, prerequisitesText: prerequisitesText, coursesText: coursesText, onSuccess: onSuccess)
+        
+    }
+    
     static func sendDataToDatabase(domainText: String, experienceText: String, prerequisitesText: String, coursesText: String, onSuccess: @escaping () -> Void) {
         let newPostId = Api.MentorPost.REF_POSTS.childByAutoId().key
         let newPostReference = Api.MentorPost.REF_POSTS.child(newPostId!)
@@ -21,7 +27,7 @@ class HelperServiceMentor {
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         // put that download url string in db
         
-        newPostReference.setValue(["uid": currentUserId, "2) Domain": domainText, "3) Experience": experienceText, "4) Prerequisites": prerequisitesText, "5) Courses": coursesText, "6) Timestamp": timestamp], withCompletionBlock: { (error, ref) in
+        newPostReference.setValue(["2) Domain": domainText, "3) Experience": experienceText, "4) Prerequisites": prerequisitesText, "5) Courses": coursesText, "6) Timestamp": timestamp, "7) uid": currentUserId], withCompletionBlock: { (error, ref) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
@@ -40,4 +46,4 @@ class HelperServiceMentor {
         })
     }
     
-}   // #44
+}   // #50
