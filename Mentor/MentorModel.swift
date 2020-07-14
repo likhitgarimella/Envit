@@ -47,11 +47,11 @@ extension MentorModel {
         let mentorPost = MentorModel()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         mentorPost.id = key
-        mentorPost.domainText = dict["2) Domain"] as? String
-        mentorPost.experienceText = dict["3) Experience"] as? String
-        mentorPost.prerequisitesText = dict["4) Prerequisites"] as? String
-        mentorPost.coursesText = dict["5) Courses"] as? String
-        mentorPost.uid = dict["7) uid"] as? String
+        mentorPost.domainText = dict["1) Domain"] as? String
+        mentorPost.experienceText = dict["2) Experience"] as? String
+        mentorPost.prerequisitesText = dict["3) Prerequisites"] as? String
+        mentorPost.coursesText = dict["4) Courses"] as? String
+        mentorPost.uid = dict["6) uid"] as? String
         
         mentorPost.likeCount = dict["likeCount"] as? Int
         mentorPost.likes = dict["likes"] as? Dictionary<String, Any>

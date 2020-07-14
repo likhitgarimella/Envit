@@ -27,7 +27,7 @@ class HelperServiceMentor {
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         // put that download url string in db
         
-        newPostReference.setValue(["2) Domain": domainText, "3) Experience": experienceText, "4) Prerequisites": prerequisitesText, "5) Courses": coursesText, "6) Timestamp": timestamp, "7) uid": currentUserId], withCompletionBlock: { (error, ref) in
+        newPostReference.setValue(["1) Domain": domainText, "2) Experience": experienceText, "3) Prerequisites": prerequisitesText, "4) Courses": coursesText, "5) Timestamp": timestamp, "6) uid": currentUserId], withCompletionBlock: { (error, ref) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
