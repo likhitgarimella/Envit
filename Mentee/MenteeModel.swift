@@ -43,9 +43,9 @@ extension MenteeModel {
         let menteePost = MenteeModel()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         menteePost.id = key
-        menteePost.domainText = dict["2) Domain"] as? String
-        menteePost.postQueryText = dict["3) Post Query"] as? String
-        menteePost.uid = dict["5) uid"] as? String
+        menteePost.domainText = dict["1) Domain"] as? String
+        menteePost.postQueryText = dict["2) Post Query"] as? String
+        menteePost.uid = dict["4) uid"] as? String
         
         menteePost.likeCount = dict["likeCount"] as? Int
         menteePost.likes = dict["likes"] as? Dictionary<String, Any>
