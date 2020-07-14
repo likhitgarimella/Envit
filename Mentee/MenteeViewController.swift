@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class MenteeViewController: UIViewController, UITextFieldDelegate {
     
@@ -80,9 +80,6 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    // Create a DB reference
-    var refMentees: DatabaseReference!
-    
     // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
@@ -95,10 +92,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        // Writing data to DB
-        refMentees = Database.database().reference().child("Mentees").child("Details")
-        let key = refMentees.childByAutoId().key
-        
+        /*
         // Creating a timestamp
         let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
         
@@ -107,23 +101,23 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
             return
         }
         let currentUserId = currentUser.uid
+        */
         
-        let mentee = ["1) id": key!, "2) Domain": domain.text!, "3) Post Query": postQueryTextView.text!, "4) Timestamp": timestamp, "5) uid": currentUserId] as [String : Any]
-        refMentees.child(key!).setValue(mentee)
-        
-        // Alert pod - Query Added
-        let alertView = SPAlertView(title: "Your query has been posted", message: nil, preset: SPAlertPreset.done)
-        alertView.duration = 1.2
-        alertView.present()
-        
-        // Clear textfields after success
-        self.domain.text = ""
-        self.postQueryTextView.text = ""
-        
-        // And to enable back for a new input in textfield
-        self.domain.isEnabled = true
-        // self.experienceTextView.isEnabled = true
+        HelperServiceMentee.uploadDataToServer(domainText: domain.text!, queryText: postQueryTextView.text!, onSuccess: {
+            // Alert pod - Query Added
+            let alertView = SPAlertView(title: "Your query has been posted", message: nil, preset: SPAlertPreset.done)
+            alertView.duration = 1.2
+            alertView.present()
+            
+            // Clear textfields after success
+            self.domain.text = ""
+            self.postQueryTextView.text = ""
+            
+            // And to enable back for a new input in textfield
+            self.domain.isEnabled = true
+            // self.experienceTextView.isEnabled = true
+        })
         
     }
     
-}   // #130
+}   // #124
