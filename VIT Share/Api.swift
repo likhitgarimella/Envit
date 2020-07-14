@@ -47,9 +47,11 @@ struct Api {
     
     ///
     static var MyMentorPosts = MyMentorPostsApi()
+    ///
+    static var MyMenteePosts = MyMenteePostsApi()
     
     
     /// Firebase node - Posts-Details
     static var Post = PostApi()
     
-}   // #56
+}   // #58
