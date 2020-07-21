@@ -39,7 +39,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="top" secondItem="XWU-GX-jql" secondAttribute="top" constant="10" id="H2J-aA-8Ol"/>
+                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="leading" secondItem="XWU-GX-jql" secondAttribute="leading" constant="22.5" id="J30-ah-Qwk"/>
                             <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerX" secondItem="XWU-GX-jql" secondAttribute="centerX" id="Slc-0m-Xkn"/>
+                            <constraint firstAttribute="trailing" secondItem="fnw-Eb-mKy" secondAttribute="trailing" constant="22.5" id="cPc-xn-Tdd"/>
+                            <constraint firstAttribute="bottom" secondItem="fnw-Eb-mKy" secondAttribute="bottom" constant="10" id="esu-b3-O8A"/>
                             <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerY" secondItem="XWU-GX-jql" secondAttribute="centerY" id="zAK-jT-Rmx"/>
                         </constraints>
                     </view>

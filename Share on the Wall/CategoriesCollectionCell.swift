@@ -23,7 +23,7 @@ class CategoriesCollectionCell: UICollectionViewCell {
     }
     
     func configureCell(name: String) {
-        self.buttonOutlet.setTitle("#hashtag", for: .normal)
+        self.buttonOutlet.setTitle(name, for: .normal)
     }
     
     /*

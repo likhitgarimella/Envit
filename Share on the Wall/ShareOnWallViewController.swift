@@ -241,7 +241,7 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-    var names = ["Anders", "Kristian", "Sofia", "John", "Jenny", "Lina", "Annie", "Katie", "Johanna"]
+    var names = ["      Anders      ", "      Kristian      ", "      Sofia      ", "      John      ", "      Jenny      ", "      Lina      ", "      Annie      ", "      Katie      ", "      Johanna      "]
     
 }
 
@@ -263,6 +263,12 @@ extension ShareOnWallViewController: UICollectionViewDataSource {
 }
 
 extension ShareOnWallViewController: UICollectionViewDelegateFlowLayout {
+    
+    /*
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return view.frame.height
+    }
+    */
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let cell: CategoriesCollectionCell = Bundle.main.loadNibNamed(CategoriesCollectionCell.nibName, owner: self, options: nil)?.first as? CategoriesCollectionCell else {
@@ -292,4 +298,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #296
+}   // #302
