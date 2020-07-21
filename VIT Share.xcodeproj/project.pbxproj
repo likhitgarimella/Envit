@@ -45,6 +45,8 @@
 		0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11B2477C12E0022DCCB /* SPAlertIconRepeatView.swift */; };
 		0221E1392477C12F0022DCCB /* SPAlertIconMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11C2477C12E0022DCCB /* SPAlertIconMoonView.swift */; };
 		0221E13A2477C12F0022DCCB /* SPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221E11D2477C12E0022DCCB /* SPAlert.swift */; };
+		02357D8A24C7593B00A5292D /* CategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02357D8824C7593B00A5292D /* CategoriesCollectionCell.swift */; };
+		02357D8B24C7593B00A5292D /* CategoriesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02357D8924C7593B00A5292D /* CategoriesCollectionCell.xib */; };
 		023CB4F924AAC6CC002FFF74 /* PersProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */; };
 		023CB4FB24AAC753002FFF74 /* PersProjPostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */; };
 		023CB4FD24AAC781002FFF74 /* JCompProjCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */; };
@@ -182,6 +184,8 @@
 		0221E11B2477C12E0022DCCB /* SPAlertIconRepeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconRepeatView.swift; sourceTree = "<group>"; };
 		0221E11C2477C12E0022DCCB /* SPAlertIconMoonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlertIconMoonView.swift; sourceTree = "<group>"; };
 		0221E11D2477C12E0022DCCB /* SPAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAlert.swift; sourceTree = "<group>"; };
+		02357D8824C7593B00A5292D /* CategoriesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCell.swift; sourceTree = "<group>"; };
+		02357D8924C7593B00A5292D /* CategoriesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionCell.xib; sourceTree = "<group>"; };
 		023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjCommentApi.swift; sourceTree = "<group>"; };
 		023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersProjPostCommentApi.swift; sourceTree = "<group>"; };
 		023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjCommentApi.swift; sourceTree = "<group>"; };
@@ -510,6 +514,8 @@
 			children = (
 				02AB10D124B98DC700D1824D /* Post.swift */,
 				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
+				02357D8924C7593B00A5292D /* CategoriesCollectionCell.xib */,
+				02357D8824C7593B00A5292D /* CategoriesCollectionCell.swift */,
 			);
 			path = "Share on the Wall";
 			sourceTree = "<group>";
@@ -699,6 +705,7 @@
 				024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				02BA546F24A91D6E00F3DFA5 /* JCompProjPostCell.xib in Resources */,
 				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
+				02357D8B24C7593B00A5292D /* CategoriesCollectionCell.xib in Resources */,
 				024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */,
@@ -818,6 +825,7 @@
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
 				02BA547524A9616E00F3DFA5 /* PersProjectComments.swift in Sources */,
 				02BA546E24A91D6E00F3DFA5 /* JCompProjPostCell.swift in Sources */,
+				02357D8A24C7593B00A5292D /* CategoriesCollectionCell.swift in Sources */,
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
 				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
