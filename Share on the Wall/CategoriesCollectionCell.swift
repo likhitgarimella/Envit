@@ -11,11 +11,15 @@ import UIKit
 class CategoriesCollectionCell: UICollectionViewCell {
     
     // Outlets
+    @IBOutlet var cellView: UIView!
+    @IBOutlet var buttonOutlet: UIButton!
     
-
+    // linking feed VC & cell
+    var shareOnWallVC: ShareOnWallViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
 
-}   // #22
+}   // #26

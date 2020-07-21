@@ -52,6 +52,10 @@
                 <constraint firstItem="XWU-GX-jql" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="thd-QY-j42"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="buttonOutlet" destination="fnw-Eb-mKy" id="pcw-qc-fZB"/>
+                <outlet property="cellView" destination="XWU-GX-jql" id="pgW-Sc-eWa"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </collectionViewCell>
     </objects>
