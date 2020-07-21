@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ShareOnWallViewController: UIViewController {
+class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet var categoryCollectionView: UICollectionView!
     
     // Outlets
     @IBOutlet var photoView: UIView!
@@ -22,6 +24,27 @@ class ShareOnWallViewController: UIViewController {
     @IBOutlet var buttonFour: UIButton!
     
     var selectedImage: UIImage?
+    
+    // numberOfSections
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    // numberOfItemsInSection
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    // cellForItemAt
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let categoryCell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCollectionCell", for: indexPath) as! CategoriesCollectionCell
+        // linking home VC & home table view cell
+        categoryCell.shareOnWallVC = self
+        categoryCell.buttonOutlet.setTitle("#hashtag", for: .normal)
+        return categoryCell
+        
+    }
     
     func Properties() {
         
@@ -55,6 +78,12 @@ class ShareOnWallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Register CollectionViewCell here
+        categoryCollectionView.register(UINib.init(nibName: "CategoriesCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CategoriesCollectionCell")
+        if let flowLayout = categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
         
         hideKeyboardWhenTappedAround()
         
@@ -212,4 +241,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #216
+}   // #245

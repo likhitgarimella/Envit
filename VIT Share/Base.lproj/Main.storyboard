@@ -2035,6 +2035,7 @@
                         <outlet property="buttonOne" destination="PW2-8f-ruK" id="Dgq-X4-J37"/>
                         <outlet property="buttonThree" destination="Usm-QQ-Fiv" id="fiz-sW-Ccf"/>
                         <outlet property="buttonTwo" destination="JTA-dL-KPo" id="7ph-ml-xtI"/>
+                        <outlet property="categoryCollectionView" destination="cZV-fS-PAC" id="mDT-CG-Sq1"/>
                         <outlet property="insideView" destination="6Qb-KB-mlm" id="jSS-sc-z2X"/>
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
                         <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
