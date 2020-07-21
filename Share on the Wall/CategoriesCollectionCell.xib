@@ -16,17 +16,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionCell" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="VIT_Share" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWU-GX-jql">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnw-Eb-mKy">
-                                <rect key="frame" x="22.5" y="10" width="105" height="30"/>
+                                <rect key="frame" x="11.5" y="10" width="105" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="T5L-vl-c95"/>
@@ -39,10 +39,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fnw-Eb-mKy" secondAttribute="trailing" constant="11.5" id="6z3-BV-D2C"/>
+                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="leading" secondItem="XWU-GX-jql" secondAttribute="leading" constant="11.5" id="8d1-e5-4Or"/>
                             <constraint firstItem="fnw-Eb-mKy" firstAttribute="top" secondItem="XWU-GX-jql" secondAttribute="top" constant="10" id="H2J-aA-8Ol"/>
-                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="leading" secondItem="XWU-GX-jql" secondAttribute="leading" constant="22.5" id="J30-ah-Qwk"/>
                             <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerX" secondItem="XWU-GX-jql" secondAttribute="centerX" id="Slc-0m-Xkn"/>
-                            <constraint firstAttribute="trailing" secondItem="fnw-Eb-mKy" secondAttribute="trailing" constant="22.5" id="cPc-xn-Tdd"/>
                             <constraint firstAttribute="bottom" secondItem="fnw-Eb-mKy" secondAttribute="bottom" constant="10" id="esu-b3-O8A"/>
                             <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerY" secondItem="XWU-GX-jql" secondAttribute="centerY" id="zAK-jT-Rmx"/>
                         </constraints>

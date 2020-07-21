@@ -34,6 +34,8 @@ class CategoriesCollectionCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        buttonOutlet.layer.cornerRadius = 15
+        
     }
 
-}   // #40
+}   // #42
