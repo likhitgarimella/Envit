@@ -14,12 +14,26 @@ class CategoriesCollectionCell: UICollectionViewCell {
     @IBOutlet var cellView: UIView!
     @IBOutlet var buttonOutlet: UIButton!
     
+    class var reuseIdentifier: String {
+        return "CategoriesCollectionCell"
+    }
+    
+    class var nibName: String {
+        return "CategoriesCollectionCell"
+    }
+    
+    func configureCell(name: String) {
+        self.buttonOutlet.setTitle("#hashtag", for: .normal)
+    }
+    
+    /*
     // linking feed VC & cell
     var shareOnWallVC: ShareOnWallViewController?
+    */
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
 
-}   // #26
+}   // #40

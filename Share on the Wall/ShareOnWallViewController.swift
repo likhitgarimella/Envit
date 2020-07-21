@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ShareOnWallViewController: UIViewController {
     
     @IBOutlet var categoryCollectionView: UICollectionView!
     
@@ -25,6 +25,7 @@ class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UIC
     
     var selectedImage: UIImage?
     
+    /*
     // numberOfSections
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -45,6 +46,7 @@ class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UIC
         return categoryCell
         
     }
+    */
     
     func Properties() {
         
@@ -76,14 +78,28 @@ class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UIC
         
     }
     
+    func registerNib() {
+        
+        let nib = UINib(nibName: CategoriesCollectionCell.nibName, bundle: nil)
+        categoryCollectionView?.register(nib, forCellWithReuseIdentifier: CategoriesCollectionCell.reuseIdentifier)
+        if let flowLayout = self.categoryCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerNib()
+        
+        /*
         // Register CollectionViewCell here
         categoryCollectionView.register(UINib.init(nibName: "CategoriesCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CategoriesCollectionCell")
         if let flowLayout = categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
+        */
         
         hideKeyboardWhenTappedAround()
         
@@ -225,6 +241,41 @@ class ShareOnWallViewController: UIViewController, UICollectionViewDelegate, UIC
         
     }
     
+    var names = ["Anders", "Kristian", "Sofia", "John", "Jenny", "Lina", "Annie", "Katie", "Johanna"]
+    
+}
+
+extension ShareOnWallViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return names.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoriesCollectionCell.reuseIdentifier, for: indexPath) as? CategoriesCollectionCell {
+            let name = names[indexPath.row]
+            cell.configureCell(name: name)
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+}
+
+extension ShareOnWallViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let cell: CategoriesCollectionCell = Bundle.main.loadNibNamed(CategoriesCollectionCell.nibName, owner: self, options: nil)?.first as? CategoriesCollectionCell else {
+            return CGSize.zero
+        }
+        
+        cell.configureCell(name: names[indexPath.row])
+        cell.setNeedsLayout()
+        cell.layoutIfNeeded()
+        let size: CGSize = cell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        return CGSize(width: size.width, height: 30)
+    }
+    
 }
 
 extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -241,4 +292,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #245
+}   // #296
