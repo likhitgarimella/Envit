@@ -9,10 +9,13 @@
 import UIKit
 
 class CategoriesCollectionCell: UICollectionViewCell {
+    
+    // Outlets
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
 
-}   // #19
+}   // #22

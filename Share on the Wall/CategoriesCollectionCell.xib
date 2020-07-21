@@ -7,18 +7,52 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Medium.otf">
+            <string>SFProRounded-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="VIT_Share" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionCell" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="VIT_Share" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWU-GX-jql">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnw-Eb-mKy">
+                                <rect key="frame" x="22.5" y="10" width="105" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T5L-vl-c95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
+                                <state key="normal" title="      #hashtag      ">
+                                    <color key="titleColor" red="0.99607843137254903" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerX" secondItem="XWU-GX-jql" secondAttribute="centerX" id="Slc-0m-Xkn"/>
+                            <constraint firstItem="fnw-Eb-mKy" firstAttribute="centerY" secondItem="XWU-GX-jql" secondAttribute="centerY" id="zAK-jT-Rmx"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XWU-GX-jql" secondAttribute="bottom" id="3Vj-TQ-aBx"/>
+                <constraint firstAttribute="trailing" secondItem="XWU-GX-jql" secondAttribute="trailing" id="6OD-QJ-Hqz"/>
+                <constraint firstItem="XWU-GX-jql" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="esy-ZP-Nwh"/>
+                <constraint firstItem="XWU-GX-jql" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="thd-QY-j42"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </collectionViewCell>
     </objects>
 </document>
