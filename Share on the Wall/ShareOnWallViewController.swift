@@ -23,6 +23,8 @@ class ShareOnWallViewController: UIViewController {
     
     var selectedImage: UIImage?
     
+    let button = UIButton.init(type: .custom)
+    
     // scroll view
     var scView: UIScrollView!
     // space b/w button and cell
@@ -88,8 +90,10 @@ class ShareOnWallViewController: UIViewController {
             button.layer.cornerRadius = 15
             button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
             button.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
+            button.titleLabel?.textAlignment = .center
             button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             button.setTitle(name, for: .normal)
+            /// add target
             button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
             
             /// button positions & dimensions
@@ -264,4 +268,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #268
+}   // #272
