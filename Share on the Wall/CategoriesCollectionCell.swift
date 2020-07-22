@@ -31,6 +31,15 @@ class CategoriesCollectionCell: UICollectionViewCell {
     var shareOnWallVC: ShareOnWallViewController?
     */
     
+    /// We can erase all old data before a cell is reused...
+    /// this method will be called right before a cell is reused...
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        buttonOutlet.setTitle("", for: .normal)
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -43,9 +52,10 @@ class CategoriesCollectionCell: UICollectionViewCell {
     
     @IBAction func buttonAction(_ sender: UIButton) {
         
+        // When tapped
         buttonOutlet.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
         buttonOutlet.setTitleColor(UIColor.white, for: .normal)
         
     }
     
-}   // #52
+}   // #62
