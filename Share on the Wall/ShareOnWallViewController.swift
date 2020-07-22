@@ -23,7 +23,9 @@ class ShareOnWallViewController: UIViewController {
     
     var selectedImage: UIImage?
     
+    // scroll view
     var scView: UIScrollView!
+    // space b/w button and cell
     let buttonPadding: CGFloat = 10
     var xOffset: CGFloat = 10
     
@@ -60,10 +62,14 @@ class ShareOnWallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // scroll view positions & dimensions
         scView = UIScrollView(frame: CGRect(x: 0, y: 640, width: view.bounds.width, height: 50))
+        // adding scroll view to view
         view.addSubview(scView)
         
-        scView.backgroundColor = UIColor.blue
+        // bg color
+        scView.backgroundColor = UIColor.orange
+        // constraint
         scView.translatesAutoresizingMaskIntoConstraints = false
         
         let names = ["ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO"]
@@ -73,12 +79,14 @@ class ShareOnWallViewController: UIViewController {
             let name = names[j]
             let button = UIButton()
             button.tag = j
-            button.backgroundColor = UIColor.darkGray
+            button.layer.cornerRadius = 15
+            button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
+            button.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
+            button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             button.setTitle(name, for: .normal)
             // button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
             
             button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: 100, height: 30)
-            
             xOffset = xOffset + CGFloat(buttonPadding) + button.frame.size.width
             scView.addSubview(button)
             
@@ -242,4 +250,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #246
+}   // #254
