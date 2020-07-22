@@ -60,17 +60,21 @@ class ShareOnWallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scView = UIScrollView(frame: CGRect(x: 0, y: 600, width: view.bounds.width, height: 50))
+        scView = UIScrollView(frame: CGRect(x: 0, y: 640, width: view.bounds.width, height: 50))
         view.addSubview(scView)
         
         scView.backgroundColor = UIColor.blue
         scView.translatesAutoresizingMaskIntoConstraints = false
         
-        for i in 0 ... 10 {
+        let names = ["ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO"]
+        
+        for j in 0 ..< names.count {
+            
+            let name = names[j]
             let button = UIButton()
-            button.tag = i
+            button.tag = j
             button.backgroundColor = UIColor.darkGray
-            button.setTitle("\(i)", for: .normal)
+            button.setTitle(name, for: .normal)
             // button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
             
             button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: 100, height: 30)
@@ -238,4 +242,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #242
+}   // #246
