@@ -36,7 +36,7 @@ class ShareOnWallViewController: UIViewController {
         selectPhotoImage.image = UIImage(named: "selectPhoto")
         selectPhotoImage.layer.cornerRadius = 5
         
-        // MARK: - Inital state
+        // MARK: - Initial state
         
         /// red color
         photoView.backgroundColor = UIColor(red: 253/255, green: 181/255, blue: 181/255, alpha: 1.0)
@@ -62,22 +62,28 @@ class ShareOnWallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // scroll view positions & dimensions
+        // MARK: - Horz coll view
+        
+        /// scroll view positions & dimensions
         scView = UIScrollView(frame: CGRect(x: 0, y: 640, width: view.bounds.width, height: 50))
-        // adding scroll view to view
+        /// adding scroll view to view
         view.addSubview(scView)
         
-        // bg color
+        /// bg color
         scView.backgroundColor = UIColor.orange
-        // constraint
+        /// constraint
         scView.translatesAutoresizingMaskIntoConstraints = false
         
-        let names = ["ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO"]
+        let names = ["ABCDEABCDEABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO"]
         
+        /// array count
         for j in 0 ..< names.count {
             
+            /// array index
             let name = names[j]
+            /// button
             let button = UIButton()
+            /// button tag
             button.tag = j
             button.layer.cornerRadius = 15
             button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
@@ -86,8 +92,10 @@ class ShareOnWallViewController: UIViewController {
             button.setTitle(name, for: .normal)
             // button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
             
-            button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: 100, height: 30)
+            /// button positions & dimensions
+            button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button.intrinsicContentSize.width + 48, height: 30)
             xOffset = xOffset + CGFloat(buttonPadding) + button.frame.size.width
+            /// adding button to scroll view
             scView.addSubview(button)
             
         }
@@ -250,4 +258,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #254
+}   // #262
