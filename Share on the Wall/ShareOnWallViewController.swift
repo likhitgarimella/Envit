@@ -254,10 +254,18 @@ extension ShareOnWallViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoriesCollectionCell.reuseIdentifier, for: indexPath) as? CategoriesCollectionCell {
             let name = names[indexPath.row]
-            cell.configureCell(name: name)
+            cell.configureCell(title: name)
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+}
+
+extension ShareOnWallViewController: UICollectionViewDelegate {
+    
+    func didTapButton(with title: String) {
+        print("\(title)")
     }
     
 }
@@ -275,7 +283,7 @@ extension ShareOnWallViewController: UICollectionViewDelegateFlowLayout {
             return CGSize.zero
         }
         
-        cell.configureCell(name: names[indexPath.row])
+        cell.configureCell(title: names[indexPath.row])
         cell.setNeedsLayout()
         cell.layoutIfNeeded()
         let size: CGSize = cell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
@@ -298,4 +306,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #302
+}   // #310
