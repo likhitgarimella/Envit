@@ -32,9 +32,12 @@
                                     <constraint firstAttribute="height" constant="30" id="T5L-vl-c95"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="16"/>
-                                <state key="normal" title="      #hashtag      ">
+                                <state key="normal" title="#hashtag">
                                     <color key="titleColor" red="0.99607843137254903" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="NTL-dy-y2G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
