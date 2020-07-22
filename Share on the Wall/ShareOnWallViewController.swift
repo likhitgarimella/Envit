@@ -90,7 +90,7 @@ class ShareOnWallViewController: UIViewController {
             button.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 16)
             button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             button.setTitle(name, for: .normal)
-            // button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
+            button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
             
             /// button positions & dimensions
             button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button.intrinsicContentSize.width + 48, height: 30)
@@ -110,6 +110,12 @@ class ShareOnWallViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSelectPhoto))
         selectPhotoImage.addGestureRecognizer(tapGesture)
         selectPhotoImage.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func buttonTouch(sender: UIButton) {
+        
+        print(sender.tag)
         
     }
     
@@ -258,4 +264,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #262
+}   // #268
