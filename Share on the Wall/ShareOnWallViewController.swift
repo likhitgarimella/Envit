@@ -25,6 +25,8 @@ class ShareOnWallViewController: UIViewController {
     
     let button = UIButton.init(type: .custom)
     
+    var buttonArray : NSMutableArray = []
+    
     // scroll view
     var scView: UIScrollView!
     // space b/w button and cell
@@ -76,7 +78,7 @@ class ShareOnWallViewController: UIViewController {
         /// constraint
         scView.translatesAutoresizingMaskIntoConstraints = false
         
-        let names = ["ABCDEABCDEABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO", "ABCDE", "FGHIJ", "KLMNO"]
+        let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
         
         /// array count
         for j in 0 ..< names.count {
@@ -95,6 +97,8 @@ class ShareOnWallViewController: UIViewController {
             button.setTitle(name, for: .normal)
             /// add target
             button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
+            
+            buttonArray.add(button)
             
             /// button positions & dimensions
             button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: button.intrinsicContentSize.width + 48, height: 30)
@@ -119,7 +123,13 @@ class ShareOnWallViewController: UIViewController {
     
     @objc func buttonTouch(sender: UIButton) {
         
+        let taptic = UIImpactFeedbackGenerator(style: .medium)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         print(sender.tag)
+        
+        // print(buttonArray)
         
     }
     
@@ -268,4 +278,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #272
+}   // #282
