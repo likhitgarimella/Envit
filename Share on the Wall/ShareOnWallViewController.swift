@@ -23,6 +23,10 @@ class ShareOnWallViewController: UIViewController {
     
     var selectedImage: UIImage?
     
+    var scView: UIScrollView!
+    let buttonPadding: CGFloat = 10
+    var xOffset: CGFloat = 10
+    
     func Properties() {
         
         photoView.layer.cornerRadius = 10
@@ -55,6 +59,28 @@ class ShareOnWallViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scView = UIScrollView(frame: CGRect(x: 0, y: 600, width: view.bounds.width, height: 50))
+        view.addSubview(scView)
+        
+        scView.backgroundColor = UIColor.blue
+        scView.translatesAutoresizingMaskIntoConstraints = false
+        
+        for i in 0 ... 10 {
+            let button = UIButton()
+            button.tag = i
+            button.backgroundColor = UIColor.darkGray
+            button.setTitle("\(i)", for: .normal)
+            // button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
+            
+            button.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: 100, height: 30)
+            
+            xOffset = xOffset + CGFloat(buttonPadding) + button.frame.size.width
+            scView.addSubview(button)
+            
+        }
+
+        scView.contentSize = CGSize(width: xOffset, height: scView.frame.height)
         
         hideKeyboardWhenTappedAround()
         
@@ -212,4 +238,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #216
+}   // #242
