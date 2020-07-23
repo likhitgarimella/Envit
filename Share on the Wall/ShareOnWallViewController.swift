@@ -25,6 +25,8 @@ class ShareOnWallViewController: UIViewController {
     
     let button = UIButton.init(type: .custom)
     
+    var selectedIndex : Int = 0
+    
     var buttonArray : NSMutableArray = []
     
     // scroll view
@@ -32,6 +34,8 @@ class ShareOnWallViewController: UIViewController {
     // space b/w button and cell
     let buttonPadding: CGFloat = 10
     var xOffset: CGFloat = 10
+    
+    let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
     
     func Properties() {
         
@@ -78,7 +82,7 @@ class ShareOnWallViewController: UIViewController {
         /// constraint
         scView.translatesAutoresizingMaskIntoConstraints = false
         
-        let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
+        
         
         /// array count
         for j in 0 ..< names.count {
@@ -96,7 +100,22 @@ class ShareOnWallViewController: UIViewController {
             button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             button.setTitle(name, for: .normal)
             /// add target
-            button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
+            button.addTarget(self, action: #selector(self.buttonEvent(_:)), for: .touchUpInside)
+            // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
+            
+            let strofMenu = names[selectedIndex]
+            
+            if (j == selectedIndex) {
+                if(strofMenu == "abcdefghijkl") {
+                    button.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
+                    button.setTitleColor(UIColor.white, for: .normal)
+                }
+                button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
+                button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
+            } else {
+                button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
+                button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
+            }
             
             buttonArray.add(button)
             
@@ -121,17 +140,38 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
-    @objc func buttonTouch(sender: UIButton) {
+    @objc func buttonEvent(_ sender: UIButton) {
         
-        let taptic = UIImpactFeedbackGenerator(style: .medium)
+        let taptic = UIImpactFeedbackGenerator(style: .light)
         taptic.prepare()
         taptic.impactOccurred()
         
-        print(sender.tag)
-        
-        // print(buttonArray)
+        let index = sender.tag
+        selectedIndex = index
+        let getRepoName = names[index]
+        print("\(getRepoName); \(sender.tag)")
+        for i in 0 ..< buttonArray.count {
+            let buttonone : UIButton = (buttonArray[i] as! UIButton)
+            if i == selectedIndex {
+                buttonone.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
+                buttonone.setTitleColor(UIColor.white, for: .normal)
+            } else {
+                buttonone.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
+                buttonone.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
+            }
+        }
         
     }
+    
+    /*
+    @objc func buttonTouch(sender: UIButton) {
+        let taptic = UIImpactFeedbackGenerator(style: .medium)
+        taptic.prepare()
+        taptic.impactOccurred()
+        print(sender.tag)
+        // print(buttonArray)
+    }
+    */
     
     @objc func handleSelectPhoto() {
         
@@ -278,4 +318,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #282
+}   // #322
