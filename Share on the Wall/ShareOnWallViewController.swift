@@ -49,6 +49,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     /// array data
     let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
     
+    /// dummy label
+    @IBOutlet var categoryLabel: UILabel!
+    
     func Properties() {
         
         photoView.layer.cornerRadius = 10
@@ -185,6 +188,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         let selectedButtonName = names[index]
         /// print name of selected button & button tag
         print("\(selectedButtonName); \(sender.tag)")
+        /// print that in dummy label
+        categoryLabel.text = selectedButtonName
+        
         for i in 0 ..< buttonArray.count {
             let buttonone : UIButton = (buttonArray[i] as! UIButton)
             if i == selectedIndex {
@@ -364,4 +370,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #368
+}   // #374
