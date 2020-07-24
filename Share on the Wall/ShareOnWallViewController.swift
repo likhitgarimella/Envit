@@ -27,8 +27,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     /// reference label
     @IBOutlet var selectCategory: UILabel!
     
-    /// button declaration
-    let shareButton = UIButton(type: .system)
+    @IBOutlet var shareButton: UIButton!
     
     var selectedImage: UIImage?
     
@@ -82,30 +81,6 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    func setupShareButton() {
-        
-        // properties
-        shareButton.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
-        shareButton.setTitle("Share", for: .normal)
-        shareButton.setTitleColor(UIColor.white, for: .normal)
-        shareButton.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 20)
-        shareButton.translatesAutoresizingMaskIntoConstraints = false
-        shareButton.layer.cornerRadius = 10
-        shareButton.layer.masksToBounds = true
-        
-        // Need x, y, width, height constraints
-        shareButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        // shareButton.topAnchor.constraint(equalTo: scView.bottomAnchor, constant: 30).isActive = true
-        shareButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 285).isActive = true
-        shareButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 76).isActive = true
-        shareButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 76).isActive = true
-        shareButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        
-        // Action for register button
-        // shareButton.addTarget(self, action: #selector(handleShare), for: .touchUpInside)
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -119,11 +94,6 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
         /// adding scroll view to view
         view.addSubview(scView)
-        
-        /// adding share button to view
-        view.addSubview(shareButton)
-        
-        setupShareButton()
         
         scView.translatesAutoresizingMaskIntoConstraints = false
         scView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

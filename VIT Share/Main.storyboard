@@ -1978,14 +1978,29 @@
                                                 <color key="textColor" red="0.1803921568627451" green="0.50196078431372548" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klZ-3T-ACJ">
+                                                <rect key="frame" x="76" y="690" width="262" height="44"/>
+                                                <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="VQD-Qv-58y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                                <state key="normal" title="Share">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="klZ-3T-ACJ" secondAttribute="trailing" constant="76" id="1WE-7Z-An0"/>
+                                            <constraint firstAttribute="bottom" secondItem="klZ-3T-ACJ" secondAttribute="bottom" constant="285" id="6Di-qo-QV4"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="HwS-Fr-m5t"/>
+                                            <constraint firstItem="klZ-3T-ACJ" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="J8A-TV-4eN"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="OYj-s3-myb"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="bottom" constant="24" id="PVO-Fg-bwR"/>
+                                            <constraint firstItem="klZ-3T-ACJ" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="76" id="Q0G-Ak-bfW"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="60" id="RLN-dQ-Ld8"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="W0p-tk-QIV"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="top" secondItem="hrg-MM-CKy" secondAttribute="bottom" constant="36" id="XCR-By-4CE"/>
@@ -2027,6 +2042,7 @@
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
                         <outlet property="selectCategory" destination="fJl-on-sB4" id="M2c-jF-Ceq"/>
                         <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
+                        <outlet property="shareButton" destination="klZ-3T-ACJ" id="2cE-rG-CCG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
