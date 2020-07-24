@@ -21,6 +21,8 @@ class ShareOnWallViewController: UIViewController {
     @IBOutlet var buttonThree: UIButton!
     @IBOutlet var buttonFour: UIButton!
     
+    @IBOutlet var frameColorLabel: UILabel!
+    
     var selectedImage: UIImage?
     
     /// global declaration
@@ -52,6 +54,8 @@ class ShareOnWallViewController: UIViewController {
         
         /// red color
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        
+        frameColorLabel.text = "red"
         
         buttonOne.setImage(UIImage(named: "redOn"), for: .normal)
         /// red color
@@ -160,9 +164,9 @@ class ShareOnWallViewController: UIViewController {
         /// selected index = button tag
         selectedIndex = index
         /// name of selected button
-        let getRepoName = names[index]
+        let selectedButtonName = names[index]
         /// print name of selected button & button tag
-        print("\(getRepoName); \(sender.tag)")
+        print("\(selectedButtonName); \(sender.tag)")
         for i in 0 ..< buttonArray.count {
             let buttonone : UIButton = (buttonArray[i] as! UIButton)
             if i == selectedIndex {
@@ -219,6 +223,8 @@ class ShareOnWallViewController: UIViewController {
         /// red color
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
+        frameColorLabel.text = "red"
+        
         buttonOne.setImage(UIImage(named: "redOn"), for: .normal)
         /// red color
         buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
@@ -245,6 +251,8 @@ class ShareOnWallViewController: UIViewController {
         
         /// blue color
         photoView.backgroundColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
+        
+        frameColorLabel.text = "blue"
         
         buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
         /// red color
@@ -273,6 +281,8 @@ class ShareOnWallViewController: UIViewController {
         /// purple color
         photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
+        frameColorLabel.text = "purple"
+        
         buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
         /// red color
         buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
@@ -299,6 +309,8 @@ class ShareOnWallViewController: UIViewController {
         
         /// green color
         photoView.backgroundColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        frameColorLabel.text = "green"
         
         buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
         /// red color
@@ -334,4 +346,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #338
+}   // #350

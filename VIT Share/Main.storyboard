@@ -1966,6 +1966,12 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TQ-Sr-MST">
+                                                <rect key="frame" x="190.33333333333334" y="458" width="33.333333333333343" height="19.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-on-sB4">
                                                 <rect key="frame" x="20.000000000000007" y="522" width="124.66666666666669" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
@@ -1977,6 +1983,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
+                                            <constraint firstItem="1TQ-Sr-MST" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="HwS-Fr-m5t"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="OYj-s3-myb"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="bottom" constant="24" id="PVO-Fg-bwR"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="80" id="RLN-dQ-Ld8"/>
@@ -1985,6 +1992,7 @@
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="top" secondItem="n8j-sZ-7aV" secondAttribute="top" id="gph-Nh-a1g"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="pjC-IR-jdj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hrg-MM-CKy" secondAttribute="trailing" constant="20" symbolic="YES" id="qlr-3y-WIt"/>
+                                            <constraint firstItem="1TQ-Sr-MST" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="16" id="t9x-BJ-YW9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2014,6 +2022,7 @@
                         <outlet property="buttonOne" destination="PW2-8f-ruK" id="Dgq-X4-J37"/>
                         <outlet property="buttonThree" destination="Usm-QQ-Fiv" id="fiz-sW-Ccf"/>
                         <outlet property="buttonTwo" destination="JTA-dL-KPo" id="7ph-ml-xtI"/>
+                        <outlet property="frameColorLabel" destination="1TQ-Sr-MST" id="X0x-r3-Tnb"/>
                         <outlet property="insideView" destination="6Qb-KB-mlm" id="jSS-sc-z2X"/>
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
                         <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
