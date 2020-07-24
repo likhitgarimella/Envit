@@ -23,18 +23,22 @@ class ShareOnWallViewController: UIViewController {
     
     var selectedImage: UIImage?
     
+    /// global declaration
     let button = UIButton.init(type: .custom)
     
+    /// selected index of button in scroll view
     var selectedIndex : Int = 0
     
+    /// array of buttons
     var buttonArray : NSMutableArray = []
     
-    // scroll view
+    /// scroll view
     var scView: UIScrollView!
-    // space b/w button and cell
+    /// space b/w button and cell
     let buttonPadding: CGFloat = 10
     var xOffset: CGFloat = 10
     
+    /// array data
     let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
     
     func Properties() {
@@ -82,8 +86,6 @@ class ShareOnWallViewController: UIViewController {
         /// constraint
         scView.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        
         /// array count
         for j in 0 ..< names.count {
             
@@ -101,22 +103,27 @@ class ShareOnWallViewController: UIViewController {
             button.setTitle(name, for: .normal)
             /// add target
             button.addTarget(self, action: #selector(self.buttonEvent(_:)), for: .touchUpInside)
+            /// old one
             // button.addTarget(self, action: #selector(buttonTouch), for: .touchUpInside)
             
             let strofMenu = names[selectedIndex]
             
             if (j == selectedIndex) {
                 if(strofMenu == "abcdefghijkl") {
+                    /// button selected
                     button.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
                     button.setTitleColor(UIColor.white, for: .normal)
                 }
+                /// button normal
                 button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
                 button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             } else {
+                /// button normal
                 button.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
                 button.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             }
             
+            /// add buttons to button array
             buttonArray.add(button)
             
             /// button positions & dimensions
@@ -126,7 +133,8 @@ class ShareOnWallViewController: UIViewController {
             scView.addSubview(button)
             
         }
-
+        
+        /// scroll view prop
         scView.contentSize = CGSize(width: xOffset, height: scView.frame.height)
         
         hideKeyboardWhenTappedAround()
@@ -142,20 +150,27 @@ class ShareOnWallViewController: UIViewController {
     
     @objc func buttonEvent(_ sender: UIButton) {
         
+        /// button taptic
         let taptic = UIImpactFeedbackGenerator(style: .light)
         taptic.prepare()
         taptic.impactOccurred()
         
+        /// button tag
         let index = sender.tag
+        /// selected index = button tag
         selectedIndex = index
+        /// name of selected button
         let getRepoName = names[index]
+        /// print name of selected button & button tag
         print("\(getRepoName); \(sender.tag)")
         for i in 0 ..< buttonArray.count {
             let buttonone : UIButton = (buttonArray[i] as! UIButton)
             if i == selectedIndex {
+                /// button selected
                 buttonone.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
                 buttonone.setTitleColor(UIColor.white, for: .normal)
             } else {
+                /// button normal
                 buttonone.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1.0)
                 buttonone.setTitleColor(UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0), for: .normal)
             }
@@ -163,6 +178,7 @@ class ShareOnWallViewController: UIViewController {
         
     }
     
+    /// old one
     /*
     @objc func buttonTouch(sender: UIButton) {
         let taptic = UIImpactFeedbackGenerator(style: .medium)
@@ -318,4 +334,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #322
+}   // #338
