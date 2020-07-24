@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareOnWallViewController: UIViewController {
+class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     // Outlets
     @IBOutlet var photoView: UIView!
@@ -22,6 +22,10 @@ class ShareOnWallViewController: UIViewController {
     @IBOutlet var buttonFour: UIButton!
     
     @IBOutlet var frameColorLabel: UILabel!
+    
+    @IBOutlet var selectCategory: UILabel!
+    
+    @IBOutlet var shareOutlet: UIButton!
     
     var selectedImage: UIImage?
     
@@ -80,15 +84,23 @@ class ShareOnWallViewController: UIViewController {
         
         // MARK: - Horz coll view
         
-        /// scroll view positions & dimensions
-        scView = UIScrollView(frame: CGRect(x: 0, y: 640, width: view.bounds.width, height: 50))
+        /// scroll view
+        let scView = UIScrollView()
+        scView.delegate = self
+        // scView.contentSize = CGSize(width: view.bounds.width, height: 50)
+        // scView = UIScrollView(frame: CGRect(x: 0, y: 620, width: view.bounds.width, height: 50))
         /// adding scroll view to view
         view.addSubview(scView)
         
+        scView.translatesAutoresizingMaskIntoConstraints = false
+        scView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        scView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        scView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        scView.topAnchor.constraint(equalTo: selectCategory.bottomAnchor, constant: 20).isActive = true
+        scView.bottomAnchor.constraint(equalTo: shareOutlet.topAnchor, constant: 30).isActive = true
+        
         /// bg color
         scView.backgroundColor = UIColor.orange
-        /// constraint
-        scView.translatesAutoresizingMaskIntoConstraints = false
         
         /// array count
         for j in 0 ..< names.count {
@@ -346,4 +358,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #350
+}   // #362

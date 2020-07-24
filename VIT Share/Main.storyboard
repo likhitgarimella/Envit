@@ -1873,14 +1873,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="phN-2Q-2CK" customClass="ShareOnWallViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fOl-ti-qmt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="880"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1124"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-9b-hij">
-                                <rect key="frame" x="0.0" y="56" width="414" height="775"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="1019"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8j-sZ-7aV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="775"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1019"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on the Wall" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-MM-CKy">
                                                 <rect key="frame" x="20.000000000000014" y="0.0" width="223.33333333333337" height="36"/>
@@ -1967,32 +1967,47 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TQ-Sr-MST">
-                                                <rect key="frame" x="190.33333333333334" y="458" width="33.333333333333343" height="19.333333333333314"/>
+                                                <rect key="frame" x="190.33333333333334" y="466" width="33.333333333333343" height="19.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-on-sB4">
-                                                <rect key="frame" x="20.000000000000007" y="522" width="124.66666666666669" height="21.666666666666629"/>
+                                                <rect key="frame" x="20.000000000000007" y="502.00000000000006" width="124.66666666666669" height="21.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" red="0.1803921568627451" green="0.50196078431372548" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7q-sg-riN">
+                                                <rect key="frame" x="76" y="690" width="262" height="44"/>
+                                                <color key="backgroundColor" red="1" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="vaU-Z9-oyE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
+                                                <state key="normal" title="Share">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
+                                            <constraint firstAttribute="bottom" secondItem="z7q-sg-riN" secondAttribute="bottom" constant="285" id="HPo-sB-oGI"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="HwS-Fr-m5t"/>
+                                            <constraint firstAttribute="trailing" secondItem="z7q-sg-riN" secondAttribute="trailing" constant="76" id="MCY-aB-rCv"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="OYj-s3-myb"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="bottom" constant="24" id="PVO-Fg-bwR"/>
-                                            <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="80" id="RLN-dQ-Ld8"/>
+                                            <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="60" id="RLN-dQ-Ld8"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="W0p-tk-QIV"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="top" secondItem="hrg-MM-CKy" secondAttribute="bottom" constant="36" id="XCR-By-4CE"/>
+                                            <constraint firstItem="z7q-sg-riN" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="aww-kB-pPe"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="top" secondItem="n8j-sZ-7aV" secondAttribute="top" id="gph-Nh-a1g"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="pjC-IR-jdj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hrg-MM-CKy" secondAttribute="trailing" constant="20" symbolic="YES" id="qlr-3y-WIt"/>
-                                            <constraint firstItem="1TQ-Sr-MST" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="16" id="t9x-BJ-YW9"/>
+                                            <constraint firstItem="z7q-sg-riN" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="76" id="rAF-d3-Dlv"/>
+                                            <constraint firstItem="1TQ-Sr-MST" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="24" id="t9x-BJ-YW9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2016,7 +2031,7 @@
                         <viewLayoutGuide key="safeArea" id="z1m-aq-St6"/>
                     </view>
                     <navigationItem key="navigationItem" id="tEO-En-6xJ"/>
-                    <size key="freeformSize" width="414" height="900"/>
+                    <size key="freeformSize" width="414" height="1144"/>
                     <connections>
                         <outlet property="buttonFour" destination="Rcs-Qj-BLK" id="gyh-i0-re7"/>
                         <outlet property="buttonOne" destination="PW2-8f-ruK" id="Dgq-X4-J37"/>
@@ -2025,7 +2040,9 @@
                         <outlet property="frameColorLabel" destination="1TQ-Sr-MST" id="X0x-r3-Tnb"/>
                         <outlet property="insideView" destination="6Qb-KB-mlm" id="jSS-sc-z2X"/>
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
+                        <outlet property="selectCategory" destination="fJl-on-sB4" id="M2c-jF-Ceq"/>
                         <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
+                        <outlet property="shareOutlet" destination="z7q-sg-riN" id="icU-f4-6Qf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
