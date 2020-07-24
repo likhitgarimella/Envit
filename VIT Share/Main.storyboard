@@ -1978,35 +1978,20 @@
                                                 <color key="textColor" red="0.1803921568627451" green="0.50196078431372548" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7q-sg-riN">
-                                                <rect key="frame" x="76" y="690" width="262" height="44"/>
-                                                <color key="backgroundColor" red="1" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="vaU-Z9-oyE"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                                <state key="normal" title="Share">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
-                                            <constraint firstAttribute="bottom" secondItem="z7q-sg-riN" secondAttribute="bottom" constant="285" id="HPo-sB-oGI"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="HwS-Fr-m5t"/>
-                                            <constraint firstAttribute="trailing" secondItem="z7q-sg-riN" secondAttribute="trailing" constant="76" id="MCY-aB-rCv"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="OYj-s3-myb"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="bottom" constant="24" id="PVO-Fg-bwR"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="60" id="RLN-dQ-Ld8"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="W0p-tk-QIV"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="top" secondItem="hrg-MM-CKy" secondAttribute="bottom" constant="36" id="XCR-By-4CE"/>
-                                            <constraint firstItem="z7q-sg-riN" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="aww-kB-pPe"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="top" secondItem="n8j-sZ-7aV" secondAttribute="top" id="gph-Nh-a1g"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="pjC-IR-jdj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hrg-MM-CKy" secondAttribute="trailing" constant="20" symbolic="YES" id="qlr-3y-WIt"/>
-                                            <constraint firstItem="z7q-sg-riN" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="76" id="rAF-d3-Dlv"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="24" id="t9x-BJ-YW9"/>
                                         </constraints>
                                     </view>
@@ -2042,7 +2027,6 @@
                         <outlet property="photoView" destination="sg0-G1-ias" id="9Ks-Bi-yA5"/>
                         <outlet property="selectCategory" destination="fJl-on-sB4" id="M2c-jF-Ceq"/>
                         <outlet property="selectPhotoImage" destination="Lsi-Ym-Jnc" id="LKj-fq-IiA"/>
-                        <outlet property="shareOutlet" destination="z7q-sg-riN" id="icU-f4-6Qf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -21,11 +21,14 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var buttonThree: UIButton!
     @IBOutlet var buttonFour: UIButton!
     
+    /// dummy label
     @IBOutlet var frameColorLabel: UILabel!
     
+    /// reference label
     @IBOutlet var selectCategory: UILabel!
     
-    @IBOutlet var shareOutlet: UIButton!
+    /// button declaration
+    let shareButton = UIButton(type: .system)
     
     var selectedImage: UIImage?
     
@@ -79,6 +82,30 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    func setupShareButton() {
+        
+        // properties
+        shareButton.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
+        shareButton.setTitle("Share", for: .normal)
+        shareButton.setTitleColor(UIColor.white, for: .normal)
+        shareButton.titleLabel?.font = UIFont(name: "SFProRounded-Medium", size: 20)
+        shareButton.translatesAutoresizingMaskIntoConstraints = false
+        shareButton.layer.cornerRadius = 10
+        shareButton.layer.masksToBounds = true
+        
+        // Need x, y, width, height constraints
+        shareButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // shareButton.topAnchor.constraint(equalTo: scView.bottomAnchor, constant: 30).isActive = true
+        shareButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 285).isActive = true
+        shareButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 76).isActive = true
+        shareButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 76).isActive = true
+        shareButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        
+        // Action for register button
+        // shareButton.addTarget(self, action: #selector(handleShare), for: .touchUpInside)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -89,15 +116,21 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         scView.delegate = self
         // scView.contentSize = CGSize(width: view.bounds.width, height: 50)
         // scView = UIScrollView(frame: CGRect(x: 0, y: 620, width: view.bounds.width, height: 50))
+        
         /// adding scroll view to view
         view.addSubview(scView)
+        
+        /// adding share button to view
+        view.addSubview(shareButton)
+        
+        setupShareButton()
         
         scView.translatesAutoresizingMaskIntoConstraints = false
         scView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         scView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         scView.topAnchor.constraint(equalTo: selectCategory.bottomAnchor, constant: 20).isActive = true
-        scView.bottomAnchor.constraint(equalTo: shareOutlet.topAnchor, constant: 30).isActive = true
+        scView.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: 30).isActive = true
         
         /// bg color
         scView.backgroundColor = UIColor.orange
@@ -358,4 +391,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #362
+}   // #395
