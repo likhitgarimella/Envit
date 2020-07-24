@@ -79,6 +79,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
+        shareButton.layer.cornerRadius = 10
+        
     }
     
     override func viewDidLoad() {
@@ -95,12 +97,13 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// adding scroll view to view
         view.addSubview(scView)
         
+        /// scroll view constraints
         scView.translatesAutoresizingMaskIntoConstraints = false
         scView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         scView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        scView.topAnchor.constraint(equalTo: selectCategory.bottomAnchor, constant: 20).isActive = true
-        scView.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: 30).isActive = true
+        scView.topAnchor.constraint(equalTo: selectCategory.bottomAnchor, constant: 10).isActive = true
+        scView.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: -30).isActive = true
         
         /// bg color
         scView.backgroundColor = UIColor.orange
@@ -361,4 +364,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #395
+}   // #368
