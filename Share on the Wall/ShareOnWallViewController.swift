@@ -61,26 +61,26 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
         // MARK: - Initial state
         
-        /// red color
-        photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        /// purple color
+        photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
-        frameColorLabel.text = "red"
+        frameColorLabel.text = "purple"
         
-        buttonOne.setImage(UIImage(named: "redOn"), for: .normal)
-        /// red color
-        buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonOne.setImage(UIImage(named: "purpleOn"), for: .normal)
+        /// purple color
+        buttonOne.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
         /// blue color
         buttonTwo.tintColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
-        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
-        /// purple color
-        buttonThree.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        buttonFour.setImage(UIImage(named: "greenOff"), for: .normal)
+        buttonThree.setImage(UIImage(named: "greenOff"), for: .normal)
         /// green color
-        buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
+        /// red color
+        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
         shareButton.layer.cornerRadius = 10
         
@@ -244,26 +244,26 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic1.prepare()
         taptic1.impactOccurred()
         
-        /// red color
-        photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        /// purple color
+        photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
-        frameColorLabel.text = "red"
+        frameColorLabel.text = "purple"
         
-        buttonOne.setImage(UIImage(named: "redOn"), for: .normal)
-        /// red color
-        buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonOne.setImage(UIImage(named: "purpleOn"), for: .normal)
+        /// purple color
+        buttonOne.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
         /// blue color
         buttonTwo.tintColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
-        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
-        /// purple color
-        buttonThree.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        buttonFour.setImage(UIImage(named: "greenOff"), for: .normal)
+        buttonThree.setImage(UIImage(named: "greenOff"), for: .normal)
         /// green color
-        buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
+        /// red color
+        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
     }
     
@@ -278,21 +278,21 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
         frameColorLabel.text = "blue"
         
-        buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
+        /// purple color
+        buttonOne.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         buttonTwo.setImage(UIImage(named: "blueOn"), for: .normal)
         /// blue color
         buttonTwo.tintColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
-        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
-        /// purple color
-        buttonThree.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        buttonFour.setImage(UIImage(named: "greenOff"), for: .normal)
+        buttonThree.setImage(UIImage(named: "greenOff"), for: .normal)
         /// green color
-        buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
+        /// red color
+        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
     }
     
@@ -302,26 +302,26 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic3.prepare()
         taptic3.impactOccurred()
         
+        /// green color
+        photoView.backgroundColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        frameColorLabel.text = "green"
+        
+        buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
         /// purple color
-        photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        frameColorLabel.text = "purple"
-        
-        buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonOne.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
         /// blue color
         buttonTwo.tintColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
-        buttonThree.setImage(UIImage(named: "purpleOn"), for: .normal)
-        /// purple color
-        buttonThree.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        buttonFour.setImage(UIImage(named: "greenOff"), for: .normal)
+        buttonThree.setImage(UIImage(named: "greenOn"), for: .normal)
         /// green color
-        buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
+        /// red color
+        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
     }
     
@@ -331,26 +331,26 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic4.prepare()
         taptic4.impactOccurred()
         
-        /// green color
-        photoView.backgroundColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
-        
-        frameColorLabel.text = "green"
-        
-        buttonOne.setImage(UIImage(named: "redOff"), for: .normal)
         /// red color
-        buttonOne.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        
+        frameColorLabel.text = "red"
+        
+        buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
+        /// purple color
+        buttonOne.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         buttonTwo.setImage(UIImage(named: "blueOff"), for: .normal)
         /// blue color
         buttonTwo.tintColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
-        buttonThree.setImage(UIImage(named: "purpleOff"), for: .normal)
-        /// purple color
-        buttonThree.tintColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
-        
-        buttonFour.setImage(UIImage(named: "greenOn"), for: .normal)
+        buttonThree.setImage(UIImage(named: "greenOff"), for: .normal)
         /// green color
-        buttonFour.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
+        
+        buttonFour.setImage(UIImage(named: "redOn"), for: .normal)
+        /// red color
+        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
     }
     
