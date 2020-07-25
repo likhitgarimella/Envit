@@ -16,6 +16,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var selectPhotoImage: UIImageView!
     
+    @IBOutlet var saySomething: UITextField!
+    
     @IBOutlet var buttonOne: UIButton!
     @IBOutlet var buttonTwo: UIButton!
     @IBOutlet var buttonThree: UIButton!
@@ -96,6 +98,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         scView.delegate = self
         // scView.contentSize = CGSize(width: view.bounds.width, height: 50)
         // scView = UIScrollView(frame: CGRect(x: 0, y: 620, width: view.bounds.width, height: 50))
+        
+        scView.showsHorizontalScrollIndicator = false
         
         /// adding scroll view to view
         view.addSubview(scView)
@@ -370,4 +374,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #374
+}   // #378
