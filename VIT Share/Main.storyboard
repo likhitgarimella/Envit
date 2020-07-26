@@ -34,7 +34,7 @@
         <!--Login View Controller-->
         <scene sceneID="zym-Sk-D8Y">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="jWt-P4-PY5" customClass="LoginViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" id="jWt-P4-PY5" customClass="LoginViewController" customModule="VIT_Share" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOr-wU-Rdw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -548,6 +548,9 @@
                                                 <state key="normal" title="Log out">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="logoutAction:" destination="lRJ-Ug-21N" eventType="touchUpInside" id="BMR-Bd-KY4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2474,14 +2477,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-7P-IaG">
-                                <rect key="frame" x="0.0" y="448" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="447" width="414" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="khE-0K-byv"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-rO-whY">
-                                <rect key="frame" x="120" y="456" width="174" height="44"/>
+                                <rect key="frame" x="120" y="455" width="174" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="9Tk-B4-ah3"/>
@@ -2523,7 +2526,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-xU-r3d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="508"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="507"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M7i-Bm-EjZ">
                                     <size key="itemSize" width="128" height="128"/>
@@ -2711,7 +2714,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hvI-zd-Dgr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="458"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="457"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2730,7 +2733,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-Tu-x4S">
-                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="66.666666666666686" height="20"/>
+                                                    <rect key="frame" x="40.000000000000007" y="37.666666666666664" width="70.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2769,7 +2772,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joC-rq-bAE">
-                                <rect key="frame" x="0.0" y="458" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="457" width="414" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8b-Fi-DYA">
                                         <rect key="frame" x="20" y="5" width="322" height="40"/>
@@ -3012,7 +3015,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4e8-lt-oAl"/>
+        <segue reference="Hdy-ma-UKs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BG1" width="414" height="896"/>
