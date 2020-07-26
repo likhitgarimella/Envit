@@ -48,6 +48,19 @@ class AuthService {
         
     }
     
+    // Log out
+    static func logout(onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+        
+        do {
+            try Auth.auth().signOut()
+            print("----------------")
+            onSuccess()
+        } catch let logoutError {
+            onError(logoutError.localizedDescription)
+        }
+        
+    }
+    
     // Set user info to database
     static func setUserInformation(name: String, email: String, phone: String, block: String, uid: String, onSuccess: @escaping () -> Void) {
         
@@ -58,4 +71,4 @@ class AuthService {
         
     }
     
-}   // #62
+}   // #75
