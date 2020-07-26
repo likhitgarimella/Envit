@@ -12,8 +12,13 @@ import Foundation
 
 struct Api {
     
+    // MARK:- User
+    
     /// Firebase node - Users
     static var UserDet = UserApi()
+    
+    
+    // MARK:- Mentee
     
     /// Firebase node - Mentees-Details
     static var MenteePost = MenteePostApi()
@@ -21,6 +26,9 @@ struct Api {
     static var MenteeComment = MenteeCommentApi()
     /// Firebase node - Mentee-Post-Comments
     static var MenteePostComment = MenteePostCommentApi()
+    
+    
+    // MARK:- Mentor
     
     /// Firebase node - Mentors-Details
     static var MentorPost = MentorPostApi()
@@ -30,12 +38,17 @@ struct Api {
     static var MentorPostComment = MentorPostCommentApi()
     
     
+    // MARK:- Personal Project
+    
     /// Firebase node - Personal Projects-Details
     static var PersonalProjectPost = PersonalProjectPostApi()
     /// Firebase node - Comments-In-Pers-Projects
     static var PersProjComment = PersProjCommentApi()
     /// Firebase node - Pers-Proj-Post-Comments
     static var PersProjPostComment = PersProjPostCommentApi()
+    
+    
+    // MARK:- J component
     
     /// Firebase node - J-Component Projects-Details
     static var JComponentProjectPost = JComponentProjectPostApi()
@@ -45,13 +58,17 @@ struct Api {
     static var JCompProjPostComment = JCompProjPostCommentApi()
     
     
-    ///
+    // MARK:- Profile
+    
+    /// Firebase node - My-Mentor-Posts
     static var MyMentorPosts = MyMentorPostsApi()
-    ///
+    /// Firebase node - My-Mentee-Posts
     static var MyMenteePosts = MyMenteePostsApi()
     
+    
+    // MARK:- Share on wall
     
     /// Firebase node - Posts-Details
     static var Post = PostApi()
     
-}   // #58
+}   // #75
