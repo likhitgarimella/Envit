@@ -37,6 +37,7 @@ class UserApi {
         
         REF_USERS.child(currentUser.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             
+            /// tranform data snapshot to user object
             if let dict = snapshot.value as? [String:Any] {
                 let user = AppUser.transformUser(dict: dict, key: snapshot.key)
                 completion(user)
@@ -53,12 +54,19 @@ class UserApi {
             
             if let dict = snapshot.value as? [String:Any] {
                 let user = AppUser.transformUser(dict: dict, key: snapshot.key)
-                completion(user)
+                
+                /// Display list of users in 'Discover users' exclusing the current user in that
+                if user.id! !=  Api.UserDet.CURRENT_USER?.uid {
+                    completion(user)
+                }
             }
             
         })
         
     }
+    
+    /// This will be the search text that we get from users
+    // func queryUsers
     
     ///
     var CURRENT_USER: User? {
@@ -78,4 +86,4 @@ class UserApi {
         
     }
     
-}   // #82
+}   // #90
