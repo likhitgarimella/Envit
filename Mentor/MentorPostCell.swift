@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import Firebase
+// import Firebase
+
+/// If a View needs data, it should ask controllers...
 
 class MentorPostCell: UICollectionViewCell {
     
@@ -31,7 +33,7 @@ class MentorPostCell: UICollectionViewCell {
     var mentorFeedVC: MentorFeedViewController?
     
     // db ref
-    var mentorPostRef: DatabaseReference!
+    // --- var mentorPostRef: DatabaseReference!
     
     var mentorPost: MentorModel? {
         didSet {
@@ -59,6 +61,11 @@ class MentorPostCell: UICollectionViewCell {
         /// Update like
         updateLike(post: mentorPost!)
         
+        /// New
+        self.updateLike(post: self.mentorPost!)
+        
+        /// Old
+        /*
         /// Update like count
         Api.MentorPost.REF_POSTS.child(mentorPost!.id!).observe(.childChanged, with: {
             snapshot in
@@ -76,6 +83,7 @@ class MentorPostCell: UICollectionViewCell {
                 self.updateLike(post: post)
             }
         })
+        */
         
     }
     
@@ -109,6 +117,8 @@ class MentorPostCell: UICollectionViewCell {
     }
     
     /// New setupUserInfo() func
+    /// previously, our cell had to go look up the db for a user based on the uid...
+    /// it now knows all that information already...
     func setupUserInfo() {
         
         nameLabel.text = user?.nameString
@@ -168,22 +178,31 @@ class MentorPostCell: UICollectionViewCell {
         
     }
     
-    @objc func commentImageViewTouch() {
+    @objc func likeImageViewTouch() {
         
-        if let id = mentorPost?.uid {
-            mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: id)
+        /// Old
+        /*
+        mentorPostRef = Api.MentorPost.REF_POSTS.child(mentorPost!.id!)
+        incrementLikes(forRef: mentorPostRef)
+        */
+        
+        /// New
+        Api.MentorPost.incrementLikes(postId: mentorPost!.id!, onSuccess: { (post) in
+            self.updateLike(post: post)
+            /// New #2
+            /// Now the post property of the cell is updated right after a like/dislike
+            self.mentorPost?.likes = post.likes
+            self.mentorPost?.isLiked = post.isLiked
+            self.mentorPost?.likeCount = post.likeCount
+        }) { (errorMessage) in
+            // hud
+            print(errorMessage!)
         }
         
     }
     
-    @objc func likeImageViewTouch() {
-        
-        /// Scalable way of liking posts.. new method..
-        mentorPostRef = Api.MentorPost.REF_POSTS.child(mentorPost!.id!)
-        incrementLikes(forRef: mentorPostRef)
-        
-    }
-    
+    /// Old incrementLikes method
+    /*
     func incrementLikes(forRef ref: DatabaseReference) {
         
         ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
@@ -221,5 +240,14 @@ class MentorPostCell: UICollectionViewCell {
         }
         
     }
+    */
+    
+    @objc func commentImageViewTouch() {
+        
+        if let id = mentorPost?.uid {
+            mentorFeedVC?.performSegue(withIdentifier: "commentsInMentorFeed", sender: id)
+        }
+        
+    }
 
-}   // #226
+}   // #254
