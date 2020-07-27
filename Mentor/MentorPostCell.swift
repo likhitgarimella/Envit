@@ -32,9 +32,6 @@ class MentorPostCell: UICollectionViewCell {
     // linking mentor feed VC & mentor post cell
     var mentorFeedVC: MentorFeedViewController?
     
-    // db ref
-    // --- var mentorPostRef: DatabaseReference!
-    
     var mentorPost: MentorModel? {
         didSet {
             updateView()
@@ -201,47 +198,6 @@ class MentorPostCell: UICollectionViewCell {
         
     }
     
-    /// Old incrementLikes method
-    /*
-    func incrementLikes(forRef ref: DatabaseReference) {
-        
-        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
-            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
-                // print("Value 1: \(currentData.value)")
-                var likes: Dictionary<String, Bool>
-                likes = post["likes"] as? [String: Bool] ?? [:]
-                var likeCount = post["likeCount"] as? Int ?? 0
-                if let _ = likes[uid] {
-                    likeCount -= 1
-                    likes.removeValue(forKey: uid)
-                } else {
-                    likeCount += 1
-                    likes[uid] = true
-                }
-                post["likeCount"] = likeCount as AnyObject
-                post["likes"] = likes as AnyObject
-                
-                currentData.value = post
-                
-                return TransactionResult.success(withValue: currentData)
-            }
-            return TransactionResult.success(withValue: currentData)
-        }) { (error, committed, snapshot) in
-            
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            // print("Value 2: \(snapshot?.value)")
-            if let dict = snapshot?.value as? [String: Any] {
-                let post = MentorModel.transformMentorPost(dict: dict, key: snapshot!.key)
-                self.updateLike(post: post)
-            }
-            
-        }
-        
-    }
-    */
-    
     @objc func commentImageViewTouch() {
         
         if let id = mentorPost?.uid {
@@ -250,4 +206,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #254
+}   // #210
