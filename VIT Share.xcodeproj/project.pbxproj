@@ -82,6 +82,7 @@
 		02A4D16C24CEC472007502D7 /* PostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16B24CEC472007502D7 /* PostCommentApi.swift */; };
 		02A4D16E24CEC492007502D7 /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16D24CEC492007502D7 /* MyPostsApi.swift */; };
 		02A4D17024CEC553007502D7 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16F24CEC553007502D7 /* HelperService.swift */; };
+		02A4D17224CF738B007502D7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D17124CF738B007502D7 /* Comment.swift */; };
 		02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A502C824A4744F001E4F25 /* AddProjectViewController.swift */; };
 		02AB10D024B98C5F00D1824D /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10CF24B98C5F00D1824D /* PostApi.swift */; };
 		02AB10D224B98DC700D1824D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10D124B98DC700D1824D /* Post.swift */; };
@@ -223,6 +224,7 @@
 		02A4D16B24CEC472007502D7 /* PostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentApi.swift; sourceTree = "<group>"; };
 		02A4D16D24CEC492007502D7 /* MyPostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
 		02A4D16F24CEC553007502D7 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		02A4D17124CF738B007502D7 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		02A502C824A4744F001E4F25 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		02AB10CF24B98C5F00D1824D /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
 		02AB10D124B98DC700D1824D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -515,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				02AB10D124B98DC700D1824D /* Post.swift */,
+				02A4D17124CF738B007502D7 /* Comment.swift */,
 				02CAF41F24B84499008A7874 /* ShareOnWallViewController.swift */,
 			);
 			path = "Share on the Wall";
@@ -838,6 +841,7 @@
 				0221E1372477C12F0022DCCB /* SPAlertIconDoneView.swift in Sources */,
 				02E3A9A92478DC4A00A9C18C /* CBTabItemSelectAnimation.swift in Sources */,
 				0221E12C2477C12F0022DCCB /* SPAlertIconErrorView.swift in Sources */,
+				02A4D17224CF738B007502D7 /* Comment.swift in Sources */,
 				0221E1322477C12F0022DCCB /* SPAlertIconFlagView.swift in Sources */,
 				02BA546924A8A82200F3DFA5 /* JComponentProjectPostApi.swift in Sources */,
 				024FC8D92496D470006046B3 /* MenteeFeedViewController.swift in Sources */,
