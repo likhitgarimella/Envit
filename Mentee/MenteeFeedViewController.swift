@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -52,7 +52,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     var users = [AppUser]()
     
     // DB ref
-    var refMentees: DatabaseReference!
+    // --- var refMentees: DatabaseReference!
     
     // load mentee posts
     func loadPosts() {
