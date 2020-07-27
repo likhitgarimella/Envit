@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import Firebase
+// import Firebase
+
+/// If a View needs data, it should ask controllers...
 
 class MenteePostCell: UICollectionViewCell {
     
@@ -27,9 +29,6 @@ class MenteePostCell: UICollectionViewCell {
     
     // linking mentee feed VC & mentee post cell
     var menteeFeedVC: MenteeFeedViewController?
-    
-    // db ref
-    var menteePostRef: DatabaseReference!
     
     var menteePost: MenteeModel? {
         didSet {
@@ -55,6 +54,11 @@ class MenteePostCell: UICollectionViewCell {
         /// Update like
         updateLike(post: menteePost!)
         
+        /// New
+        self.updateLike(post: self.menteePost!)
+        
+        /// Old
+        /*
         /// Update like count
         Api.MenteePost.REF_POSTS.child(menteePost!.id!).observe(.childChanged, with: {
             snapshot in
@@ -72,6 +76,7 @@ class MenteePostCell: UICollectionViewCell {
                 self.updateLike(post: post)
             }
         })
+        */
         
     }
     
@@ -105,6 +110,8 @@ class MenteePostCell: UICollectionViewCell {
     }
     
     /// New setupUserInfo() func
+    /// previously, our cell had to go look up the db for a user based on the uid...
+    /// it now knows all that information already...
     func setupUserInfo() {
         
         nameLabel.text = user?.nameString
@@ -158,6 +165,29 @@ class MenteePostCell: UICollectionViewCell {
         
     }
     
+    @objc func likeImageViewTouch() {
+        
+        /// Old
+        /*
+        menteePostRef = Api.MenteePost.REF_POSTS.child(menteePost!.id!)
+        incrementLikes(forRef: menteePostRef)
+        */
+        
+        /// New
+        Api.MenteePost.incrementLikes(postId: menteePost!.id!, onSuccess: { (post) in
+            self.updateLike(post: post)
+            /// New #2
+            /// Now the post property of the cell is updated right after a like/dislike
+            self.menteePost?.likes = post.likes
+            self.menteePost?.isLiked = post.isLiked
+            self.menteePost?.likeCount = post.likeCount
+        }) { (errorMessage) in
+            // hud
+            print(errorMessage!)
+        }
+        
+    }
+    
     @objc func commentImageViewTouch() {
         
         if let id = menteePost?.uid {
@@ -165,51 +195,5 @@ class MenteePostCell: UICollectionViewCell {
         }
         
     }
-    
-    @objc func likeImageViewTouch() {
-        
-        /// Scalable way of liking posts.. new method..
-        menteePostRef = Api.MenteePost.REF_POSTS.child(menteePost!.id!)
-        incrementLikes(forRef: menteePostRef)
-        
-    }
-    
-    func incrementLikes(forRef ref: DatabaseReference) {
-        
-        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
-            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
-                // print("Value 1: \(currentData.value)")
-                var likes: Dictionary<String, Bool>
-                likes = post["likes"] as? [String: Bool] ?? [:]
-                var likeCount = post["likeCount"] as? Int ?? 0
-                if let _ = likes[uid] {
-                    likeCount -= 1
-                    likes.removeValue(forKey: uid)
-                } else {
-                    likeCount += 1
-                    likes[uid] = true
-                }
-                post["likeCount"] = likeCount as AnyObject
-                post["likes"] = likes as AnyObject
-                
-                currentData.value = post
-                
-                return TransactionResult.success(withValue: currentData)
-            }
-            return TransactionResult.success(withValue: currentData)
-        }) { (error, committed, snapshot) in
-            
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            // print("Value 2: \(snapshot?.value)")
-            if let dict = snapshot?.value as? [String: Any] {
-                let post = MenteeModel.transformMenteePost(dict: dict, key: snapshot!.key)
-                self.updateLike(post: post)
-            }
-            
-        }
-        
-    }
 
-}   // #216
+}   // #200
