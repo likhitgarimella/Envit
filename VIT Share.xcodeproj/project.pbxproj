@@ -78,6 +78,10 @@
 		02802BB924850709008BF296 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB824850709008BF296 /* FeedViewController.swift */; };
 		02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BBA24857862008BF296 /* TextFieldCounter.swift */; };
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
+		02A4D16A24CEC44A007502D7 /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16924CEC44A007502D7 /* CommentApi.swift */; };
+		02A4D16C24CEC472007502D7 /* PostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16B24CEC472007502D7 /* PostCommentApi.swift */; };
+		02A4D16E24CEC492007502D7 /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16D24CEC492007502D7 /* MyPostsApi.swift */; };
+		02A4D17024CEC553007502D7 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16F24CEC553007502D7 /* HelperService.swift */; };
 		02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A502C824A4744F001E4F25 /* AddProjectViewController.swift */; };
 		02AB10D024B98C5F00D1824D /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10CF24B98C5F00D1824D /* PostApi.swift */; };
 		02AB10D224B98DC700D1824D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB10D124B98DC700D1824D /* Post.swift */; };
@@ -217,6 +221,10 @@
 		02802BB824850709008BF296 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		02802BBA24857862008BF296 /* TextFieldCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCounter.swift; sourceTree = "<group>"; };
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02A4D16924CEC44A007502D7 /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
+		02A4D16B24CEC472007502D7 /* PostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentApi.swift; sourceTree = "<group>"; };
+		02A4D16D24CEC492007502D7 /* MyPostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
+		02A4D16F24CEC553007502D7 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
 		02A502C824A4744F001E4F25 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		02AB10CF24B98C5F00D1824D /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
 		02AB10D124B98DC700D1824D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -447,30 +455,34 @@
 				024C711E2443B149002D9CCE /* Info.plist */,
 				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
 				02DC18D3248224C100CBC10C /* AuthService.swift */,
-				02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */,
-				02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */,
-				02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */,
-				02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */,
 				02E90B2A249D89C10094759C /* Api.swift */,
 				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
-				02F84B1424BAEB01003EF494 /* MyMentorPostsApi.swift */,
-				02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */,
-				02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */,
-				02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */,
 				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
 				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
 				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
+				02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */,
+				02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */,
 				02E90B34249ED96C0094759C /* MentorPostApi.swift */,
 				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */,
+				02F84B1424BAEB01003EF494 /* MyMentorPostsApi.swift */,
+				02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */,
 				022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */,
 				023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */,
 				023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */,
+				02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */,
+				02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */,
 				02BA546824A8A82200F3DFA5 /* JComponentProjectPostApi.swift */,
 				023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */,
 				023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */,
+				02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */,
+				02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */,
 				02AB10CF24B98C5F00D1824D /* PostApi.swift */,
+				02A4D16924CEC44A007502D7 /* CommentApi.swift */,
+				02A4D16B24CEC472007502D7 /* PostCommentApi.swift */,
+				02A4D16D24CEC492007502D7 /* MyPostsApi.swift */,
+				02A4D16F24CEC553007502D7 /* HelperService.swift */,
 			);
 			path = "VIT Share";
 			sourceTree = "<group>";
@@ -765,6 +777,7 @@
 				023CB4F924AAC6CC002FFF74 /* PersProjCommentApi.swift in Sources */,
 				02B96D8F248659CF000C7D48 /* MentorPostCell.swift in Sources */,
 				02E3A9AD2478DC4A00A9C18C /* CBFlashyTabBar.swift in Sources */,
+				02A4D17024CEC553007502D7 /* HelperService.swift in Sources */,
 				02E90B35249ED96C0094759C /* MentorPostApi.swift in Sources */,
 				0221E1212477C12F0022DCCB /* SPAlertIconAnimatable.swift in Sources */,
 				02D6B9282498E13B0008B503 /* MentorComments.swift in Sources */,
@@ -801,6 +814,7 @@
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
 				0221E12D2477C12F0022DCCB /* SPAlertIconQuestionView.swift in Sources */,
 				02A502C924A4744F001E4F25 /* AddProjectViewController.swift in Sources */,
+				02A4D16C24CEC472007502D7 /* PostCommentApi.swift in Sources */,
 				0221E1202477C12F0022DCCB /* SPAlertLayout.swift in Sources */,
 				0221E1342477C12F0022DCCB /* SPAlertIconDocView.swift in Sources */,
 				022001AC24A7EAA100C60462 /* PersonalProjectModel.swift in Sources */,
@@ -818,6 +832,7 @@
 				02E3A9AB2478DC4A00A9C18C /* CBTabItemAnimation.swift in Sources */,
 				02BA547524A9616E00F3DFA5 /* PersProjectComments.swift in Sources */,
 				02BA546E24A91D6E00F3DFA5 /* JCompProjPostCell.swift in Sources */,
+				02A4D16E24CEC492007502D7 /* MyPostsApi.swift in Sources */,
 				0221E12E2477C12F0022DCCB /* SPAlertIconExclamationView.swift in Sources */,
 				0221E12A2477C12F0022DCCB /* SPAlertIconCardView.swift in Sources */,
 				024FC8D72496D447006046B3 /* MentorFeedViewController.swift in Sources */,
@@ -863,6 +878,7 @@
 				0221E1382477C12F0022DCCB /* SPAlertIconRepeatView.swift in Sources */,
 				025F79DC24A56A200052C9E1 /* JComponentViewController.swift in Sources */,
 				02B96D93248665B2000C7D48 /* MenteePostCell.swift in Sources */,
+				02A4D16A24CEC44A007502D7 /* CommentApi.swift in Sources */,
 				02E4C7BE24483C9F004CE7D5 /* SearchBarView.swift in Sources */,
 				024C71132443B145002D9CCE /* SceneDelegate.swift in Sources */,
 				020A330424443B07006FE3E5 /* ProfileViewController.swift in Sources */,
