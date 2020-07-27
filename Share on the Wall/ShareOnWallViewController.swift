@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// import Firebase
 
 class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
@@ -14,8 +15,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var photoView: UIView!
     @IBOutlet var insideView: UIView!
     
+    /// main image
     @IBOutlet var selectPhotoImage: UIImageView!
     
+    /// main textfield
     @IBOutlet var saySomething: UITextField!
     
     @IBOutlet var buttonOne: UIButton!
@@ -29,9 +32,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     /// reference label
     @IBOutlet var selectCategory: UILabel!
     
-    @IBOutlet var shareButton: UIButton!
-    
-    var selectedImage: UIImage?
+    /// main button outlet
+    @IBOutlet var shareOutlet: UIButton!
     
     /// global declaration
     let button = UIButton.init(type: .custom)
@@ -84,7 +86,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// red color
         buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
-        shareButton.layer.cornerRadius = 10
+        shareOutlet.layer.cornerRadius = 10
         
     }
     
@@ -110,7 +112,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         scView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         scView.topAnchor.constraint(equalTo: selectCategory.bottomAnchor, constant: 10).isActive = true
-        scView.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: -30).isActive = true
+        scView.bottomAnchor.constraint(equalTo: shareOutlet.topAnchor, constant: -30).isActive = true
         
         /// bg color
         scView.backgroundColor = UIColor.orange
@@ -220,27 +222,6 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         // print(buttonArray)
     }
     */
-    
-    @objc func handleSelectPhoto() {
-        
-        let pickerController = UIImagePickerController()
-        // To get access to selected media files, add delegate
-        pickerController.delegate = self
-        /// presenting it in full screen bcuz...
-        /// i want the view to change...
-        /// so that viewWillAppear will work...
-        pickerController.modalPresentationStyle = .fullScreen
-        // present photo library
-        present(pickerController, animated: true, completion: nil)
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-        
-    }
     
     @IBAction func buttonOneAction(_ sender: UIButton) {
         
@@ -358,6 +339,45 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    var selectedImage: UIImage?
+    
+    @objc func handleSelectPhoto() {
+        
+        let pickerController = UIImagePickerController()
+        // To get access to selected media files, add delegate
+        pickerController.delegate = self
+        /// presenting it in full screen bcuz...
+        /// i want the view to change...
+        /// so that viewWillAppear will work...
+        pickerController.modalPresentationStyle = .fullScreen
+        // present photo library
+        present(pickerController, animated: true, completion: nil)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        handlePost()
+        
+    }
+    
+    func handlePost() {
+        
+        if selectedImage != nil {
+            // Enable
+            self.shareOutlet.isEnabled = true
+            shareOutlet.setTitleColor(UIColor.white, for: .normal)
+            // shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
+        } else {
+            // Disable
+            self.shareOutlet.isEnabled = false
+            shareOutlet.setTitleColor(UIColor.lightText, for: .normal)
+            // shareOutlet.backgroundColor = UIColor(red: 80/255, green: 101/255, blue: 161/255, alpha: 1)
+        }
+        
+    }
+    
 }
 
 extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -374,4 +394,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #378
+}   // #398
