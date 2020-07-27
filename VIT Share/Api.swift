@@ -65,10 +65,17 @@ struct Api {
     /// Firebase node - My-Mentee-Posts
     static var MyMenteePosts = MyMenteePostsApi()
     
+    /// Firebase node - My-Wall-Posts
+    static var MyPosts = MyPostsApi()
+    
     
     // MARK:- Share on wall
     
     /// Firebase node - Posts-Details
     static var Post = PostApi()
+    /// Firebase node - Comments-On-Wall
+    static var Comment = CommentApi()
+    /// Firebase node - Wall-Post-Comments
+    static var PostComment = PostCommentApi()
     
-}   // #75
+}   // #82
