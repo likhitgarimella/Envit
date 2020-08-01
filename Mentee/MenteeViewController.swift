@@ -103,7 +103,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         let currentUserId = currentUser.uid
         */
         
-        HelperServiceMentee.uploadDataToServer(domainText: domain.text!, queryText: postQueryTextView.text!, onSuccess: {
+        HelperServiceMentee.uploadDataToServer(domainText: domain.text!, queryText: postQueryTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines), onSuccess: {
             // Alert pod - Query Added
             let alertView = SPAlertView(title: "Your query has been posted", message: nil, preset: SPAlertPreset.done)
             alertView.duration = 1.2

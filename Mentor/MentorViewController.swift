@@ -115,7 +115,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         let currentUserId = currentUser.uid
         */
         
-        HelperServiceMentor.uploadDataToServer(domainText: domain.text!, experienceText: experienceTextView.text!, prerequisitesText: prerequisites.text!, coursesText: courses.text!, onSuccess: {
+        HelperServiceMentor.uploadDataToServer(domainText: domain.text!, experienceText: experienceTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines), prerequisitesText: prerequisites.text!.trimmingCharacters(in: .whitespacesAndNewlines), coursesText: courses.text!.trimmingCharacters(in: .whitespacesAndNewlines), onSuccess: {
             // Alert pod - Work Added
             let alertView = SPAlertView(title: "Your work has been added", message: nil, preset: SPAlertPreset.done)
             alertView.duration = 1.2
