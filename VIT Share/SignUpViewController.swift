@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+// import Firebase
 import JGProgressHUD
 
 class SignUpViewController: UIViewController {

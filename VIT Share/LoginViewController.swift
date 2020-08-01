@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+// import Firebase
 import JGProgressHUD
 
 class LoginViewController: UIViewController {
@@ -22,9 +22,17 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        // if user signed in
+        /*
         if Auth.auth().currentUser != nil {
             print("Current user: \(String(describing: Auth.auth().currentUser))")
+            // segue to tab bar VC
+            self.performSegue(withIdentifier: "goToHome", sender: self)
+        }
+        */
+        
+        // if user signed in
+        if Api.UserDet.CURRENT_USER != nil {
+            // print("Current user: \(Auth.auth().currentUser)")
             // segue to tab bar VC
             self.performSegue(withIdentifier: "goToHome", sender: self)
         }
@@ -120,4 +128,4 @@ class LoginViewController: UIViewController {
         
     }
     
-}   // #124
+}   // #132
