@@ -6,6 +6,7 @@ target 'VIT Share' do
 
   # Pods for VIT Share
 
+pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'JGProgressHUD'
