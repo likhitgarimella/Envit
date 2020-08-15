@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class PersProjPostCell: UICollectionViewCell {
     
@@ -210,4 +211,4 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #214
+}   // #215

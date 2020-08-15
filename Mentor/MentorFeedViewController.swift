@@ -67,7 +67,7 @@ class MentorFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             // fetch user data in mentor posts
             self.fetchUser(uid: postId, completed: {
                 self.mentorPosts.append(post)
-                // print(self.posts)
+                print(self.mentorPosts)
                 /// stop before tablew view reloads data
                 self.activityIndicatorView6.stopAnimating()
                 self.activityIndicatorView6.hidesWhenStopped = true

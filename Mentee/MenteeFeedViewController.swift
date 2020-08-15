@@ -67,7 +67,7 @@ class MenteeFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             // fetch user data in mentee posts
             self.fetchUser(uid: postId, completed: {
                 self.menteePosts.append(post)
-                // print(self.posts)
+                print(self.menteePosts)
                 /// stop before tablew view reloads data
                 self.activityIndicatorView5.stopAnimating()
                 self.activityIndicatorView5.hidesWhenStopped = true

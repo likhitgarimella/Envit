@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 /// Write your own Api, to conveniently observe database data...
 
@@ -86,4 +87,4 @@ class UserApi {
         
     }
     
-}   // #90
+}   // #91

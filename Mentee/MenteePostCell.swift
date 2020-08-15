@@ -18,7 +18,7 @@ class MenteePostCell: UICollectionViewCell {
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     
     @IBOutlet var domainName: UILabel!
-    @IBOutlet var postedQueryTextView: UITextView!
+    @IBOutlet var postedQueryTextView: UILabel!
     @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
@@ -149,9 +149,7 @@ class MenteePostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        // text view
-        postedQueryTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
-        postedQueryTextView.dataDetectorTypes = .link
+        // postedQueryTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
@@ -196,4 +194,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #200
+}   // #198

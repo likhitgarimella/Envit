@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class AuthService {
     
@@ -71,4 +72,4 @@ class AuthService {
         
     }
     
-}   // #75
+}   // #76

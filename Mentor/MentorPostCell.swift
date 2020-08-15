@@ -18,9 +18,9 @@ class MentorPostCell: UICollectionViewCell {
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     
     @IBOutlet var domainName: UILabel!
-    @IBOutlet var experienceTextView: UITextView!
-    @IBOutlet var courseTextView: UITextView!
-    @IBOutlet var prerequisiteTextView: UITextView!
+    @IBOutlet var experienceTextView: UILabel!
+    @IBOutlet var courseTextView: UILabel!
+    @IBOutlet var prerequisiteTextView: UILabel!
     @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
@@ -157,11 +157,7 @@ class MentorPostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        // text view
-        experienceTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
-        courseTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
-        prerequisiteTextView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1.0)
-        courseTextView.dataDetectorTypes = .link
+        // courseTextView.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))
@@ -206,4 +202,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #210
+}   // #206

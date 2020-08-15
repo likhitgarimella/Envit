@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class JCompProjPostCell: UICollectionViewCell {
     
@@ -210,4 +211,4 @@ class JCompProjPostCell: UICollectionViewCell {
         
     }
 
-}   // #214
+}   // #215
