@@ -48,6 +48,8 @@ class MenteePostCell: UICollectionViewCell {
         
         domainName.text = menteePost?.domainText
         postedQueryTextView.text = menteePost?.postQueryText
+        print(domainName.text)
+        print(postedQueryTextView.text)
         
         setupUserInfo()
         
@@ -194,4 +196,4 @@ class MenteePostCell: UICollectionViewCell {
         
     }
 
-}   // #198
+}   // #200
