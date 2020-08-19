@@ -18,7 +18,7 @@ class MenteePostCell: UICollectionViewCell {
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     
     @IBOutlet var domainName: UILabel!
-    @IBOutlet var postedQueryTextView: UILabel!
+    @IBOutlet var postedQueryLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var bottomView: UIView!
@@ -47,9 +47,9 @@ class MenteePostCell: UICollectionViewCell {
     func updateView() {
         
         domainName.text = menteePost?.domainText
-        postedQueryTextView.text = menteePost?.postQueryText
+        postedQueryLabel.text = menteePost?.postQueryText
         print(domainName.text)
-        print(postedQueryTextView.text)
+        print(postedQueryLabel.text)
         
         setupUserInfo()
         
@@ -126,12 +126,12 @@ class MenteePostCell: UICollectionViewCell {
         // initial text
         nameLabel.text = ""
         domainName.text = ""
-        postedQueryTextView.text = ""
+        postedQueryLabel.text = ""
         
         // corner radius
         cardView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
-        postedQueryTextView.layer.cornerRadius = 6
+        postedQueryLabel.layer.cornerRadius = 6
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
@@ -151,7 +151,7 @@ class MenteePostCell: UICollectionViewCell {
         let screenWidth = UIScreen.main.bounds.size.width
         widthConstraint.constant = screenWidth - (2 * 12)
         
-        // postedQueryTextView.dataDetectorTypes = .link
+        // postedQueryLabel.dataDetectorTypes = .link
         
         // Tap gesture for comment image on tap
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(commentImageViewTouch))

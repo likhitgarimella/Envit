@@ -132,7 +132,7 @@
                 <outlet property="menteeCommentImageView" destination="U8n-E9-f6t" id="hvS-uO-9xi"/>
                 <outlet property="menteeLikeImageView" destination="AZO-yI-mpP" id="iL5-GQ-BZL"/>
                 <outlet property="nameLabel" destination="tI0-EH-Qz2" id="8un-EF-LgJ"/>
-                <outlet property="postedQueryTextView" destination="TgV-MG-8bm" id="rV4-5Z-wRp"/>
+                <outlet property="postedQueryLabel" destination="TgV-MG-8bm" id="EG1-wH-Q3U"/>
                 <outlet property="widthConstraint" destination="Ocf-Nd-wjP" id="zDn-ir-Kyc"/>
             </connections>
             <point key="canvasLocation" x="37.681159420289859" y="39.508928571428569"/>
