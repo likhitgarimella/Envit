@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -54,7 +54,7 @@ class FindNewProjectsViewController: UIViewController, UICollectionViewDelegate,
     var users = [AppUser]()
     
     // DB ref
-    var refPersProjects: DatabaseReference!
+    // --- var refPersProjects: DatabaseReference!
     
     func GeneralProp() {
         
