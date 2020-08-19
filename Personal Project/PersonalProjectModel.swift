@@ -36,10 +36,10 @@ extension PersonalProjectModel {
         let persProjPost = PersonalProjectModel()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         persProjPost.id = key
-        persProjPost.projectTitle = dict["2) Title"] as? String
-        persProjPost.role = dict["3) Role"] as? String
-        persProjPost.projDesc = dict["4) Description"] as? String
-        persProjPost.uid = dict["6) uid"] as? String
+        persProjPost.projectTitle = dict["1) Title"] as? String
+        persProjPost.role = dict["2) Role"] as? String
+        persProjPost.projDesc = dict["3) Description"] as? String
+        persProjPost.uid = dict["5) uid"] as? String
         
         persProjPost.likeCount = dict["likeCount"] as? Int
         persProjPost.likes = dict["likes"] as? Dictionary<String, Any>
