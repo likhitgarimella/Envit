@@ -413,6 +413,11 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
+				027ADB7A24EE364A003245E1 /* Mentor Apis */,
+				027ADB7B24EE365B003245E1 /* Mentee Apis */,
+				027ADB7C24EE3664003245E1 /* Pers Project Apis */,
+				027ADB7D24EE3678003245E1 /* J-comp Project Apis */,
+				027ADB7E24EE3704003245E1 /* Share on Wall Apis */,
 				02CAF41E24B84442008A7874 /* Share on the Wall */,
 				02A502C724A468F9001E4F25 /* Tech Share */,
 				02D6B92B24996B270008B503 /* Mentor */,
@@ -454,33 +459,68 @@
 				02E90B2A249D89C10094759C /* Api.swift */,
 				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
-				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
-				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
-				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
-				02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */,
-				02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */,
+			);
+			path = "VIT Share";
+			sourceTree = "<group>";
+		};
+		027ADB7A24EE364A003245E1 /* Mentor Apis */ = {
+			isa = PBXGroup;
+			children = (
 				02E90B34249ED96C0094759C /* MentorPostApi.swift */,
 				02E90B36249ED9B00094759C /* MentorCommentApi.swift */,
 				02E90B38249ED9D40094759C /* MentorPostCommentApi.swift */,
 				02F84B1424BAEB01003EF494 /* MyMentorPostsApi.swift */,
 				02E9B87424BA133C00F5D9E3 /* HelperServiceMentor.swift */,
+			);
+			path = "Mentor Apis";
+			sourceTree = "<group>";
+		};
+		027ADB7B24EE365B003245E1 /* Mentee Apis */ = {
+			isa = PBXGroup;
+			children = (
+				02E90B2B249D89C20094759C /* MenteePostApi.swift */,
+				02E90B30249D9EB50094759C /* MenteeCommentApi.swift */,
+				02E90B32249DA1F10094759C /* MenteePostCommentApi.swift */,
+				02B27EE424BC87E1002ECFC9 /* MyMenteePostsApi.swift */,
+				02E9B87624BA135F00F5D9E3 /* HelperServiceMentee.swift */,
+			);
+			path = "Mentee Apis";
+			sourceTree = "<group>";
+		};
+		027ADB7C24EE3664003245E1 /* Pers Project Apis */ = {
+			isa = PBXGroup;
+			children = (
 				022001A724A7E32700C60462 /* PersonalProjectPostApi.swift */,
 				023CB4F824AAC6CC002FFF74 /* PersProjCommentApi.swift */,
 				023CB4FA24AAC753002FFF74 /* PersProjPostCommentApi.swift */,
 				02B27EE624BC8859002ECFC9 /* MyPersProjApi.swift */,
 				02E9B87824BA138500F5D9E3 /* HelperServicePP.swift */,
+			);
+			path = "Pers Project Apis";
+			sourceTree = "<group>";
+		};
+		027ADB7D24EE3678003245E1 /* J-comp Project Apis */ = {
+			isa = PBXGroup;
+			children = (
 				02BA546824A8A82200F3DFA5 /* JComponentProjectPostApi.swift */,
 				023CB4FC24AAC781002FFF74 /* JCompProjCommentApi.swift */,
 				023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */,
 				02B27EE824BC88B6002ECFC9 /* MyJCompProjApi.swift */,
 				02E9B87A24BA139300F5D9E3 /* HelperServiceJC.swift */,
+			);
+			path = "J-comp Project Apis";
+			sourceTree = "<group>";
+		};
+		027ADB7E24EE3704003245E1 /* Share on Wall Apis */ = {
+			isa = PBXGroup;
+			children = (
 				02AB10CF24B98C5F00D1824D /* PostApi.swift */,
 				02A4D16924CEC44A007502D7 /* CommentApi.swift */,
 				02A4D16B24CEC472007502D7 /* PostCommentApi.swift */,
 				02A4D16D24CEC492007502D7 /* MyPostsApi.swift */,
 				02A4D16F24CEC553007502D7 /* HelperService.swift */,
 			);
-			path = "VIT Share";
+			path = "Share on Wall Apis";
 			sourceTree = "<group>";
 		};
 		02A502C524A46837001E4F25 /* Project Share */ = {
