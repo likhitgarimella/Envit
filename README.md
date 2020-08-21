@@ -27,6 +27,16 @@ VIT Share
 
 #### _loads of backend changes in Project Share; big commit 2.0_
 
+### _big commit 2.0 includes: -_
+* include remaining profile posts apis in root api
+* transforming pers proj post api
+* adding everything to helper service pers proj
+* flash to mentor screen submit button tap
+* flash to mentee screen submit button tap
+* pers proj VC transformed
+* pers proj cell ‘like’ feature transformed
+* project share all files checked
+
 ### _frontend: -_
 
 ### _frontend + backend: -_
