@@ -9,7 +9,7 @@ VIT Share
 * share on wall
 * profile
 
-#### _loads of backend changes; big commit 1.0_
+#### _loads of backend changes in Tech Share; big commit 1.0_
 #### _break due to CAT-1 & other deal talks_
 
 ### _big commit 1.0 includes: -_
@@ -24,6 +24,8 @@ VIT Share
 * mentee cell xib constraint changes
 * mentee cell file properties changes
 * mentee feed VC print loaded posts
+
+#### _loads of backend changes in Project Share; big commit 2.0_
 
 ### _frontend: -_
 
