@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseDatabase
+// import Firebase
+
+/// If a View needs data, it should ask controllers...
 
 class PersProjPostCell: UICollectionViewCell {
     
@@ -16,10 +17,10 @@ class PersProjPostCell: UICollectionViewCell {
     @IBOutlet var cardView: UIView!
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     
-    @IBOutlet var personName: UILabel!
     @IBOutlet var roleName: UILabel!
     @IBOutlet var projectName: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var personName: UILabel!
     
     @IBOutlet var bottomView: UIView!
     @IBOutlet var projectLikeImageView: UIImageView!
@@ -29,9 +30,6 @@ class PersProjPostCell: UICollectionViewCell {
     
     // linking pers proj feed VC & pers proj post cell
     var persProjFeedVC: FindNewProjectsViewController?
-    
-    // db ref
-    var persProjectsRef: DatabaseReference!
     
     var persProjPost: PersonalProjectModel? {
         didSet {
@@ -52,29 +50,17 @@ class PersProjPostCell: UICollectionViewCell {
         roleName.text = persProjPost?.role
         projectName.text = persProjPost?.projectTitle
         descriptionLabel.text = persProjPost?.projDesc
+        print(roleName.text)
+        print(projectName.text)
+        print(descriptionLabel.text)
         
         setupUserInfo()
         
         /// Update like
         updateLike(post: persProjPost!)
         
-        /// Update like count
-        Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!).observe(.childChanged, with: {
-            snapshot in
-            print(snapshot)
-            if let value = snapshot.value as? Int {
-                self.likeCountButton.setTitle("\(value) likes", for: .normal)
-            }
-        })
-        
-        /// Smoothly update like, when scrolling view
-        Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!).observeSingleEvent(of: .value, with: {
-            snapshot in
-            if let dict = snapshot.value as? [String: Any] {
-                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot.key)
-                self.updateLike(post: post)
-            }
-        })
+        /// New
+        self.updateLike(post: self.persProjPost!)
         
     }
     
@@ -108,6 +94,8 @@ class PersProjPostCell: UICollectionViewCell {
     }
     
     /// New setupUserInfo() func
+    /// previously, our cell had to go look up the db for a user based on the uid...
+    /// it now knows all that information already...
     func setupUserInfo() {
         
         personName.text = user?.nameString
@@ -119,13 +107,16 @@ class PersProjPostCell: UICollectionViewCell {
         
         // initial text
         personName.text = ""
-        roleName.text = ""
         projectName.text = ""
+        roleName.text = ""
         descriptionLabel.text = ""
         
         // corner radius
         cardView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
+        projectName.layer.cornerRadius = 6
+        roleName.layer.cornerRadius = 6
+        descriptionLabel.layer.cornerRadius = 6
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
@@ -157,6 +148,24 @@ class PersProjPostCell: UICollectionViewCell {
         
     }
     
+    
+    @objc func likeImageViewTouch() {
+        
+        /// New
+        Api.PersonalProjectPost.incrementLikes(postId: persProjPost!.id!, onSuccess: { (post) in
+            self.updateLike(post: post)
+            /// New #2
+            /// Now the post property of the cell is updated right after a like/dislike
+            self.persProjPost?.likes = post.likes
+            self.persProjPost?.isLiked = post.isLiked
+            self.persProjPost?.likeCount = post.likeCount
+        }) { (errorMessage) in
+            // hud
+            print(errorMessage!)
+        }
+        
+    }
+    
     @objc func commentImageViewTouch() {
         
         if let id = persProjPost?.uid {
@@ -164,51 +173,5 @@ class PersProjPostCell: UICollectionViewCell {
         }
         
     }
-    
-    @objc func likeImageViewTouch() {
-        
-        /// Scalable way of liking posts.. new method..
-        persProjectsRef = Api.PersonalProjectPost.REF_PERS_PROJ_POSTS.child(persProjPost!.id!)
-        incrementLikes(forRef: persProjectsRef)
-        
-    }
-    
-    func incrementLikes(forRef ref: DatabaseReference) {
-        
-        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
-            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
-                // print("Value 1: \(currentData.value)")
-                var likes: Dictionary<String, Bool>
-                likes = post["likes"] as? [String: Bool] ?? [:]
-                var likeCount = post["likeCount"] as? Int ?? 0
-                if let _ = likes[uid] {
-                    likeCount -= 1
-                    likes.removeValue(forKey: uid)
-                } else {
-                    likeCount += 1
-                    likes[uid] = true
-                }
-                post["likeCount"] = likeCount as AnyObject
-                post["likes"] = likes as AnyObject
-                
-                currentData.value = post
-                
-                return TransactionResult.success(withValue: currentData)
-            }
-            return TransactionResult.success(withValue: currentData)
-        }) { (error, committed, snapshot) in
-            
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            // print("Value 2: \(snapshot?.value)")
-            if let dict = snapshot?.value as? [String: Any] {
-                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot!.key)
-                self.updateLike(post: post)
-            }
-            
-        }
-        
-    }
 
-}   // #215
+}   // #178

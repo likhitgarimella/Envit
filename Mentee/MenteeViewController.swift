@@ -42,7 +42,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
     
     func LeftPadding() {
         
-        // Create a padding view for Textfields/Textviews on LEFT
+        // Create a padding view for Textfields on LEFT
         domain.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: domain.frame.height))
         domain.leftViewMode = .always
         
@@ -83,6 +83,8 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
     // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
+        sender.flash()
+        
         if (domain.text!.isEmpty || postQueryTextView.text!.isEmpty) {
             // Alert for empty fields
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
@@ -120,4 +122,4 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-}   // #124
+}   // #126

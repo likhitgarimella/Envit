@@ -95,6 +95,8 @@ class MentorViewController: UIViewController, UITextViewDelegate {
     // Submit button action
     @IBAction func submitTapped(_ sender: UIButton) {
         
+        sender.flash()
+        
         if (domain.text!.isEmpty || experienceTextView.text!.isEmpty) {
             // Alert for empty fields
             let myAlert = UIAlertController(title: "Empty Fields", message: "", preferredStyle: UIAlertController.Style.alert)
@@ -136,4 +138,4 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         
     }
 
-}   // #140
+}   // #142

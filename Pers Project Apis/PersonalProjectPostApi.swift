@@ -13,11 +13,11 @@ import FirebaseDatabase
 
 class PersonalProjectPostApi {
     
-    var REF_PERS_PROJ_POSTS = Database.database().reference().child("Personal Projects").child("Details")
+    var REF_POSTS = Database.database().reference().child("Personal Projects").child("Details")
     
     func observePosts(completion: @escaping (PersonalProjectModel) -> Void) {
         
-        REF_PERS_PROJ_POSTS.observe(.childAdded, with: { (snapshot) in
+        REF_POSTS.observe(.childAdded, with: { (snapshot) in
             
             if let dict = snapshot.value as? [String: Any] {
                 let newPost = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot.key)
@@ -28,4 +28,68 @@ class PersonalProjectPostApi {
         
     }
     
-}   // #32
+    func observePost(withId id: String, completion: @escaping (PersonalProjectModel) -> Void) {
+        
+        REF_POSTS.child(id).observeSingleEvent(of: .value, with: {
+            snapshot in
+            
+            if let dict = snapshot.value as? [String:Any] {
+                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot.key)
+                completion(post)
+            }
+            
+        })
+        
+    }
+    
+    func observeLikeCount(withPostId id: String, completion: @escaping (Int) -> Void) {
+        
+        REF_POSTS.child(id).observe(.childChanged, with: {
+            snapshot in
+            print(snapshot)
+            if let value = snapshot.value as? Int {
+                completion(value)
+            }
+        })
+        
+    }
+    
+    func incrementLikes(postId: String, onSuccess: @escaping (PersonalProjectModel) -> Void, onError: @escaping (_ errorMessage: String?) -> Void ) {
+        
+        let postRef = Api.PersonalProjectPost.REF_POSTS.child(postId)
+        postRef.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
+            if var post = currentData.value as? [String: AnyObject], let uid = Api.UserDet.CURRENT_USER?.uid {
+                // print("Value 1: \(currentData.value)")
+                var likes: Dictionary<String, Bool>
+                likes = post["likes"] as? [String: Bool] ?? [:]
+                var likeCount = post["likeCount"] as? Int ?? 0
+                if let _ = likes[uid] {
+                    likeCount -= 1
+                    likes.removeValue(forKey: uid)
+                } else {
+                    likeCount += 1
+                    likes[uid] = true
+                }
+                post["likeCount"] = likeCount as AnyObject
+                post["likes"] = likes as AnyObject
+                
+                currentData.value = post
+                
+                return TransactionResult.success(withValue: currentData)
+            }
+            return TransactionResult.success(withValue: currentData)
+        }) { (error, committed, snapshot) in
+            if let error = error {
+                onError(error.localizedDescription)
+            }
+            // print("Value 2: \(snapshot?.value)")
+            if let dict = snapshot?.value as? [String: Any] {
+                let post = PersonalProjectModel.transformPersProjPost(dict: dict, key: snapshot!.key)
+                onSuccess(post)
+            }
+            
+        }
+        
+    }
+    
+}   // #96

@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
-class PersonalProjectViewController: UIViewController {
+class PersonalProjectViewController: UIViewController, UITextFieldDelegate {
     
     // Outlets
     @IBOutlet var projectTitle: UITextField!
@@ -20,7 +20,7 @@ class PersonalProjectViewController: UIViewController {
     
     func BorderProp() {
         
-        // Textfield Border Property
+        // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
         // let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
         projectTitle.layer.borderColor = myColor.cgColor
@@ -34,7 +34,7 @@ class PersonalProjectViewController: UIViewController {
     
     func CornerRadius() {
         
-        // Textfield Corner Radius Property
+        // Textfield/Textview Corner Radius Property
         projectTitle.layer.cornerRadius = 4
         roleOption.layer.cornerRadius = 22
         projDescTextView.layer.cornerRadius = 4
@@ -72,6 +72,7 @@ class PersonalProjectViewController: UIViewController {
         super.viewDidLoad()
         
         hideKeyboardWhenTappedAround()
+        
         BorderProp()
         CornerRadius()
         LeftPadding()
@@ -79,9 +80,6 @@ class PersonalProjectViewController: UIViewController {
         TextViewProperties()
         
     }
-    
-    // Create a DB reference
-    var refPersProjPosts: DatabaseReference!
     
     // Submit button action
     @IBAction func addProjectTapped(_ sender: UIButton) {
@@ -97,37 +95,23 @@ class PersonalProjectViewController: UIViewController {
             return
         }
         
-        // Writing data to DB
-        refPersProjPosts = Database.database().reference().child("Personal Projects").child("Details")
-        let key = refPersProjPosts.childByAutoId().key
-        
-        // Creating a timestamp
-        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
-        
-        // Current user uid
-        guard let currentUser = Auth.auth().currentUser else {
-            return
-        }
-        let currentUserId = currentUser.uid
-        
-        let project = ["1) id": key!, "2) Title": projectTitle.text!, "3) Role": roleOption.text!, "4) Description": projDescTextView.text!, "5) Timestamp": timestamp, "6) uid": currentUserId] as [String : Any]
-        refPersProjPosts.child(key!).setValue(project)
-        
-        // Alert pod - Project Added
-        let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
-        alertView.duration = 1.2
-        alertView.present()
-        
-        // Clear textfields after success
-        self.projectTitle.text = ""
-        self.roleOption.text = ""
-        self.projDescTextView.text = ""
-        
-        // And to enable back for a new input in textfield
-        self.projectTitle.isEnabled = true
-        self.roleOption.isEnabled = true
-        // self.projDescTextView.isEnabled = true
+        HelperServicePP.uploadDataToServer(titleText: projectTitle.text!, roleText: roleOption.text!, descText: projDescTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines), onSuccess: {
+            // Alert pod - Project Added
+            let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
+            alertView.duration = 1.2
+            alertView.present()
+            
+            // Clear textfields after success
+            self.projectTitle.text = ""
+            self.roleOption.text = ""
+            self.projDescTextView.text = ""
+            
+            // And to enable back for a new input in textfield
+            self.projectTitle.isEnabled = true
+            self.roleOption.isEnabled = true
+            // self.projDescTextView.isEnabled = true
+        })
         
     }
     
-}   // #134
+}   // #118
