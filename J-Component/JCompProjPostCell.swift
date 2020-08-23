@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseDatabase
+// import Firebase
+
+/// If a View needs data, it should ask controllers...
 
 class JCompProjPostCell: UICollectionViewCell {
     
@@ -16,10 +17,10 @@ class JCompProjPostCell: UICollectionViewCell {
     @IBOutlet var cardView: UIView!
     @IBOutlet var widthConstraint: NSLayoutConstraint!
     
-    @IBOutlet var personName: UILabel!
     @IBOutlet var courseName: UILabel!
     @IBOutlet var projectName: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var personName: UILabel!
     
     @IBOutlet var bottomView: UIView!
     @IBOutlet var projectLikeImageView: UIImageView!
@@ -29,9 +30,6 @@ class JCompProjPostCell: UICollectionViewCell {
     
     // linking jcomp proj feed VC & jcomp proj post cell
     var jCompProjFeedVC: JComponentFeed?
-    
-    // db ref
-    var jCompProjectsRef: DatabaseReference!
     
     var jCompProjPost: JComponentProjectModel? {
         didSet {
@@ -52,29 +50,17 @@ class JCompProjPostCell: UICollectionViewCell {
         courseName.text = jCompProjPost?.courseTitle
         projectName.text = jCompProjPost?.projectTitle
         descriptionLabel.text = jCompProjPost?.projDesc
+        print(courseName.text)
+        print(projectName.text)
+        print(descriptionLabel.text)
         
         setupUserInfo()
         
         /// Update like
         updateLike(post: jCompProjPost!)
         
-        /// Update like count
-        Api.JComponentProjectPost.REF_JCOMP_PROJ_POSTS.child(jCompProjPost!.id!).observe(.childChanged, with: {
-            snapshot in
-            print(snapshot)
-            if let value = snapshot.value as? Int {
-                self.likeCountButton.setTitle("\(value) likes", for: .normal)
-            }
-        })
-        
-        /// Smoothly update like, when scrolling view
-        Api.JComponentProjectPost.REF_JCOMP_PROJ_POSTS.child(jCompProjPost!.id!).observeSingleEvent(of: .value, with: {
-            snapshot in
-            if let dict = snapshot.value as? [String: Any] {
-                let post = JComponentProjectModel.transformJCompProjPost(dict: dict, key: snapshot.key)
-                self.updateLike(post: post)
-            }
-        })
+        /// New
+        self.updateLike(post: self.jCompProjPost!)
         
     }
     
@@ -108,6 +94,8 @@ class JCompProjPostCell: UICollectionViewCell {
     }
     
     /// New setupUserInfo() func
+    /// previously, our cell had to go look up the db for a user based on the uid...
+    /// it now knows all that information already...
     func setupUserInfo() {
         
         personName.text = user?.nameString
@@ -126,6 +114,9 @@ class JCompProjPostCell: UICollectionViewCell {
         // corner radius
         cardView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
+        projectName.layer.cornerRadius = 6
+        courseName.layer.cornerRadius = 6
+        descriptionLabel.layer.cornerRadius = 6
         
         // shadow properties
         cardView.layer.shadowColor = UIColor.lightGray.cgColor
@@ -157,6 +148,24 @@ class JCompProjPostCell: UICollectionViewCell {
         
     }
     
+    
+    @objc func likeImageViewTouch() {
+        
+        /// New
+        Api.JComponentProjectPost.incrementLikes(postId: jCompProjPost!.id!, onSuccess: { (post) in
+            self.updateLike(post: post)
+            /// New #2
+            /// Now the post property of the cell is updated right after a like/dislike
+            self.jCompProjPost?.likes = post.likes
+            self.jCompProjPost?.isLiked = post.isLiked
+            self.jCompProjPost?.likeCount = post.likeCount
+        }) { (errorMessage) in
+            // hud
+            print(errorMessage!)
+        }
+        
+    }
+    
     @objc func commentImageViewTouch() {
         
         if let id = jCompProjPost?.uid {
@@ -164,51 +173,5 @@ class JCompProjPostCell: UICollectionViewCell {
         }
         
     }
-    
-    @objc func likeImageViewTouch() {
-        
-        /// Scalable way of liking posts.. new method..
-        jCompProjectsRef = Api.JComponentProjectPost.REF_JCOMP_PROJ_POSTS.child(jCompProjPost!.id!)
-        incrementLikes(forRef: jCompProjectsRef)
-        
-    }
-    
-    func incrementLikes(forRef ref: DatabaseReference) {
-        
-        ref.runTransactionBlock ({ (currentData: MutableData) -> TransactionResult in
-            if var post = currentData.value as? [String: AnyObject], let uid = Auth.auth().currentUser?.uid {
-                // print("Value 1: \(currentData.value)")
-                var likes: Dictionary<String, Bool>
-                likes = post["likes"] as? [String: Bool] ?? [:]
-                var likeCount = post["likeCount"] as? Int ?? 0
-                if let _ = likes[uid] {
-                    likeCount -= 1
-                    likes.removeValue(forKey: uid)
-                } else {
-                    likeCount += 1
-                    likes[uid] = true
-                }
-                post["likeCount"] = likeCount as AnyObject
-                post["likes"] = likes as AnyObject
-                
-                currentData.value = post
-                
-                return TransactionResult.success(withValue: currentData)
-            }
-            return TransactionResult.success(withValue: currentData)
-        }) { (error, committed, snapshot) in
-            
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            // print("Value 2: \(snapshot?.value)")
-            if let dict = snapshot?.value as? [String: Any] {
-                let post = JComponentProjectModel.transformJCompProjPost(dict: dict, key: snapshot!.key)
-                self.updateLike(post: post)
-            }
-            
-        }
-        
-    }
 
-}   // #215
+}   // #178

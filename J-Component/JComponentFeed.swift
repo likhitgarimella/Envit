@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
 class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -52,7 +52,7 @@ class JComponentFeed: UIViewController, UICollectionViewDelegate, UICollectionVi
     var users = [AppUser]()
     
     // DB ref
-    var refJCompProjects: DatabaseReference!
+    // --- var refJCompProjects: DatabaseReference!
     
     // load jcomp project posts
     func loadPosts() {

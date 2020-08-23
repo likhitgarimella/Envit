@@ -36,10 +36,10 @@ extension JComponentProjectModel {
         let jcompProjPost = JComponentProjectModel()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         jcompProjPost.id = key
-        jcompProjPost.projectTitle = dict["2) Title"] as? String
-        jcompProjPost.courseTitle = dict["3) Course"] as? String
-        jcompProjPost.projDesc = dict["4) Description"] as? String
-        jcompProjPost.uid = dict["6) uid"] as? String
+        jcompProjPost.projectTitle = dict["1) Title"] as? String
+        jcompProjPost.courseTitle = dict["2) Course"] as? String
+        jcompProjPost.projDesc = dict["3) Description"] as? String
+        jcompProjPost.uid = dict["5) uid"] as? String
         
         jcompProjPost.likeCount = dict["likeCount"] as? Int
         jcompProjPost.likes = dict["likes"] as? Dictionary<String, Any>

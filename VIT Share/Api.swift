@@ -64,9 +64,9 @@ struct Api {
     static var MyMentorPosts = MyMentorPostsApi()
     /// Firebase node - My-Mentee-Posts
     static var MyMenteePosts = MyMenteePostsApi()
-    /// Firebase node - My-Pers-Proj-Posts
+    /// Firebase node - My-Pers-Projects
     static var MyPersProjPosts = MyPersProjApi()
-    /// Firebase node - My-Jcomp-Proj-Posts
+    /// Firebase node - My-Jcomp-Projects
     static var MyJcompProjPosts = MyJCompProjApi()
     
     /// Firebase node - My-Wall-Posts

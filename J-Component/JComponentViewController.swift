@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseDatabase
+// import Firebase
+// import FirebaseDatabase
 
-class JComponentViewController: UIViewController {
+class JComponentViewController: UIViewController, UITextFieldDelegate {
     
     // Outlets
     @IBOutlet var projectTitle: UITextField!
@@ -20,7 +20,7 @@ class JComponentViewController: UIViewController {
     
     func BorderProp() {
         
-        // Textfield Border Property
+        // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
         projectTitle.layer.borderColor = myColor.cgColor
         projectTitle.layer.borderWidth = 1.6
@@ -33,7 +33,7 @@ class JComponentViewController: UIViewController {
     
     func CornerRadius() {
         
-        // Textfield Corner Radius Property
+        // Textfield/Textview Corner Radius Property
         projectTitle.layer.cornerRadius = 4
         courseTitle.layer.cornerRadius = 4
         projDescTextView.layer.cornerRadius = 4
@@ -63,15 +63,13 @@ class JComponentViewController: UIViewController {
         super.viewDidLoad()
         
         hideKeyboardWhenTappedAround()
+        
         BorderProp()
         CornerRadius()
         LeftPadding()
         TextViewProperties()
         
     }
-    
-    // Create a DB reference
-    var refJComponentPosts: DatabaseReference!
     
     // Submit button action
     @IBAction func addProjectTapped(_ sender: UIButton) {
@@ -87,37 +85,23 @@ class JComponentViewController: UIViewController {
             return
         }
         
-        // Writing data to DB
-        refJComponentPosts = Database.database().reference().child("J-Component Projects").child("Details")
-        let key = refJComponentPosts.childByAutoId().key
-        
-        // Creating a timestamp
-        let timestamp = NSNumber(value: Int(NSDate().timeIntervalSince1970))
-        
-        // Current user uid
-        guard let currentUser = Auth.auth().currentUser else {
-            return
-        }
-        let currentUserId = currentUser.uid
-        
-        let project = ["1) id": key!, "2) Title": projectTitle.text!, "3) Course": courseTitle.text!, "4) Description": projDescTextView.text!, "5) Timestamp": timestamp, "6) uid": currentUserId] as [String : Any]
-        refJComponentPosts.child(key!).setValue(project)
-        
-        // Alert pod - Project Added
-        let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
-        alertView.duration = 1.2
-        alertView.present()
-        
-        // Clear textfields after success
-        self.projectTitle.text = ""
-        self.courseTitle.text = ""
-        self.projDescTextView.text = ""
-        
-        // And to enable back for a new input in textfield
-        self.projectTitle.isEnabled = true
-        self.courseTitle.isEnabled = true
-        // self.projDescTextView.isEnabled = true
+        HelperServiceJC.uploadDataToServer(titleText: projectTitle.text!, courseText: courseTitle.text!, descText: projDescTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines), onSuccess: {
+            // Alert pod - Project Added
+            let alertView = SPAlertView(title: "Your project has been added", message: nil, preset: SPAlertPreset.done)
+            alertView.duration = 1.2
+            alertView.present()
+            
+            // Clear textfields after success
+            self.projectTitle.text = ""
+            self.courseTitle.text = ""
+            self.projDescTextView.text = ""
+            
+            // And to enable back for a new input in textfield
+            self.projectTitle.isEnabled = true
+            self.courseTitle.isEnabled = true
+            // self.projDescTextView.isEnabled = true
+        })
         
     }
     
-}   // #124
+}   // #108
