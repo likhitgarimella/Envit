@@ -35,6 +35,8 @@ VIT Share
 * flash to mentee screen submit button tap
 * pers proj VC transformed
 * pers proj cell ‘like’ feature transformed
+
+### _big commit 3.0 includes all J-comp project share transformations_
 * project share all files checked
 
 ### _frontend: -_
