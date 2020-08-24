@@ -13,6 +13,8 @@ class Post {
     
     var caption: String?
     var photoUrl: String?
+    var frameColor: String?
+    var categoryLabel: String?
     
     var uid: String?
     
@@ -34,6 +36,8 @@ extension Post {
         let post = Post()
         /// Remodel Post class, bcuz it currently doesn't have a post id property
         post.id = key
+        post.frameColor = dict["frameColor"] as? String
+        post.categoryLabel = dict["categoryLabel"] as? String
         post.caption = dict["caption"] as? String
         post.photoUrl = dict["photoUrl"] as? String
         post.uid = dict["uid"] as? String
@@ -64,4 +68,4 @@ extension Post {
         
     }
     
-}   // #68
+}   // #72
