@@ -8,10 +8,12 @@
 
 import UIKit
 // import Firebase
+import JGProgressHUD
 
-class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
+class ShareOnWallViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate {
     
-    // Outlets
+    // MARK: - Outlets
+    
     @IBOutlet var photoView: UIView!
     @IBOutlet var insideView: UIView!
     
@@ -26,14 +28,29 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var buttonThree: UIButton!
     @IBOutlet var buttonFour: UIButton!
     
-    /// dummy label
+    /// dummy label for frame color
     @IBOutlet var frameColorLabel: UILabel!
     
     /// reference label
     @IBOutlet var selectCategory: UILabel!
     
+    /// dummy label for category name
+    @IBOutlet var categoryLabel: UILabel!
+    
     /// main button outlet
     @IBOutlet var shareOutlet: UIButton!
+    
+    // MARK: - Scroll view
+    
+    /// scroll view
+    var scView: UIScrollView!
+    /// space b/w button and cell
+    let buttonPadding: CGFloat = 10
+    var xOffset: CGFloat = 10
+    
+    // MARK: - Declarations
+    
+    var selectedImage: UIImage?
     
     /// global declaration
     let button = UIButton.init(type: .custom)
@@ -44,17 +61,11 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     /// array of buttons
     var buttonArray : NSMutableArray = []
     
-    /// scroll view
-    var scView: UIScrollView!
-    /// space b/w button and cell
-    let buttonPadding: CGFloat = 10
-    var xOffset: CGFloat = 10
-    
     /// array data
     let names = ["abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh", "abcdefghijkl", "abcdef", "abcd", "abcdefgh"]
     
-    /// dummy label
-    @IBOutlet var categoryLabel: UILabel!
+    // progress hud
+    let hud1 = JGProgressHUD(style: .dark)
     
     func Properties() {
         
@@ -93,7 +104,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // MARK: - Horz coll view
+        // MARK: - Horz scroll view, properties & conditions
         
         /// scroll view
         let scView = UIScrollView()
@@ -339,8 +350,6 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    var selectedImage: UIImage?
-    
     @objc func handleSelectPhoto() {
         
         let pickerController = UIImagePickerController()
@@ -378,6 +387,39 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    @IBAction func shareButton(_ sender: UIButton) {
+        
+        hud1.show(in: self.view)
+        
+        // selected image(imageSelected) should be from selectedImage
+        guard let imageSelected = self.selectedImage else {
+            print("Avatar is nil")
+            hud1.indicatorView = nil    // remove indicator
+            hud1.textLabel.text = "Empty image"
+            hud1.dismiss(afterDelay: 2.0, animated: true)
+            return
+        }
+        // image data from selected image in jpeg format
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+        }
+        HelperService.uploadDataToServer(data: imageData, caption: saySomething.text!, frame: frameColorLabel.text!, category: categoryLabel.text!, onSuccess: {
+            self.clean()
+            self.tabBarController?.selectedIndex = 0
+        })
+        
+    }
+    
+    // Reset function
+    func clean() {
+        self.selectPhotoImage.image = UIImage(named: "Placeholder-image")
+        // selected image should be blank again, after we push the post to db
+        self.selectedImage = nil
+        self.saySomething.text = "Write a caption..."
+        // setting back text view text color to light gray, so that delegate methods work
+        // self.captionTextView.textColor = UIColor.lightGray
+    }
+    
 }
 
 extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -394,4 +436,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #398
+}   // #440
