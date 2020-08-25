@@ -13,7 +13,7 @@ import FirebaseDatabase
 
 class PostApi {
     
-    var REF_POSTS = Database.database().reference().child("Posts").child("Details")
+    var REF_POSTS = Database.database().reference().child("Wall-Posts").child("Details")
     
     func observePosts(completion: @escaping (Post) -> Void) {
         

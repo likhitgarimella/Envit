@@ -405,17 +405,17 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate, UITextV
         }
         HelperService.uploadDataToServer(data: imageData, caption: saySomething.text!, frame: frameColorLabel.text!, category: categoryLabel.text!, onSuccess: {
             self.clean()
-            self.tabBarController?.selectedIndex = 0
+            // self.tabBarController?.selectedIndex = 0
         })
         
     }
     
     // Reset function
     func clean() {
-        self.selectPhotoImage.image = UIImage(named: "Placeholder-image")
+        self.selectPhotoImage.image = UIImage(named: "selectPhoto")
         // selected image should be blank again, after we push the post to db
         self.selectedImage = nil
-        self.saySomething.text = "Write a caption..."
+        self.saySomething.text = "Say something about this..."
         // setting back text view text color to light gray, so that delegate methods work
         // self.captionTextView.textColor = UIColor.lightGray
     }
