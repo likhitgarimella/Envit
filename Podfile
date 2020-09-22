@@ -12,6 +12,8 @@ pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'JGProgressHUD'
 
+pod "Colorful", "~> 3.0"
+
 end
 
 post_install do |installer|
