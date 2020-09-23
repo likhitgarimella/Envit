@@ -78,6 +78,7 @@
 		02802BB924850709008BF296 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BB824850709008BF296 /* FeedViewController.swift */; };
 		02802BBB24857863008BF296 /* TextFieldCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02802BBA24857862008BF296 /* TextFieldCounter.swift */; };
 		029FB8012475A3E60053D916 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FB8002475A3E60053D916 /* Extensions.swift */; };
+		02A4573C251B0504005F3E60 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4573B251B0504005F3E60 /* DiscoverViewController.swift */; };
 		02A4D16A24CEC44A007502D7 /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16924CEC44A007502D7 /* CommentApi.swift */; };
 		02A4D16C24CEC472007502D7 /* PostCommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16B24CEC472007502D7 /* PostCommentApi.swift */; };
 		02A4D16E24CEC492007502D7 /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4D16D24CEC492007502D7 /* MyPostsApi.swift */; };
@@ -220,6 +221,7 @@
 		02802BB824850709008BF296 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		02802BBA24857862008BF296 /* TextFieldCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCounter.swift; sourceTree = "<group>"; };
 		029FB8002475A3E60053D916 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02A4573B251B0504005F3E60 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		02A4D16924CEC44A007502D7 /* CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
 		02A4D16B24CEC472007502D7 /* PostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentApi.swift; sourceTree = "<group>"; };
 		02A4D16D24CEC492007502D7 /* MyPostsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
@@ -413,18 +415,19 @@
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
 				024C710F2443B145002D9CCE /* VIT Share */,
-				027ADB7A24EE364A003245E1 /* Mentor Apis */,
-				027ADB7B24EE365B003245E1 /* Mentee Apis */,
-				027ADB7C24EE3664003245E1 /* Pers Project Apis */,
-				027ADB7D24EE3678003245E1 /* J-comp Project Apis */,
+				02A4573F251B0511005F3E60 /* Discover */,
 				027ADB7E24EE3704003245E1 /* Share on Wall Apis */,
 				02CAF41E24B84442008A7874 /* Share on the Wall */,
-				02A502C724A468F9001E4F25 /* Tech Share */,
-				02D6B92B24996B270008B503 /* Mentor */,
-				02D6B92C24996B460008B503 /* Mentee */,
-				02A502C524A46837001E4F25 /* Project Share */,
-				022001A924A7E4A600C60462 /* Personal Project */,
+				027ADB7D24EE3678003245E1 /* J-comp Project Apis */,
 				022001AA24A7E4C300C60462 /* J-Component */,
+				027ADB7C24EE3664003245E1 /* Pers Project Apis */,
+				022001A924A7E4A600C60462 /* Personal Project */,
+				02A502C524A46837001E4F25 /* Project Share */,
+				02D6B92C24996B460008B503 /* Mentee */,
+				027ADB7B24EE365B003245E1 /* Mentee Apis */,
+				02D6B92B24996B270008B503 /* Mentor */,
+				027ADB7A24EE364A003245E1 /* Mentor Apis */,
+				02A502C724A468F9001E4F25 /* Tech Share */,
 				02A502C624A46868001E4F25 /* Profile */,
 				024C710E2443B145002D9CCE /* Products */,
 				7F240E75B7C0609C05F44065 /* Pods */,
@@ -446,8 +449,8 @@
 				024C71102443B145002D9CCE /* AppDelegate.swift */,
 				024C71122443B145002D9CCE /* SceneDelegate.swift */,
 				024C711B2443B149002D9CCE /* LaunchScreen.storyboard */,
-				024C71192443B149002D9CCE /* Assets.xcassets */,
 				02EB905724C8CAA2008C4FCB /* Main.storyboard */,
+				024C71192443B149002D9CCE /* Assets.xcassets */,
 				020A32FB244434F1006FE3E5 /* LoginViewController.swift */,
 				024C71242443B48C002D9CCE /* SignUpViewController.swift */,
 				029FB8002475A3E60053D916 /* Extensions.swift */,
@@ -521,6 +524,14 @@
 				02A4D16F24CEC553007502D7 /* HelperService.swift */,
 			);
 			path = "Share on Wall Apis";
+			sourceTree = "<group>";
+		};
+		02A4573F251B0511005F3E60 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				02A4573B251B0504005F3E60 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		02A502C524A46837001E4F25 /* Project Share */ = {
@@ -847,6 +858,7 @@
 				02BA547B24A9BA1100F3DFA5 /* CommentsInJCompProjTableViewCell.swift in Sources */,
 				0221E1252477C12F0022DCCB /* SPAlertIconAddView.swift in Sources */,
 				024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */,
+				02A4573C251B0504005F3E60 /* DiscoverViewController.swift in Sources */,
 				02E9B87B24BA139300F5D9E3 /* HelperServiceJC.swift in Sources */,
 				024A05512483A41300CC06CB /* ProjectsShareViewController.swift in Sources */,
 				0221E12D2477C12F0022DCCB /* SPAlertIconQuestionView.swift in Sources */,
