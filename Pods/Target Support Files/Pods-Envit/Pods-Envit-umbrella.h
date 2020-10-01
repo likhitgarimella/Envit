@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_VIT_ShareVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_VIT_ShareVersionString[];
+FOUNDATION_EXPORT double Pods_EnvitVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_EnvitVersionString[];
 

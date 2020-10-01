@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0FC437E717953F9DF6DB95BD4A892179"
-               BuildableName = "Pods_VIT_Share.framework"
-               BlueprintName = "Pods-VIT Share"
+               BlueprintIdentifier = "D1433C331EA7625A0022A2C5ACA5FD2C"
+               BuildableName = "Pods_Envit.framework"
+               BlueprintName = "Pods-Envit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
