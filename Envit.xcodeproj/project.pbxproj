@@ -192,7 +192,7 @@
 		023CB4FE24AAC7B4002FFF74 /* JCompProjPostCommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCompProjPostCommentApi.swift; sourceTree = "<group>"; };
 		024A05502483A41300CC06CB /* ProjectsShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsShareViewController.swift; sourceTree = "<group>"; };
 		024A05522483A43C00CC06CB /* TechShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechShareViewController.swift; sourceTree = "<group>"; };
-		024C710D2443B145002D9CCE /* VIT Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIT Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024C710D2443B145002D9CCE /* Envit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Envit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024C71102443B145002D9CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024C71122443B145002D9CCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		024C71192443B149002D9CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -414,7 +414,7 @@
 				02E3A9992478DC4600A9C18C /* CBFlashyTabBarController */,
 				0221E0FC2477C12D0022DCCB /* SPAlert */,
 				02F46AC62444F712001668A3 /* Fonts */,
-				024C710F2443B145002D9CCE /* VIT Share */,
+				024C710F2443B145002D9CCE /* Envit */,
 				02A4573F251B0511005F3E60 /* Discover */,
 				027ADB7E24EE3704003245E1 /* Share on Wall Apis */,
 				02CAF41E24B84442008A7874 /* Share on the Wall */,
@@ -438,12 +438,12 @@
 		024C710E2443B145002D9CCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				024C710D2443B145002D9CCE /* VIT Share.app */,
+				024C710D2443B145002D9CCE /* Envit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		024C710F2443B145002D9CCE /* VIT Share */ = {
+		024C710F2443B145002D9CCE /* Envit */ = {
 			isa = PBXGroup;
 			children = (
 				024C71102443B145002D9CCE /* AppDelegate.swift */,
@@ -463,7 +463,7 @@
 				02D6B929249909170008B503 /* AppUser.swift */,
 				02E90B2E249D8CE40094759C /* UserApi.swift */,
 			);
-			path = "VIT Share";
+			path = Envit;
 			sourceTree = "<group>";
 		};
 		027ADB7A24EE364A003245E1 /* Mentor Apis */ = {
@@ -687,9 +687,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		024C710C2443B145002D9CCE /* VIT Share */ = {
+		024C710C2443B145002D9CCE /* Envit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "VIT Share" */;
+			buildConfigurationList = 024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "Envit" */;
 			buildPhases = (
 				32FD0A7D034B6793FFFF1BFE /* [CP] Check Pods Manifest.lock */,
 				024C71092443B145002D9CCE /* Sources */,
@@ -701,9 +701,9 @@
 			);
 			dependencies = (
 			);
-			name = "VIT Share";
+			name = Envit;
 			productName = "VIT Share";
-			productReference = 024C710D2443B145002D9CCE /* VIT Share.app */;
+			productReference = 024C710D2443B145002D9CCE /* Envit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -722,7 +722,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 024C71082443B145002D9CCE /* Build configuration list for PBXProject "VIT Share" */;
+			buildConfigurationList = 024C71082443B145002D9CCE /* Build configuration list for PBXProject "Envit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -735,7 +735,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				024C710C2443B145002D9CCE /* VIT Share */,
+				024C710C2443B145002D9CCE /* Envit */,
 			);
 		};
 /* End PBXProject section */
@@ -1072,16 +1072,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77BWS8985H;
-				INFOPLIST_FILE = "VIT Share/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Envit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Share";
+				MARKETING_VERSION = 1.0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.Envit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1096,16 +1096,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77BWS8985H;
-				INFOPLIST_FILE = "VIT Share/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Envit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.VIT-Share";
+				MARKETING_VERSION = 1.0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.Envit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1115,7 +1115,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		024C71082443B145002D9CCE /* Build configuration list for PBXProject "VIT Share" */ = {
+		024C71082443B145002D9CCE /* Build configuration list for PBXProject "Envit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				024C711F2443B149002D9CCE /* Debug */,
@@ -1124,7 +1124,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "VIT Share" */ = {
+		024C71212443B149002D9CCE /* Build configuration list for PBXNativeTarget "Envit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				024C71222443B149002D9CCE /* Debug */,

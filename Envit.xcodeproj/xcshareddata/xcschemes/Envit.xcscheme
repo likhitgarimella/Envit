@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1220"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "024C710C2443B145002D9CCE"
-               BuildableName = "VIT Share.app"
-               BlueprintName = "VIT Share"
-               ReferencedContainer = "container:VIT Share.xcodeproj">
+               BuildableName = "Envit.app"
+               BlueprintName = "Envit"
+               ReferencedContainer = "container:Envit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "024C710C2443B145002D9CCE"
-            BuildableName = "VIT Share.app"
-            BlueprintName = "VIT Share"
-            ReferencedContainer = "container:VIT Share.xcodeproj">
+            BuildableName = "Envit.app"
+            BlueprintName = "Envit"
+            ReferencedContainer = "container:Envit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "024C710C2443B145002D9CCE"
-            BuildableName = "VIT Share.app"
-            BlueprintName = "VIT Share"
-            ReferencedContainer = "container:VIT Share.xcodeproj">
+            BuildableName = "Envit.app"
+            BlueprintName = "Envit"
+            ReferencedContainer = "container:Envit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

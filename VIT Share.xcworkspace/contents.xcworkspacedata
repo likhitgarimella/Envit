@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:VIT Share.xcodeproj">
+      location = "group:/Users/likhitgarimella/Desktop/VIT Share/Envit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

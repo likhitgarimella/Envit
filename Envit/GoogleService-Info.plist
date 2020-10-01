@@ -13,21 +13,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.likhitgarimella.VIT-Share</string>
+	<string>com.likhitgarimella.Envit</string>
 	<key>PROJECT_ID</key>
 	<string>vit-share</string>
 	<key>STORAGE_BUCKET</key>
 	<string>vit-share.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:632612835962:ios:508fe68c80cae1543221c3</string>
 	<key>DATABASE_URL</key>
