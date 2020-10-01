@@ -1,6 +1,6 @@
 //
 //  TechShareViewController.swift
-//  VIT Share
+//  Envit
 //
 //  Created by Likhit Garimella on 31/05/20.
 //  Copyright © 2020 Likhit Garimella. All rights reserved.
