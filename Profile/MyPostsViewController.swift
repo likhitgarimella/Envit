@@ -1,6 +1,6 @@
 //
 //  MyPostsViewController.swift
-//  VIT Share
+//  Envit
 //
 //  Created by Likhit Garimella on 23/06/20.
 //  Copyright © 2020 Likhit Garimella. All rights reserved.
