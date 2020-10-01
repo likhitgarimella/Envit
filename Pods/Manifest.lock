@@ -1,5 +1,4 @@
 PODS:
-  - Colorful (3.0.0)
   - Firebase (6.33.0):
     - Firebase/Core (= 6.33.0)
   - Firebase/Auth (6.33.0):
@@ -88,7 +87,6 @@ PODS:
   - PromisesObjC (1.2.10)
 
 DEPENDENCIES:
-  - Colorful (~> 3.0)
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -97,7 +95,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Colorful
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -116,7 +113,6 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  Colorful: 9e093edacaa9fb73512ad9da157f0707b82d2542
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
   FirebaseAnalytics: 5dd088bd2e67bb9d13dbf792d1164ceaf3052193
   FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
@@ -134,6 +130,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
 
-PODFILE CHECKSUM: 5b3f8cb64f69da9849660937a82525c17feaf406
+PODFILE CHECKSUM: d4dee7da2918e0639c58c64772e10591fb3066ab
 
 COCOAPODS: 1.9.3
