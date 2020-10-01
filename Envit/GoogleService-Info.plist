@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>632612835962-e2t0k1chn0ut3d8uu907b4p48tvn3knr.apps.googleusercontent.com</string>
+	<string>632612835962-r5ip3nf2aeap7g90pq8ua0oakkkdi4tg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.632612835962-e2t0k1chn0ut3d8uu907b4p48tvn3knr</string>
+	<string>com.googleusercontent.apps.632612835962-r5ip3nf2aeap7g90pq8ua0oakkkdi4tg</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>632612835962-peceuke3ck4fpc904geq3i1qbb2u06pc.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDzg-63Axqk5vjXPMU4uws96Xy79Imjm5k</string>
 	<key>GCM_SENDER_ID</key>
@@ -19,17 +21,17 @@
 	<key>STORAGE_BUCKET</key>
 	<string>vit-share.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:632612835962:ios:508fe68c80cae1543221c3</string>
+	<string>1:632612835962:ios:98ae32cb59ebb27b3221c3</string>
 	<key>DATABASE_URL</key>
 	<string>https://vit-share.firebaseio.com</string>
 </dict>

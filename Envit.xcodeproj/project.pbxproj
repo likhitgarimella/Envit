@@ -56,7 +56,7 @@
 		024C711A2443B149002D9CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024C71192443B149002D9CCE /* Assets.xcassets */; };
 		024C711D2443B149002D9CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024C711B2443B149002D9CCE /* LaunchScreen.storyboard */; };
 		024C71252443B48C002D9CCE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C71242443B48C002D9CCE /* SignUpViewController.swift */; };
-		024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024C71262443BCBB002D9CCE /* GoogleService-Info.plist */; };
+		024CA806252630B70031BAD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024CA805252630B70031BAD4 /* GoogleService-Info.plist */; };
 		024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C224964ED6006046B3 /* SF-Pro-Rounded-Regular.otf */; };
 		024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */; };
 		024FC8CD24964ED8006046B3 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 024FC8C424964ED7006046B3 /* SF-Pro-Rounded-Bold.otf */; };
@@ -199,7 +199,7 @@
 		024C711C2443B149002D9CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024C711E2443B149002D9CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024C71242443B48C002D9CCE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		024C71262443BCBB002D9CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		024CA805252630B70031BAD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		024FC8C224964ED6006046B3 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		024FC8C324964ED7006046B3 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		024FC8C424964ED7006046B3 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
@@ -457,7 +457,7 @@
 				02B0EBF824467C0D004742B1 /* iOSDropDown.swift */,
 				02802BBA24857862008BF296 /* TextFieldCounter.swift */,
 				024C711E2443B149002D9CCE /* Info.plist */,
-				024C71262443BCBB002D9CCE /* GoogleService-Info.plist */,
+				024CA805252630B70031BAD4 /* GoogleService-Info.plist */,
 				02DC18D3248224C100CBC10C /* AuthService.swift */,
 				02E90B2A249D89C10094759C /* Api.swift */,
 				02D6B929249909170008B503 /* AppUser.swift */,
@@ -751,6 +751,7 @@
 				02D2DF5B24A1814E00A6A017 /* SF-Pro-Text-RegularItalic.otf in Resources */,
 				02D2DF5A24A1814E00A6A017 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				02EB905824C8CAA3008C4FCB /* Main.storyboard in Resources */,
+				024CA806252630B70031BAD4 /* GoogleService-Info.plist in Resources */,
 				024FC8D124964ED8006046B3 /* SF-Pro-Rounded-Light.otf in Resources */,
 				02D2DF5D24A1814E00A6A017 /* SF-Pro-Text-ThinItalic.otf in Resources */,
 				02B96D94248665B2000C7D48 /* MenteePostCell.xib in Resources */,
@@ -759,7 +760,6 @@
 				02B96D90248659CF000C7D48 /* MentorPostCell.xib in Resources */,
 				024FC8D224964ED8006046B3 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				02BA546F24A91D6E00F3DFA5 /* JCompProjPostCell.xib in Resources */,
-				024C71272443BCBB002D9CCE /* GoogleService-Info.plist in Resources */,
 				024FC8CB24964ED8006046B3 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				024FC8CC24964ED8006046B3 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				024FC8D324964ED8006046B3 /* SF-Pro-Rounded-Heavy.otf in Resources */,
