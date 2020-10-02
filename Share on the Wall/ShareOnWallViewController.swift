@@ -10,7 +10,7 @@ import UIKit
 // import Firebase
 import JGProgressHUD
 
-class ShareOnWallViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate {
+class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Outlets
     
@@ -405,6 +405,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate, UITextV
         }
         HelperService.uploadDataToServer(data: imageData, caption: saySomething.text!, frame: frameColorLabel.text!, category: categoryLabel.text!, onSuccess: {
             self.clean()
+            // dismiss hud
+            self.hud1.dismiss()
             // self.tabBarController?.selectedIndex = 0
         })
         
@@ -412,10 +414,16 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate, UITextV
     
     // Reset function
     func clean() {
+        // setting back to placeholder image
         self.selectPhotoImage.image = UIImage(named: "selectPhoto")
         // selected image should be blank again, after we push the post to db
         self.selectedImage = nil
-        self.saySomething.text = "Say something about this..."
+        // setting back default nil text
+        self.saySomething.text = ""
+        // setting back to default placeholder
+        self.saySomething.placeholder = "Say something about this..."
+        // setting back share button to disabled state
+        shareOutlet.isEnabled = false
         // setting back text view text color to light gray, so that delegate methods work
         // self.captionTextView.textColor = UIColor.lightGray
     }
@@ -436,4 +444,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #440
+}   // #448
