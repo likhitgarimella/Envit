@@ -126,7 +126,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         scView.bottomAnchor.constraint(equalTo: shareOutlet.topAnchor, constant: -30).isActive = true
         
         /// bg color
-        scView.backgroundColor = UIColor.orange
+        scView.backgroundColor = UIColor.white
         
         /// array count
         for j in 0 ..< names.count {
