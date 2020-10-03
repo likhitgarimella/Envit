@@ -17,7 +17,7 @@ class TechShareViewController: UIViewController {
     
     func ButtonsProp() {
         
-        goToFeedOutlet.layer.cornerRadius = 22
+        goToFeedOutlet.layer.cornerRadius = 18
         mentorOutlet.layer.cornerRadius = 10
         menteeOutlet.layer.cornerRadius = 10
         

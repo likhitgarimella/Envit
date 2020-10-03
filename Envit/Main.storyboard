@@ -2875,22 +2875,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-Cj-XAi">
                                 <rect key="frame" x="20" y="56" width="143.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Techies." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-Tf-tg7">
                                 <rect key="frame" x="20" y="120.00000000000001" width="153.33333333333334" height="25.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="0.2470588235" green="0.33333333329999998" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-8c-SNF">
-                                <rect key="frame" x="120" y="165.66666666666666" width="174" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="130" y="165.66666666666666" width="154" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="55q-lD-zPc"/>
+                                    <constraint firstAttribute="height" constant="36" id="55q-lD-zPc"/>
                                 </constraints>
-                                <state key="normal" image="goToFeed">
+                                <state key="normal" image="goToFeedNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2900,37 +2900,37 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Mentor. Share your work." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWa-Fs-W7K">
                                 <rect key="frame" x="40.333333333333343" y="447.66666666666669" width="333.66666666666663" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrD-BT-qtd">
-                                <rect key="frame" x="76" y="493.33333333333326" width="262" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="493.33333333333326" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="d7T-UK-LTk"/>
+                                    <constraint firstAttribute="height" constant="40" id="d7T-UK-LTk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" image="mentor">
+                                <state key="normal" image="mentorNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="mentorAction:" destination="nHm-LH-6eE" eventType="touchUpInside" id="eE9-7X-OZa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Mentor. Post your queries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-Rg-sG1">
-                                <rect key="frame" x="56.666666666666657" y="557.33333333333337" width="301" height="25.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Mentor. Post your queries." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-Rg-sG1">
+                                <rect key="frame" x="53.666666666666657" y="557.33333333333337" width="307" height="25.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3h-fB-coZ">
-                                <rect key="frame" x="76" y="603" width="262" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="603" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="E20-g0-OMw"/>
+                                    <constraint firstAttribute="height" constant="40" id="E20-g0-OMw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" image="mentee">
+                                <state key="normal" image="menteeNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2941,28 +2941,25 @@
                         <viewLayoutGuide key="safeArea" id="lJ9-ng-JxZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aZc-8c-SNF" firstAttribute="centerX" secondItem="EDw-eL-tBi" secondAttribute="centerX" id="9pn-fY-bTY"/>
-                            <constraint firstItem="9rI-Rg-sG1" firstAttribute="top" secondItem="mrD-BT-qtd" secondAttribute="bottom" constant="20" id="A8E-16-axu"/>
-                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="aZc-8c-SNF" secondAttribute="right" constant="120" id="Ay6-mD-TLR"/>
+                            <constraint firstItem="9rI-Rg-sG1" firstAttribute="top" secondItem="mrD-BT-qtd" secondAttribute="bottom" constant="24" id="A8E-16-axu"/>
+                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="aZc-8c-SNF" secondAttribute="right" constant="130" id="Ay6-mD-TLR"/>
                             <constraint firstItem="9rI-Rg-sG1" firstAttribute="centerX" secondItem="EDw-eL-tBi" secondAttribute="centerX" id="BXF-Xg-Nvg"/>
-                            <constraint firstItem="mrD-BT-qtd" firstAttribute="centerX" secondItem="EDw-eL-tBi" secondAttribute="centerX" id="Dmu-kJ-a53"/>
-                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="mrD-BT-qtd" secondAttribute="right" constant="76" id="MCn-va-zTg"/>
-                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="V3h-fB-coZ" secondAttribute="right" constant="76" id="NS2-Tt-X1Z"/>
-                            <constraint firstItem="V3h-fB-coZ" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="76" id="QAD-8l-vkr"/>
-                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="bottom" secondItem="V3h-fB-coZ" secondAttribute="bottom" constant="20" id="TBK-qb-xjA"/>
+                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="mrD-BT-qtd" secondAttribute="right" constant="20" id="MCn-va-zTg"/>
+                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="right" secondItem="V3h-fB-coZ" secondAttribute="right" constant="20" id="NS2-Tt-X1Z"/>
+                            <constraint firstItem="V3h-fB-coZ" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="20" id="QAD-8l-vkr"/>
+                            <constraint firstItem="lJ9-ng-JxZ" firstAttribute="bottom" secondItem="V3h-fB-coZ" secondAttribute="bottom" constant="24" id="TBK-qb-xjA"/>
                             <constraint firstItem="NPY-zj-dty" firstAttribute="top" secondItem="lJ9-ng-JxZ" secondAttribute="top" id="Wiw-pM-KDt"/>
                             <constraint firstItem="P5Y-Tf-tg7" firstAttribute="leading" secondItem="lJ9-ng-JxZ" secondAttribute="leading" constant="20" id="YBA-Sa-yjQ"/>
                             <constraint firstItem="2jg-Cj-XAi" firstAttribute="top" secondItem="lJ9-ng-JxZ" secondAttribute="top" id="ZCN-Yc-Wjd"/>
-                            <constraint firstItem="mrD-BT-qtd" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="76" id="aTs-FJ-dJt"/>
+                            <constraint firstItem="mrD-BT-qtd" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="20" id="aTs-FJ-dJt"/>
                             <constraint firstItem="mrD-BT-qtd" firstAttribute="top" secondItem="dWa-Fs-W7K" secondAttribute="bottom" constant="20" id="alN-A0-VKG"/>
                             <constraint firstItem="dWa-Fs-W7K" firstAttribute="centerX" secondItem="EDw-eL-tBi" secondAttribute="centerX" id="b5J-gF-CFK"/>
-                            <constraint firstItem="V3h-fB-coZ" firstAttribute="centerX" secondItem="EDw-eL-tBi" secondAttribute="centerX" id="dEg-Xo-Ps1"/>
                             <constraint firstItem="NPY-zj-dty" firstAttribute="leading" secondItem="lJ9-ng-JxZ" secondAttribute="leading" id="dFl-PQ-EdC"/>
                             <constraint firstItem="NPY-zj-dty" firstAttribute="bottom" secondItem="lJ9-ng-JxZ" secondAttribute="bottom" id="f1e-FY-7EZ"/>
                             <constraint firstItem="NPY-zj-dty" firstAttribute="trailing" secondItem="lJ9-ng-JxZ" secondAttribute="trailing" id="fGO-6w-Pn9"/>
                             <constraint firstItem="V3h-fB-coZ" firstAttribute="top" secondItem="9rI-Rg-sG1" secondAttribute="bottom" constant="20" id="gpP-gK-SNL"/>
                             <constraint firstItem="lJ9-ng-JxZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="P5Y-Tf-tg7" secondAttribute="trailing" symbolic="YES" id="h1r-hC-vIT"/>
-                            <constraint firstItem="aZc-8c-SNF" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="120" id="pQ4-8Y-uvq"/>
+                            <constraint firstItem="aZc-8c-SNF" firstAttribute="left" secondItem="lJ9-ng-JxZ" secondAttribute="left" constant="130" id="pQ4-8Y-uvq"/>
                             <constraint firstItem="2jg-Cj-XAi" firstAttribute="leading" secondItem="lJ9-ng-JxZ" secondAttribute="leading" constant="20" id="t3C-bB-wsl"/>
                             <constraint firstItem="P5Y-Tf-tg7" firstAttribute="top" secondItem="2jg-Cj-XAi" secondAttribute="bottom" constant="28" id="xZw-t1-jiy"/>
                             <constraint firstItem="aZc-8c-SNF" firstAttribute="top" secondItem="P5Y-Tf-tg7" secondAttribute="bottom" constant="20" id="zfL-js-XqE"/>
@@ -3043,10 +3040,10 @@
         <image name="coins" width="30" height="30"/>
         <image name="findjc" width="154" height="19"/>
         <image name="findnewpro" width="142" height="19"/>
-        <image name="goToFeed" width="71" height="14"/>
+        <image name="goToFeedNew" width="154" height="36"/>
         <image name="heart" width="30" height="30"/>
-        <image name="mentee" width="62" height="16"/>
-        <image name="mentor" width="59" height="16"/>
+        <image name="menteeNew" width="374" height="40"/>
+        <image name="mentorNew" width="374" height="40"/>
         <image name="profile" width="23" height="26"/>
         <image name="sample" width="1106" height="810"/>
         <image name="shape" width="10" height="17"/>
