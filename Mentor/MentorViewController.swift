@@ -28,11 +28,11 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
         experienceTextView.layer.borderColor = myColor.cgColor
-        experienceTextView.layer.borderWidth = 1.6
+        experienceTextView.layer.borderWidth = 1.0
         prerequisites.layer.borderColor = myColor.cgColor
-        prerequisites.layer.borderWidth = 1.6
+        prerequisites.layer.borderWidth = 1.0
         courses.layer.borderColor = myColor.cgColor
-        courses.layer.borderWidth = 1.6
+        courses.layer.borderWidth = 1.0
         
     }
     
