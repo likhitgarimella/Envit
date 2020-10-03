@@ -153,7 +153,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
             if (j == selectedIndex) {
                 if(strofMenu == "abcdefghijkl") {
                     /// button selected
-                    button.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
+                    button.backgroundColor = UIColor(red: 255/255, green: 101/255, blue: 101/255, alpha: 1.0)
                     button.setTitleColor(UIColor.white, for: .normal)
                 }
                 /// button normal
