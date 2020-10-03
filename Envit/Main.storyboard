@@ -747,7 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3q-6c-HWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2852" y="439"/>
+            <point key="canvasLocation" x="3012" y="439"/>
         </scene>
         <!--FindJ Component View Controller-->
         <scene sceneID="Vbi-2e-RTR">
@@ -838,7 +838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-sa-M0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6200.0000000000009" y="1617.3913043478262"/>
+            <point key="canvasLocation" x="5748" y="1836"/>
         </scene>
         <!--Add Project View Controller-->
         <scene sceneID="11e-H7-9Do">
@@ -930,7 +930,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Bs-Pu-MBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3538" y="-346"/>
+            <point key="canvasLocation" x="3935" y="-192"/>
         </scene>
         <!--Mentee View Controller-->
         <scene sceneID="sqN-XP-3dq">
@@ -1068,7 +1068,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Gx-3BW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="-702"/>
+            <point key="canvasLocation" x="170" y="-2358"/>
         </scene>
         <!--Mentor View Controller-->
         <scene sceneID="oTE-aG-1v7">
@@ -1274,7 +1274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06g-1d-Nnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="-573"/>
+            <point key="canvasLocation" x="-697" y="-2228"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="ByD-lt-4z1">
@@ -1368,7 +1368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30a-mQ-tD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1914" y="-1533"/>
+            <point key="canvasLocation" x="170" y="-3183"/>
         </scene>
         <!--Mentee Feed View Controller-->
         <scene sceneID="53b-gV-1ur">
@@ -1416,7 +1416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0O-AI-QTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="-1818"/>
+            <point key="canvasLocation" x="1029" y="-3274"/>
         </scene>
         <!--Mentor Feed View Controller-->
         <scene sceneID="7Rv-u6-BoU">
@@ -1464,7 +1464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kU-gj-ao0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="-1249"/>
+            <point key="canvasLocation" x="1029" y="-2449"/>
         </scene>
         <!--Tech-->
         <scene sceneID="sPG-aL-RV4">
@@ -1487,7 +1487,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ki-8yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="-1532"/>
+            <point key="canvasLocation" x="-1771" y="-2601"/>
         </scene>
         <!--Comments In Mentee Post Feed-->
         <scene sceneID="ucF-04-03M">
@@ -1627,7 +1627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b5-Uj-oWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3538" y="-1818"/>
+            <point key="canvasLocation" x="2045" y="-3274"/>
         </scene>
         <!--Comments In Mentor Post Feed-->
         <scene sceneID="zUh-dP-e1f">
@@ -1767,7 +1767,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZS-cj-odp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3538" y="-1249"/>
+            <point key="canvasLocation" x="2045" y="-2448"/>
         </scene>
         <!--Profile-->
         <scene sceneID="V0t-TA-6VJ">
@@ -1870,7 +1870,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obx-zO-mxb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="1202"/>
+            <point key="canvasLocation" x="3012" y="3270"/>
         </scene>
         <!--Share On Wall View Controller-->
         <scene sceneID="6li-rq-4ih">
@@ -1899,9 +1899,6 @@
                                                     <constraint firstAttribute="height" constant="49" id="pMU-Ew-Qbu"/>
                                                 </constraints>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="uwK-0Z-CZe">
-                                                <rect key="frame" x="345" y="29.666666666666671" width="49" height="49"/>
-                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sg0-G1-ias">
                                                 <rect key="frame" x="75" y="108" width="264" height="266"/>
                                                 <subviews>
@@ -2033,12 +2030,9 @@
                                             <constraint firstAttribute="trailing" secondItem="klZ-3T-ACJ" secondAttribute="trailing" constant="75" id="1WE-7Z-An0"/>
                                             <constraint firstItem="iKg-Oi-fux" firstAttribute="centerY" secondItem="hrg-MM-CKy" secondAttribute="centerY" id="2we-BC-crO"/>
                                             <constraint firstAttribute="trailing" secondItem="0e6-7Z-IWu" secondAttribute="trailing" constant="80" id="4ga-I7-59a"/>
-                                            <constraint firstItem="uwK-0Z-CZe" firstAttribute="bottom" secondItem="iKg-Oi-fux" secondAttribute="bottom" id="5fg-Tc-oP0"/>
                                             <constraint firstAttribute="bottom" secondItem="klZ-3T-ACJ" secondAttribute="bottom" constant="285" id="6Di-qo-QV4"/>
-                                            <constraint firstItem="uwK-0Z-CZe" firstAttribute="leading" secondItem="iKg-Oi-fux" secondAttribute="leading" id="6uz-gc-e7G"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
-                                            <constraint firstItem="uwK-0Z-CZe" firstAttribute="trailing" secondItem="iKg-Oi-fux" secondAttribute="trailing" id="Dv7-df-3wP"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="0e6-7Z-IWu" secondAttribute="bottom" constant="14" id="EzB-Bv-gD9"/>
                                             <constraint firstItem="hep-41-IdC" firstAttribute="leading" secondItem="1TQ-Sr-MST" secondAttribute="trailing" constant="20" id="GiV-6A-bDy"/>
                                             <constraint firstItem="hep-41-IdC" firstAttribute="centerY" secondItem="1TQ-Sr-MST" secondAttribute="centerY" id="IN6-kT-bLP"/>
@@ -2055,7 +2049,6 @@
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="120" id="nnL-wn-rb6"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="pjC-IR-jdj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hrg-MM-CKy" secondAttribute="trailing" constant="20" symbolic="YES" id="qlr-3y-WIt"/>
-                                            <constraint firstItem="uwK-0Z-CZe" firstAttribute="top" secondItem="iKg-Oi-fux" secondAttribute="top" id="sWh-wo-Hcv"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="24" id="t9x-BJ-YW9"/>
                                         </constraints>
                                     </view>
@@ -2098,7 +2091,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he8-vT-F1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="2043.7500000000002"/>
+            <point key="canvasLocation" x="2045" y="5410"/>
         </scene>
         <!--Projects-->
         <scene sceneID="tVX-Is-HQ4">
@@ -2267,7 +2260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0j-ac-Qmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4386" y="-729"/>
+            <point key="canvasLocation" x="4758" y="-752"/>
         </scene>
         <!--Component View Controller-->
         <scene sceneID="e5F-qT-cOW">
@@ -2413,7 +2406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7E5-Oe-8or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4386" y="91"/>
+            <point key="canvasLocation" x="4758" y="90"/>
         </scene>
         <!--Find New Projects View Controller-->
         <scene sceneID="nDc-vp-R0u">
@@ -2489,7 +2482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdk-f2-dfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3935" y="907"/>
+            <point key="canvasLocation" x="3935" y="1093"/>
         </scene>
         <!--Project Request Feed-->
         <scene sceneID="yY3-V1-gcc">
@@ -2538,7 +2531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-9K-uKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7639.130434782609" y="1710.733695652174"/>
+            <point key="canvasLocation" x="6541" y="1743"/>
         </scene>
         <!--Component Feed-->
         <scene sceneID="Wjj-Xh-7ny">
@@ -2586,7 +2579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxr-Rl-4og" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5826" y="1000"/>
+            <point key="canvasLocation" x="5749" y="998"/>
         </scene>
         <!--Comments In Pers Proj Feed-->
         <scene sceneID="U7E-UP-m1Q">
@@ -2726,7 +2719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGD-bC-oQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4758" y="907"/>
+            <point key="canvasLocation" x="4758" y="1092"/>
         </scene>
         <!--Comments InJ Comp Proj Feed-->
         <scene sceneID="wzj-0n-mD6">
@@ -2866,7 +2859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cud-zQ-jTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6586" y="1000"/>
+            <point key="canvasLocation" x="6541" y="999"/>
         </scene>
         <!--Tech Share View Controller-->
         <scene sceneID="Hp5-X1-pkW">
@@ -2988,7 +2981,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVh-M8-96m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="-1533"/>
+            <point key="canvasLocation" x="-697" y="-3183"/>
         </scene>
         <!--Discover-->
         <scene sceneID="HkD-sw-kwL">
@@ -3011,7 +3004,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqt-hP-kbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="1201"/>
+            <point key="canvasLocation" x="2045" y="3270"/>
         </scene>
         <!--Share-->
         <scene sceneID="UqD-aQ-6Dd">
@@ -3034,7 +3027,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6x-gS-YpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="2044"/>
+            <point key="canvasLocation" x="1029" y="5244"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -3048,7 +3041,6 @@
         <image name="bell" width="30" height="30"/>
         <image name="chart" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
-        <image name="delete" width="49" height="49"/>
         <image name="findjc" width="154" height="19"/>
         <image name="findnewpro" width="142" height="19"/>
         <image name="goToFeed" width="71" height="14"/>

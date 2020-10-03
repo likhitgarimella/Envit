@@ -212,7 +212,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
             let buttonone : UIButton = (buttonArray[i] as! UIButton)
             if i == selectedIndex {
                 /// button selected
-                buttonone.backgroundColor = UIColor(red: 254/255, green: 110/255, blue: 110/255, alpha: 1.0)
+                buttonone.backgroundColor = UIColor(red: 255/255, green: 101/255, blue: 101/255, alpha: 1.0)
                 buttonone.setTitleColor(UIColor.white, for: .normal)
             } else {
                 /// button normal
