@@ -44,7 +44,7 @@ class MentorViewController: UIViewController, UITextViewDelegate {
         experienceTextView.layer.cornerRadius = 4
         prerequisites.layer.cornerRadius = 4
         courses.layer.cornerRadius = 4
-        submitOutlet.layer.cornerRadius = 6
+        submitOutlet.layer.cornerRadius = 10
         
     }
     

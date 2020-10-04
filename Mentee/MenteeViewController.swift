@@ -26,7 +26,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         domain.layer.borderColor = myColor.cgColor
         domain.layer.borderWidth = 1.6
         postQueryTextView.layer.borderColor = myColor.cgColor
-        postQueryTextView.layer.borderWidth = 1.6
+        postQueryTextView.layer.borderWidth = 1.0
         
     }
     
@@ -36,7 +36,7 @@ class MenteeViewController: UIViewController, UITextFieldDelegate {
         beMentee.layer.cornerRadius = 15
         domain.layer.cornerRadius = 22
         postQueryTextView.layer.cornerRadius = 4
-        submitOutlet.layer.cornerRadius = 6
+        submitOutlet.layer.cornerRadius = 10
         
     }
     
