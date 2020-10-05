@@ -1880,20 +1880,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1075"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on the Wall" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-MM-CKy">
-                                                <rect key="frame" x="20.000000000000014" y="36" width="235.33333333333337" height="35"/>
+                                                <rect key="frame" x="20.000000000000014" y="36" width="223.33333333333337" height="36"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                                 <color key="textColor" red="0.47058823529411764" green="0.31764705882352939" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKg-Oi-fux">
-                                                <rect key="frame" x="345" y="29" width="49" height="49"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="49" id="fao-5D-JzZ"/>
-                                                    <constraint firstAttribute="height" constant="49" id="pMU-Ew-Qbu"/>
-                                                </constraints>
-                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sg0-G1-ias">
-                                                <rect key="frame" x="75" y="107" width="264" height="266"/>
+                                                <rect key="frame" x="75" y="108" width="264" height="266"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-KB-mlm">
                                                         <rect key="frame" x="5" y="5" width="254" height="256"/>
@@ -1923,7 +1916,7 @@
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Say something about this..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0e6-7Z-IWu">
-                                                <rect key="frame" x="80" y="387" width="254" height="34"/>
+                                                <rect key="frame" x="80" y="388" width="254" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="8HI-QA-fJS"/>
                                                 </constraints>
@@ -1937,7 +1930,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="keq-Af-0c6">
-                                                <rect key="frame" x="41" y="435" width="332" height="42"/>
+                                                <rect key="frame" x="41" y="436" width="332" height="42"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW2-8f-ruK">
                                                         <rect key="frame" x="0.0" y="0.0" width="68" height="42"/>
@@ -1986,28 +1979,28 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TQ-Sr-MST">
-                                                <rect key="frame" x="120" y="501" width="36" height="18.666666666666629"/>
+                                                <rect key="frame" x="119.99999999999999" y="502" width="33.333333333333329" height="19.333333333333371"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hep-41-IdC">
-                                                <rect key="frame" x="176" y="510.33333333333331" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="173.33333333333334" y="511.66666666666669" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-on-sB4">
-                                                <rect key="frame" x="20" y="537" width="129" height="21"/>
+                                                <rect key="frame" x="20.000000000000007" y="538" width="124.66666666666669" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="18"/>
                                                 <color key="textColor" red="0.47058823529411764" green="0.31764705882352939" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klZ-3T-ACJ">
-                                                <rect key="frame" x="75" y="746" width="264" height="44"/>
-                                                <color key="backgroundColor" red="1" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="20" y="750" width="374" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="VQD-Qv-58y"/>
+                                                    <constraint firstAttribute="height" constant="40" id="VQD-Qv-58y"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
                                                 <state key="normal" title="Share">
@@ -2020,24 +2013,21 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="klZ-3T-ACJ" secondAttribute="trailing" constant="75" id="1WE-7Z-An0"/>
-                                            <constraint firstItem="iKg-Oi-fux" firstAttribute="centerY" secondItem="hrg-MM-CKy" secondAttribute="centerY" id="2we-BC-crO"/>
+                                            <constraint firstAttribute="trailing" secondItem="klZ-3T-ACJ" secondAttribute="trailing" constant="20" id="1WE-7Z-An0"/>
                                             <constraint firstAttribute="trailing" secondItem="0e6-7Z-IWu" secondAttribute="trailing" constant="80" id="4ga-I7-59a"/>
-                                            <constraint firstAttribute="bottom" secondItem="klZ-3T-ACJ" secondAttribute="bottom" constant="285" id="6Di-qo-QV4"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJl-on-sB4" secondAttribute="trailing" constant="20" symbolic="YES" id="81T-ET-XDe"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="centerX" secondItem="sg0-G1-ias" secondAttribute="centerX" id="Bp3-ic-LHX"/>
                                             <constraint firstItem="keq-Af-0c6" firstAttribute="top" secondItem="0e6-7Z-IWu" secondAttribute="bottom" constant="14" id="EzB-Bv-gD9"/>
                                             <constraint firstItem="hep-41-IdC" firstAttribute="leading" secondItem="1TQ-Sr-MST" secondAttribute="trailing" constant="20" id="GiV-6A-bDy"/>
                                             <constraint firstItem="hep-41-IdC" firstAttribute="centerY" secondItem="1TQ-Sr-MST" secondAttribute="centerY" id="IN6-kT-bLP"/>
-                                            <constraint firstItem="klZ-3T-ACJ" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="J8A-TV-4eN"/>
                                             <constraint firstItem="0e6-7Z-IWu" firstAttribute="top" secondItem="sg0-G1-ias" secondAttribute="bottom" constant="14" id="JcE-8N-53M"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="OYj-s3-myb"/>
-                                            <constraint firstItem="klZ-3T-ACJ" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="75" id="Q0G-Ak-bfW"/>
+                                            <constraint firstItem="klZ-3T-ACJ" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="Q0G-Ak-bfW"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="top" secondItem="keq-Af-0c6" secondAttribute="bottom" constant="60" id="RLN-dQ-Ld8"/>
                                             <constraint firstItem="fJl-on-sB4" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="20" id="W0p-tk-QIV"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="top" secondItem="hrg-MM-CKy" secondAttribute="bottom" constant="36" id="XCR-By-4CE"/>
+                                            <constraint firstAttribute="bottom" secondItem="klZ-3T-ACJ" secondAttribute="bottom" constant="285" id="gGB-GZ-QzT"/>
                                             <constraint firstItem="hrg-MM-CKy" firstAttribute="top" secondItem="n8j-sZ-7aV" secondAttribute="top" constant="36" id="gph-Nh-a1g"/>
-                                            <constraint firstAttribute="trailing" secondItem="iKg-Oi-fux" secondAttribute="trailing" constant="20" id="i5X-i3-tQG"/>
                                             <constraint firstItem="0e6-7Z-IWu" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="80" id="m6S-HQ-fcj"/>
                                             <constraint firstItem="1TQ-Sr-MST" firstAttribute="leading" secondItem="n8j-sZ-7aV" secondAttribute="leading" constant="120" id="nnL-wn-rb6"/>
                                             <constraint firstItem="sg0-G1-ias" firstAttribute="centerX" secondItem="n8j-sZ-7aV" secondAttribute="centerX" id="pjC-IR-jdj"/>
