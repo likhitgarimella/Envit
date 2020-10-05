@@ -639,24 +639,24 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COm-lf-jYp">
-                                <rect key="frame" x="20" y="56" width="180.66666666666666" height="35"/>
+                                <rect key="frame" x="20" y="56" width="172.33333333333334" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collaborate and share your projects." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cco-fe-m8m">
-                                <rect key="frame" x="20" y="119.00000000000001" width="357.66666666666669" height="25.666666666666671"/>
+                                <rect key="frame" x="20" y="120.00000000000001" width="340.66666666666669" height="25.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-CU-cKl">
-                                <rect key="frame" x="120" y="164.66666666666666" width="174" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="130" y="165.66666666666666" width="154" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="GuY-lk-2VB"/>
+                                    <constraint firstAttribute="height" constant="36" id="GuY-lk-2VB"/>
                                 </constraints>
-                                <state key="normal" image="add1">
+                                <state key="normal" image="addProjectNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -664,19 +664,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for projects?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-ZU-Kfx">
-                                <rect key="frame" x="92.666666666666671" y="447.66666666666669" width="228.66666666666663" height="25.666666666666686"/>
+                                <rect key="frame" x="97.666666666666671" y="447.66666666666669" width="218.66666666666663" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLx-GX-TIC">
-                                <rect key="frame" x="76" y="493.33333333333326" width="262" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="493.33333333333326" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="xHd-mf-nVO"/>
+                                    <constraint firstAttribute="height" constant="40" id="xHd-mf-nVO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" image="findnewpro">
+                                <state key="normal" image="findNewProjNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -684,19 +684,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J - Component projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNi-tJ-EBN">
-                                <rect key="frame" x="90.333333333333329" y="557.33333333333337" width="233.66666666666669" height="25.666666666666629"/>
+                                <rect key="frame" x="95.333333333333329" y="557.33333333333337" width="223.66666666666669" height="25.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-4R-lBN">
-                                <rect key="frame" x="76" y="603" width="262" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="603" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="xnX-jF-wh3"/>
+                                    <constraint firstAttribute="height" constant="40" id="xnX-jF-wh3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="20"/>
-                                <state key="normal" image="findjc">
+                                <state key="normal" image="findJcompNew">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -709,29 +709,26 @@
                         <constraints>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="bottom" secondItem="4Bv-zA-Qh6" secondAttribute="bottom" id="0Gn-6o-hKK"/>
                             <constraint firstItem="MLx-GX-TIC" firstAttribute="top" secondItem="O6a-ZU-Kfx" secondAttribute="bottom" constant="20" id="6aC-FH-s56"/>
-                            <constraint firstItem="qNK-CU-cKl" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="120" id="9U1-cT-2gT"/>
-                            <constraint firstItem="MLx-GX-TIC" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="BHg-vS-cpo"/>
-                            <constraint firstItem="hkd-4R-lBN" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="76" id="ERS-od-cz7"/>
-                            <constraint firstItem="hkd-4R-lBN" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="JxF-yX-xEa"/>
+                            <constraint firstItem="qNK-CU-cKl" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="130" id="9U1-cT-2gT"/>
+                            <constraint firstItem="hkd-4R-lBN" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="20" id="ERS-od-cz7"/>
                             <constraint firstItem="cco-fe-m8m" firstAttribute="top" secondItem="COm-lf-jYp" secondAttribute="bottom" constant="28" id="NFo-e9-heg"/>
-                            <constraint firstItem="gNi-tJ-EBN" firstAttribute="top" secondItem="MLx-GX-TIC" secondAttribute="bottom" constant="20" id="NfX-m8-BBK"/>
+                            <constraint firstItem="gNi-tJ-EBN" firstAttribute="top" secondItem="MLx-GX-TIC" secondAttribute="bottom" constant="24" id="NfX-m8-BBK"/>
                             <constraint firstItem="O6a-ZU-Kfx" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="OZA-fN-2Va"/>
-                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="bottom" secondItem="hkd-4R-lBN" secondAttribute="bottom" constant="20" id="PaF-G5-rg5"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="bottom" secondItem="hkd-4R-lBN" secondAttribute="bottom" constant="24" id="PaF-G5-rg5"/>
                             <constraint firstItem="gNi-tJ-EBN" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="QAO-ae-M9g"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" id="T2i-uR-hcu"/>
-                            <constraint firstItem="MLx-GX-TIC" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="76" id="UYn-GW-WdD"/>
+                            <constraint firstItem="MLx-GX-TIC" firstAttribute="left" secondItem="4Bv-zA-Qh6" secondAttribute="left" constant="20" id="UYn-GW-WdD"/>
                             <constraint firstItem="COm-lf-jYp" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" constant="20" id="W2n-wf-bI3"/>
                             <constraint firstItem="hkd-4R-lBN" firstAttribute="top" secondItem="gNi-tJ-EBN" secondAttribute="bottom" constant="20" id="Y1c-FK-ToI"/>
-                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="MLx-GX-TIC" secondAttribute="right" constant="76" id="Yg5-zc-UyQ"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="MLx-GX-TIC" secondAttribute="right" constant="20" id="Yg5-zc-UyQ"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="trailing" secondItem="4Bv-zA-Qh6" secondAttribute="trailing" id="Z3Q-Rq-KRs"/>
                             <constraint firstItem="qNK-CU-cKl" firstAttribute="top" secondItem="cco-fe-m8m" secondAttribute="bottom" constant="20" id="ZFv-ME-NFe"/>
                             <constraint firstItem="COm-lf-jYp" firstAttribute="top" secondItem="4Bv-zA-Qh6" secondAttribute="top" id="akn-tN-GU6"/>
                             <constraint firstItem="4Bv-zA-Qh6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="COm-lf-jYp" secondAttribute="trailing" symbolic="YES" id="bOQ-fx-35l"/>
-                            <constraint firstItem="qNK-CU-cKl" firstAttribute="centerX" secondItem="ECU-NN-MtA" secondAttribute="centerX" id="cgZ-Pb-cH2"/>
                             <constraint firstItem="4Bv-zA-Qh6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cco-fe-m8m" secondAttribute="trailing" symbolic="YES" id="daa-jD-uAw"/>
                             <constraint firstItem="cco-fe-m8m" firstAttribute="leading" secondItem="4Bv-zA-Qh6" secondAttribute="leading" constant="20" id="gMC-Ww-FZz"/>
-                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="hkd-4R-lBN" secondAttribute="right" constant="76" id="urQ-i9-Nfp"/>
-                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="qNK-CU-cKl" secondAttribute="right" constant="120" id="x55-QX-V6K"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="hkd-4R-lBN" secondAttribute="right" constant="20" id="urQ-i9-Nfp"/>
+                            <constraint firstItem="4Bv-zA-Qh6" firstAttribute="right" secondItem="qNK-CU-cKl" secondAttribute="right" constant="130" id="x55-QX-V6K"/>
                             <constraint firstItem="0jf-4h-nj0" firstAttribute="top" secondItem="4Bv-zA-Qh6" secondAttribute="top" id="zCS-oq-agr"/>
                         </constraints>
                     </view>
@@ -1288,7 +1285,7 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-8T-AIv">
                                 <rect key="frame" x="95.333333333333329" y="113" width="50.999999999999986" height="31"/>
-                                <color key="onTintColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="enableMentor:" destination="T5f-2L-9Do" eventType="valueChanged" id="1L4-jp-WZd"/>
                                 </connections>
@@ -2869,19 +2866,19 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="611"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-Cj-XAi">
-                                <rect key="frame" x="20" y="56" width="149" height="35"/>
+                                <rect key="frame" x="20" y="56" width="143.66666666666666" height="36"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="30"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore Techies." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-Tf-tg7">
-                                <rect key="frame" x="20" y="119.00000000000001" width="160.33333333333334" height="25.666666666666671"/>
+                                <rect key="frame" x="20" y="120.00000000000001" width="153.33333333333334" height="25.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-8c-SNF">
-                                <rect key="frame" x="130" y="164.66666666666666" width="154" height="36"/>
+                                <rect key="frame" x="130" y="165.66666666666666" width="154" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="55q-lD-zPc"/>
@@ -2894,7 +2891,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Mentor. Share your work." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWa-Fs-W7K">
-                                <rect key="frame" x="30.666666666666657" y="447.66666666666669" width="353" height="25.666666666666686"/>
+                                <rect key="frame" x="40.333333333333343" y="447.66666666666669" width="333.66666666666663" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.33333333333333331" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -2914,9 +2911,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Mentor. Post your queries." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-Rg-sG1">
-                                <rect key="frame" x="44.333333333333343" y="557.33333333333337" width="325.66666666666663" height="25.666666666666629"/>
+                                <rect key="frame" x="53.666666666666657" y="557.33333333333337" width="307" height="25.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="1" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="1" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3h-fB-coZ">
@@ -3029,13 +3026,13 @@
     <resources>
         <image name="BG1" width="414" height="896"/>
         <image name="Placeholder-image" width="200" height="200"/>
-        <image name="add1" width="105" height="17"/>
         <image name="add2" width="105" height="17"/>
+        <image name="addProjectNew" width="154" height="36"/>
         <image name="bell" width="30" height="30"/>
         <image name="chart" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
-        <image name="findjc" width="154" height="19"/>
-        <image name="findnewpro" width="142" height="19"/>
+        <image name="findJcompNew" width="374" height="40"/>
+        <image name="findNewProjNew" width="374" height="40"/>
         <image name="goToFeedNew" width="154" height="36"/>
         <image name="heart" width="30" height="30"/>
         <image name="menteeNew" width="374" height="40"/>

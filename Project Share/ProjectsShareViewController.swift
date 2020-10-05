@@ -17,7 +17,7 @@ class ProjectsShareViewController: UIViewController {
     
     func ButtonsProp() {
         
-        addProjectOutlet.layer.cornerRadius = 22
+        addProjectOutlet.layer.cornerRadius = 18
         newProjectsOutlet.layer.cornerRadius = 10
         jComponentOutlet.layer.cornerRadius = 10
         

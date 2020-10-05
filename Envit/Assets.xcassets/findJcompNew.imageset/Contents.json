@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "findnewpro.png",
+      "filename" : "findJcompNew.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "findnewpro@2x.png",
+      "filename" : "findJcompNew@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "findnewpro@3x.png",
+      "filename" : "findJcompNew@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
