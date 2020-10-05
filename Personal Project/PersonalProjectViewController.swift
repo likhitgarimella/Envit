@@ -24,11 +24,11 @@ class PersonalProjectViewController: UIViewController, UITextFieldDelegate {
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
         // let dropdownColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0)
         projectTitle.layer.borderColor = myColor.cgColor
-        projectTitle.layer.borderWidth = 1.6
+        projectTitle.layer.borderWidth = 1.0
         roleOption.layer.borderColor = myColor.cgColor
         roleOption.layer.borderWidth = 1.6
         projDescTextView.layer.borderColor = myColor.cgColor
-        projDescTextView.layer.borderWidth = 1.6
+        projDescTextView.layer.borderWidth = 1.0
         
     }
     

@@ -23,11 +23,11 @@ class JComponentViewController: UIViewController, UITextFieldDelegate {
         // Textfield/Textview Border Property
         let myColor = UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0)
         projectTitle.layer.borderColor = myColor.cgColor
-        projectTitle.layer.borderWidth = 1.6
+        projectTitle.layer.borderWidth = 1.0
         courseTitle.layer.borderColor = myColor.cgColor
         courseTitle.layer.borderWidth = 1.6
         projDescTextView.layer.borderColor = myColor.cgColor
-        projDescTextView.layer.borderWidth = 1.6
+        projDescTextView.layer.borderWidth = 1.0
         
     }
     
