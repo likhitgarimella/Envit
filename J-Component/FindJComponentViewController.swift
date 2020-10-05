@@ -20,10 +20,10 @@ class FindJComponentViewController: UIViewController {
     
     func Default() {
         
-        jcOutlet.backgroundColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0) /// red
+        jcOutlet.backgroundColor = UIColor(red: 255/255, green: 101/255, blue: 101/255, alpha: 1.0) /// red
         jcOutlet.setTitleColor(UIColor.white, for: .normal)
         prRequest.backgroundColor = UIColor(red: 220/255, green: 231/255, blue: 255/255, alpha: 1.0) /// blue
-        prRequest.setTitleColor(UIColor(red: 101/255, green: 119/255, blue: 157/255, alpha: 1.0), for: .normal)
+        prRequest.setTitleColor(UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0), for: .normal)
         
     }
     
@@ -48,10 +48,10 @@ class FindJComponentViewController: UIViewController {
     
     @IBAction func jcAction(_ sender: UIButton) {
         
-        jcOutlet.backgroundColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0) /// red
+        jcOutlet.backgroundColor = UIColor(red: 255/255, green: 101/255, blue: 101/255, alpha: 1.0) /// red
         jcOutlet.setTitleColor(UIColor.white, for: .normal)
         prRequest.backgroundColor = UIColor(red: 220/255, green: 231/255, blue: 255/255, alpha: 1.0) /// blue
-        prRequest.setTitleColor(UIColor(red: 101/255, green: 119/255, blue: 157/255, alpha: 1.0), for: .normal)
+        prRequest.setTitleColor(UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0), for: .normal)
         jcFeed.alpha = 1
         jcRequest.alpha = 0
         
@@ -59,10 +59,10 @@ class FindJComponentViewController: UIViewController {
     
     @IBAction func prAction(_ sender: UIButton) {
         
-        prRequest.backgroundColor = UIColor(red: 255/255, green: 119/255, blue: 119/255, alpha: 1.0) /// red
+        prRequest.backgroundColor = UIColor(red: 255/255, green: 101/255, blue: 101/255, alpha: 1.0) /// red
         prRequest.setTitleColor(UIColor.white, for: .normal)
         jcOutlet.backgroundColor = UIColor(red: 220/255, green: 231/255, blue: 255/255, alpha: 1.0) /// blue
-        jcOutlet.setTitleColor(UIColor(red: 101/255, green: 119/255, blue: 157/255, alpha: 1.0), for: .normal)
+        jcOutlet.setTitleColor(UIColor(red: 63/255, green: 85/255, blue: 132/255, alpha: 1.0), for: .normal)
         jcFeed.alpha = 0
         jcRequest.alpha = 1
         
