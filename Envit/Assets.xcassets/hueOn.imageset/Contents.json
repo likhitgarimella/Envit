@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "redOff.png",
+      "filename" : "hueOn.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "redOff@2x.png",
+      "filename" : "hueOn@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "redOff@3x.png",
+      "filename" : "hueOn@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
