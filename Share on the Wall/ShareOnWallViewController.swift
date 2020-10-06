@@ -106,10 +106,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Color Slider
     
-    let colorSlider = ColorSlider(orientation: .horizontal, previewSide: .bottom)
+    let colorSlider = ColorSlider(orientation: .horizontal, previewSide: .top)
     
     func ColorSliderFunc() {
-        colorSlider.frame = CGRect(x: 0, y: 0, width: colorSliderView.frame.size.width, height: colorSliderView.frame.size.height/2)
+        colorSlider.frame = CGRect(x: 0, y: 14, width: colorSliderView.frame.size.width, height: colorSliderView.frame.size.height*(9/20))
         colorSliderView.addSubview(colorSlider)
         // Action
         colorSlider.addTarget(self, action: #selector(changedColor(_:)), for: .valueChanged)
@@ -265,6 +265,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
         frameColorLabel.text = "purple"
+        print(frameColorLabel)
         
         buttonOne.setImage(UIImage(named: "purpleOn"), for: .normal)
         /// purple color
@@ -296,6 +297,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
         
         frameColorLabel.text = "blue"
+        print(frameColorLabel)
         
         buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
         /// purple color
@@ -327,6 +329,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
         frameColorLabel.text = "green"
+        print(frameColorLabel)
         
         buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
         /// purple color
@@ -358,6 +361,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
         frameColorLabel.text = "hue"
+        print(frameColorLabel)
         
         buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
         /// purple color
@@ -474,4 +478,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #478
+}   // #482
