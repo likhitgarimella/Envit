@@ -41,6 +41,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     /// main button outlet
     @IBOutlet var shareOutlet: UIButton!
     
+    @IBOutlet var colorSliderView: UIView!
+    
     // MARK: - Scroll view
     
     /// scroll view
@@ -107,8 +109,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     let colorSlider = ColorSlider(orientation: .horizontal, previewSide: .bottom)
     
     func ColorSliderFunc() {
-        colorSlider.frame = CGRect(x: 20, y: 548, width: 380, height: 20)
-        view.addSubview(colorSlider)
+        colorSlider.frame = CGRect(x: 0, y: 0, width: colorSliderView.frame.size.width, height: colorSliderView.frame.size.height/2)
+        colorSliderView.addSubview(colorSlider)
         // Action
         colorSlider.addTarget(self, action: #selector(changedColor(_:)), for: .valueChanged)
     }
@@ -472,4 +474,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #476
+}   // #478
