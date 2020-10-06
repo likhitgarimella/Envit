@@ -9,6 +9,7 @@
 import UIKit
 // import Firebase
 import JGProgressHUD
+import ColorSlider
 
 class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
@@ -69,10 +70,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     func Properties() {
         
-        photoView.layer.cornerRadius = 10
-        insideView.layer.cornerRadius = 5
+        photoView.layer.cornerRadius = 12
+        insideView.layer.cornerRadius = 8
         selectPhotoImage.image = UIImage(named: "selectPhoto")
-        selectPhotoImage.layer.cornerRadius = 5
+        selectPhotoImage.layer.cornerRadius = 6
         
         // MARK: - Initial state
         
@@ -99,6 +100,22 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
         shareOutlet.layer.cornerRadius = 10
         
+    }
+    
+    // MARK: - Color Slider
+    
+    let colorSlider = ColorSlider(orientation: .horizontal, previewSide: .bottom)
+    
+    func ColorSliderFunc() {
+        colorSlider.frame = CGRect(x: 20, y: 548, width: 380, height: 20)
+        view.addSubview(colorSlider)
+        // Action
+        colorSlider.addTarget(self, action: #selector(changedColor(_:)), for: .valueChanged)
+    }
+    
+    @objc func changedColor(_ slider: ColorSlider) {
+        let color = slider.color
+        photoView.backgroundColor = color
     }
     
     override func viewDidLoad() {
@@ -240,6 +257,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic1.prepare()
         taptic1.impactOccurred()
         
+        colorSlider.isHidden = true
+        
         /// purple color
         photoView.backgroundColor = UIColor(red: 146/255, green: 110/255, blue: 209/255, alpha: 1.0)
         
@@ -268,6 +287,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         let taptic2 = UIImpactFeedbackGenerator(style: .medium)
         taptic2.prepare()
         taptic2.impactOccurred()
+        
+        colorSlider.isHidden = true
         
         /// blue color
         photoView.backgroundColor = UIColor(red: 129/255, green: 188/255, blue: 245/255, alpha: 1.0)
@@ -298,6 +319,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic3.prepare()
         taptic3.impactOccurred()
         
+        colorSlider.isHidden = true
+        
         /// green color
         photoView.backgroundColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
@@ -327,6 +350,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         taptic4.prepare()
         taptic4.impactOccurred()
         
+        colorSlider.isHidden = false
+        
         /// red color
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
@@ -347,6 +372,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         buttonFour.setImage(UIImage(named: "hueOn"), for: .normal)
         /// white color
         buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
+        
+        // Color Slider
+        ColorSliderFunc()
         
     }
     
@@ -444,4 +472,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #448
+}   // #476
