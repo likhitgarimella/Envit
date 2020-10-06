@@ -93,9 +93,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
-        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonFour.setImage(UIImage(named: "hueOff"), for: .normal)
+        /// white color
+        buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
         
         shareOutlet.layer.cornerRadius = 10
         
@@ -257,9 +257,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
-        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonFour.setImage(UIImage(named: "hueOff"), for: .normal)
+        /// white color
+        buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
         
     }
     
@@ -286,9 +286,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
-        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonFour.setImage(UIImage(named: "hueOff"), for: .normal)
+        /// white color
+        buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
         
     }
     
@@ -315,9 +315,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
-        buttonFour.setImage(UIImage(named: "redOff"), for: .normal)
-        /// red color
-        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonFour.setImage(UIImage(named: "hueOff"), for: .normal)
+        /// white color
+        buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
         
     }
     
@@ -344,9 +344,9 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// green color
         buttonThree.tintColor = UIColor(red: 126/255, green: 199/255, blue: 162/255, alpha: 1.0)
         
-        buttonFour.setImage(UIImage(named: "redOn"), for: .normal)
-        /// red color
-        buttonFour.tintColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
+        buttonFour.setImage(UIImage(named: "hueOn"), for: .normal)
+        /// white color
+        buttonFour.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0)
         
     }
     
