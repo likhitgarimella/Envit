@@ -10,7 +10,9 @@ pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+
 pod 'JGProgressHUD'
+pod 'ColorSlider', '~> 4.4'
 
 end
 
