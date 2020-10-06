@@ -123,7 +123,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = color
         // print(color)
         // convert color to hexcode
-        customColorParam = color.toRGBAString()
+        customColorParam = color.toHexString()
         print(customColorParam)
     }
     
