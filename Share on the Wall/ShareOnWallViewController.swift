@@ -330,7 +330,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// red color
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
-        frameColorLabel.text = "red"
+        frameColorLabel.text = "hue"
         
         buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
         /// purple color
