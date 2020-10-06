@@ -101,8 +101,48 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    // MARK: - Color Picker
+    
+    private var selectedColor = UIColor.systemTeal
+    @available(iOS 14.0, *)
+    private(set) lazy var colorPicker = UIColorPickerViewController()
+    
+    @available(iOS 14.0, *)
+    private func selectColor() {
+        
+        colorPicker.supportsAlpha = true
+        colorPicker.selectedColor = selectedColor
+        present(colorPicker, animated: true)
+        
+    }
+    
+    @available(iOS 14.0, *)
+    private func setupBarButton() {
+        
+        let pickedColorAction = UIAction(title: "Pick Color") { _ in
+            self.selectColor()
+        }
+        
+        let pickColorBarButton = UIBarButtonItem(image: UIImage(systemName: "eyedropper"), primaryAction: pickedColorAction)
+        navigationItem.rightBarButtonItem = pickColorBarButton
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoView.backgroundColor = selectedColor
+        
+        if #available(iOS 14.0, *) {
+            colorPicker.delegate = self
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 14.0, *) {
+            setupBarButton()
+        } else {
+            // Fallback on earlier versions
+        }
         
         // MARK: - Horz scroll view, properties & conditions
         
@@ -430,6 +470,20 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
 }
 
+@available(iOS 14.0, *)
+extension ShareOnWallViewController: UIColorPickerViewControllerDelegate {
+    
+    func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController) {
+        selectedColor = viewController.selectedColor
+        photoView.backgroundColor = selectedColor
+    }
+    
+    func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
+        print("Did dismiss controller")
+    }
+    
+}
+
 extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -444,4 +498,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #448
+}   // #502
