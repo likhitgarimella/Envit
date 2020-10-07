@@ -444,10 +444,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     
     // Reset function
     func clean() {
-        // setting back to placeholder image
-        self.selectPhotoImage.image = UIImage(named: "selectPhoto")
         // selected image should be blank again, after we push the post to db
         self.selectedImage = nil
+        // setting back to placeholder image
+        self.selectPhotoImage.image = UIImage(named: "selectPhoto")
         // setting back default nil text
         self.saySomething.text = ""
         // setting back to default placeholder
