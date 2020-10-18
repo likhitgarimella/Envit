@@ -52,10 +52,6 @@ class MentorPostCell: UICollectionViewCell {
         experienceTextView.text = mentorPost?.experienceText
         courseTextView.text = mentorPost?.coursesText
         prerequisiteTextView.text = mentorPost?.prerequisitesText
-        print(domainName.text)
-        print(experienceTextView.text)
-        print(courseTextView.text)
-        print(prerequisiteTextView.text)
         
         setupUserInfo()
         
@@ -206,4 +202,4 @@ class MentorPostCell: UICollectionViewCell {
         
     }
 
-}   // #210
+}   // #206
