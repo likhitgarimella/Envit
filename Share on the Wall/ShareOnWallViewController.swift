@@ -70,8 +70,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     // progress hud
     let hud1 = JGProgressHUD(style: .dark)
     
+    /*
     // stores the hex code of the custom color chosen from color slider
     var customColorParam: String?
+    */
     
     func Properties() {
         
@@ -123,8 +125,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         photoView.backgroundColor = color
         // print(color)
         // convert color to hexcode
-        customColorParam = color.toHexString()
-        print(customColorParam)
+        // customColorParam = color.toHexString()
+        // print(customColorParam)
     }
     
     override func viewDidLoad() {
@@ -356,7 +358,7 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         /// red color
         photoView.backgroundColor = UIColor(red: 240/255, green: 125/255, blue: 125/255, alpha: 1.0)
         
-        frameColorLabel.text = customColorParam
+        // frameColorLabel.text = customColorParam
         // print(frameColorLabel)
         
         buttonOne.setImage(UIImage(named: "purpleOff"), for: .normal)
@@ -474,4 +476,4 @@ extension ShareOnWallViewController: UIImagePickerControllerDelegate, UINavigati
         dismiss(animated: true, completion: nil)
     }
     
-}   // #478
+}   // #480
