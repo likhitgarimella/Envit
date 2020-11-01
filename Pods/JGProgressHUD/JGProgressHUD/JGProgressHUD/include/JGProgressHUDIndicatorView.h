@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wquoted-include-in-framework-header"
 #import "JGProgressHUD-Defines.h"
+#pragma clang diagnostic pop
 
 /** You may subclass this class to create a custom progress indicator view. */
 @interface JGProgressHUDIndicatorView : UIView

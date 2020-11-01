@@ -70,10 +70,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     // progress hud
     let hud1 = JGProgressHUD(style: .dark)
     
-    /*
-    // stores the hex code of the custom color chosen from color slider
+    // stores the rgba code of the custom color chosen from color slider
     var customColorParam: String?
-    */
     
     func Properties() {
         
@@ -123,9 +121,10 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
     @objc func changedColor(_ slider: ColorSlider) {
         let color = slider.color
         photoView.backgroundColor = color
-        // print(color)
-        // convert color to hexcode
-        // customColorParam = color.toHexString()
+        // convert uicolor to rgba string & print
+        print(color.toRGBAString())
+        // convert color to rgba & store in customColorParam
+        customColorParam = color.toRGBAString()
         // print(customColorParam)
     }
     
@@ -435,7 +434,8 @@ class ShareOnWallViewController: UIViewController, UIScrollViewDelegate {
         guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
             return
         }
-        HelperService.uploadDataToServer(data: imageData, caption: saySomething.text!, frame: frameColorLabel.text!, category: categoryLabel.text!, onSuccess: {
+        // customColorParam in frame color
+        HelperService.uploadDataToServer(data: imageData, caption: saySomething.text!, frame: customColorParam!, category: categoryLabel.text!, onSuccess: {
             self.clean()
             // dismiss hud
             self.hud1.dismiss()

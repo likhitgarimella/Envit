@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Jonas Gessner. All rights reserved.
 //
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wquoted-include-in-framework-header"
 #import "JGProgressHUD-Defines.h"
 #import "JGProgressHUDShadow.h"
 #import "JGProgressHUDAnimation.h"
@@ -17,12 +19,13 @@
 #import "JGProgressHUDRingIndicatorView.h"
 #import "JGProgressHUDPieIndicatorView.h"
 #import "JGProgressHUDIndeterminateIndicatorView.h"
+#pragma clang diagnostic pop
 
 @protocol JGProgressHUDDelegate;
 
 /**
  A HUD to indicate progress, success, error, warnings or other notifications to the user.
-@discussion @c JGProgressHUD respects its @c layoutMargins when positioning the HUD view. Additionally, on iOS 11 if @c insetsLayoutMarginsFromSafeArea is set to @c YES (default) the @c layoutMargins additionally contain the @c safeAreaInsets.
+ @discussion @c JGProgressHUD respects its @c layoutMargins when positioning the HUD view. Additionally, on iOS 11 if @c insetsLayoutMarginsFromSafeArea is set to @c YES (default) the @c layoutMargins additionally contain the @c safeAreaInsets.
  @note Remember to call every method from the main thread! UIKit => main thread!
  @attention You may not add JGProgressHUD to a view which has an alpha value < 1.0 or to a view which is a subview of a view with an alpha value < 1.0.
  */
@@ -41,10 +44,20 @@
 + (instancetype __nonnull)progressHUDWithStyle:(JGProgressHUDStyle)style;
 
 /**
+ Convenience initializer. The HUD will dynamically change its style based on whether dark mode is enabled or not. When dark mode is on, the style will be JGProgressHUDStyleDark, when dark mode is off the style will be JGProgressHUDStyleExtraLight.
+ */
+- (instancetype __nonnull)initWithAutomaticStyle;
+
+/**
+ Convenience initializer. The HUD will dynamically change its style based on whether dark mode is enabled or not. When dark mode is on, the style will be JGProgressHUDStyleDark, when dark mode is off the style will be JGProgressHUDStyleExtraLight.
+ */
++ (instancetype __nonnull)progressHUDWithAutomaticStyle;
+
+/**
  The appearance style of the HUD.
  @b Default: JGProgressHUDStyleExtraLight.
  */
-@property (nonatomic, assign, readonly) JGProgressHUDStyle style;
+@property (nonatomic, assign) JGProgressHUDStyle style;
 
 /** The view in which the HUD is presented. */
 @property (nonatomic, weak, readonly, nullable) UIView *targetView;
@@ -214,27 +227,50 @@
  */
 - (void)showInView:(UIView *__nonnull)view animated:(BOOL)animated;
 
-/** Dismisses the HUD animated. */
+/**
+ Shows the HUD after a delay. You should preferably show the HUD in a UIViewController's view. The HUD will be repositioned in response to rotation and keyboard show/hide notifications.
+ You may call @c dismiss to stop the HUD from appearing before the delay has passed.
+ @param view The view to show the HUD in. The frame of the @c view will be used to calculate the position of the HUD.
+ @param animated If the HUD should show with an animation.
+ @param delay The delay until the HUD will be shown.
+ */
+- (void)showInView:(UIView *__nonnull)view animated:(BOOL)animated afterDelay:(NSTimeInterval)delay;
+
+/** Dismisses the HUD animated. If the HUD is currently not visible this method does nothing. */
 - (void)dismiss;
 
 /**
- Dismisses the HUD.
+ Dismisses the HUD. If the HUD is currently not visible this method does nothing.
  @param animated If the HUD should dismiss with an animation.
  */
 - (void)dismissAnimated:(BOOL)animated;
 
 /**
- Dismisses the HUD animated after a delay.
+ Dismisses the HUD animated after a delay. If the HUD is currently not visible this method does nothing.
  @param delay The delay until the HUD will be dismissed.
  */
 - (void)dismissAfterDelay:(NSTimeInterval)delay;
 
 /**
- Dismisses the HUD after a delay.
+ Dismisses the HUD after a delay. If the HUD is currently not visible this method does nothing.
  @param delay The delay until the HUD will be dismissed.
  @param animated If the HUD should dismiss with an animation.
  */
 - (void)dismissAfterDelay:(NSTimeInterval)delay animated:(BOOL)animated;
+
+/**
+ Dismisses the HUD after a delay and runs a block upon completion. If the HUD is currently not visible this method does nothing.
+ @param delay The delay until the HUD will be dismissed.
+ @param animated If the HUD should dismiss with an animation.
+ @param dismissCompletion The block to execute after the HUD was dismissed.
+ */
+- (void)dismissAfterDelay:(NSTimeInterval)delay animated:(BOOL)animated completion:(void (^_Nullable)(void))dismissCompletion;
+
+/**
+ Schedules the given block to be executed when this HUD disapears. If the HUD is currently not visible this method does nothing.
+ @param dismissCompletion The block to execute after the HUD was dismissed. Multiple calls to this method cause the different blocks to be executed in FIFO order.
+ */
+- (void)performAfterDismiss:(void (^_Nonnull)(void))dismissCompletion;
 
 @end
 
@@ -251,27 +287,6 @@
  @return All visible progress HUDs in the view and its subviews.
  */
 + (NSArray<JGProgressHUD *> *__nonnull)allProgressHUDsInViewHierarchy:(UIView *__nonnull)view;
-
-@end
-
-@interface JGProgressHUD (Deprecated)
-
-#define JG_PROGRESS_HUD_SHOW_IN_RECT_DEPRECATED __attribute((deprecated(("Showing a HUD in a specific frame is no longer supported. Use a blank UIView with the desired frame and present the HUD in that view to achieve this behaviour."))))
-
-/**
- Shows the HUD animated. You should preferably show the HUD in a UIViewController's view.
- @param view The view to show the HUD in.
- @param rect The rect allocated in @c view for displaying the HUD.
- */
-- (void)showInRect:(CGRect)rect inView:(UIView *__nonnull)view JG_PROGRESS_HUD_SHOW_IN_RECT_DEPRECATED;
-
-/**
- Shows the HUD. You should preferably show the HUD in a UIViewController's view.
- @param view The view to show the HUD in.
- @param rect The rect allocated in @c view for displaying the HUD.
- @param animated If the HUD should show with an animation.
- */
-- (void)showInRect:(CGRect)rect inView:(UIView *__nonnull)view animated:(BOOL)animated JG_PROGRESS_HUD_SHOW_IN_RECT_DEPRECATED;
 
 @end
 

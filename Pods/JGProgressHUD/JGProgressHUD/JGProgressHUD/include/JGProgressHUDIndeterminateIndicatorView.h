@@ -6,18 +6,15 @@
 //  Copyright (c) 2014 Jonas Gessner. All rights reserved.
 //
 
-#import "JGProgressHUD-Defines.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wquoted-include-in-framework-header"
 #import "JGProgressHUDIndicatorView.h"
+#pragma clang diagnostic pop
 
 /**
  An indeterminate progress indicator showing a @c UIActivityIndicatorView.
  */
 @interface JGProgressHUDIndeterminateIndicatorView : JGProgressHUDIndicatorView
-
-/**
- Initializes the indicator view and sets the correct color to match the HUD style.
- */
-- (instancetype __nonnull)initWithHUDStyle:(JGProgressHUDStyle)style __attribute((deprecated(("This initializer is no longer needed. Use the init initializer method."))));
 
 /**
  Set the color of the activity indicator view.
